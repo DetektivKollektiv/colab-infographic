@@ -1,0 +1,8 @@
+{
+    "ignore": [
+        "src/components/Infographic/Infographic.vue"
+    ],
+    "watch": [
+        "src/components/Infographic/"
+    ]
+}

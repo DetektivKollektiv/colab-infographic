@@ -1,228 +1,79 @@
-import { ELEMENT_STYLES } from '@/components/Infographic.js'
+import was from './was.json'
+import wer from './wer.json'
+import wie from './wie.json'
 
-let layerIndex = 0
-
-const columnRowStyle = {
-    backgroundColor: 'rgb(243, 244, 246)',
-    padding: '10px',
-    margin: '5px',
-    borderRadius: '10px',
+const DEFAULT_TYPES = {
+    headline: {
+        type: 'headline',
+        subheadline: '',
+        headline: '',
+    },
+    card: {
+        type: 'card',
+        title: '',
+        example: '',
+        description: '',
+        storys: [],
+    },
+    chapter: {
+        type: 'chapter',
+        chapter: '',
+        text: '',
+    },
+    notFound: {},
 }
 
-function isColumnOrRow(element) {
-    return element.type == 'row' || element.type == 'column'
+function cleanData(data) {
+    return Object.entries(data).reduce((acc, [key, value]) => {
+        acc[key] = value
+            .map((element) => {
+                return assignDefault(element)
+            })
+            .filter((element) => element)
+        return acc
+    }, {})
 }
 
-function isColumnOrRowinChilds(element) {
-    return element.children.some((child) => isColumnOrRow(child))
+function getType(element) {
+    return isHeadline(element)
+        ? 'headline'
+        : isCard(element)
+        ? 'card'
+        : isChapter(element)
+        ? 'chapter'
+        : undefined
 }
 
-function applyColumnRowStyle(element) {
-    if (isColumnOrRow(element)) {
-        if (layerIndex == 1 && !isColumnOrRowinChilds(element)) {
-            element.style = {
-                ...element.style,
-                ...columnRowStyle,
-            }
-        }
-        if (layerIndex == 2) {
-            element.style = {
-                ...element.style,
-                ...columnRowStyle,
-            }
-        }
-    }
+function isHeadline(element) {
+    return (
+        Object.keys(element).includes('headline') &&
+        Object.keys(element).includes('subheadline')
+    )
 }
 
-function iterate(element) {
-    layerIndex++
-    element.children.forEach((child) => {
-        assignDefaultElement(child)
-    })
-    layerIndex--
+function isCard(element) {
+    return (
+        Object.keys(element).includes('title') &&
+        Object.keys(element).includes('description')
+    )
 }
 
-function assignDefaultElement(element) {
-    element.type = element.type || 'default'
-    element.style = { ...ELEMENT_STYLES[element.type] }
-    element.content = element.content || {}
-    element.children = element.children || []
-
-    applyColumnRowStyle(element)
-    iterate(element)
-
-    return element
+function isChapter(element) {
+    return (
+        Object.keys(element).includes('chapter') &&
+        Object.keys(element).includes('text')
+    )
 }
 
-const response = {
-    type: 'container',
-    children: [
-        {
-            type: 'column',
-            children: [
-                {
-                    type: 'card',
-                    content: {
-                        title: 'Staaten',
-                        example: 'z. B. Russland, China',
-                        description:
-                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et',
-                        story: '',
-                    },
-                },
-                {
-                    type: 'chapter_headline',
-                    content: {
-                        chapter: '01A',
-                        headline: '(Qualitativ) Verstärken',
-                    },
-                },
-                {
-                    type: 'card',
-
-                    content: {
-                        title: 'Staaten',
-                        example: 'z. B. Russland, China',
-                        description:
-                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et',
-                        story: '',
-                    },
-                },
-                {
-                    type: 'chapter_headline',
-                    content: {
-                        chapter: '01B',
-                        headline: '(Quantitativ) Vervielfältigen',
-                    },
-                },
-                {
-                    type: 'card',
-
-                    content: {
-                        title: 'Staaten',
-                        example: 'z. B. Russland, China',
-                        description:
-                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et',
-                        story: '',
-                    },
-                },
-            ],
-        },
-        {
-            type: 'column',
-
-            children: [
-                {
-                    type: 'row',
-
-                    children: [
-                        {
-                            type: 'column',
-
-                            children: [
-                                {
-                                    type: 'card',
-
-                                    content: {
-                                        title: 'Staaten',
-                                        example: 'z. B. Russland, China',
-                                        description:
-                                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et',
-                                        story: '',
-                                    },
-                                },
-                            ],
-                        },
-                        {
-                            type: 'column',
-
-                            children: [
-                                {
-                                    type: 'card',
-
-                                    content: {
-                                        title: 'Staaten',
-                                        example: 'z. B. Russland, China',
-                                        description:
-                                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et',
-                                        story: '',
-                                    },
-                                },
-                                {
-                                    type: 'card',
-
-                                    content: {
-                                        title: 'Staaten',
-                                        example: 'z. B. Russland, China',
-                                        description:
-                                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et',
-                                        story: '',
-                                    },
-                                },
-                            ],
-                        },
-                    ],
-                },
-                {
-                    type: 'row',
-
-                    children: [
-                        {
-                            type: 'column',
-
-                            children: [
-                                {
-                                    type: 'card',
-
-                                    content: {
-                                        title: 'Staaten',
-                                        example: 'z. B. Russland, China',
-                                        description:
-                                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et',
-                                        story: '',
-                                    },
-                                },
-                            ],
-                        },
-                        {
-                            type: 'column',
-
-                            children: [
-                                {
-                                    type: 'card',
-
-                                    content: {
-                                        title: 'Staaten',
-                                        example: 'z. B. Russland, China',
-                                        description:
-                                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et',
-                                        story: '',
-                                    },
-                                },
-                                {
-                                    type: 'card',
-
-                                    content: {
-                                        title: 'Staaten',
-                                        example: 'z. B. Russland, China',
-                                        description:
-                                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et',
-                                        story: '',
-                                    },
-                                },
-                            ],
-                        },
-                    ],
-                },
-            ],
-        },
-    ],
+function assignDefault(element) {
+    return getType(element)
+        ? Object.assign(
+              element,
+              Object.assign(DEFAULT_TYPES[getType(element)], element)
+          )
+        : undefined
 }
 
-export function getInfographicData() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(assignDefaultElement(response))
-        }, 1)
-    })
-}
+export const WAS = cleanData(was)
+export const WER = cleanData(wer)
+export const WIE = cleanData(wie)

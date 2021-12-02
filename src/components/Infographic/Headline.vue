@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div class="text-2xl text-purple-700 font-bold">
-            <h1>{{ content.chapter }}</h1>
+        <div class="text-xl text-purple-500 font-bold">
+            <h1>{{ content.headline }}</h1>
         </div>
-        <div class="-mt-2">
-            <h2>{{ content.headline }}</h2>
+        <div>
+            <h2>{{ content.subheadline }}</h2>
         </div>
     </div>
 </template>

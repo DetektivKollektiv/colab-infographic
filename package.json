@@ -4,14 +4,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview --port 3000",
+    "nodemon": "nodemon --exec npm run dev -e js,vue"
   },
   "dependencies": {
+    "pinia": "^2.0.5",
     "vue": "^3.2.16"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
     "autoprefixer": "^10.4.0",
+    "nodemon": "^2.0.15",
     "postcss": "^8.3.11",
     "tailwindcss": "^2.2.19",
     "vite": "^2.6.4"
