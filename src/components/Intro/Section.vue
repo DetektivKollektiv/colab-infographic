@@ -1,6 +1,6 @@
 <script setup>
-import IntroSectionSlide from './IntroSectionSlide.vue'
-import IntroSectionArrows from './IntroSectionArrows.vue'
+import SectionSlide from './SectionSlide.vue'
+import SectionArrows from './SectionArrows.vue'
 </script>
 
 <script>
@@ -31,40 +31,40 @@ export default {
         enter-active-class="animate__animated animate__slideInLeft"
         leave-active-class="animate__animated animate__slideOutRight"
     >
-        <!-- <h1>Intro-Section: Currently showing slide {{ this.slide }}</h1> -->
-        <IntroSectionSlide
+        <!-- <h1>-Section: Currently showing slide {{ this.slide }}</h1> -->
+        <SectionSlide
             key="Slide1"
             text="Hallo"
             color="bg-red-200"
             v-if="slide == 1"
-        ></IntroSectionSlide>
-        <IntroSectionSlide
+        ></SectionSlide>
+        <SectionSlide
             key="Slide2"
             text="Das"
             color="bg-blue-200"
             v-if="slide == 2"
-        ></IntroSectionSlide>
-        <IntroSectionSlide
+        ></SectionSlide>
+        <SectionSlide
             key="Slide3"
             text="ist"
             color="bg-green-200"
             v-if="slide == 3"
-        ></IntroSectionSlide>
-        <IntroSectionSlide
+        ></SectionSlide>
+        <SectionSlide
             key="Slide4"
             text="ein"
             color="bg-yellow-200"
             v-if="slide == 4"
-        ></IntroSectionSlide>
-        <IntroSectionSlide
+        ></SectionSlide>
+        <SectionSlide
             key="Slide5"
             text="Slider"
             color="bg-purple-200"
             v-if="slide == 5"
-        ></IntroSectionSlide>
+        ></SectionSlide>
     </transition-group>
 
-    <IntroSectionArrows @change_slide="mShod_slAe"></IntroSectionArrows>
+    <SectionArrows @change_slide="method_slide"></SectionArrows>
 </template>
 
 <style scoped>
