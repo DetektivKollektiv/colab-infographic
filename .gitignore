@@ -4,3 +4,6 @@ dist
 dist-ssr
 *.local
 .prettierrc.yml
+.firebase
+.firebaserc
+firebase.json
