@@ -4,9 +4,9 @@ import Infographic from './components/Infographic/Infographic.vue'
 </script>
 
 <template>
-    <div class="relative h-screen">
+    <!-- <div class="relative h-screen">
         <Section class="h-screen w-screen"></Section>
-    </div>
+    </div> -->
     <Infographic />
 </template>
 

@@ -2,100 +2,114 @@
     "01": [
         {
             "title": "Staaten",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": [
                 "story-1"
             ]
         },
         {
             "title": "Parteien",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         },
         {
             "title": "Interessen-/Lobbyverbände",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         },
         {
             "title": "Ideolog*innen",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         },
         {
             "title": "Einzel-kämpfer*innen",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         }
     ],
     "02": [
         {
             "title": "Troll-Fabriken",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         },
         {
             "title": "Content-Provider",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": [
                 "story-1"
             ]
         },
         {
             "title": "Offiziell gesteuerte Vertreter*innen",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         },
         {
             "title": "Blogs/Podcasts",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         }
     ],
     "03": [
         {
             "title": "Beratungsfirmen/Agenturen",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         },
         {
             "title": "Expert*innen/Berater*innen",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": [
                 "story-1"
             ]
         },
         {
             "title": "Selbstorganisierte Bewegungen",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         }
     ],
     "04": [
         {
             "title": "Geschlossene Platformen",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": [
                 "story-1"
             ]
         },
         {
             "title": "Offene Platformen",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         }
     ],
@@ -106,28 +120,32 @@
         },
         {
             "title": "News-Seiten",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         },
         {
             "title": "Gruppen/Bubbles",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": [
                 "story-1"
             ]
         },
         {
             "title": "Blogs/Podcasts",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         },
         {
             "title": "Einzelkämpfer*innen",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         }
     ],
@@ -138,42 +156,48 @@
         },
         {
             "title": "Automatisierte Bots",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         },
         {
             "title": "Manuell: Maschienen",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         },
         {
             "title": "Einzelkämpfer*innen",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         }
     ],
     "05": [
         {
             "title": "Medien",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": [
                 "story-1"
             ]
         },
         {
             "title": "(Fach-)Diskurse",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         },
         {
             "title": "Meinungen",
-            "example": "z. B. Russland, China",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+            "example": "z. B. Russland, China",
+            "exampleDescription": "Example -Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
             "storys": []
         }
     ]

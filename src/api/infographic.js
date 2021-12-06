@@ -11,8 +11,9 @@ const DEFAULT_TYPES = {
     card: {
         type: 'card',
         title: '',
-        example: '',
         description: '',
+        example: '',
+        exampleDescription: '',
         storys: [],
     },
     chapter: {
