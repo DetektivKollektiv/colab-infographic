@@ -1,32 +1,15 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
-import Intro_section from './components/Intro_section.vue';
-import trendsSection from './components/TrendsSection/TrendsSection.vue';
+import Section from './components/Intro/Section.vue'
+import Infographic from './components/Infographic/Infographic.vue'
 </script>
 
 <template>
-  <div class="flex flex-col">
-    <div class="h-screen w-screen">
-      <Intro_section></Intro_section>
+    <div class="relative h-screen">
+        <Section class="h-screen w-screen"></Section>
     </div>
-    <div>
-      <trendsSection></trendsSection>
-    </div>
-  </div>
+          <Intro_section></Intro_section>
+
+    <Infographic />
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  /* overflow: hidden; */
-}
-::-webkit-scrollbar {
-  display: none;
-}
-</style>
+<style></style>

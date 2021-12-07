@@ -1,0 +1,24 @@
+{
+    "chapters": [
+        {
+            "chapter": "01",
+            "text": "Initiieren"
+        },
+        {
+            "chapter": "02",
+            "text": "Produzieren"
+        },
+        {
+            "chapter": "03",
+            "text": "Platzieren"
+        },
+        {
+            "chapter": "04",
+            "text": "Verbreiten"
+        },
+        {
+            "chapter": "05",
+            "text": "Beeinflussende Faktoren"
+        }
+    ]
+}
