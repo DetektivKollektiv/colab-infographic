@@ -17,8 +17,8 @@
 
 <script setup>
 import TrendsSectionContainer from "./TrendsSectionContainer.vue";
-import makrotrendData from "/src/assets/makrotrends.json"
-import mesotrendData from "/src/assets/mesotrends.json"
+import makrotrendData from "/src/api/makrotrends.json"
+import mesotrendData from "/src/api/mesotrends.json"
 </script>
 
 <script>
