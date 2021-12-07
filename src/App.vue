@@ -3,10 +3,18 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import HelloWorld from './components/HelloWorld.vue'
 import Intro_section from './components/Intro_section.vue';
+import trendsSection from './components/TrendsSection/TrendsSection.vue';
 </script>
 
 <template>
-  <Intro_section class="h-screen w-screen"></Intro_section>
+  <div class="flex flex-col">
+    <div class="h-screen w-screen">
+      <Intro_section></Intro_section>
+    </div>
+    <div>
+      <trendsSection></trendsSection>
+    </div>
+  </div>
 </template>
 
 <style>
@@ -19,6 +27,6 @@ import Intro_section from './components/Intro_section.vue';
   /* overflow: hidden; */
 }
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 </style>
