@@ -1,8 +1,8 @@
 <template>
-    <div class="flex flex-col container">
-        <h1>{{ currentTrend.headline }}</h1>
-        <transition :name="transition_name" @after-leave="afterLeave">
-            <div class="flex flex-row justify-center" v-if="animation_ongoing == false">
+    <transition :name="transition_name" @after-leave="afterLeave">
+        <div class="flex flex-col items-center" v-if="!animation_ongoing">
+            <h1>{{ currentTrend.headline }}</h1>
+            <div class="flex flex-row justify-center">
                 <button class="arrow-button" @click="nextTrend(false)">
                     <i class="fas fa-arrow-left"></i>
                 </button>
@@ -11,8 +11,8 @@
                     <i class="fas fa-arrow-right"></i>
                 </button>
             </div>
-        </transition>
-    </div>
+        </div>
+    </transition>
 </template>
 
 <script>
@@ -40,7 +40,6 @@ export default {
             this.animation_ongoing = true
             if (up == true) {
                 this.transition_name = "next"
-                this.animate_next = true;
                 if (this.currentTrendCount < this.trendData.length) {
                     this.currentTrendCount++;
                 }
@@ -68,54 +67,39 @@ export default {
 </script>
 
 <style scoped>
-.next-enter-active{
-    animation: spin-in-left 0.75s;
-    transform-origin: center 500vw; 
-}
-@keyframes spin-in-left {
-    0% {
-        transform: rotate(-19deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
+.next-enter-active {
+    animation: spin-in-left 2s !important;
+    transform-origin: center 500vh !important;
 }
 .next-leave-active {
-    animation: spin-out-right 0.75s;
-    transform-origin: center 500vw; 
-}
-@keyframes spin-out-right {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(19deg);
-    }
+    animation: spin-in-right 2s reverse;
+    transform-origin: center 500vh;
 }
 
-.prev-enter-active{
-    animation: spin-in-right 0.75s;
-    transform-origin: center 500vw; 
+.prev-enter-active {
+    animation: spin-in-right 2s !important;
+    transform-origin: center 500vh !important;
+}
+
+.prev-leave-active {
+    animation: spin-in-left 2s reverse;
+    transform-origin: center 500vh;
+}
+
+@keyframes spin-in-left {
+    0% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 @keyframes spin-in-right {
     0% {
-        transform: rotate(19deg);
+        transform: rotate(20deg);
     }
     100% {
         transform: rotate(0deg);
     }
 }
-.prev-leave-active {
-    animation: spin-out-left 0.75s;
-    transform-origin: center 500vw; 
-}
-@keyframes spin-out-left {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(-19deg);
-    }
-}
-
 </style>

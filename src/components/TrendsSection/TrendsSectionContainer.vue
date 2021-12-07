@@ -1,8 +1,7 @@
 <template>
     <div class="trend-container flex flex-col items-center w-full" :style="cssProps">
-        <div class="flex flex-col py-12">
+        <div class="flex flex-col items-center py-12">
             <h2>{{ headline }}</h2>
-
             <trendsSectionContent :trendData="trendData"></trendsSectionContent>
         </div>
     </div>
