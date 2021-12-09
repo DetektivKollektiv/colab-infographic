@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "headline": "Ausdifferenzierung der Lebenswelten",
+    "text": "Lebenswelten haben sich im Zuge von Industrialisierung, Individualisierung, aber auch Globalisierung und Digitalisierung stark ausdifferenziert. Diese Entwicklung bringt es mit sich, dass Menschen immer weniger vorgeprägten Lebenswegen und Weltbildern folgen, sondern mit einer großen Vielfalt von Optionen und Werten konfrontiert sind. Sie können und müssen viel mehr selbstverantwortliche Entscheidungen treffen, statt sich von etablierten Autoritäten und Informations-Gatekeepers lenken zu lassen. Zudem gewinnen durch digitale Technologien gerade bislang marginalisierte Gruppen neue Stimmen. Diese Entwicklung führt dazu, dass immer mehr Perspektiven und Werte nebeneinander existieren und um Gültigkeit ringen. Viele Antworten auf Fragen sind dementsprechend nicht “richtig” oder “falsch”, sondern kontextabhängig."
+  },
+  {
+    "id": 2,
+    "headline": "Kollektives Trauma als Folge von historischen Umbrüchen",
+    "text": "Die zeitgenössische Traumaforschung belegt, wie kollektive Katastrophen, von Kriegen über Völkermorde bis zur Entwertungserfahrung ganzer Gruppen (z.B. im Zuge der Wiedervereinigung Deutschlands) zur psychischen Überforderung von Menschen beigetragen haben. Individuen, unfähig überwältigende Ereignisse adäquat zu verarbeiten, mussten ganze Teile ihrer emotionalen Realität abspalten, um im Alltag weiter zu funktionieren. Diese unbewussten, gefrorenen Aspekte stehen ihnen jetzt nicht mehr zur Verfügung um dem Leben dynamisch zu begegnen. Die Sicht auf und das Erleben von Wirklichkeit erscheint dementsprechend teilweise verzerrt."
+  },
+  {
+    "id": 3,
+    "headline": "Spaltung in Folge von Geopolitik/ Rassismus/ Diskriminierung",
+    "text": "Epochale geopolitische Entwicklungen, wie Imperialismus, Kolonialismus, der Kalte Krieg, aber auch die zeitgenössische Konkurrenz zwischen Staaten und Regionen wie China, Russland, USA und Europa führen zu einer Vielzahl von materiellen Verteilungskämpfen und ideologischen Spaltungen. In diesem Zuge formen sie auch die Innenwelten ihrer Bürger in Form von Ideologien wie Rassismus oder Eurozentrismus."
+  },
+  {
+    "id": 4,
+    "headline": "Vertrauenskrise in repräsentative Institutionen",
+    "text": "Weltweit sind wir mit einem schwindenden Vertrauen in repräsentative gesellschaftliche und politische Institutionen konfrontiert. Die Gründe dafür sind vielfältig. Mit dazu beigetragen haben u.a. in den USA und Westeuropa das zunehmende Primat des Kapitals und marktwirtschaftlicher Dynamiken seit den 1980ern, in Folge derer soziale und demokratische Strukturen ausgehöhlt wurden. Im Zuge des exponentiellen Wachstums digitaler Technologien erleben wir zudem eine immer größer werdende Kluft zwischen sich rasant verändernden Lebensbereichen (Kommunikation, Produktion, Überwachung etc.) und sich nur langsam weiterentwickelnden Staats- und Verwaltungsstrukturen. Ohne adäquates Update verlieren letztere an Sinn und Legitimität."
+  },
+  {
+    "id": 5,
+    "headline": "Ideologie der Meritokratie",
+    "text": "Meritokratie, d.h. die Überzeugung, dass jeder Mensch durch seine eigene Leistung seinen ihm gebührenden Platz in der Gesellschaft einnehmen kann, avancierte im späten 20. und frühen 21. Jahrhundert zu einem Leitbild. Der meriokratische Diskurs wertet viele nicht-akademische Lebensstile und Berufsgruppen ab. In der Folge fühlen sich breite Bevölkerungsgruppen nicht mehr von Eliten repräsentiert. Sie zeigen ihren Widerstand und ihr Mißtrauen gegen etablierte Informationsmedien und Machtstrukturen, in dem sie alternativen Akteuren Vertrauen schenken."
+  },
+  {
+    "id": 6,
+    "headline": "Plattformisierung",
+    "text": "Im Zuge der Plattformisierung unserer Wirtschaft, entstehen machtvolle neue Akteure, die nicht mehr selbst Güter und Dienstleistungen produzieren, sondern die Infrastruktur für Vernetzung von Produzenten und Konsumenten anbieten. dabei schöpfen Technologieunternehmen die persönlichen Daten von Nutzern ab, um daraus Verhaltensvorhersagen zu generieren und mit diesen Geld zu verdienen. Mit Hilfe von Algorithmen beeinflussen sie, welche Informationen Nutzer zu sehen bekommen."
+  },
+  {
+    "id": 7,
+    "headline": "Aufmerksamkeitsökonomie/ Informationsflut",
+    "text": "Jeder Bürger ist mit einer riesigen Informationsschwemme konfrontiert, mit Nachrichten, die sich zum Teil widersprechen, deren Halbwertzeit immer geringer und deren Spezialisierungsgrad ständig größer wird. Nachdem es immer weniger etablierte GatekeeperInnen (in Form von Journalisten oder vertrauten Autoritäten) gibt, spüren Individuen den Druck sich selbst zu positionieren. Seit dem Web 2.0. ist jeder Einzelne zudem nicht nur Konsument von Information, sondern über Social Media Plattformen auch deren Produzent (zusammengefasst im Begriff des Prosumers)."
+  }
+
+]

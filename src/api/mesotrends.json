@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "headline": "Wachsende soziale Ungleichheit",
+        "text": "Zahlreiche Studien belegen die wachsende soziale Ungleichheit in fast allen Industrienationen (oder weltweit?). Insbesondere seit den 1980er Jahren sind wir mit stagnierenden oder schrumpfenden Mittelschichten, einem neuen Prekariat und wachsenden Einkommensklüften konfrontiert, die viele Menschen unzufrieden machen. Damit sinkt die Selbstachtung, ebenso wie die Toleranz gegenüber Minderheiten, Flüchtlingen und Einwanderern, die zu Sündenböcken gemacht werden."
+    },
+    {
+        "id": 2,
+        "headline": "Vereinzelung /Re-Kollektivierung",
+        "text": "Insbesondere die Industrienationen sind von einer Vereinzelung geradezu epidemischen Ausmaßes konfrontiert. Im Zuge von Individualisierung, erhöhter Mobilität, Veränderung der Familienstrukturen etc. leben immer mehr Menschen alleine und fühlen sich einsam und isoliert. Mentale Gesundheitsprobleme wie Depressionen nehmen zu. Diese Bindungsarmut erhöht unsere Anfälligkeit für neue, teils autoritäre Gemeinschaften, die einfache Antworten auf komplexe Fragen bieten."
+    },
+    {
+        "id": 3,
+        "headline": "Psychologische Unsicherheit und Angst vor Veränderungen",
+        "text": "Psychologische Unsicherheit hat viele komplexe kollektive und individuelle Gründe. Dazu zählen intergenerationelle Traumatisierungen, z.B. in Folge von Krieg, Völkermord und Flucht, biographische Entwertungserfahrungen, z.B. nach historischen Umbrüchen, aber auch der rapide aktuelle Wandel in der Arbeitswelt, z.B. durch die Einführung digitaler Technologien. Psychische Verletzungen zeigen sich in Form von Unsicherheit, sowie der Unfähigkeit Spannungen und Widersprüche adäquat zu halten. Menschen haben das Bedürfnis klar zwischen “richtig” und “falsch” zu unterscheiden. Realitäten und Identitäten werden nicht als miteinander verbunden, bzw. als unterschiedliche Perspektiven auf das Leben gesehen (Multiperspektivität), sondern als sich gegenseitig ausschließende Wahrheiten. Dies hat weitreichende Auswirkungen auf unsere Fähigkeit zwischen Information und Desinformation zu unterscheiden und wie offen wir für Verschwörungstheorien und Projektionen sind."
+    },
+    {
+        "id": 4,
+        "headline": "Fehlende Methodenkompetenz und Misstrauen gegenüber Wissenschaft",
+        "text": "Digitale Technologien und die mit ihnen einhergehende Informationsüberflutung erfordern neue Medienkompetenzen von Bürgern, die in den wenigsten Schulen oder Elternhäusern vermittelt werden. Zugleich spezialisieren sich die Wissenschaften immer mehr und die Kluft zwischen wissenschaftlichem Elfenbeinturm und Alltagswissen wächst. Westliche Wissenssysteme müssen sich aber auch immer mehr dem Vorwurf stellen, weniger universell, als oftmals einseitig (z.B. männlich und eurozentristisch) zu sein. All dies bereitet einen fruchtbaren Boden für Mißtrauen gegenüber etablierten Wissenschaften."
+    },
+    {
+        "id": 5,
+        "headline": "Krise des Journalismus",
+        "text": "In Folge neuer Geschäftsmodelle und einer Vielzahl neuer Stimmen im digitalen Raum, haben etablierte Medien ihre Rolle als Gatekeeper von Information zunehmend verloren. Es fehlt an wirksamen Orientierungskriterien für faktenbasiertes Wissen. Zudem sehen wir wie sich Journalistinnen mangels Finanzierung aus ganzen Regionen, z.B. dem ländlichen Raum, aber auch der internationalen Berichterstattung zurückgezogen haben. Damit fehlt es an wirksamen Orientierungskriterien für faktenbasiertes Wissen."
+    },
+    {
+        "id": 6,
+        "headline": "Echokammern durch Algorithmen",
+        "text": "Dadurch, dass es Technologieunternehmen möglich ist die Handlungen und Vorlieben einzelner Nutzer zu identifizieren, können diese in Gruppen segmentiert, gezielt angesprochen und entsprechend beeinflusst werden. Das Werbebasierte Geschäftsmodell der großen Plattformen begünstigt den Trend der Echokammern."
+    }
+]
