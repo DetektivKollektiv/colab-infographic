@@ -1,14 +1,14 @@
 <template>
     <transition :name="transition_name" @after-leave="afterLeave">
         <div class="flex flex-col items-center" v-if="!animation_ongoing">
-            <h1>{{ currentTrend.headline }}</h1>
-            <div class="flex flex-row justify-center">
-                <button class="arrow-button" @click="nextTrend(false)">
-                    <i class="fas fa-arrow-left"></i>
+            <h3 class="text-lg pt-4 pb-2">{{ currentTrend.headline }}</h3>
+            <div class="flex flex-row justify-center items-center">
+                <button class="text-purple-700 text-3xl" @click="nextTrend(false)">
+                    <i class="fas fa-arrow-circle-left"></i>
                 </button>
-                <div>{{ currentTrend.text }}</div>
-                <button class="arrow-button" @click="nextTrend(true)">
-                    <i class="fas fa-arrow-right"></i>
+                <div class="text-base w-1/2 mx-16 text-justify">{{ currentTrend.text }}</div>
+                <button class="text-purple-700 text-3xl" @click="nextTrend(true)">
+                    <i class="fas fa-arrow-circle-right"></i>
                 </button>
             </div>
         </div>
