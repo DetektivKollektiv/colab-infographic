@@ -5,8 +5,8 @@ import Infographic from './components/Infographic/Infographic.vue'
 </script>
 
 <template>
-    <div class="relative h-screen">
-        <Section class="h-screen w-screen"></Section>
+    <div class="relative min-h-screen">
+        <Section></Section>
     </div>
           <Intro_section></Intro_section>
           <trends-section></trends-section>
