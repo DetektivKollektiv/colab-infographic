@@ -1,5 +1,6 @@
 <script>
 export default {
+  props: ['current_slide'],
   emits: ["change_slide"],
   methods: {
     goToNextSlide() {
@@ -16,11 +17,19 @@ export default {
 
 <template>
   <div class="absolute top-0 right-0 flex flex-row text-xs pt-8 pr-6">
-    <button v-on:click="goToPrevSlide" class="bg-purple-700 h-5 w-5 rounded-full text-black p-2 m-1 flex items-center justify-center">
-      <i class="fas fa-arrow-left"></i>
+    <button
+      v-on:click="goToPrevSlide"
+      class="text-purple-600 text-2xl p-2 m-1 flex items-center justify-center"
+    >
+    <!-- v-bind:class="[(current_slide==1) ? text-purple-600 : text-gray-600]" -->
+
+      <i class="fas fa-arrow-circle-left"></i>
     </button>
-    <button v-on:click="goToNextSlide" class="bg-purple-700 h-5 w-5 rounded-full text-black p-2 m-1 flex items-center justify-center">
-      <i class="fas fa-arrow-right"></i>
+    <button
+      v-on:click="goToNextSlide"
+      class="text-purple-600 text-2xl p-2 m-1 flex items-center justify-center"
+    >
+      <i class="fas fa-arrow-circle-right"></i>
     </button>
   </div>
 </template>
