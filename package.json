@@ -5,7 +5,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview --port 3000",
-    "nodemon": "nodemon --exec npm run dev -e js,vue"
+    "nodemon": "nodemon --exec npm run dev -e js,vue",
+    "deploy": "npm run build && firebase deploy"
   },
   "dependencies": {
     "pinia": "^2.0.5",
