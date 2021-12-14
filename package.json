@@ -2,7 +2,7 @@
   "name": "infographics",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "serve": "vite preview --port 3000",
     "nodemon": "nodemon --exec npm run dev -e js,vue",
@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "pinia": "^2.0.5",
-    "vue": "^3.2.16"
+    "vue": "^3.2.16",
+    "vue3-touch-events": "^4.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
