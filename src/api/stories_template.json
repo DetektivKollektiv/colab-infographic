@@ -1,0 +1,71 @@
+[
+  {
+    "title": "Renate Künast und Desinfo",
+    "subtitle": "Catchy subtitle",
+    "description": "Kurze Beschreibung für die Übersicht",
+    "phases": [
+      {
+        "phase": 1,
+        "who": "Die rechtsextreme Szene in Deutschland will ihr völkisch-rassistisches Weltbild durchsetzen, indem sie den Staat grundlegend verändert. Viele demokratische Aktivist*innen und Politiker*innen, die die bestehende Ordnung repräsentieren, werden deshalb als Gegner betrachtet.",
+        "how": "Ein Mittel der rechtsextremen Szene ist die Einschüchterung und Bedrohung von Politiker*innen und andere Personen des öffentlichen Lebens, um diese aus dem demokratischen Diskurs zu verdrängen. Zum Repertoire solcher verbalen Angriffe gehört auch der gezielte Anstoß zur Produktion von falschen Tatsachenbehauptungen.",
+        "summary": {
+          "text": "Rechtsextremisten verwenden verbale Angriffe und falsche Tatsachenbehauptungen, um andere Personen einzuschüchtern und aus der Öffentlichkeit zu verdrängen.",
+          "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+        },
+        "sources": []
+      },
+      {
+        "phase": 2,
+        "who": "Der Blogger Sven Liebich verbreitet seit den 1990er-Jahren rechtes Gedankengut und Verschwörungsmythen – regelmäßig offline auf Kundgebungen und Demonstrationen, außerdem online, erst auf seinem eigenen Blog, mittlerweile über Telegram. Liebich betreibt außerdem einen Online-Shop für Sticker und Aufkleber mit rechtsextremen Motiven. Der Verfassungsschutz in Sachsen-Anhalt zählt Liebich zur rechtsextremen Szene.",
+        "how": "Liebich machte schon in der Vergangenheit wiederholt Politiker*innen zur Zielscheibe von Hetze und falscher Behauptungen. Im Oktober 2016 erstellte er – vermutlich inspiriert von einem kritischen WELT-Artikel – ein Bild mit einem Portrait und einer vermeintlichen Aussage von Grünen-Politikerin Renate Künast. Das Bild basiert auf einem Zwischenruf von Künast während einer Debatte im Abgeordnetenhaus Berlin im Jahr 1986. Das im Kontext missverständliche Zitat wurde von Liebich so ergänzt, dass der Eindruck entsteht, Künast würde eindeutig Sex mit Minderjährigen befürworten.",
+        "summary": {
+          "text": "Der Rechtsextremist Sven Liebich erstellte ein Bild mit einem falschen Zitat von Renate Künast (Grüne), um den Eindruck zu erwecken, sie befürworte Sex mit Kindern.",
+          "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+        },
+        "sources": [
+          {
+            "text": "Artikel MDR",
+            "link": "https://www.mdr.de/nachrichten/sachsen-anhalt/halle/halle/wer-ist-der-rechtsextremist-sven-liebich-100.html"
+          },
+          {
+            "text": "Artikel Süddeutsche",
+            "link": "https://www.sueddeutsche.de/digital/hate-speech-renate-kuenast-beleidigungen-halle-leaks-1.4712947"
+          },
+          {
+            "text": "Aussage Renate Künast",
+            "link": "https://digital.zlb.de/viewer/image/15975513_1986/737/"
+          },
+          {
+            "text": "Faktcheck zur Aussage",
+            "link": "https://www.presseportal.de/pm/133833/4605392"
+          },
+          {
+            "text": "Faktcheck zur Aussage",
+            "link": "https://colorful-germany.de/faktencheck-zu-rechten-fake-news-kein-zitat-von-renate-kuenast-zu-sex-mit-kindern"
+          },
+          {
+            "text": "WELT-Artikel, den Liebich auf Facebook und Telegram geteilt hat",
+            "link": "https://www.welt.de/politik/deutschland/article141406874/Gruenen-Politikerin-Kuenast-geraet-in-Erklaerungsnot.html"
+          },
+          {
+            "text": "Website/Blog von Sven Liebich, mittlerweile offline; mindestens online gewesen bis 05.06.2021",
+            "link": "https://blog.halle-leaks.de/"
+          }
+        ]
+      },
+      {
+        "Hier kommen": "noch mehr Phasen"
+      }
+    ],
+    "trends":{
+      "makro": "Hier wird erklärt welche Makrotrends einwirken. Der Text könnte ungefähr so lang werden: Personen, die sich nur flüchtig mit dem Zitat beschäftigen, werden überzeugt. Aber auch wenn der Post skeptisch aufgenommen wird oder die Vorwürfe später entkräftet werden, setzt sich möglicherweise ein Grundzweifel fest: Vertrauen wird durch Verunsicherung und Irritation ersetzt. Die Polarisierung in der Gesellschaft steigt,das rechtsextreme Lager gewinnt Anhänger*innen und wird nach innen bestärkt - das Bild von moralisch verkommenen Politiker*innen legitimiert die Anstrengungen von Rechtsextremist*innen. Der vermeintliche Kampf gegen eine „pädophile Elite“ ist ein wiederkehrendes Motiv, das auch im „Q Anon“-Verschwörungsmythos eine zentrale Rolle spielt.",
+      "meso": "Hier wird erklärt welche Mesotrends einwirken. Der Text könnte ungefähr so lang werden: Personen, die sich nur flüchtig mit dem Zitat beschäftigen, werden überzeugt. Aber auch wenn der Post skeptisch aufgenommen wird oder die Vorwürfe später entkräftet werden, setzt sich möglicherweise ein Grundzweifel fest: Vertrauen wird durch Verunsicherung und Irritation ersetzt. Die Polarisierung in der Gesellschaft steigt,das rechtsextreme Lager gewinnt Anhänger*innen und wird nach innen bestärkt - das Bild von moralisch verkommenen Politiker*innen legitimiert die Anstrengungen von Rechtsextremist*innen. Der vermeintliche Kampf gegen eine „pädophile Elite“ ist ein wiederkehrendes Motiv, das auch im „Q Anon“-Verschwörungsmythos eine zentrale Rolle spielt."
+    }
+  },
+  {
+    "Hier kommt": "Story 2"
+  },
+  {
+    "Hier kommt": "Story 3"
+  }
+]
