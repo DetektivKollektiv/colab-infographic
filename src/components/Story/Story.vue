@@ -21,23 +21,13 @@
     </div>
     <div v-if="state == 'phasen' || state == 'trends'" class="container-box">
         <div class="space-y-8 my-24">
-            <Text>
+            <Text v-for="text in getTexts()" :key="text">
                 <template v-slot:title>
-                    <h3>Wer</h3>
+                    <h3>{{ text.title }}</h3>
                 </template>
                 <template v-slot:description>
                     <p>
-                        {{ getPhaseByIndex(phaseIndex).who }}
-                    </p>
-                </template>
-            </Text>
-            <Text>
-                <template v-slot:title>
-                    <h3>Wie</h3>
-                </template>
-                <template v-slot:description>
-                    <p>
-                        {{ getPhaseByIndex(phaseIndex).how }}
+                        {{ text.description }}
                     </p>
                 </template>
             </Text>
@@ -55,7 +45,7 @@ import WSK from '@/components/WSK.vue'
 import Sources from '@/components/Sources.vue'
 
 import { toRefs, ref, reactive } from '@vue/reactivity'
-import { watchEffect } from '@vue/runtime-core'
+import { watchEffect, watch } from '@vue/runtime-core'
 
 const props = defineProps({
     story: {
@@ -82,9 +72,39 @@ function setState(s) {
 }
 
 watchEffect(() => {
-    if (state.value == 'uebersicht' || state.value == 'trends') {
-        phaseIndex.value = 6
-    }
+    state.value == 'phasen' ? (phaseIndex.value = 1) : (phaseIndex.value = 6)
     console.log(state.value)
 })
+
+watch(state, () => {
+    if (state.value == 'phasen') {
+        phaseIndex.value = 1
+    }
+})
+
+function getTexts() {
+    return state.value == 'phasen'
+        ? [
+              {
+                  title: 'Wer',
+                  description: getPhaseByIndex(phaseIndex.value).who,
+              },
+              {
+                  title: 'Wie',
+                  description: getPhaseByIndex(phaseIndex.value).how,
+              },
+          ]
+        : state.value == 'trends'
+        ? [
+              {
+                  title: 'Makrotrends',
+                  description: story.value.trends.makro,
+              },
+              {
+                  title: 'Mesotrends',
+                  description: story.value.trends.meso,
+              },
+          ]
+        : []
+}
 </script>
