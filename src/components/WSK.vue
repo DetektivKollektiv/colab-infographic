@@ -15,13 +15,21 @@
                             class="rounded-full flex justify-center items-center border-2 border-red-500 transition-all"
                             :class="
                                 i + 1 < phaseIndex
-                                    ? 'bg-red-500 w-8 h-8 text-white'
+                                    ? 'bg-red-500 w-4 h-4 text-white'
                                     : i + 1 > phaseIndex
-                                    ? 'bg-white w-8 h-8 '
-                                    : 'w-12 h-12 label-xl bg-red-500 text-white'
+                                    ? 'bg-white w-4 h-4 md:w-8 md:h-8 '
+                                    : 'w-8 h-8 md:w-12 md:h-12 label-xl bg-red-500 text-white'
                             "
                         >
-                            <p class="">{{ i + 1 }}</p>
+                            <p
+                                :class="
+                                    i + 1 !== phaseIndex
+                                        ? 'hidden md:block'
+                                        : ''
+                                "
+                            >
+                                {{ i + 1 }}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -36,11 +44,12 @@
                     <p
                         v-if="showTitle"
                         class="transition-all"
-                        :class="
+                        :class="[
                             i + 1 == phaseIndex
                                 ? 'label-xl mt-8'
-                                : 'label-sm mt-6'
-                        "
+                                : 'label-sm mt-6',
+                            i + 1 !== phaseIndex ? 'hidden md:block' : '',
+                        ]"
                     >
                         {{ phaseText }}
                     </p>
