@@ -1,9 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=EB+Garamond&family=Space+Grotesk:wght@300;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h1 {
+        @apply font-headline font-bold text-4xl;
+    }
+    h2 {
+        @apply font-headline font-bold text-2xl;
+    }
+    h3 {
+        @apply font-headline font-bold text-xl;
+    }
+    h4 {
+        @apply font-headline font-light text-xl;
+    }
 
-html, body {
+    .label-sm {
+        @apply text-sm font-bold;
+    }
+    .label-xl {
+        @apply text-xl font-bold;
+    }
+}
+
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
 }
