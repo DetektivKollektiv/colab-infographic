@@ -7,14 +7,15 @@
     ></WSK>
     <div
         v-if="state == 'uebersicht'"
-        class="grid grid-cols-5 container-box my-24"
+        class="grid grid-rows-5 md:grid-cols-5 container-box my-12"
     >
         <div
-            class="flex items-center flex-col text-center cursor-pointer"
+            class="md:flex items-center flex-col md:text-center cursor-pointer"
             v-for="phase in story.phases"
             :key="phase"
         >
-            <p class="w-3/4">{{ phase.summary.text }}</p>
+            <h3 class="md:hidden">{{ phase.title }}</h3>
+            <p class="md:w-3/4 max-w-md text-sm">{{ phase.summary.text }}</p>
         </div>
     </div>
     <div v-if="state == 'phasen' || state == 'trends'" class="container-box">
@@ -60,7 +61,7 @@ function setPhaseIndex(i) {
 }
 
 function getPhaseByIndex(i) {
-    return story.value.phases.find((obj) => obj.phase === i)
+    return story.value.phases.find((obj) => obj.phaseIndex === i)
 }
 
 const state = ref('phasen')
