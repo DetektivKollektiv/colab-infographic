@@ -18,7 +18,11 @@
                         </p>
                     </template>
                 </TextBlock>
-                <ButtonText> Trends </ButtonText>
+                <div class="space-x-2 mt-4">
+                    <ButtonText :active="true">Phasen</ButtonText>
+                    <ButtonText :active="false">Übersicht</ButtonText>
+                    <ButtonText :active="false">Trends</ButtonText>
+                </div>
             </div>
         </div>
 
