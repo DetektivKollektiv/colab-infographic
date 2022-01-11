@@ -5,6 +5,7 @@ import Infographic from './components/Infographic/Infographic.vue'
 </script>
 
 <template>
+    <h1 class="text-red-500">Hello world</h1>
     <div class="relative min-h-screen">
         <Section></Section>
     </div>
