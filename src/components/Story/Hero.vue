@@ -1,7 +1,7 @@
 <template>
     <div class="relative">
         <div
-            class="bg-gradient-to-b from-transparent to-black w-full absolute h-[50vh] opacity-25"
+            class="bg-gradient-to-b from-transparent to-black w-full absolute h-[50vh] opacity-40"
         ></div>
         <div class="absolute top-1/2 -translate-y-1/2 w-full px-4">
             <div class="container-box mx-auto text-white">

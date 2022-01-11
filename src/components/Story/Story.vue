@@ -19,17 +19,29 @@
         </div>
     </div>
     <div v-if="state == 'phasen' || state == 'trends'" class="container-box">
-        <div class="space-y-8 my-24">
-            <Text v-for="text in getTexts()" :key="text">
-                <template v-slot:title>
-                    <h3>{{ text.title }}</h3>
-                </template>
-                <template v-slot:description>
-                    <p>
-                        {{ text.description }}
-                    </p>
-                </template>
-            </Text>
+        <div
+            class="flex flex-col md:flex-row justify-between my-24 md:my-36 space-y-8 md:space-y-0"
+        >
+            <div class="space-y-8 flex-shrink-0 md:mr-12">
+                <Text v-for="text in getTexts()" :key="text">
+                    <template v-slot:title>
+                        <h3>{{ text.title }}</h3>
+                    </template>
+                    <template v-slot:description>
+                        <p>
+                            {{ text.description }}
+                        </p>
+                    </template>
+                </Text>
+            </div>
+            <img
+                class="md:h-auto flex-shrink object-cover overflow-hidden"
+                v-for="image in getImages()"
+                :key="image"
+                :src="image"
+                alt=""
+                srcset=""
+            />
         </div>
         <div v-if="state == 'phasen'">
             <Sources :sources="getPhaseByIndex(phaseIndex).sources"></Sources>
@@ -108,6 +120,12 @@ function getTexts() {
                   description: story.value.trends.meso,
               },
           ]
+        : []
+}
+
+function getImages() {
+    return getPhaseByIndex(phaseIndex.value).images
+        ? getPhaseByIndex(phaseIndex.value).images
         : []
 }
 </script>
