@@ -1,5 +1,5 @@
 <template>
-    <div class="relative" v-for="story in [stories[0]]" :key="story">
+    <div class="relative">
         <div
             class="bg-gradient-to-b from-transparent to-black w-full absolute h-[50vh] opacity-25"
         ></div>
@@ -33,8 +33,14 @@
 import TextBlock from '@/components/TextBlock.vue'
 import ButtonText from '@/components/ButtonText.vue'
 
-import stories from '@/api/stories_template.json'
+import { toRefs } from '@vue/reactivity'
 
-console.log(stories)
+const props = defineProps({
+    story: {
+        type: Object,
+        required: true,
+    },
+})
+const { story } = toRefs(props)
 </script>
 <style lang=""></style>

@@ -4,13 +4,18 @@
             <div
                 class="grid grid-cols-5 container-box z-10 relative items-center"
             >
-                <div class="flex items-center flex-col" v-for="i in 5" :key="i">
+                <div
+                    class="flex items-center flex-col cursor-pointer"
+                    v-for="i in 5"
+                    :key="i"
+                    @click="emit('change', i)"
+                >
                     <div
                         class="rounded-full flex justify-center items-center label-sm"
                         :class="
-                            i < index
+                            i < phase
                                 ? 'bg-red-500 w-8 h-8 text-white'
-                                : i > index
+                                : i > phase
                                 ? 'bg-white w-8 h-8 border-2 border-red-500 '
                                 : 'w-12 h-12 label-xl bg-red-500 text-white'
                         "
@@ -22,16 +27,17 @@
         </div>
         <div class="grid grid-cols-5 container-box">
             <div
-                class="flex items-center flex-col text-center"
-                v-for="i in 5"
+                class="flex items-center flex-col text-center cursor-pointer"
+                v-for="(phase, i) in phases"
                 :key="i"
+                @click="emit('change', i)"
             >
                 <p
                     v-if="showTitle"
                     class=""
-                    :class="i == index ? 'label-xl mt-8' : 'label-sm mt-6'"
+                    :class="i + 1 == phase ? 'label-xl mt-8' : 'label-sm mt-6'"
                 >
-                    Initiieren
+                    {{ phase }}
                 </p>
                 <p v-if="showDescription" class="w-3/4">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -42,12 +48,11 @@
     </div>
 </template>
 <script setup>
-import { toRefs } from '@vue/reactivity'
+import { toRefs, isRef } from '@vue/reactivity'
 
 const props = defineProps({
-    index: {
+    phase: {
         type: Number,
-        default: 3,
     },
     showTitle: {
         type: Boolean,
@@ -59,5 +64,15 @@ const props = defineProps({
     },
 })
 
-const { index } = toRefs(props)
+const { phase, showTitle, showDescription } = toRefs(props)
+console.log(phase.value)
+const phases = [
+    'Initiieren',
+    'Produzieren',
+    'Platzieren',
+    'Verbreiten',
+    'Beeinflussung',
+]
+
+const emit = defineEmits(['change'])
 </script>

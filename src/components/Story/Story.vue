@@ -1,6 +1,6 @@
 <template>
-    <Hero></Hero>
-    <WSK :index="2"></WSK>
+    <Hero :story="story"></Hero>
+    <WSK @change="setPhase" :phase="phase"></WSK>
     <div class="space-y-8 mt-8 container-box">
         <WerWie>
             <template v-slot:title>
@@ -30,6 +30,22 @@
 <script setup>
 import Hero from '@/components/Story/Hero.vue'
 import WerWie from '@/components/Story/WerWie.vue'
-
 import WSK from '@/components/WSK.vue'
+
+import { toRefs, ref } from '@vue/reactivity'
+
+const props = defineProps({
+    story: {
+        type: Object,
+        required: true,
+    },
+})
+
+const { story } = toRefs(props)
+const phase = ref(1)
+
+function setPhase(i) {
+    console.log(i)
+    phase.value = i
+}
 </script>
