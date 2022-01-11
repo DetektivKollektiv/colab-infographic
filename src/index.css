@@ -24,6 +24,9 @@
     .label-xl {
         @apply text-xl font-bold;
     }
+    .container-box {
+        @apply mx-auto container px-4;
+    }
 }
 
 html,

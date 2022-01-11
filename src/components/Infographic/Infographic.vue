@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto">
+    <div class="container-box">
         <div class="flex space-x-4 justify-center pt-6">
             <Story story="Story 1"></Story>
             <Story story="Story 2"></Story>

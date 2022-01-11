@@ -2,7 +2,7 @@
 import Section from './components/Intro/Section.vue'
 import TrendsSection from './components/TrendsSection/TrendsSection.vue'
 import Infographic from './components/Infographic/Infographic.vue'
-import Story from './components/Story/Hero.vue'
+import Story from './components/Story/Story.vue'
 </script>
 
 <template>

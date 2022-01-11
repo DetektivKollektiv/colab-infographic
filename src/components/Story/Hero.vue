@@ -3,8 +3,8 @@
         <div
             class="bg-gradient-to-b from-transparent to-black w-full absolute h-[50vh] opacity-25"
         ></div>
-        <div class="absolute bottom-4 w-full px-4">
-            <div class="container mx-auto text-white">
+        <div class="absolute top-1/2 -translate-y-1/2 w-full px-4">
+            <div class="container-box mx-auto text-white">
                 <TextBlock>
                     <template v-slot:subtitle>
                         <p class="font-serif">{{ story.subtitle }}</p>
