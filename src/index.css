@@ -18,6 +18,10 @@
         @apply font-headline font-light text-xl;
     }
 
+    .label-xs {
+        @apply text-xs font-bold;
+    }
+
     .label-sm {
         @apply text-sm font-bold;
     }

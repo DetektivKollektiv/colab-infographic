@@ -19,9 +19,24 @@
                     </template>
                 </TextBlock>
                 <div class="space-x-2 mt-4">
-                    <ButtonText :active="true">Phasen</ButtonText>
-                    <ButtonText :active="false">Übersicht</ButtonText>
-                    <ButtonText :active="false">Trends</ButtonText>
+                    <ButtonText
+                        @click="emit('phasen')"
+                        :active="state === 'phasen'"
+                    >
+                        Phasen</ButtonText
+                    >
+                    <ButtonText
+                        @click="emit('uebersicht')"
+                        :active="state === 'uebersicht'"
+                    >
+                        Übersicht</ButtonText
+                    >
+                    <ButtonText
+                        @click="emit('trends')"
+                        :active="state === 'trends'"
+                    >
+                        Trends</ButtonText
+                    >
                 </div>
             </div>
         </div>
@@ -40,7 +55,13 @@ const props = defineProps({
         type: Object,
         required: true,
     },
+    state: {
+        type: String,
+        required: true,
+    },
 })
-const { story } = toRefs(props)
+const { story, state } = toRefs(props)
+
+const emit = defineEmits(['phasen', 'uebersicht', 'trends'])
 </script>
 <style lang=""></style>
