@@ -1,11 +1,5 @@
 <template>
-    <Hero
-        :story="story"
-        :state="state"
-        @phasen="state = 'phasen'"
-        @trends="state = 'trends'"
-        @uebersicht="state = 'uebersicht'"
-    ></Hero>
+    <Hero :story="story" :state="state" @state="setState"></Hero>
     <WSK
         @change="setPhaseIndex"
         :phaseIndex="phaseIndex"
@@ -82,6 +76,10 @@ function getPhaseByIndex(i) {
 }
 
 const state = ref('phasen')
+
+function setState(s) {
+    state.value = s
+}
 
 watchEffect(() => {
     if (state.value == 'uebersicht' || state.value == 'trends') {

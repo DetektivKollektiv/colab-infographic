@@ -20,19 +20,19 @@
                 </TextBlock>
                 <div class="space-x-2 mt-4">
                     <ButtonText
-                        @click="emit('phasen')"
+                        @click="emit('state', 'phasen')"
                         :active="state === 'phasen'"
                     >
                         Phasen</ButtonText
                     >
                     <ButtonText
-                        @click="emit('uebersicht')"
+                        @click="emit('state', 'uebersicht')"
                         :active="state === 'uebersicht'"
                     >
                         Übersicht</ButtonText
                     >
                     <ButtonText
-                        @click="emit('trends')"
+                        @click="emit('state', 'trends')"
                         :active="state === 'trends'"
                     >
                         Trends</ButtonText
@@ -62,6 +62,6 @@ const props = defineProps({
 })
 const { story, state } = toRefs(props)
 
-const emit = defineEmits(['phasen', 'uebersicht', 'trends'])
+const emit = defineEmits(['state'])
 </script>
 <style lang=""></style>
