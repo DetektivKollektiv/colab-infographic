@@ -124,8 +124,12 @@ function getTexts() {
 }
 
 function getImages() {
-    return getPhaseByIndex(phaseIndex.value).images
-        ? getPhaseByIndex(phaseIndex.value).images
-        : []
+    if (state.value == 'phasen') {
+        return getPhaseByIndex(phaseIndex.value).images
+            ? getPhaseByIndex(phaseIndex.value).images
+            : []
+    } else {
+        return []
+    }
 }
 </script>
