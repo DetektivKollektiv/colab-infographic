@@ -46,7 +46,7 @@
                         class="transition-all"
                         :class="[
                             i + 1 == phaseIndex
-                                ? 'label-xl mt-8'
+                                ? 'label-xl mt-6 md:mt-8'
                                 : 'label-sm mt-6',
                             i + 1 !== phaseIndex ? 'hidden md:block' : '',
                         ]"
