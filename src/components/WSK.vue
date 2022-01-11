@@ -6,21 +6,21 @@
             >
                 <div
                     class="flex items-center flex-col cursor-pointer"
-                    v-for="i in 5"
+                    v-for="(phaseText, i) in phases"
                     :key="i"
-                    @click="emit('change', i)"
+                    @click="emit('change', i + 1)"
                 >
                     <div
                         class="rounded-full flex justify-center items-center border-2 border-red-500 transition-all"
                         :class="
-                            i < phase
+                            i + 1 < phaseIndex
                                 ? 'bg-red-500 w-8 h-8 text-white'
-                                : i > phase
+                                : i + 1 > phaseIndex
                                 ? 'bg-white w-8 h-8 '
                                 : 'w-12 h-12 label-xl bg-red-500 text-white'
                         "
                     >
-                        <p class="">{{ i }}</p>
+                        <p class="">{{ i + 1 }}</p>
                     </div>
                 </div>
             </div>
@@ -30,12 +30,14 @@
                 class="flex items-center flex-col text-center cursor-pointer"
                 v-for="(phaseText, i) in phases"
                 :key="i"
-                @click="emit('change', i)"
+                @click="emit('change', i + 1)"
             >
                 <p
                     v-if="showTitle"
                     class="transition-all"
-                    :class="i + 1 == phase ? 'label-xl mt-8' : 'label-sm mt-6'"
+                    :class="
+                        i + 1 == phaseIndex ? 'label-xl mt-8' : 'label-sm mt-6'
+                    "
                 >
                     {{ phaseText }}
                 </p>
@@ -51,7 +53,7 @@
 import { toRefs, isRef } from '@vue/reactivity'
 
 const props = defineProps({
-    phase: {
+    phaseIndex: {
         type: Number,
     },
     showTitle: {
@@ -64,8 +66,8 @@ const props = defineProps({
     },
 })
 
-const { phase, showTitle, showDescription } = toRefs(props)
-console.log(phase.value)
+const { phaseIndex, showTitle, showDescription } = toRefs(props)
+
 const phases = [
     'Initiieren',
     'Produzieren',

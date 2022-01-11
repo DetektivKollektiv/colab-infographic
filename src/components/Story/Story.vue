@@ -1,6 +1,6 @@
 <template>
     <Hero :story="story"></Hero>
-    <WSK @change="setPhase" :phase="phase"></WSK>
+    <WSK @change="setPhaseIndex" :phaseIndex="phaseIndex"></WSK>
     <div class="space-y-8 mt-8 container-box">
         <WerWie>
             <template v-slot:title>
@@ -8,8 +8,7 @@
             </template>
             <template v-slot:description>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquam illo maxime fugiat corrupti adipisci.
+                    {{ story }}
                 </p>
             </template>
         </WerWie>
@@ -42,10 +41,9 @@ const props = defineProps({
 })
 
 const { story } = toRefs(props)
-const phase = ref(1)
+const phaseIndex = ref(1)
 
-function setPhase(i) {
-    console.log(i)
-    phase.value = i
+function setPhaseIndex(i) {
+    phaseIndex.value = i
 }
 </script>
