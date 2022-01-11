@@ -11,12 +11,12 @@
                     @click="emit('change', i)"
                 >
                     <div
-                        class="rounded-full flex justify-center items-center label-sm"
+                        class="rounded-full flex justify-center items-center border-2 border-red-500 transition-all"
                         :class="
                             i < phase
                                 ? 'bg-red-500 w-8 h-8 text-white'
                                 : i > phase
-                                ? 'bg-white w-8 h-8 border-2 border-red-500 '
+                                ? 'bg-white w-8 h-8 '
                                 : 'w-12 h-12 label-xl bg-red-500 text-white'
                         "
                     >
@@ -28,16 +28,16 @@
         <div class="grid grid-cols-5 container-box">
             <div
                 class="flex items-center flex-col text-center cursor-pointer"
-                v-for="(phase, i) in phases"
+                v-for="(phaseText, i) in phases"
                 :key="i"
                 @click="emit('change', i)"
             >
                 <p
                     v-if="showTitle"
-                    class=""
+                    class="transition-all"
                     :class="i + 1 == phase ? 'label-xl mt-8' : 'label-sm mt-6'"
                 >
-                    {{ phase }}
+                    {{ phaseText }}
                 </p>
                 <p v-if="showDescription" class="w-3/4">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
