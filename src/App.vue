@@ -6,7 +6,12 @@ import Story from './components/Story/Hero.vue'
 </script>
 
 <template>
+<<<<<<< HEAD
     <!-- <div class="relative min-h-screen">
+=======
+    <h1 class="text-red-500">Hello world</h1>
+    <div class="relative min-h-screen">
+>>>>>>> origin/main
         <Section></Section>
     </div>
           <Intro_section></Intro_section>
