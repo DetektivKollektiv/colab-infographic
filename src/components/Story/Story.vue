@@ -8,7 +8,7 @@
             </template>
             <template v-slot:description>
                 <p>
-                    {{ story }}
+                    {{ getPhaseByIndex(phaseIndex).who }}
                 </p>
             </template>
         </WerWie>
@@ -18,8 +18,7 @@
             </template>
             <template v-slot:description>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aliquam illo maxime fugiat corrupti adipisci.
+                    {{ getPhaseByIndex(phaseIndex).how }}
                 </p>
             </template>
         </WerWie>
@@ -45,5 +44,9 @@ const phaseIndex = ref(1)
 
 function setPhaseIndex(i) {
     phaseIndex.value = i
+}
+
+function getPhaseByIndex(i) {
+    return story.value.phases.find((obj) => obj.phase === i)
 }
 </script>
