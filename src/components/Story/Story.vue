@@ -1,50 +1,63 @@
 <template>
     <Hero :story="story" :state="state" @state="setState"></Hero>
     <WSK
+        v-if="active"
         @change="setPhaseIndex"
         :phaseIndex="phaseIndex"
         class="absolute w-screen"
     ></WSK>
     <div
-        v-if="state == 'uebersicht'"
-        class="grid grid-rows-5 md:grid-cols-5 container-box my-12"
+        class="overflow-hidden transition-all duration-300"
+        :style="{ maxHeight: active ? '100vh' : '0vh' }"
     >
         <div
-            class="md:flex items-center flex-col md:text-center cursor-pointer"
-            v-for="phase in story.phases"
-            :key="phase"
+            v-if="state == 'uebersicht'"
+            class="grid grid-rows-5 md:grid-cols-5 container-box my-12"
         >
-            <h3 class="md:hidden">{{ phase.title }}</h3>
-            <p class="md:w-3/4 max-w-md text-sm">{{ phase.summary.text }}</p>
-        </div>
-    </div>
-    <div v-if="state == 'phasen' || state == 'trends'" class="container-box">
-        <div
-            class="flex flex-col md:flex-row justify-between my-24 md:my-36 space-y-8 md:space-y-0"
-        >
-            <div class="space-y-8 flex-shrink-0 md:mr-12">
-                <Text v-for="text in getTexts()" :key="text">
-                    <template v-slot:title>
-                        <h3>{{ text.title }}</h3>
-                    </template>
-                    <template v-slot:description>
-                        <p>
-                            {{ text.description }}
-                        </p>
-                    </template>
-                </Text>
+            <div
+                class="md:flex items-center flex-col md:text-center cursor-pointer"
+                v-for="phase in story.phases"
+                :key="phase"
+            >
+                <h3 class="md:hidden">{{ phase.title }}</h3>
+                <p class="md:w-3/4 max-w-md text-sm">
+                    {{ phase.summary.text }}
+                </p>
             </div>
-            <img
-                class="md:h-auto flex-shrink object-cover overflow-hidden"
-                v-for="image in getImages()"
-                :key="image"
-                :src="image"
-                alt=""
-                srcset=""
-            />
         </div>
-        <div v-if="state == 'phasen'">
-            <Sources :sources="getPhaseByIndex(phaseIndex).sources"></Sources>
+        <div
+            v-if="state == 'phasen' || state == 'trends'"
+            class="container-box"
+        >
+            <div
+                class="flex flex-col md:flex-row justify-between my-24 md:my-36 space-y-8 md:space-y-0"
+            >
+                <div class="space-y-8 flex-shrink-0 md:mr-12">
+                    <Text v-for="text in getTexts()" :key="text">
+                        <template v-slot:title>
+                            <h3>{{ text.title }}</h3>
+                        </template>
+                        <template v-slot:description>
+                            <p>
+                                {{ text.description }}
+                            </p>
+                        </template>
+                    </Text>
+                </div>
+                <img
+                    class="md:h-auto flex-shrink object-cover overflow-hidden"
+                    v-for="image in getImages()"
+                    :key="image"
+                    :src="image"
+                    alt=""
+                    srcset=""
+                />
+            </div>
+            <div v-if="state == 'phasen'">
+                <Sources
+                    :sources="getPhaseByIndex(phaseIndex).sources"
+                ></Sources>
+            </div>
         </div>
     </div>
 </template>
@@ -63,9 +76,13 @@ const props = defineProps({
         type: Object,
         required: true,
     },
+    active: {
+        type: Boolean,
+        default: false,
+    },
 })
 
-const { story } = toRefs(props)
+const { story, active } = toRefs(props)
 const phaseIndex = ref(1)
 
 function setPhaseIndex(i) {

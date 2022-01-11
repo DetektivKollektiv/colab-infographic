@@ -6,7 +6,7 @@
         <div>
             <slot name="title"></slot>
         </div>
-        <div>
+        <div class="mt-2 md:mt-4">
             <slot name="description"></slot>
         </div>
     </div>

@@ -19,7 +19,7 @@
     }
 
     p {
-        @apply text-sm md:text-base;
+        @apply text-sm md:text-base leading-snug;
     }
 
     .label-xs {
