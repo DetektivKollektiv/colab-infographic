@@ -3,6 +3,7 @@
     "title": "Renate Künast und Desinfo",
     "subtitle": "Catchy subtitle",
     "description": "Kurze Beschreibung für die Übersicht",
+    "image": "https://picsum.photos/id/1/2048/1280",
     "phases": [
       {
         "phase": 1,
@@ -57,7 +58,7 @@
         "Hier kommen": "noch mehr Phasen"
       }
     ],
-    "trends":{
+    "trends": {
       "makro": "Hier wird erklärt welche Makrotrends einwirken. Der Text könnte ungefähr so lang werden: Personen, die sich nur flüchtig mit dem Zitat beschäftigen, werden überzeugt. Aber auch wenn der Post skeptisch aufgenommen wird oder die Vorwürfe später entkräftet werden, setzt sich möglicherweise ein Grundzweifel fest: Vertrauen wird durch Verunsicherung und Irritation ersetzt. Die Polarisierung in der Gesellschaft steigt,das rechtsextreme Lager gewinnt Anhänger*innen und wird nach innen bestärkt - das Bild von moralisch verkommenen Politiker*innen legitimiert die Anstrengungen von Rechtsextremist*innen. Der vermeintliche Kampf gegen eine „pädophile Elite“ ist ein wiederkehrendes Motiv, das auch im „Q Anon“-Verschwörungsmythos eine zentrale Rolle spielt.",
       "meso": "Hier wird erklärt welche Mesotrends einwirken. Der Text könnte ungefähr so lang werden: Personen, die sich nur flüchtig mit dem Zitat beschäftigen, werden überzeugt. Aber auch wenn der Post skeptisch aufgenommen wird oder die Vorwürfe später entkräftet werden, setzt sich möglicherweise ein Grundzweifel fest: Vertrauen wird durch Verunsicherung und Irritation ersetzt. Die Polarisierung in der Gesellschaft steigt,das rechtsextreme Lager gewinnt Anhänger*innen und wird nach innen bestärkt - das Bild von moralisch verkommenen Politiker*innen legitimiert die Anstrengungen von Rechtsextremist*innen. Der vermeintliche Kampf gegen eine „pädophile Elite“ ist ein wiederkehrendes Motiv, das auch im „Q Anon“-Verschwörungsmythos eine zentrale Rolle spielt."
     }
