@@ -15,13 +15,13 @@
                             class="rounded-full flex justify-center items-center border-2 border-red-500 transition-all"
                             :class="
                                 i + 1 < phaseIndex
-                                    ? 'bg-red-500 w-4 h-4 md:w-8 md:h-8  text-white'
+                                    ? 'bg-red-500 w-4 h-4 md:w-8 md:h-8 text-white label-sm'
                                     : i + 1 > phaseIndex
-                                    ? 'bg-white w-4 h-4 md:w-8 md:h-8 '
-                                    : 'w-8 h-8 md:w-12 md:h-12 label-xl bg-red-500 text-white'
+                                    ? 'bg-white w-4 h-4 md:w-8 md:h-8 label-sm'
+                                    : 'w-8 h-8 md:w-12 md:h-12  label-xl bg-red-500 text-white'
                             "
                         >
-                            <p
+                            <span
                                 :class="
                                     i + 1 !== phaseIndex
                                         ? 'hidden md:block'
@@ -29,7 +29,7 @@
                                 "
                             >
                                 {{ i + 1 }}
-                            </p>
+                            </span>
                         </div>
                     </div>
                 </div>
