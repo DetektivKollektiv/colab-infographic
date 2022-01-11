@@ -1,9 +1,8 @@
 <script setup>
 import Section from './components/Intro/Section.vue'
-import TrendsSection from './components/TrendsSection/TrendsSection.vue';
+import TrendsSection from './components/TrendsSection/TrendsSection.vue'
 import Infographic from './components/Infographic/Infographic.vue'
 import Story from './components/Story/Hero.vue'
-
 </script>
 
 <template>
