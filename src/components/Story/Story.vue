@@ -11,12 +11,10 @@
     >
         <div
             class="flex items-center flex-col text-center cursor-pointer"
-            v-for="summary in story.phases"
-            :key="summary"
+            v-for="phase in story.phases"
+            :key="phase"
         >
-            <p class="w-3/4">
-                {{ summary.text }}
-            </p>
+            <p class="w-3/4">{{ phase.summary.text }}</p>
         </div>
     </div>
     <div v-if="state == 'phasen' || state == 'trends'" class="container-box">
@@ -71,14 +69,18 @@ function setState(s) {
     state.value = s
 }
 
-watchEffect(() => {
-    state.value == 'phasen' ? (phaseIndex.value = 1) : (phaseIndex.value = 6)
-    console.log(state.value)
+watch(state, () => {
+    if (state.value == 'uebersicht' || state.value == 'trends') {
+        phaseIndex.value = 6
+    }
+    if (state.value == 'phasen' && phaseIndex.value == 6) {
+        phaseIndex.value = 1
+    }
 })
 
-watch(state, () => {
-    if (state.value == 'phasen') {
-        phaseIndex.value = 1
+watch(phaseIndex, () => {
+    if (phaseIndex.value !== 6) {
+        state.value = 'phasen'
     }
 })
 
