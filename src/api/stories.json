@@ -1,0 +1,111 @@
+[
+  {
+    "title": "Der Fall Künast",
+    "subtitle": "Mit Desinformation attackieren und verletzen:",
+    "description": "Verleumdung, die Wut und Hass erzeugt: Gezielt eingesetzt, kann Desinformation wie eine Waffe wirken. Demokratische Politiker*innen sind häufig Opfer solcher Angriffe, die oft von rechtsextremer Seite erfolgen. Als Beispiel erzählen wir die Geschichte von Renate Künast – der es gelang, sich mit Hilfe der Organisation „Hate Aid“ zur Wehr zu setzen.",
+    "phases": [
+      {
+        "phase": 1,
+        "who": "Die rechtsextreme Szene in Deutschland will ihr völkisch-rassistisches Weltbild durchsetzen, indem sie den Staat grundlegend verändert. Viele demokratische Aktivist*innen und Politiker*innen, die die bestehende Ordnung repräsentieren, werden deshalb als Gegner*innen betrachtet.",
+        "how": "Ein Mittel der rechtsextremen Szene ist die Einschüchterung und Bedrohung von Politiker*innen und anderen Personen des öffentlichen Lebens, um diese aus dem demokratischen Diskurs zu verdrängen. Zum Repertoire solcher verbalen Angriffe gehört auch der gezielte Anstoß zur Produktion von falschen Tatsachenbehauptungen.",
+        "summary": {
+          "text": "Rechtsextremisten verwenden verbale Angriffe und falsche Tatsachenbehauptungen, um andere Personen einzuschüchtern und aus der Öffentlichkeit zu verdrängen.",
+          "image": ""
+        },
+        "sources": []
+      },
+      {
+        "phase": 2,
+        "who": "Der Blogger Sven Liebich verbreitet seit den 1990er-Jahren rechtes Gedankengut und Verschwörungsmythen – regelmäßig offline auf Kundgebungen und Demonstrationen, außerdem online, erst auf seinem eigenen Blog, mittlerweile über Telegram. Liebich betreibt außerdem einen Online-Shop für Sticker und Aufkleber mit rechtsextremen Motiven. Der Verfassungsschutz in Sachsen-Anhalt zählt Liebich zur rechtsextremen Szene.",
+        "how": "Sven Liebich machte schon in der Vergangenheit wiederholt Politiker*innen zur Zielscheibe von Hetze und falschen Behauptungen. Im Oktober 2016 erstellte er – vermutlich inspiriert von einem kritischen WELT-Artikel – ein Bild mit einem Portrait und einer vermeintlichen Aussage von Grünen-Politikerin Renate Künast. Das Bild basiert auf einem Zwischenruf von Künast während einer Debatte im Abgeordnetenhaus Berlin im Jahr 1986. Das im Kontext missverständliche Zitat wurde von Liebich so ergänzt, dass der Eindruck entsteht, Künast würde eindeutig Sex mit Minderjährigen befürworten.",
+        "summary": {
+          "text": "Der Rechtsextremist Sven Liebich erstellte ein Bild mit einem falschen Zitat von Renate Künast (Grüne), um den Eindruck zu erwecken, sie befürworte Sex mit Kindern.",
+          "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+        },
+        "sources": [
+          {
+            "text": "Artikel MDR",
+            "link": "https://www.mdr.de/nachrichten/sachsen-anhalt/halle/halle/wer-ist-der-rechtsextremist-sven-liebich-100.html"
+          },
+          {
+            "text": "Artikel Süddeutsche",
+            "link": "https://www.sueddeutsche.de/digital/hate-speech-renate-kuenast-beleidigungen-halle-leaks-1.4712947"
+          },
+          {
+            "text": "Aussage Renate Künast",
+            "link": "https://digital.zlb.de/viewer/image/15975513_1986/737/"
+          },
+          {
+            "text": "Faktcheck zur Aussage",
+            "link": "https://www.presseportal.de/pm/133833/4605392"
+          },
+          {
+            "text": "Faktcheck zur Aussage",
+            "link": "https://colorful-germany.de/faktencheck-zu-rechten-fake-news-kein-zitat-von-renate-kuenast-zu-sex-mit-kindern"
+          },
+          {
+            "text": "WELT-Artikel, den Liebich auf Facebook und Telegram geteilt hat",
+            "link": "https://www.welt.de/politik/deutschland/article141406874/Gruenen-Politikerin-Kuenast-geraet-in-Erklaerungsnot.html"
+          },
+          {
+            "text": "Website/Blog von Sven Liebich, mittlerweile offline; mindestens online gewesen bis 05.06.2021",
+            "link": "https://blog.halle-leaks.de/"
+          }
+        ]
+      },
+      {
+        "phase": 3,
+        "who": "Sven Liebich betrieb früher einen eigenen Blog und eine Facebookseite, mittlerweile ist er eher auf geschlossenen Plattformen wie Telegram zu finden – dort findet fast keine Löschung von illegalen Inhalten statt.",
+        "how": "Liebich postete sein Bild am 30. Oktober 2016 auf seinem eigenen Blog. Künast erstattete dagegen schon im März 2017 Anzeige. Das Bild wurde im Folgenden einige Male von Nutzer*innen in den sozialen Medien geteilt, Liebichs Blog wurde dabei als Quelle angegeben. \n Am 27. März 2019 veröffentlichte Liebich das Bild erneut, diesmal auf seiner eigenen Facebook-Seite. Liebich bewarb sein Bild zudem als „Sponsored Post“, erhöhte also die Reichweite seines Posts, indem er Geld an Facebook bezahlte. Der Post wurde dann anderen Nutzer*innen als Werbung in deren Feed angezeigt.",
+        "summary": {
+          "text": "Liebich postete das Bild auf seinem Blog und auf Facebook. Er bezahlte Geld an Facebook, um seinen Post weiteren Nutzer*innen als Werbung anzuzeigen.",
+          "image": ""
+        },
+        "sources": [
+          {
+            "text": "Der originale Artikel",
+            "link": "https://web.archive.org/web/20190301135119/https:/blog.halle-leaks.de/2016/10/kuendast-findet-kinderficken-ok-solange-keine-gewalt-im-spiel-ist/"
+          },
+          {
+            "text": "Artikel Sueddeutsche",
+            "link": "https://www.sueddeutsche.de/digital/hate-speech-renate-kuenast-beleidigungen-halle-leaks-1.4712947"
+          },
+          {
+            "text": "Gerichtsurteil",
+            "link": "https://archive.vn/yT0Pk"
+          }
+        ]
+      },
+      {
+        "phase": 4,
+        "who": "Offene Kommunikationsplattformen - hier Facebook - ermöglichen die schnelle Verbreitung von Informationen. Es gibt hier keine redaktionelle Kontrolle der Inhalte, deshalb können sich Falschinformationen genauso wie wahre Inhalte verbreiten – oft sogar schneller, da sie emotionaler und provokanter formuliert sind.",
+        "how": "Das Bild mit dem falschen Zitat von Renate Künast verbreitete sich nach dem Post auf Liebichs Facebook-Seite vielfach auf der Plattform. Darunter sammelten sich Kommentare an, die Künast auf das Härteste beschimpften, schmähten und bedrohten.\nDiese Reaktionen der Anhänger*innen von Liebich sind kein Einzelfall, sondern können als das Ergebnis einer kalkulierten Strategie des Desinformations-Produzenten gesehen werden: Die Mechanismen der Plattform, einen Wettbewerb um Aufmerksamkeit und Anerkennung zu befeuern, werden genutzt, um die Verbreitung zu maximieren.\nNachdem Künast Anzeige erstattet hatte, gab es auch einen gewissen Verstärkungseffekt durch die „klassischen“ Medien: zwar identifizierte die Berichterstattung das angebliche Künast-Zitat meist deutlich als falsch, doch der Vorwurf wurde eben doch thematisiert, wiederholt und auch dadurch verbreitet.\nDie Verbreitung der Inhalte durch „Bots“ oder Fake-Accounts spielt in diesem Fall vermutlich keine Rolle: Es überwog das Teilen durch einzelne reichweitenstarke Accounts, Seiten und Personen auf Facebook.",
+        "summary": {
+          "text": "Das Bild wurde vielfach geteilt. In den Kommentaren unter Liebichs Post kam es zu drastischen Beschimpfungen, Beleidigungen und Bedrohungen. Künast klagte gegen Liebich, viele Medien berichteten.",
+          "image": ""
+        },
+        "sources": []
+      },
+      {
+        "phase": 5,
+        "who": "Die öffentliche Meinung über Renate Künast und ihre Partei wird durch das Falschzitat beeinflusst. Das Vertrauen in Politiker*innen wird gestört. Das rechtsextreme Lager wird durch klare Freund/Feind-Bilder gestärkt.",
+        "how": "Personen, die sich nur flüchtig mit dem Zitat beschäftigen, werden überzeugt. Aber auch wenn der Post skeptisch aufgenommen wird oder die Vorwürfe später entkräftet werden, setzt sich möglicherweise ein Grundzweifel fest: Vertrauen wird durch Verunsicherung und Irritation ersetzt.\nDie Polarisierung in der Gesellschaft steigt, das rechtsextreme Lager gewinnt Anhänger*innen und wird nach innen bestärkt – das Bild von moralisch verkommenen Politiker*innen legitimiert die Anstrengungen von Rechtsextremist*innen. Der vermeintliche Kampf gegen eine „pädophile Elite“ ist ein wiederkehrendes Motiv, das auch im „Q Anon“-Verschwörungsmythos eine zentrale Rolle spielt.\nAber dank der erfolgreichen Arbeit der Organisation „HateAid“, mit deren Hilfe sich Renate Künast vor allem juristisch gegen die auf ihre Person gerichtete Desinformation zur Wehr setzt, zeigt sich auch: Opfer sind nicht hilflos. Es ist möglich, gezielt in die Wertschöpfungskette einzugreifen und die Produktion und Verbreitung zumindest zu erschweren. Auf diese Weise wurden wegweisende Gerichtsurteile erzielt.",
+        "summary": {
+          "text": "In der Öffentlichkeit verbleibt Verunsicherung und Irritation. Die rechte Szene wird durch das klare Feindbild bestärkt. Gleichzeitig zeigt die konsequente Reaktion der Organisation „HateAid“ mit und für Künast, dass es sich lohnt, gegen Desinformation vorzugehen.",
+          "image": ""
+        },
+        "sources": []
+      }
+    ],
+    "trends":{
+      "makro": "Hier wird erklärt welche Makrotrends einwirken. Der Text könnte ungefähr so lang werden: Personen, die sich nur flüchtig mit dem Zitat beschäftigen, werden überzeugt. Aber auch wenn der Post skeptisch aufgenommen wird oder die Vorwürfe später entkräftet werden, setzt sich möglicherweise ein Grundzweifel fest: Vertrauen wird durch Verunsicherung und Irritation ersetzt. Die Polarisierung in der Gesellschaft steigt,das rechtsextreme Lager gewinnt Anhänger*innen und wird nach innen bestärkt - das Bild von moralisch verkommenen Politiker*innen legitimiert die Anstrengungen von Rechtsextremist*innen. Der vermeintliche Kampf gegen eine „pädophile Elite“ ist ein wiederkehrendes Motiv, das auch im „Q Anon“-Verschwörungsmythos eine zentrale Rolle spielt.",
+      "meso": "Hier wird erklärt welche Mesotrends einwirken. Der Text könnte ungefähr so lang werden: Personen, die sich nur flüchtig mit dem Zitat beschäftigen, werden überzeugt. Aber auch wenn der Post skeptisch aufgenommen wird oder die Vorwürfe später entkräftet werden, setzt sich möglicherweise ein Grundzweifel fest: Vertrauen wird durch Verunsicherung und Irritation ersetzt. Die Polarisierung in der Gesellschaft steigt,das rechtsextreme Lager gewinnt Anhänger*innen und wird nach innen bestärkt - das Bild von moralisch verkommenen Politiker*innen legitimiert die Anstrengungen von Rechtsextremist*innen. Der vermeintliche Kampf gegen eine „pädophile Elite“ ist ein wiederkehrendes Motiv, das auch im „Q Anon“-Verschwörungsmythos eine zentrale Rolle spielt."
+    }
+  },
+  {
+    "Hier kommt": "Story 2"
+  },
+  {
+    "Hier kommt": "Story 3"
+  }
+]
