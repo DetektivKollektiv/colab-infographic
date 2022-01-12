@@ -29,10 +29,11 @@ function getCurrentElement() {
     )
 }
 
-window.VueUse.useEventListener(container, 'scroll', () => {
+const emit = defineEmits(['phaseIndex'])
+useEventListener(container, 'scroll', () => {
     if (getCurrentElement() !== currentElement.value) {
         currentElement.value = getCurrentElement()
-        console.log('current Element:', currentElement.value)
+        emit('phaseIndex', currentElement.value)
     }
 })
 

@@ -9,6 +9,7 @@
     "deploy": "npm run build && firebase deploy"
   },
   "dependencies": {
+    "@vueuse/core": "^7.5.3",
     "pinia": "^2.0.5",
     "vue": "^3.2.16",
     "vue3-touch-events": "^4.1.0"
@@ -19,6 +20,8 @@
     "nodemon": "^2.0.15",
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.13",
+    "unplugin-auto-import": "^0.5.9",
+    "unplugin-vue-components": "^0.17.11",
     "vite": "^2.6.4"
   }
 }
