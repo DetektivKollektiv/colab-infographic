@@ -9,7 +9,7 @@
                         class="flex items-center flex-col cursor-pointer relative"
                         v-for="(phaseText, i) in phases"
                         :key="i"
-                        @click="emit('change', i + 1)"
+                        @click="emit('phaseIndex', i + 1)"
                     >
                         <div
                             class="rounded-full flex justify-center items-center border-2 border-red-500 transition-all"
@@ -43,7 +43,7 @@
                     class="flex items-center flex-col text-center cursor-pointer"
                     v-for="(phaseText, i) in phases"
                     :key="i"
-                    @click="emit('change', i + 1)"
+                    @click="emit('phaseIndex', i + 1)"
                 >
                     <p
                         v-if="showTitle"
@@ -94,7 +94,7 @@ const phases = [
     'Beeinflussung',
 ]
 
-const emit = defineEmits(['change'])
+const emit = defineEmits(['phaseIndex'])
 </script>
 
 <style scoped>

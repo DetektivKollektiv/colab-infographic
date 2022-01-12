@@ -2,7 +2,7 @@
     <Hero :story="story" :state="state" @state="setState"></Hero>
     <WSK
         v-if="active"
-        @change="setPhaseIndex"
+        @phaseIndex="setPhaseIndex"
         :phaseIndex="phaseIndex"
         class="absolute w-screen"
     ></WSK>
@@ -33,7 +33,11 @@
                 class="flex flex-col md:flex-row justify-between my-24 md:my-36 space-y-8 md:space-y-0"
             >
                 <div class="space-y-8 flex-shrink-0 md:mr-12">
-                    <TextDesktop v-for="text in getTexts()" :key="text">
+                    <TextDesktop
+                        v-for="text in getTexts()"
+                        :key="text"
+                        class="hidden md:block"
+                    >
                         <template v-slot:title>
                             <h3>{{ text.title }}</h3>
                         </template>
@@ -43,6 +47,7 @@
                             </p>
                         </template>
                     </TextDesktop>
+                    <TextMobile> </TextMobile>
                 </div>
                 <img
                     class="md:h-auto flex-shrink object-cover overflow-hidden"
