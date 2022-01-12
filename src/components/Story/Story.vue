@@ -7,8 +7,8 @@
         class="absolute w-full"
     ></WSK>
     <div
-        class="transition-all duration-300"
-        :style="{ maxHeight: active ? '100vh' : '0vh' }"
+        class="transition-all duration-300 overflow-y-hidden"
+        :class="active ? 'max-h-[999px]' : 'max-h-[0px]'"
     >
         <div
             v-if="state == 'uebersicht'"
@@ -30,7 +30,8 @@
             class="container-box"
         >
             <div
-                class="flex flex-col md:flex-row justify-between my-24 md:my-36 space-y-8 md:space-y-0"
+                class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0"
+                :class="active ? 'my-24 md:my-36' : ''"
             >
                 <div class="space-y-8 flex-shrink-0 md:mr-12">
                     <Text

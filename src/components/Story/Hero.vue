@@ -1,7 +1,7 @@
 <template>
-    <div class="relative">
+    <div class="relative h-[50vh] min-h-[400px]">
         <div
-            class="bg-gradient-to-b from-transparent to-black w-full absolute h-[50vh] opacity-40"
+            class="bg-gradient-to-b from-transparent to-black w-full h-full absolute opacity-40"
         ></div>
         <div class="absolute top-1/2 -translate-y-1/2 w-full px-4">
             <div class="container-box mx-auto text-white">
@@ -41,7 +41,11 @@
             </div>
         </div>
 
-        <img class="object-cover w-screen h-[50vh]" :src="story.image" alt="" />
+        <img
+            class="object-cover w-screen h-[50vh] min-h-[400px]"
+            :src="story.image"
+            alt=""
+        />
     </div>
 </template>
 <script setup>
