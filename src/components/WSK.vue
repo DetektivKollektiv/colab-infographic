@@ -68,8 +68,6 @@
 </template>
 
 <script setup>
-import { toRefs, isRef } from '@vue/reactivity'
-
 const props = defineProps({
     phaseIndex: {
         type: Number,

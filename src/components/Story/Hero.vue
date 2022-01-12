@@ -45,11 +45,6 @@
     </div>
 </template>
 <script setup>
-import TextBlock from '@/components/TextBlock.vue'
-import ButtonText from '@/components/ButtonText.vue'
-
-import { toRefs } from '@vue/reactivity'
-
 const props = defineProps({
     story: {
         type: Object,

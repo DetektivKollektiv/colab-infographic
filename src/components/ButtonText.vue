@@ -9,8 +9,6 @@
     </button>
 </template>
 <script setup>
-import { toRefs } from '@vue/reactivity'
-
 const props = defineProps({
     active: {
         type: Boolean,

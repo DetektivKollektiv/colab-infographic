@@ -4,10 +4,10 @@
         v-if="active"
         @phaseIndex="setPhaseIndex"
         :phaseIndex="phaseIndex"
-        class="absolute w-screen"
+        class="absolute w-full"
     ></WSK>
     <div
-        class="overflow-hidden transition-all duration-300"
+        class="transition-all duration-300"
         :style="{ maxHeight: active ? '100vh' : '0vh' }"
     >
         <div
@@ -33,21 +33,12 @@
                 class="flex flex-col md:flex-row justify-between my-24 md:my-36 space-y-8 md:space-y-0"
             >
                 <div class="space-y-8 flex-shrink-0 md:mr-12">
-                    <TextDesktop
-                        v-for="text in getTexts()"
-                        :key="text"
-                        class="hidden md:block"
+                    <Text
+                        :texts="getTexts()"
+                        :phaseIndex="phaseIndex"
+                        @phaseIndex="setPhaseIndex"
                     >
-                        <template v-slot:title>
-                            <h3>{{ text.title }}</h3>
-                        </template>
-                        <template v-slot:description>
-                            <p class="w-96 flex-shrink-0 snap-start">
-                                {{ text.description }}
-                            </p>
-                        </template>
-                    </TextDesktop>
-                    <TextMobile> </TextMobile>
+                    </Text>
                 </div>
                 <img
                     class="md:h-auto flex-shrink object-cover overflow-hidden"
@@ -68,14 +59,6 @@
 </template>
 
 <script setup>
-import Hero from '@/components/Story/Hero.vue'
-import TextDesktop from '@/components/Story/TextDesktop.vue'
-import WSK from '@/components/WSK.vue'
-import Sources from '@/components/Sources.vue'
-
-import { toRefs, ref, reactive } from '@vue/reactivity'
-import { watchEffect, watch } from '@vue/runtime-core'
-
 const props = defineProps({
     story: {
         type: Object,
@@ -124,22 +107,22 @@ function getTexts() {
         ? [
               {
                   title: 'Wer',
-                  description: getPhaseByIndex(phaseIndex.value).who,
+                  descriptions: story.value.phases.map((phase) => phase.who),
               },
               {
                   title: 'Wie',
-                  description: getPhaseByIndex(phaseIndex.value).how,
+                  descriptions: story.value.phases.map((phase) => phase.how),
               },
           ]
         : state.value == 'trends'
         ? [
               {
                   title: 'Makrotrends',
-                  description: story.value.trends.makro,
+                  descriptions: [story.value.trends.makro],
               },
               {
                   title: 'Mesotrends',
-                  description: story.value.trends.meso,
+                  descriptions: [story.value.trends.meso],
               },
           ]
         : []
