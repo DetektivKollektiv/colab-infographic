@@ -6,7 +6,7 @@
                     class="grid grid-cols-5 container-box z-10 relative items-center"
                 >
                     <div
-                        class="flex items-center flex-col cursor-pointer"
+                        class="flex items-center flex-col cursor-pointer relative"
                         v-for="(phaseText, i) in phases"
                         :key="i"
                         @click="emit('change', i + 1)"
@@ -31,6 +31,10 @@
                                 {{ i + 1 }}
                             </span>
                         </div>
+                        <div
+                            v-if="i + 1 !== phases.length"
+                            class="arrow-right absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2"
+                        ></div>
                     </div>
                 </div>
             </div>
@@ -62,6 +66,7 @@
         </div>
     </div>
 </template>
+
 <script setup>
 import { toRefs, isRef } from '@vue/reactivity'
 
@@ -91,3 +96,13 @@ const phases = [
 
 const emit = defineEmits(['change'])
 </script>
+
+<style scoped>
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid rgba(252, 95, 87, var(--tw-border-opacity));
+}
+</style>

@@ -11,15 +11,15 @@ const storyActive = ref(false)
 </script>
 
 <template>
-    <div class="relative min-h-screen">
+    <!--     <div class="relative min-h-screen">
         <Section></Section>
     </div>
-    <Intro_section></Intro_section>
-    <trends-section></trends-section>
-    <div @click.prevent="storyActive = true">
-        <Story :story="stories[0]" :active="storyActive"></Story>
-    </div>
-    <Infographic />
+    <Intro_section></Intro_section> -->
+    <Story :story="stories[0]" :active="true"></Story>
+    <div @click.prevent="storyActive = true"></div>
+    <!--     <trends-section></trends-section>
+
+    <Infographic /> -->
 </template>
 
 <style></style>
