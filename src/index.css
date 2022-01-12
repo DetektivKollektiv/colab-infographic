@@ -35,6 +35,15 @@
     .container-box {
         @apply mx-auto container px-4;
     }
+    .scrollbar-hidden {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-y: scroll;
+    }
+
+    .scrollbar-hidden::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 html,
