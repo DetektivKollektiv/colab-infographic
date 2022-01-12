@@ -30,11 +30,11 @@
                             >
                                 {{ i + 1 }}
                             </span>
+                            <div
+                                v-if="i + 1 !== phases.length"
+                                class="arrow-right absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2"
+                            ></div>
                         </div>
-                        <div
-                            v-if="i + 1 !== phases.length"
-                            class="arrow-right absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2"
-                        ></div>
                     </div>
                 </div>
             </div>

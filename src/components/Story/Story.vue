@@ -33,7 +33,7 @@
                 class="flex flex-col md:flex-row justify-between my-24 md:my-36 space-y-8 md:space-y-0"
             >
                 <div class="space-y-8 flex-shrink-0 md:mr-12">
-                    <Text v-for="text in getTexts()" :key="text">
+                    <TextDesktop v-for="text in getTexts()" :key="text">
                         <template v-slot:title>
                             <h3>{{ text.title }}</h3>
                         </template>
@@ -42,7 +42,7 @@
                                 {{ text.description }}
                             </p>
                         </template>
-                    </Text>
+                    </TextDesktop>
                 </div>
                 <img
                     class="md:h-auto flex-shrink object-cover overflow-hidden"
@@ -64,7 +64,7 @@
 
 <script setup>
 import Hero from '@/components/Story/Hero.vue'
-import Text from '@/components/Story/Text.vue'
+import TextDesktop from '@/components/Story/TextDesktop.vue'
 import WSK from '@/components/WSK.vue'
 import Sources from '@/components/Sources.vue'
 
