@@ -38,7 +38,7 @@
                             <h3>{{ text.title }}</h3>
                         </template>
                         <template v-slot:description>
-                            <p>
+                            <p class="w-96 flex-shrink-0">
                                 {{ text.description }}
                             </p>
                         </template>

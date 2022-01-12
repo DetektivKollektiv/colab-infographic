@@ -11,7 +11,7 @@ const storyActive = ref(false)
 </script>
 
 <template>
-    <!--     <div class="relative min-h-screen">
+    <!-- <div class="relative min-h-screen">
         <Section></Section>
     </div>
     <Intro_section></Intro_section> -->
