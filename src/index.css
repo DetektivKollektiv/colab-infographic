@@ -6,28 +6,42 @@
 
 @layer base {
     h1 {
-        @apply font-headline font-bold text-4xl;
+        @apply font-headline font-bold text-2xl md:text-4xl;
     }
     h2 {
-        @apply font-headline font-bold text-2xl;
+        @apply font-headline font-bold text-xl md:text-3xl;
     }
     h3 {
-        @apply font-headline font-bold text-xl;
+        @apply font-headline font-bold text-lg md:text-2xl;
     }
     h4 {
-        @apply font-headline font-light text-xl;
+        @apply font-headline font-light text-lg md:text-2xl;
+    }
+
+    p {
+        @apply text-sm md:text-base leading-snug;
+    }
+
+    .label-xs {
+        @apply text-xs font-bold;
     }
 
     .label-sm {
-        @apply text-sm font-bold;
+        @apply text-xs md:text-sm font-bold;
     }
     .label-xl {
-        @apply text-xl font-bold;
+        @apply text-base md:text-xl font-bold;
     }
-}
+    .container-box {
+        @apply mx-auto container px-4;
+    }
+    .scrollbar-hidden {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-y: scroll;
+    }
 
-html,
-body {
-    max-width: 100%;
-    overflow-x: hidden;
+    .scrollbar-hidden::-webkit-scrollbar {
+        display: none;
+    }
 }
