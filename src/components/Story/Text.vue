@@ -1,13 +1,14 @@
 <template>
-    <div class="md:max-w-md container-box relative">
+    <div class="md:max-w-md relative md:container-box">
         <div
-            class="flex flex-row overflow-x-scroll overflow-y-hidden w-full snap-mandatory snap-x scrollbar-hidden"
+            class="flex flex-row scroll-px-4 overflow-y-hidden w-full snap-mandatory snap-x scrollbar-hidden"
             @scroll="update"
             ref="container"
         >
             <div
                 v-for="(texts, i) in getDescriptions(zippedTexts)"
                 :key="texts"
+                class="scroll-px-4 first:ml-4 last:mr-4"
             >
                 <div
                     v-for="text in texts"

@@ -25,10 +25,7 @@
                 </p>
             </div>
         </div>
-        <div
-            v-if="state == 'phasen' || state == 'trends'"
-            class="container-box"
-        >
+        <div v-if="state == 'phasen' || state == 'trends'" class="">
             <div
                 class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0"
                 :class="active ? 'my-24 md:my-36' : ''"
@@ -42,7 +39,7 @@
                     </Text>
                 </div>
                 <img
-                    class="md:h-auto flex-shrink object-cover overflow-hidden"
+                    class="md:h-auto flex-shrink scroll-mx-4 px-4 md:px-8 object-cover overflow-hidden"
                     v-for="image in getImages()"
                     :key="image"
                     :src="image"

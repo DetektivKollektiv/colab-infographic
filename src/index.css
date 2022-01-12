@@ -33,7 +33,7 @@
         @apply text-base md:text-xl font-bold;
     }
     .container-box {
-        @apply mx-auto container px-4;
+        @apply mx-auto container px-4 md:px-8;
     }
     .scrollbar-hidden {
         -ms-overflow-style: none;
