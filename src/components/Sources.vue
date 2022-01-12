@@ -7,7 +7,7 @@
             v-for="source in sources"
             :key="source"
             :href="source.link"
-            >• {{ source.text }}</a
+            >{{ source.text }}</a
         >
     </div>
 </template>
@@ -21,4 +21,3 @@ const props = defineProps({
 
 const { sources } = toRefs(props)
 </script>
-<style lang=""></style>
