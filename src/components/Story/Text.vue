@@ -80,7 +80,6 @@ function update() {
 }
 
 function getDescriptions(descriptions) {
-    console.log('descriptions', descriptions)
     if (phaseIndex > descriptions.length) {
         return descriptions[0]
     }

@@ -128,6 +128,7 @@ function getTexts() {
 }
 
 function getImages() {
+    console.log(phaseIndex.value)
     if (state.value == 'phasen') {
         return getPhaseByIndex(phaseIndex.value).images
             ? getPhaseByIndex(phaseIndex.value).images

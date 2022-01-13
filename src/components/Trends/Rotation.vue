@@ -72,8 +72,6 @@ const { width } = useWindowSize()
 
 const rotation = computed(() => 24 - width.value / 140)
 
-useEventListener('resize', () => console.log(rotation.value))
-
 const { bg, color, trends } = toRefs(props)
 
 function getTrends(trends) {
