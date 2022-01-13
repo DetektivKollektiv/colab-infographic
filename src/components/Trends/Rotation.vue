@@ -1,6 +1,6 @@
 <template>
     <div class="overflow-hidden bg-yellow-500" :class="bg">
-        <div class="w-screen relative h-[80vh]">
+        <div class="w-screen relative h-[80vh] min-h-[600px]">
             <div
                 class="rounded-full w-[500vw] h-[500vw] absolute -translate-x-1/2 left-1/2"
                 :class="color"
@@ -38,7 +38,13 @@
                     </TextBlock>
                 </div>
             </div>
-            <TextSlide :trends="getTrends(trends)"></TextSlide>
+
+            <div class="md:hidden">
+                <TextSlide
+                    :trends="getTrends(trends)"
+                    :subtitle="subtitle"
+                ></TextSlide>
+            </div>
         </div>
     </div>
 </template>

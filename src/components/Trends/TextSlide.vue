@@ -1,15 +1,15 @@
 <template>
     <div
-        class="flex overflow-x-scroll snap-x snap-mandatory scrollbar-hidden"
+        class="flex overflow-x-scroll snap-x snap-mandatory scrollbar-hidden h-[80vh] min-h-[600px]"
         ref="container"
         @scroll="update"
     >
         <div v-for="trend in trends" :key="trend" class="snap-start">
             <TextBlock
-                class="mt-[40vh] -translate-y-1/2 w-screen container-box"
+                class="relative top-1/2 -translate-y-1/2 -mt-4 w-screen container-box"
             >
                 <template v-slot:subtitle>
-                    <p class="font-serif">Trends</p>
+                    <p class="font-serif">{{ subtitle }}</p>
                 </template>
                 <template v-slot:title>
                     <h1>{{ trend.headline }}</h1>
@@ -36,9 +36,13 @@ const props = defineProps({
         type: Array,
         required: true,
     },
+    subtitle: {
+        type: String,
+        default: 'Trends',
+    },
 })
 
-const { trends } = toRefs(props)
+const { trends, subtitle } = toRefs(props)
 
 const container = ref(null)
 const currentElement = ref(0)

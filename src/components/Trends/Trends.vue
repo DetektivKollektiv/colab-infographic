@@ -24,13 +24,13 @@
         <Rotation
             bg="bg-yellow-500"
             color="bg-yellow-300"
-            :trends="mesotrends"
-            subtitle="Mesotrends"
+            :trends="makrotrends"
+            subtitle="Makrotrends"
         ></Rotation>
         <Rotation
             bg="bg-yellow-300"
             color="bg-white"
-            :trends="makrotrends"
+            :trends="mesotrends"
             subtitle="Mesotrends"
         ></Rotation>
     </div>
