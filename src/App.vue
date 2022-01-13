@@ -1,13 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import Section from './components/Intro/Section.vue'
-import TrendsSection from './components/TrendsSection/TrendsSection.vue'
-import Infographic from './components/Infographic/Infographic.vue'
-import Story from './components/Story/Story.vue'
-
 import stories from '@/api/stories.json'
-
-const storyActive = ref(false)
 </script>
 
 <template>
@@ -15,8 +8,15 @@ const storyActive = ref(false)
         <Section></Section>
     </div>
     <Intro_section></Intro_section> -->
-    <Story :story="stories[0]" :active="true"></Story>
-    <div @click.prevent="storyActive = true"></div>
+    <!-- <div
+        v-for="(story, i) in stories"
+        :key="story.title"
+        @click="activeStory = i"
+        :class="{ 'cursor-pointer': activeStory !== i }"
+    >
+        <Story :story="story" :active="i == activeStory"></Story>
+    </div> -->
+    <Trends></Trends>
     <!--     <trends-section></trends-section>
 
     <Infographic /> -->

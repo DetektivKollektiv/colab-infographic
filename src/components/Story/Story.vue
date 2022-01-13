@@ -7,8 +7,8 @@
         class="absolute w-full"
     ></WSK>
     <div
-        class="transition-all duration-300"
-        :style="{ maxHeight: active ? '100vh' : '0vh' }"
+        class="transition-all duration-300 overflow-y-hidden"
+        :class="active ? 'max-h-[999px]' : 'max-h-[0px]'"
     >
         <div
             v-if="state == 'uebersicht'"
@@ -25,12 +25,10 @@
                 </p>
             </div>
         </div>
-        <div
-            v-if="state == 'phasen' || state == 'trends'"
-            class="container-box"
-        >
+        <div v-if="state == 'phasen' || state == 'trends'" class="">
             <div
-                class="flex flex-col md:flex-row justify-between my-24 md:my-36 space-y-8 md:space-y-0"
+                class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0"
+                :class="active ? 'my-24 md:my-36' : ''"
             >
                 <div class="space-y-8 flex-shrink-0 md:mr-12">
                     <Text
@@ -41,7 +39,7 @@
                     </Text>
                 </div>
                 <img
-                    class="md:h-auto flex-shrink object-cover overflow-hidden"
+                    class="md:h-auto flex-shrink scroll-mx-4 px-4 md:px-8 object-cover overflow-hidden"
                     v-for="image in getImages()"
                     :key="image"
                     :src="image"
@@ -71,6 +69,7 @@ const props = defineProps({
 })
 
 const { story, active } = toRefs(props)
+console.log({ story })
 const phaseIndex = ref(1)
 
 function setPhaseIndex(i) {
