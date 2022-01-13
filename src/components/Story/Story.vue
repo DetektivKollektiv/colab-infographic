@@ -69,6 +69,7 @@ const props = defineProps({
 })
 
 const { story, active } = toRefs(props)
+console.log({ story })
 const phaseIndex = ref(1)
 
 function setPhaseIndex(i) {
