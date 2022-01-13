@@ -6,7 +6,9 @@
                 <button class="text-purple-700 text-3xl" @click="nextTrend(false)">
                     <i class="fas fa-arrow-circle-left"></i>
                 </button>
-                <div class="text-base w-1/2 mx-16 text-justify">{{ currentTrend.text }}</div>
+                <div class="flex justify-center items-center w-1/2 mx-16  h-96">
+                    <span class="text-base text-justify">{{ currentTrend.text }}</span>
+                </div>
                 <button class="text-purple-700 text-3xl" @click="nextTrend(true)">
                     <i class="fas fa-arrow-circle-right"></i>
                 </button>
