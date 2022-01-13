@@ -32,36 +32,28 @@ export default {
 
 <template>
   <div class="flex flex-row content-center gap-6 text-2xl">
-    <button
-      class="text-red-500"
-      v-on:click="goToPrevSlide"
-      :class="current_slide == 1 ? 'invisible' : ''"
-    >
+    <button v-on:click="goToPrevSlide" class="text-red-500">
       <i class="fas fa-caret-left"></i>
     </button>
     <button v-on:click="goToSlide(1)" v-bind:class="[current_slide == 1 ? 'highlight' : '']">
-      <p>1</p>
+      <span>1</span>
     </button>
     <button v-on:click="goToSlide(2)" v-bind:class="[current_slide == 2 ? 'highlight' : '']">
-      <p>2</p>
+      <span>2</span>
     </button>
     <button v-on:click="goToSlide(3)" v-bind:class="[current_slide == 3 ? 'highlight' : '']">
-      <p>3</p>
+      <span>3</span>
     </button>
     <button v-on:click="goToSlide(4)" v-bind:class="[current_slide == 4 ? 'highlight' : '']">
-      <p>4</p>
+      <span>4</span>
     </button>
     <button v-on:click="goToSlide(5)" v-bind:class="[current_slide == 5 ? 'highlight' : '']">
-      <p>5</p>
+      <span>5</span>
     </button>
     <button v-on:click="goToSlide(6)" v-bind:class="[current_slide == 6 ? 'highlight' : '']">
-      <p>6</p>
+      <span>6</span>
     </button>
-    <button
-      class="text-red-500"
-      v-on:click="goToNextSlide"
-      :class="current_slide == 6 ? 'invisible' : ''"
-    >
+    <button v-on:click="goToNextSlide" class="text-red-500">
       <i class="fas fa-caret-right"></i>
     </button>
   </div>
