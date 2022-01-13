@@ -7,7 +7,7 @@
             ></div>
 
             <div
-                class="w-0 h-[500vw] relative left-1/2 -translate-x-1/2 transition-all"
+                class="w-0 h-[500vw] relative left-1/2 -translate-x-1/2 transition-all hidden md:block"
                 :style="getStyle(currentRotation * -1)"
             >
                 <div
@@ -38,6 +38,7 @@
                     </TextBlock>
                 </div>
             </div>
+            <TextSlide :trends="getTrends(trends)"></TextSlide>
         </div>
     </div>
 </template>

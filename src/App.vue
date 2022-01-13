@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 import stories from '@/api/stories.json'
-console.log(stories)
 </script>
 
 <template>
