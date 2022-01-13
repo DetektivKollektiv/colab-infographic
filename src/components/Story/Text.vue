@@ -1,14 +1,14 @@
 <template>
-    <div class="md:max-w-md relative md:container-box">
+    <div class="relative">
         <div
-            class="flex flex-row scroll-px-4 overflow-y-hidden w-full snap-mandatory snap-x scrollbar-hidden"
+            class="flex flex-row scroll-px-4 md:scroll-px-0 overflow-y-hidden w-full snap-mandatory snap-x scrollbar-hidden"
             @scroll="update"
             ref="container"
         >
             <div
                 v-for="(texts, i) in getDescriptions(zippedTexts)"
                 :key="texts"
-                class="scroll-px-4 first:ml-4 last:mr-4"
+                class="scroll-px-4 first:ml-4 last:mr-4 first:md:ml-0 md:last:mr-0"
             >
                 <div
                     v-for="text in texts"
@@ -22,7 +22,7 @@
                         Wie
                     </h3>
                     <div class="w-full h-0.5 bg-red-500"></div>
-                    <p class="w-96 flex-shrink-0 snap-start mt-2 mr-4">
+                    <p class="w-96 flex-shrink-0 snap-start mt-2 mr-4 md:mr-0">
                         {{ text }}
                     </p>
                 </div>
