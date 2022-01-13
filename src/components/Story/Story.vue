@@ -27,7 +27,7 @@
         </div>
         <div v-if="state == 'phasen' || state == 'trends'" class="">
             <div
-                class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0"
+                class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 container-box"
                 :class="active ? 'my-24 md:my-36' : ''"
             >
                 <div class="space-y-8 flex-shrink-0 md:mr-12">

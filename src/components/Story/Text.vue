@@ -1,5 +1,5 @@
 <template>
-    <div class="relative md:container-box">
+    <div class="relative">
         <div
             class="flex flex-row scroll-px-4 md:scroll-px-0 overflow-y-hidden w-full snap-mandatory snap-x scrollbar-hidden"
             @scroll="update"
