@@ -22,29 +22,32 @@
             </TextBlock>
         </div> -->
         <div class="overflow-hidden bg-yellow-500">
-            <div class="w-screen relative">
+            <div class="w-screen relative h-[80vh]">
                 <div
                     class="rounded-full w-[500vw] h-[500vw] absolute -translate-x-1/2 left-1/2 bg-yellow-300"
                 ></div>
-                <p
-                    class="font-serif absolute -translate-x-1/2 top-[25%] md:top-[15%] left-1/2"
-                >
-                    Wie Wirkung von Trends
-                </p>
 
                 <div
-                    class="w-0 h-[500vw] relative left-1/2 -translate-x-1/2"
-                    :style="{ transform: `rotate(${3}deg) translateX(-50%)` }"
+                    class="w-0 h-[500vw] relative left-1/2 -translate-x-1/2 transition-transform"
+                    :style="getStyle(currentRotation)"
                 >
                     <div
-                        class="h-[500vw] w-0 absolute left-1/2"
+                        class="h-[500vw] w-0 absolute left-1/2 cursor-pointer"
                         v-for="mesotrend in getTrends(mesotrends)"
                         :key="mesotrend"
-                        :style="mesotrend.style"
+                        :style="getStyle(mesotrend.rotation)"
+                        :class="{
+                            'opacity-50':
+                                currentRotation * -1 !== mesotrend.rotation,
+                        }"
+                        @click="setRotation(mesotrend.rotation)"
                     >
                         <TextBlock
-                            class="w-screen -translate-x-1/2 mt-[25vh] -translate-y-1/2"
+                            class="w-screen -translate-x-1/2 mt-[40vh] -translate-y-1/2"
                         >
+                            <template v-slot:subtitle>
+                                <p class="font-serif">Mesotrends</p>
+                            </template>
                             <template v-slot:title>
                                 <h1>{{ mesotrend.headline }}</h1>
                             </template>
@@ -76,20 +79,29 @@
 <script setup>
 import mesotrends from '@/api/mesotrends.json'
 
-const currentRotation = ref(0)
-
 function getTrends(trends) {
     return trends.map((trend, i) => ({
-        style: {
-            transform: `rotate(${12 * i}deg) translateX(-50%)`,
-        },
+        rotation: 12 * i,
         headline: trend.headline,
         text: trend.text,
     }))
 }
 
-function setRotation() {
-    currentRotation.value = currentRotation.value * -1
+function getStyle(rotation) {
+    return {
+        transform: `rotate(${rotation}deg) translateX(-50%)`,
+    }
+}
+const currentRotation = ref(0)
+
+function setRotation(rotation) {
+    currentRotation.value = rotation * -1
+    console.log(
+        'setRotation',
+        rotation,
+        getStyle(currentRotation.value),
+        currentRotation.value
+    )
 }
 </script>
 <style scoped></style>
