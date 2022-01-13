@@ -8,7 +8,7 @@
     ></WSK>
     <div
         class="transition-all duration-300 overflow-y-hidden"
-        :class="active ? 'max-h-[999px]' : 'max-h-[0px]'"
+        :class="active ? 'max-h-[1200px]' : 'max-h-[0px]'"
     >
         <div
             v-if="state == 'uebersicht'"
@@ -47,7 +47,7 @@
                     srcset=""
                 />
             </div>
-            <div v-if="state == 'phasen'">
+            <div v-if="state == 'phasen'" class="container-box mb-12 md:mb-16">
                 <Sources
                     :sources="getPhaseByIndex(phaseIndex).sources"
                 ></Sources>

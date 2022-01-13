@@ -70,7 +70,7 @@ const props = defineProps({
 
 const { width } = useWindowSize()
 
-const rotation = computed(() => 24 - width.value / 140)
+const rotation = computed(() => Math.max(24 - width.value / 140, 6))
 
 const { bg, color, trends } = toRefs(props)
 
