@@ -69,7 +69,6 @@ const props = defineProps({
 })
 
 const { story, active } = toRefs(props)
-console.log({ story })
 const phaseIndex = ref(1)
 
 function setPhaseIndex(i) {
@@ -128,7 +127,6 @@ function getTexts() {
 }
 
 function getImages() {
-    console.log(phaseIndex.value)
     if (state.value == 'phasen') {
         return getPhaseByIndex(phaseIndex.value).images
             ? getPhaseByIndex(phaseIndex.value).images
