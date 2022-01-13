@@ -1,25 +1,22 @@
 <template>
     <div class="relative">
         <div
+            v-for="(block, i) in texts"
+            :key="block"
             class="flex flex-row scroll-px-4 md:scroll-px-0 overflow-y-hidden w-full snap-mandatory snap-x scrollbar-hidden"
             @scroll="update"
             ref="container"
         >
             <div
-                v-for="(texts, i) in getDescriptions(zippedTexts)"
-                :key="texts"
                 class="scroll-px-4 first:ml-4 last:mr-4 first:md:ml-0 md:last:mr-0"
             >
                 <div
-                    v-for="text in texts"
-                    class="pt-2 h-52 md:h-72"
+                    v-for="text in block.descriptions"
+                    class="py-2 mb-8 md:mb-12 h-64 md:h-fit"
                     :key="text"
                 >
-                    <h3
-                        v-if="i == 0"
-                        class="absolute -translate-y-6 md:-translate-y-8"
-                    >
-                        Wie
+                    <h3 class="absolute -translate-y-6 md:-translate-y-8">
+                        {{ block.title }}
                     </h3>
                     <div class="w-full h-0.5 bg-red-500"></div>
                     <p class="w-96 flex-shrink-0 snap-start mt-2 mr-4 md:mr-0">
@@ -42,12 +39,8 @@ const props = defineProps({
 })
 const { texts, phaseIndex } = toRefs(props)
 
-const zippedTexts = texts.value[0].descriptions.map((description, i) => [
-    description,
-    texts.value[1].descriptions[i],
-])
+watch(texts, () => console.log(texts.value))
 
-const isMd = useMediaQuery('(max-width: 768px)')
 const container = ref(0)
 const currentElement = ref(0)
 
@@ -77,12 +70,5 @@ function update() {
         currentElement.value = getCurrentElement()
         emit('phaseIndex', currentElement.value + 1)
     }
-}
-
-function getDescriptions(descriptions) {
-    if (phaseIndex > descriptions.length) {
-        return descriptions[0]
-    }
-    return isMd.value ? descriptions : [descriptions[phaseIndex.value - 1]]
 }
 </script>

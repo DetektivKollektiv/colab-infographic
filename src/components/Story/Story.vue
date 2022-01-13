@@ -94,36 +94,58 @@ watch(state, () => {
     }
 })
 
+const texts = reactive([])
+
 watch(phaseIndex, () => {
+    texts.value = getTexts()
     if (phaseIndex.value !== 6) {
         state.value = 'phasen'
     }
 })
 
-function getTexts() {
-    return state.value == 'phasen'
-        ? [
-              {
-                  title: 'Wer',
-                  descriptions: story.value.phases.map((phase) => phase.who),
-              },
-              {
-                  title: 'Wie',
-                  descriptions: story.value.phases.map((phase) => phase.how),
-              },
-          ]
-        : state.value == 'trends'
-        ? [
-              {
-                  title: 'Makrotrends',
-                  descriptions: [story.value.trends.makro],
-              },
-              {
-                  title: 'Mesotrends',
-                  descriptions: [story.value.trends.meso],
-              },
-          ]
-        : []
+const isMd = useMediaQuery('(max-width: 768px)')
+
+const getTexts = () => {
+    switch (state.value) {
+        case 'phasen':
+            return [
+                {
+                    title: 'Wer',
+                    descriptions: isMd.value
+                        ? story.value.phases.map((phase) => phase.who)
+                        : [
+                              story.value.phases.map((phase) => phase.who)[
+                                  phaseIndex.value - 1
+                              ],
+                          ],
+                },
+                {
+                    title: 'Wie',
+                    descriptions: isMd.value
+                        ? story.value.phases.map((phase) => phase.how)
+                        : [
+                              story.value.phases.map((phase) => phase.how)[
+                                  phaseIndex.value - 1
+                              ],
+                          ],
+                },
+            ]
+        case 'uebersicht':
+            return []
+        case 'trends':
+            return [
+                {
+                    title: 'Makrotrends',
+                    descriptions: [story.value.trends.makro],
+                },
+                {
+                    title: 'Mesotrends',
+                    descriptions: [story.value.trends.meso],
+                },
+            ]
+        default:
+            return []
+    }
 }
 
 function getImages() {
