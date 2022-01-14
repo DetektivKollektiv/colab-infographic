@@ -10,7 +10,8 @@
             <span :class="current_slide == 4 ? 'font-bold' : ''">Meso-Trends</span>
         </div>
         <div class="bg-white circle md:h-1/3 md:w-1/3 h-full w-full top-64 md:top-0">
-            <span class="whitespace-pre" :class="[5,6].includes(current_slide) ? 'font-bold' : ''">{{ current_slide == 1 ? 'Wert-\nschöpfungskette' : 'WSK' }}</span>
+            <span class="block md:hidden whitespace-pre" :class="[5,6].includes(current_slide) ? 'font-bold' : ''">{{ current_slide == 1 ? 'Wertschöpfungskette' : 'WSK' }}</span>
+            <span class="hidden md:block whitespace-pre" :class="[5,6].includes(current_slide) ? 'font-bold' : ''">{{ current_slide == 1 ? 'Wert-\nschöpfungskette' : 'WSK' }}</span>
         </div>
     </div>
 </template>

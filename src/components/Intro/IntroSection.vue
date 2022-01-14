@@ -3,6 +3,7 @@ import SectionArrows from './SectionArrows.vue'
 import Overview from './Overview.vue'
 import Overview1 from './Overview.vue'
 import TextBlock from '../TextBlock.vue'
+import Pagination from '../Pagination.vue'
 </script>
 
 
@@ -56,9 +57,9 @@ export default {
         class="intro-container relative flex flex-col justify-end overflow-hidden bg-left-bottom"
     >
         <div class="container-box h-full flex flex-col justify-between z-10">
-            <div class="flex flex-col py-20 gap-12 w-full h-5/6 md:h-full">
+            <div class="flex flex-col pt-10 pb-25 md:py-20 gap-12 w-full h-[70%] md:h-full">
                 <div
-                    class="flex flex-row snap-x snap-mandatory overflow-x-scroll w-full h-full"
+                    class="flex flex-row snap-x snap-mandatory overflow-x-scroll w-full h-full scrollbar-hidden"
                     ref="container"
                 >
                     <div
@@ -118,19 +119,19 @@ export default {
                         </div>
                     </div>
                     <div
-                        class="flex flex-col-reverse md:flex-col justify-between gap-5 min-w-full snap-center"
+                        class="flex flex-col-reverse md:flex-col justify-end md:justify-between md:gap-5 min-w-full snap-center"
                     >
-                        <div class="flex flex-col gap-8 md:w-1/3">
-                            <WSK class="pb-8" :showTitle="false"></WSK>
-                            <div class="pt-2">
+                        <div class="flex flex-col gap-4 md:gap-8 md:w-1/3">
+                            <WSK class="py-8 md:pt-0" :showTitle="false"></WSK>
+                            <div class="relative pt-2">
                                 <h3 class="absolute -translate-y-6 md:-translate-y-8">Wer</h3>
                                 <div class="h-0.5 bg-red-500"></div>
                                 <p
                                     class="w-full flex-shrink-0 mt-2 mr-4"
                                 >Wer macht’s? Akteur*innen sind je nach Phase z. B. Staaten, Verbände, Medien, Big-Tech-Plattformen, Einzelpersonen …</p>
                             </div>
-                            <div class="pt-2">
-                                <h3 class="absolute -translate-y-6 md:-translate-y-8">Wer</h3>
+                            <div class="relative pt-2">
+                                <h3 class="absolute -translate-y-6 md:-translate-y-8">Wie</h3>
                                 <div class="w-full h-0.5 bg-red-500"></div>
                                 <p
                                     class="w-full flex-shrink-0 mt-2 mr-4"
@@ -146,8 +147,11 @@ export default {
                         </div>
                     </div>
                 </div>
-
-                <SectionArrows @change_slide="method_slide" :current_slide="slide"></SectionArrows>
+                <SectionArrows
+                    class="hidden md:flex"
+                    @change_slide="method_slide"
+                    :current_slide="slide"
+                ></SectionArrows>
             </div>
         </div>
         <div
@@ -156,6 +160,8 @@ export default {
         >
             <Overview :current_slide="slide"></Overview>
         </div>
+
+        <Pagination :length="6" :index="slide" class="md:hidden absolute z-0 pb-2 w-full justify-center"></Pagination>
     </div>
 </template>
 
@@ -175,18 +181,18 @@ export default {
 }
 @media only screen and (max-width: 768px) {
     .overview-intro-slide {
-        bottom: -240vw;
+        bottom: -247vw;
         left: -100vw;
         width: 300vw;
         height: 300vw;
     }
-        .intro-container {
-        height: 90vh;
+    .intro-container {
+        height: 95vh;
+        min-height: 667px;
         /* background-image: ; */
         background-image: url("@/assets/bubbles_mobile.svg"),
             linear-gradient(rgba(255, 255, 255, 1), rgba(255, 246, 204, 1));
     }
-
 }
 .follow-up-slides {
     bottom: -25vw;
