@@ -4,6 +4,7 @@ import Overview from './Overview.vue'
 import Overview1 from './Overview.vue'
 import TextBlock from '../TextBlock.vue'
 import Pagination from '../Pagination.vue'
+import PageCount from '../PageCount.vue'
 </script>
 
 
@@ -162,6 +163,7 @@ export default {
         </div>
 
         <Pagination :length="6" :index="slide" class="md:hidden absolute z-0 pb-2 w-full justify-center"></Pagination>
+        <PageCount :length="6" :index="slide" class="md:hidden absolute top-0 right-0 mt-4 mr-4"></PageCount>
     </div>
 </template>
 
