@@ -32,12 +32,6 @@
                         >
                             Übersicht</ButtonText
                         >
-                        <ButtonText
-                            @click="emit('state', 'trends')"
-                            :active="state === 'trends'"
-                        >
-                            Trends</ButtonText
-                        >
                     </div>
                 </div>
             </div>

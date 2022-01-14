@@ -1,56 +1,51 @@
 <template>
-    <Hero :story="story" :state="state" @state="setState"></Hero>
-    <WSK
-        v-if="active"
-        @phaseIndex="setPhaseIndex"
-        :phaseIndex="phaseIndex"
-        class="absolute w-full"
-    ></WSK>
-    <div
-        class="transition-all duration-300 overflow-y-hidden"
-        :class="active ? 'max-h-[1200px]' : 'max-h-[0px]'"
-    >
+    <div class="">
+        <Hero :story="story" :state="state" @state="setState"></Hero>
+        <WSK
+            v-if="active"
+            @phaseIndex="setPhaseIndex"
+            :phaseIndex="phaseIndex"
+            :marginTop="false"
+            :border="true"
+            :showSummaries="state == 'uebersicht'"
+            :summaries="summaries"
+            class="absolute w-full"
+        ></WSK>
+        <!--    -->
         <div
-            v-if="state == 'uebersicht'"
-            class="grid grid-rows-5 md:grid-cols-5 container-box my-12"
+            class="transition-all duration-300 overflow-y-hidden"
+            :class="active ? 'max-h-[1200px]' : 'max-h-[0px]'"
         >
-            <div
-                class="md:flex items-center flex-col md:text-center cursor-pointer"
-                v-for="phase in story.phases"
-                :key="phase"
-            >
-                <h3 class="md:hidden">{{ phase.title }}</h3>
-                <p class="md:w-3/4 max-w-md text-sm">
-                    {{ phase.summary.text }}
-                </p>
-            </div>
-        </div>
-        <div v-if="state == 'phasen' || state == 'trends'" class="">
-            <div
-                class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 container-box"
-                :class="active ? 'my-24 md:my-36' : ''"
-            >
-                <div class="space-y-8 flex-shrink-0 md:mr-12">
-                    <Text
-                        :texts="getTexts()"
-                        :phaseIndex="phaseIndex"
-                        @phaseIndex="setPhaseIndex"
-                    >
-                    </Text>
+            <div v-if="state == 'phasen' || state == 'trends'" class="">
+                <div
+                    class="flex flex-col flex-wrap md:flex-row justify-between space-y-8 md:space-y-0 container-box"
+                    :class="active ? 'my-24 md:my-36' : ''"
+                >
+                    <div class="space-y-8 flex-shrink-0 md:mr-12">
+                        <Text
+                            :texts="getTexts()"
+                            :phaseIndex="phaseIndex"
+                            @phaseIndex="setPhaseIndex"
+                        >
+                        </Text>
+                    </div>
+                    <img
+                        class="md:h-auto object-cover max-w-xl"
+                        v-for="image in getImages()"
+                        :key="image"
+                        :src="image"
+                        alt=""
+                        srcset=""
+                    />
                 </div>
-                <img
-                    class="md:h-auto flex-shrink scroll-mx-4 px-4 md:px-8 object-cover overflow-hidden"
-                    v-for="image in getImages()"
-                    :key="image"
-                    :src="image"
-                    alt=""
-                    srcset=""
-                />
-            </div>
-            <div v-if="state == 'phasen'" class="container-box mb-12 md:mb-16">
-                <Sources
-                    :sources="getPhaseByIndex(phaseIndex).sources"
-                ></Sources>
+                <div
+                    v-if="state == 'phasen'"
+                    class="container-box mb-12 md:mb-16"
+                >
+                    <Sources
+                        :sources="getPhaseByIndex(phaseIndex).sources"
+                    ></Sources>
+                </div>
             </div>
         </div>
     </div>
@@ -70,6 +65,8 @@ const props = defineProps({
 
 const { story, active } = toRefs(props)
 const phaseIndex = ref(1)
+
+const summaries = story.value.phases.map((phase) => phase.summary.text)
 
 function setPhaseIndex(i) {
     phaseIndex.value = i
@@ -128,19 +125,6 @@ const getTexts = () => {
                                   phaseIndex.value - 1
                               ],
                           ],
-                },
-            ]
-        case 'uebersicht':
-            return []
-        case 'trends':
-            return [
-                {
-                    title: 'Makrotrends',
-                    descriptions: [story.value.trends.makro],
-                },
-                {
-                    title: 'Mesotrends',
-                    descriptions: [story.value.trends.meso],
                 },
             ]
         default:
