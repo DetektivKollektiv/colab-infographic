@@ -81,9 +81,7 @@ const props = defineProps({
         default: false,
     },
 })
-
 const { phaseIndex, showTitle, showDescription } = toRefs(props)
-
 const phases = [
     'Initiieren',
     'Produzieren',
@@ -91,7 +89,6 @@ const phases = [
     'Verbreiten',
     'Beeinflussung',
 ]
-
 const emit = defineEmits(['phaseIndex'])
 </script>
 

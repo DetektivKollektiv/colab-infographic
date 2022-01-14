@@ -7,8 +7,8 @@
         class="absolute w-full"
     ></WSK>
     <div
-        class="transition-all duration-300"
-        :style="{ maxHeight: active ? '100vh' : '0vh' }"
+        class="transition-all duration-300 overflow-y-hidden"
+        :class="active ? 'max-h-[1200px]' : 'max-h-[0px]'"
     >
         <div
             v-if="state == 'uebersicht'"
@@ -25,12 +25,10 @@
                 </p>
             </div>
         </div>
-        <div
-            v-if="state == 'phasen' || state == 'trends'"
-            class="container-box"
-        >
+        <div v-if="state == 'phasen' || state == 'trends'" class="">
             <div
-                class="flex flex-col md:flex-row justify-between my-24 md:my-36 space-y-8 md:space-y-0"
+                class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 container-box"
+                :class="active ? 'my-24 md:my-36' : ''"
             >
                 <div class="space-y-8 flex-shrink-0 md:mr-12">
                     <Text
@@ -41,7 +39,7 @@
                     </Text>
                 </div>
                 <img
-                    class="md:h-auto flex-shrink object-cover overflow-hidden"
+                    class="md:h-auto flex-shrink scroll-mx-4 px-4 md:px-8 object-cover overflow-hidden"
                     v-for="image in getImages()"
                     :key="image"
                     :src="image"
@@ -49,7 +47,7 @@
                     srcset=""
                 />
             </div>
-            <div v-if="state == 'phasen'">
+            <div v-if="state == 'phasen'" class="container-box mb-12 md:mb-16">
                 <Sources
                     :sources="getPhaseByIndex(phaseIndex).sources"
                 ></Sources>
@@ -96,36 +94,58 @@ watch(state, () => {
     }
 })
 
+const texts = reactive([])
+
 watch(phaseIndex, () => {
+    texts.value = getTexts()
     if (phaseIndex.value !== 6) {
         state.value = 'phasen'
     }
 })
 
-function getTexts() {
-    return state.value == 'phasen'
-        ? [
-              {
-                  title: 'Wer',
-                  descriptions: story.value.phases.map((phase) => phase.who),
-              },
-              {
-                  title: 'Wie',
-                  descriptions: story.value.phases.map((phase) => phase.how),
-              },
-          ]
-        : state.value == 'trends'
-        ? [
-              {
-                  title: 'Makrotrends',
-                  descriptions: [story.value.trends.makro],
-              },
-              {
-                  title: 'Mesotrends',
-                  descriptions: [story.value.trends.meso],
-              },
-          ]
-        : []
+const isMd = useMediaQuery('(max-width: 768px)')
+
+const getTexts = () => {
+    switch (state.value) {
+        case 'phasen':
+            return [
+                {
+                    title: 'Wer',
+                    descriptions: isMd.value
+                        ? story.value.phases.map((phase) => phase.who)
+                        : [
+                              story.value.phases.map((phase) => phase.who)[
+                                  phaseIndex.value - 1
+                              ],
+                          ],
+                },
+                {
+                    title: 'Wie',
+                    descriptions: isMd.value
+                        ? story.value.phases.map((phase) => phase.how)
+                        : [
+                              story.value.phases.map((phase) => phase.how)[
+                                  phaseIndex.value - 1
+                              ],
+                          ],
+                },
+            ]
+        case 'uebersicht':
+            return []
+        case 'trends':
+            return [
+                {
+                    title: 'Makrotrends',
+                    descriptions: [story.value.trends.makro],
+                },
+                {
+                    title: 'Mesotrends',
+                    descriptions: [story.value.trends.meso],
+                },
+            ]
+        default:
+            return []
+    }
 }
 
 function getImages() {

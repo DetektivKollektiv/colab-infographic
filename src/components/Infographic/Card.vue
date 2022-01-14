@@ -2,15 +2,7 @@
     <div
         @mouseover="hover = true"
         @mouseleave="hover = false"
-        class="
-            p-4
-            bg-gray-100
-            rounded-md
-            w-full
-            transition-all
-            duration-300
-            overflow-hidden
-        "
+        class="p-4 bg-gray-100 rounded-md w-full transition-all duration-300 overflow-hidden"
         :class="{
             'bg-purple-500 text-white': hover,
             'duration-75 border-2 border-purple-500 bg-purple-100 ': active,
