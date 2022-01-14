@@ -7,19 +7,18 @@
             ></div>
 
             <div
-                class="w-0 h-[500vw] relative left-1/2 -translate-x-1/2 transition-all hidden md:block"
+                class="w-0 h-[500vw] relative left-1/2 -translate-x-1/2 transition-all hidden lg:block"
                 :style="getStyle(currentRotation * -1)"
             >
                 <div
                     class="h-[500vw] w-0 absolute left-1/2 cursor-pointer"
-                    v-for="trend in getTrends(trends)"
+                    v-for="trend in trendsWithRotation"
                     :key="trend"
                     :style="getStyle(trend.rotation)"
                     :class="{
-                        'opacity-0 md:opacity-50':
-                            currentRotation !== trend.rotation,
+                        'opacity-0 md:opacity-50': isActive(trend.rotation),
                     }"
-                    @click="setRotation(trend.rotation)"
+                    @click="setCurrentRotation(trend.rotation)"
                 >
                     <TextBlock
                         class="w-screen -translate-x-1/2 mt-[40vh] -translate-y-1/2"
@@ -39,9 +38,9 @@
                 </div>
             </div>
 
-            <div class="md:hidden">
+            <div class="lg:hidden">
                 <TextSlide
-                    :trends="getTrends(trends)"
+                    :trends="trendsWithRotation"
                     :subtitle="subtitle"
                 ></TextSlide>
             </div>
@@ -49,7 +48,7 @@
     </div>
 </template>
 <script setup>
-import { onMounted } from '@vue/runtime-core'
+import { onMounted, watch, watchEffect } from '@vue/runtime-core'
 
 const props = defineProps({
     bg: {
@@ -70,15 +69,32 @@ const props = defineProps({
 
 const { width } = useWindowSize()
 
-const rotation = computed(() => Math.max(24 - width.value / 140, 6))
+function clamp(num, min, max) {
+    return num <= min ? min : num >= max ? max : num
+}
+
+const rotation = computed(() => Math.max(32 - width.value / 80, 10))
+
+watchEffect(() => {
+    console.log(rotation.value)
+})
 
 const { bg, color, trends } = toRefs(props)
 
-function getTrends(trends) {
-    return trends.map((trend, i) => ({
-        rotation: rotation.value * i,
-        headline: trend.headline,
-        text: trend.text,
+function getElement(array, element, value) {
+    return array[array.indexOf(element) + value] || array[0]
+}
+
+const trendsFormated = reactive(
+    setRotations([...trends.value, ...trends.value])
+)
+
+const trendsWithRotation = computed(() => setRotations(trendsFormated))
+
+function setRotations(array) {
+    return array.map((trend, i) => ({
+        ...trend,
+        rotation: rotation.value * (i - array.length / 2),
     }))
 }
 
@@ -87,10 +103,35 @@ function getStyle(rotation) {
         transform: `rotate(${rotation}deg) translateX(-50%)`,
     }
 }
-const currentRotation = ref(0)
+const currentRotation = ref(
+    trendsWithRotation.value[trendsWithRotation.value.length / 2].rotation
+)
 
-function setRotation(rotation) {
+function setCurrentRotation(rotation) {
     currentRotation.value = rotation
 }
+
+const activeElement = computed(() =>
+    trendsWithRotation.value.findIndex(
+        (trend) => trend.rotation === currentRotation.value
+    )
+)
+
+watch(activeElement, (newValue, prevValue) => {
+    if (Math.max(0, newValue - prevValue)) {
+        // push first element of array to the end
+        trendsFormated.push(trendsFormated.shift())
+    } else {
+        // push last element of array to the beginning
+        trendsFormated.unshift(trendsFormated.pop())
+    }
+    console.log(
+        trendsWithRotation.value[0],
+        trendsWithRotation.value[trendsFormated.length - 1]
+    )
+})
+
+function isActive(rotation) {
+    return currentRotation.value !== rotation
+}
 </script>
-<style lang=""></style>
