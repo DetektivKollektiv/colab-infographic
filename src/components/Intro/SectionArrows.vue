@@ -31,27 +31,45 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-row content-center gap-6 text-2xl">
+  <div class="flex flex-row items-center gap-6 text-2xl">
     <button v-on:click="goToPrevSlide" class="text-red-500">
       <i class="fas fa-caret-left"></i>
     </button>
-    <button v-on:click="goToSlide(1)" v-bind:class="[current_slide == 1 ? 'highlight' : '']">
-      <span>1</span>
+    <button
+      v-on:click="goToSlide(1)"
+      v-bind:class="[current_slide == 1 ? 'highlight' : '']"
+      class="w-4 h-4 border-2 rounded-full border-red-500"
+    >
     </button>
-    <button v-on:click="goToSlide(2)" v-bind:class="[current_slide == 2 ? 'highlight' : '']">
-      <span>2</span>
+    <button
+      v-on:click="goToSlide(2)"
+      v-bind:class="[current_slide == 2 ? 'highlight' : '']"
+      class="w-4 h-4 border-2 rounded-full border-red-500"
+    >
     </button>
-    <button v-on:click="goToSlide(3)" v-bind:class="[current_slide == 3 ? 'highlight' : '']">
-      <span>3</span>
+    <button
+      v-on:click="goToSlide(3)"
+      v-bind:class="[current_slide == 3 ? 'highlight' : '']"
+      class="w-4 h-4 border-2 rounded-full border-red-500"
+    >
     </button>
-    <button v-on:click="goToSlide(4)" v-bind:class="[current_slide == 4 ? 'highlight' : '']">
-      <span>4</span>
+    <button
+      v-on:click="goToSlide(4)"
+      v-bind:class="[current_slide == 4 ? 'highlight' : '']"
+      class="w-4 h-4 border-2 rounded-full border-red-500"
+    >
     </button>
-    <button v-on:click="goToSlide(5)" v-bind:class="[current_slide == 5 ? 'highlight' : '']">
-      <span>5</span>
+    <button
+      v-on:click="goToSlide(5)"
+      v-bind:class="[current_slide == 5 ? 'highlight' : '']"
+      class="w-4 h-4 border-2 rounded-full border-red-500"
+    >
     </button>
-    <button v-on:click="goToSlide(6)" v-bind:class="[current_slide == 6 ? 'highlight' : '']">
-      <span>6</span>
+    <button
+      v-on:click="goToSlide(6)"
+      v-bind:class="[current_slide == 6 ? 'highlight' : '']"
+      class="w-4 h-4 border-2 rounded-full border-red-500"
+    >
     </button>
     <button v-on:click="goToNextSlide" class="text-red-500">
       <i class="fas fa-caret-right"></i>
@@ -61,6 +79,6 @@ export default {
 
 <style scoped>
 .highlight {
-  @apply text-red-500 text-4xl font-bold;
+  @apply bg-red-500
 }
 </style>

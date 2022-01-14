@@ -109,7 +109,7 @@ export default {
                     <div
                         class="h-full flex flex-col-reverse md:flex-col justify-end md:justify-between gap-5 min-w-full snap-center"
                     >
-                        <WSK md:showDescription></WSK>
+                        <WSK md:showDescription :phaseIndex=1></WSK>
                         <div class="md:w-7/12">
                             <h1
                                 class="text-2xl md:text-7xl"
