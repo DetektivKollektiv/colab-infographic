@@ -1,27 +1,27 @@
 <template>
     <div class="overflow-hidden bg-yellow-500" :class="bg">
-        <div class="w-screen relative h-[80vh] min-h-[600px]">
+        <div class="w-screen relative h-[80vw] min-h-[600px]">
             <div
                 class="rounded-full w-[500vw] h-[500vw] absolute -translate-x-1/2 left-1/2"
                 :class="color"
             ></div>
 
             <div
-                class="w-0 h-[500vw] relative left-1/2 -translate-x-1/2 transition-all hidden lg:block"
-                :style="getStyle(currentRotation * -1)"
+                class="w-0 h-[500vw] relative left-1/2 -translate-x-1/2 transition-all block"
+                :style="getStyle(currentElement.rotation * -1)"
             >
                 <div
                     class="h-[500vw] w-0 absolute left-1/2 cursor-pointer"
-                    v-for="trend in trendsWithRotation"
+                    v-for="trend in trendsFormated"
                     :key="trend"
                     :style="getStyle(trend.rotation)"
                     :class="{
-                        'opacity-0 md:opacity-50': isActive(trend.rotation),
+                        'opacity-0 md:opacity-50': isActive(trend),
                     }"
-                    @click="setCurrentRotation(trend.rotation)"
+                    @click="setCurrentElement(trend)"
                 >
                     <TextBlock
-                        class="w-screen -translate-x-1/2 mt-[40vh] -translate-y-1/2"
+                        class="w-screen -translate-x-1/2 mt-[40vw] -translate-y-1/2"
                     >
                         <template v-slot:subtitle>
                             <p class="font-serif">{{ subtitle }}</p>
@@ -38,17 +38,14 @@
                 </div>
             </div>
 
-            <div class="lg:hidden">
-                <TextSlide
-                    :trends="trendsWithRotation"
-                    :subtitle="subtitle"
-                ></TextSlide>
+            <div class="hidden">
+                <TextSlide :trends="trends" :subtitle="subtitle"></TextSlide>
             </div>
         </div>
     </div>
 </template>
 <script setup>
-import { onMounted, watch, watchEffect } from '@vue/runtime-core'
+import { reactive, watch } from '@vue/runtime-core'
 
 const props = defineProps({
     bg: {
@@ -69,27 +66,13 @@ const props = defineProps({
 
 const { width } = useWindowSize()
 
-function clamp(num, min, max) {
-    return num <= min ? min : num >= max ? max : num
-}
-
 const rotation = computed(() => Math.max(32 - width.value / 80, 10))
 
-watchEffect(() => {
-    console.log(rotation.value)
-})
-
 const { bg, color, trends } = toRefs(props)
-
-function getElement(array, element, value) {
-    return array[array.indexOf(element) + value] || array[0]
-}
 
 const trendsFormated = reactive(
     setRotations([...trends.value, ...trends.value])
 )
-
-const trendsWithRotation = computed(() => setRotations(trendsFormated))
 
 function setRotations(array) {
     return array.map((trend, i) => ({
@@ -103,35 +86,33 @@ function getStyle(rotation) {
         transform: `rotate(${rotation}deg) translateX(-50%)`,
     }
 }
-const currentRotation = ref(
-    trendsWithRotation.value[trendsWithRotation.value.length / 2].rotation
-)
+const currentElement = ref(trendsFormated[trendsFormated.length / 2])
 
-function setCurrentRotation(rotation) {
-    currentRotation.value = rotation
+function setCurrentElement(element) {
+    currentElement.value = element
 }
 
-const activeElement = computed(() =>
-    trendsWithRotation.value.findIndex(
-        (trend) => trend.rotation === currentRotation.value
-    )
-)
-
-watch(activeElement, (newValue, prevValue) => {
-    if (Math.max(0, newValue - prevValue)) {
-        // push first element of array to the end
+watch(currentElement, (newValue, prevValue) => {
+    if (prevValue.rotation < newValue.rotation) {
         trendsFormated.push(trendsFormated.shift())
+
+        trendsFormated[trendsFormated.length - 1].rotation =
+            trendsFormated[trendsFormated.length - 2].rotation + rotation.value
     } else {
-        // push last element of array to the beginning
         trendsFormated.unshift(trendsFormated.pop())
+
+        trendsFormated[0].rotation = trendsFormated[1].rotation - rotation.value
     }
-    console.log(
-        trendsWithRotation.value[0],
-        trendsWithRotation.value[trendsFormated.length - 1]
-    )
 })
 
-function isActive(rotation) {
-    return currentRotation.value !== rotation
+function updateRotations() {
+    trendsFormated[0].rotation = trendsFormated[1].rotation - rotation.value
+
+    trendsFormated[trendsFormated.length - 1].rotation =
+        trendsFormated[trendsFormated.length - 2].rotation + rotation.value
+}
+
+function isActive(element) {
+    return currentElement.value !== element
 }
 </script>
