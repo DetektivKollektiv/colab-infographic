@@ -15,15 +15,19 @@
             ></WSK>
         </div>
         <div
-            class="transition-all duration-300 overflow-y-hidden"
+            class="transition-all duration-300 overflow-hidden"
             :class="active ? `max-h-[12000px];` : 'max-h-[0px]'"
         >
-            <div v-if="state == 'phasen'" :style="{ marginTop }">
+            <div
+                v-if="state == 'phasen'"
+                :style="{ marginTop }"
+                class="container-box pt-12"
+            >
                 <div
-                    class="flex flex-col flex-wrap md:flex-row justify-between space-y-8 md:space-y-0 container-box"
-                    :class="active ? 'my-24 md:my-32' : ''"
+                    class="flex flex-col flex-wrap md:flex-row justify-between space-y-8 md:space-y-0"
+                    :class="active ? '' : ''"
                 >
-                    <div class="space-y-8 flex-shrink-0 md:mr-12">
+                    <div class="flex-shrink-0 md:mr-12">
                         <Text
                             :texts="getTexts()"
                             :phaseIndex="phaseIndex"
@@ -40,19 +44,16 @@
                         srcset=""
                     />
                 </div>
-                <div class="container-box">
-                    <ButtonText @click="next" class="float-right"
-                        >Weiter</ButtonText
-                    >
-                </div>
-                <div
-                    v-if="state == 'phasen'"
-                    class="container-box mb-12 md:mb-16"
-                >
+                <div class="mb-8 md:mb-12">
                     <Sources
                         :sources="getPhaseByIndex(phaseIndex).sources"
                     ></Sources>
                 </div>
+                <ButtonText
+                    @click="next"
+                    class="float-right mb-8 md:mb-12 hidden md:block"
+                    >Weiter</ButtonText
+                >
             </div>
 
             <div
