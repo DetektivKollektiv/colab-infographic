@@ -1,13 +1,13 @@
 <template>
     <div class="overflow-hidden bg-yellow-500" :class="bg">
-        <div class="w-screen relative h-[80vw] min-h-[600px]">
+        <div class="w-screen relative min-h-[600px] h-[30rem] md:h-[40rem]">
             <div
                 class="rounded-full w-[500vw] h-[500vw] absolute -translate-x-1/2 left-1/2"
                 :class="color"
             ></div>
 
             <div
-                class="w-0 h-[500vw] relative left-1/2 -translate-x-1/2 transition-all block"
+                class="w-0 h-[500vw] relative left-1/2 -translate-x-1/2 transition-all hidden md:block"
                 :style="getStyle(currentElement.rotation * -1)"
             >
                 <div
@@ -21,7 +21,7 @@
                     @click="setCurrentElement(trend)"
                 >
                     <TextBlock
-                        class="w-screen -translate-x-1/2 mt-[40vw] -translate-y-1/2"
+                        class="w-screen -translate-x-1/2 mt-[20rem] -translate-y-1/2"
                     >
                         <template v-slot:subtitle>
                             <p class="font-serif">{{ subtitle }}</p>
@@ -38,7 +38,7 @@
                 </div>
             </div>
 
-            <div class="hidden">
+            <div class="md:hidden">
                 <TextSlide :trends="trends" :subtitle="subtitle"></TextSlide>
             </div>
         </div>

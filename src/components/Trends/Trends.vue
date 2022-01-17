@@ -1,7 +1,7 @@
 <template>
     <div class="text-center">
         <div
-            class="h-[50vh] w-full bg-yellow-500 flex justify-center items-center"
+            class="h-[30rem] md:h-[40rem] w-full bg-yellow-500 flex justify-center items-center"
         >
             <TextBlock>
                 <template v-slot:subtitle>
