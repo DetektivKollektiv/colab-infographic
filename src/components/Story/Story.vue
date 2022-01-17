@@ -51,13 +51,13 @@
 
             <div
                 v-if="state == 'uebersicht'"
-                class="relative h-[140vh] lg:h-[110vh] min-h-[600px] overflow-hidden bg-yellow-300"
+                class="relative h-[65rem] md:h-[85rem] lg:h-[65rem] min-h-[600px] overflow-hidden bg-yellow-300"
             >
                 <div
-                    class="rounded-full w-[500vw] h-[500vw] mb-[60vh] lg:mb-[60vh] absolute bottom-0 -translate-x-1/2 left-1/2 flex justify-center text-center bg-white"
+                    class="rounded-full w-[500vw] h-[500vw] mb-[25rem] md:mb-[35rem] absolute bottom-0 -translate-x-1/2 left-1/2 flex justify-center text-center bg-white"
                 ></div>
                 <div
-                    class="absolute bottom-0 w-screen flex justify-center z-10 mb-[8vh] lg:mb-[12vh]"
+                    class="absolute bottom-0 w-screen flex justify-center z-10 mb-[5rem] md:mb-[7rem]"
                 >
                     <TextBlock class="text-center">
                         <template v-slot:subtitle>
@@ -124,7 +124,6 @@ const texts = reactive([])
 
 watch(phaseIndex, () => {
     texts.value = getTexts()
-    console.log(texts.value)
     if (phaseIndex.value !== 6) {
         state.value = 'phasen'
     }
@@ -133,32 +132,31 @@ watch(phaseIndex, () => {
 const isMd = useMediaQuery('(max-width: 768px)')
 
 const getTexts = () => {
-    switch (state.value) {
-        case 'phasen':
-            return [
-                {
-                    title: 'Wer',
-                    descriptions: isMd.value
-                        ? story.value.phases.map((phase) => phase.who)
-                        : [
-                              story.value.phases.map((phase) => phase.who)[
-                                  phaseIndex.value - 1
-                              ],
+    if (state.value == 'phasen') {
+        return [
+            {
+                title: 'Wer',
+                descriptions: isMd.value
+                    ? story.value.phases.map((phase) => phase.who)
+                    : [
+                          story.value.phases.map((phase) => phase.who)[
+                              phaseIndex.value - 1
                           ],
-                },
-                {
-                    title: 'Wie',
-                    descriptions: isMd.value
-                        ? story.value.phases.map((phase) => phase.how)
-                        : [
-                              story.value.phases.map((phase) => phase.how)[
-                                  phaseIndex.value - 1
-                              ],
+                      ],
+            },
+            {
+                title: 'Wie',
+                descriptions: isMd.value
+                    ? story.value.phases.map((phase) => phase.how)
+                    : [
+                          story.value.phases.map((phase) => phase.how)[
+                              phaseIndex.value - 1
                           ],
-                },
-            ]
-        default:
-            return []
+                      ],
+            },
+        ]
+    } else {
+        return []
     }
 }
 
