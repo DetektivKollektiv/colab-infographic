@@ -51,10 +51,13 @@
 
             <div
                 v-if="state == 'uebersicht'"
-                class="relative h-[65rem] md:h-[85rem] lg:h-[65rem] min-h-[600px] overflow-hidden bg-yellow-300"
+                class="relative h-[65rem] md:h-[85rem] lg:h-[65rem] min-h-[600px] overflow-hidden bg-yellow-500"
             >
                 <div
-                    class="rounded-full w-[500vw] h-[500vw] mb-[25rem] md:mb-[35rem] absolute bottom-0 -translate-x-1/2 left-1/2 flex justify-center text-center bg-white"
+                    class="rounded-full w-[500vw] h-[500vw] mb-[24rem] md:mb-[33rem] absolute bottom-0 -translate-x-1/2 left-1/2 flex justify-center text-center bg-yellow-300"
+                ></div>
+                <div
+                    class="rounded-full w-[500vw] h-[500vw] mb-[26rem] md:mb-[37rem] absolute bottom-0 -translate-x-1/2 left-1/2 flex justify-center text-center bg-white"
                 ></div>
                 <div
                     class="absolute bottom-0 w-screen flex justify-center z-10 mb-[5rem] md:mb-[7rem]"
