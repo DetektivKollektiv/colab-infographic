@@ -5,6 +5,7 @@
             <WSK
                 v-if="active"
                 @phaseIndex="setPhaseIndex"
+                @height="setMarginTop"
                 :phaseIndex="phaseIndex"
                 :marginTop="false"
                 :border="true"
@@ -15,12 +16,13 @@
         </div>
         <div
             class="transition-all duration-300 overflow-y-hidden"
-            :class="active ? 'max-h-[12000px]' : 'max-h-[0px]'"
+            :class="active ? `max-h-[12000px];` : 'max-h-[0px]'"
+            :style="{ marginTop }"
         >
             <div v-if="state == 'phasen'">
                 <div
                     class="flex flex-col flex-wrap md:flex-row justify-between space-y-8 md:space-y-0 container-box"
-                    :class="active ? 'my-24 md:my-36' : ''"
+                    :class="active ? 'my-12 md:my-24' : ''"
                 >
                     <div class="space-y-8 flex-shrink-0 md:mr-12">
                         <Text
@@ -51,7 +53,7 @@
 
             <div
                 v-if="state == 'uebersicht'"
-                class="relative h-[65rem] md:h-[85rem] lg:h-[65rem] min-h-[600px] overflow-hidden bg-yellow-500"
+                class="relative h-[65rem] md:h-[85rem] lg:h-[50rem] min-h-[600px] overflow-hidden bg-yellow-500"
             >
                 <div
                     class="rounded-full w-[500vw] h-[500vw] mb-[24rem] md:mb-[33rem] absolute bottom-0 -translate-x-1/2 left-1/2 flex justify-center text-center bg-yellow-300"
@@ -171,5 +173,12 @@ function getImages() {
     } else {
         return []
     }
+}
+
+const marginTop = ref(0)
+
+function setMarginTop(height) {
+    marginTop.value = height.value + 'px'
+    console.log('height', height.value)
 }
 </script>

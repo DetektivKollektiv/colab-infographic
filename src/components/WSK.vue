@@ -11,7 +11,10 @@
                 >
                     <div class="h-full w-full bg-red-500"></div>
                 </div>
-                <div class="flex z-20 relative justify-between container-box">
+                <div
+                    class="flex z-20 relative justify-between container-box"
+                    ref="elementContainer"
+                >
                     <div
                         v-for="phase in phasesWithZeros"
                         :key="phase.index"
@@ -141,7 +144,7 @@ function insertZeros(array) {
 const phasesWithZeros = insertZeros(phases)
 console.log({ phasesWithZeros })
 
-const emit = defineEmits(['phaseIndex'])
+const emit = defineEmits(['phaseIndex', 'height'])
 
 const marginTopClass = computed(() => {
     if (marginTop.value) {
@@ -154,6 +157,11 @@ const marginTopClass = computed(() => {
         return ''
     }
 })
+
+const elementContainer = ref(null)
+const { height: elementContainerHeight } = useElementBounding(elementContainer)
+
+watchEffect(() => emit('height', elementContainerHeight))
 
 const phasesElements = ref([])
 const left = ref(0)
