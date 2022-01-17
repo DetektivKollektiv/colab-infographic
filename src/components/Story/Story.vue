@@ -1,22 +1,23 @@
 <template>
-    <div class="">
-        <Hero :story="story" :state="state" @state="setState"></Hero>
-        <WSK
-            v-if="active"
-            @phaseIndex="setPhaseIndex"
-            :phaseIndex="phaseIndex"
-            :marginTop="false"
-            :border="true"
-            :showSummaries="state == 'uebersicht'"
-            :summaries="summaries"
-            class="absolute w-full"
-        ></WSK>
-        <!--    -->
+    <div>
+        <div class="relative z-20">
+            <Hero :story="story" :state="state" @state="setState"></Hero>
+            <WSK
+                v-if="active"
+                @phaseIndex="setPhaseIndex"
+                :phaseIndex="phaseIndex"
+                :marginTop="false"
+                :border="true"
+                :showSummaries="state == 'uebersicht'"
+                :summaries="summaries"
+                class="absolute w-full"
+            ></WSK>
+        </div>
         <div
             class="transition-all duration-300 overflow-y-hidden"
-            :class="active ? 'max-h-[1200px]' : 'max-h-[0px]'"
+            :class="active ? 'max-h-[12000px]' : 'max-h-[0px]'"
         >
-            <div v-if="state == 'phasen' || state == 'trends'" class="">
+            <div v-if="state == 'phasen'">
                 <div
                     class="flex flex-col flex-wrap md:flex-row justify-between space-y-8 md:space-y-0 container-box"
                     :class="active ? 'my-24 md:my-36' : ''"
@@ -45,6 +46,34 @@
                     <Sources
                         :sources="getPhaseByIndex(phaseIndex).sources"
                     ></Sources>
+                </div>
+            </div>
+
+            <div
+                v-if="state == 'uebersicht'"
+                class="relative h-[140vh] lg:h-[110vh] min-h-[600px] overflow-hidden bg-yellow-300"
+            >
+                <div
+                    class="rounded-full w-[500vw] h-[500vw] mb-[60vh] lg:mb-[60vh] absolute bottom-0 -translate-x-1/2 left-1/2 flex justify-center text-center bg-white"
+                ></div>
+                <div
+                    class="absolute bottom-0 w-screen flex justify-center z-10 mb-[8vh] lg:mb-[12vh]"
+                >
+                    <TextBlock class="text-center">
+                        <template v-slot:subtitle>
+                            <p class="font-serif">
+                                {{ story.trends.subtitle }}
+                            </p>
+                        </template>
+                        <template v-slot:title>
+                            <h1>{{ story.trends.title }}</h1>
+                        </template>
+                        <template v-slot:description>
+                            <p>
+                                {{ story.trends.description }}
+                            </p>
+                        </template>
+                    </TextBlock>
                 </div>
             </div>
         </div>
@@ -95,6 +124,7 @@ const texts = reactive([])
 
 watch(phaseIndex, () => {
     texts.value = getTexts()
+    console.log(texts.value)
     if (phaseIndex.value !== 6) {
         state.value = 'phasen'
     }

@@ -45,8 +45,6 @@ const props = defineProps({
 })
 const { texts, phaseIndex } = toRefs(props)
 
-watch(texts, () => console.log(texts.value))
-
 const container = ref(0)
 
 const currentElement = ref(0)
@@ -74,8 +72,6 @@ const active = (index) => {
 
 function update() {
     if (getCurrentElement() !== currentElement.value) {
-        console.log('update', currentElement.value)
-
         currentElement.value = getCurrentElement()
         emit('phaseIndex', currentElement.value + 1)
     }

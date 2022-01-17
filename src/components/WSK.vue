@@ -11,7 +11,7 @@
                 >
                     <div class="h-full w-full bg-red-500"></div>
                 </div>
-                <div class="flex z-10 relative justify-between container-box">
+                <div class="flex z-20 relative justify-between container-box">
                     <div
                         v-for="phase in phasesWithZeros"
                         :key="phase.index"
@@ -59,7 +59,7 @@
                                 </p>
                                 <p
                                     v-if="showSummaries"
-                                    class="max-w-xs px-4 hidden md:block"
+                                    class="max-w-xs px-4 hidden lg:block"
                                 >
                                     {{ summaries[phase.index] }}
                                 </p>
@@ -73,11 +73,11 @@
                     </div>
                 </div>
             </div>
-            <div v-if="showSummaries" class="container-box">
+            <div v-if="showSummaries" class="container-box py-24 space-y-4">
                 <div
                     v-for="(sum, i) in summaries"
                     :key="sum"
-                    class="flex flex-col md:hidden"
+                    class="flex flex-col lg:hidden"
                 >
                     <h2>{{ phases[i] }}</h2>
                     <p>
@@ -156,7 +156,6 @@ const left = ref(0)
 const right = ref(0)
 
 function setPadding() {
-    console.log('setting')
     const first = phasesElements.value[0]
     const last = phasesElements.value[phasesElements.value.length - 1]
 
