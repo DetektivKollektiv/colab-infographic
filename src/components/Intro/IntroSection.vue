@@ -99,7 +99,7 @@ export default {
     <div
         class="intro-container relative flex flex-col justify-end overflow-hidden bg-left-bottom"
     >
-        <div class="container-box h-full flex flex-col justify-between z-10">
+        <div class="h-full flex flex-col justify-between z-10">
             <div
                 class="flex flex-col pt-10 pb-25 lg:py-20 gap-12 w-full h-[70%] lg:h-full"
             >
@@ -108,9 +108,7 @@ export default {
                     ref="container"
                     @scroll="update"
                 >
-                    <div
-                        class="flex flex-col justify-start lg:justify-end gap-5 min-w-full snap-center"
-                    >
+                    <div class="slide container-box">
                         <div class="w-full lg:w-7/12">
                             <h1 class="text-2xl lg:text-7xl">
                                 Ein holistischer Blick
@@ -126,9 +124,7 @@ export default {
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col justify-start lg:justify-end gap-5 min-w-full snap-center"
-                    >
+                    <div class="slide container-box">
                         <div class="w-full lg:w-7/12">
                             <h1 class="text-2xl lg:text-7xl">Das Universum</h1>
                             <p
@@ -152,9 +148,7 @@ export default {
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col justify-start lg:justify-end gap-5 min-w-full snap-center"
-                    >
+                    <div class="slide container-box">
                         <div class="w-full lg:w-7/12">
                             <h1 class="text-2xl lg:text-7xl">Makro-Trends</h1>
                             <p
@@ -171,9 +165,7 @@ export default {
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col justify-start lg:justify-end gap-5 min-w-full snap-center"
-                    >
+                    <div class="slide container-box">
                         <div class="w-full lg:w-7/12">
                             <h1 class="text-2xl lg:text-7xl">Meso-Trends</h1>
                             <p
@@ -268,12 +260,14 @@ export default {
                     @change_slide="method_slide"
                     :current_slide="slide"
                 ></SectionArrows> -->
-                <Pagination
-                    :length="length"
-                    :index="index"
-                    :showArrows="true"
-                    @index="scrollTo"
-                ></Pagination>
+                <div class="w-full container-box">
+                    <Pagination
+                        :length="length"
+                        :index="index"
+                        :showArrows="true"
+                        @index="scrollTo"
+                    ></Pagination>
+                </div>
             </div>
         </div>
         <div
@@ -293,6 +287,9 @@ export default {
 </template>
 
 <style scoped>
+.slide {
+    @apply flex flex-col justify-start lg:justify-end gap-5 min-w-full snap-center;
+}
 .intro-container {
     height: 90vh;
     /* background-image: ; */
