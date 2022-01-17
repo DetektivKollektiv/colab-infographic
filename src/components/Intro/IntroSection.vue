@@ -1,27 +1,15 @@
-<script setup>
-import SectionArrows from './SectionArrows.vue'
-import Overview from './Overview.vue'
-import Overview1 from './Overview.vue'
-import TextBlock from '../TextBlock.vue'
-import Pagination from '../Pagination.vue'
-import PageCount from '../PageCount.vue'
-</script>
-
+<script setup></script>
 
 <script>
-
 export default {
-
     data() {
         return {
             slide: 1,
             enter_class: 'animate__animated animate__slideInRight',
             leave_class: 'animate__animated animate__slideOutLeft',
-
         }
     },
     methods: {
-
         method_slide(input) {
             console.log(input)
             let target = input['target']
@@ -31,24 +19,24 @@ export default {
             } else {
                 scrollTo(-1000)
             }
-            this.slide = target;
+            this.slide = target
         },
         swipe() {
-            var self = this;
+            var self = this
             return function (direction, event) {
-                console.log("Swiped in direction ", direction);
+                console.log('Swiped in direction ', direction)
                 let target = self.slide
-                if (direction == "left") {
+                if (direction == 'left') {
                     target = self.slide + 1 == 7 ? 1 : self.slide + 1
-                    self.method_slide({ 'target': target, 'animationUp': true })
+                    self.method_slide({ target: target, animationUp: true })
                 }
-                if (direction == "right") {
+                if (direction == 'right') {
                     target = self.slide - 1 == 0 ? 6 : self.slide - 1
-                    self.method_slide({ 'target': target, 'animationUp': false })
+                    self.method_slide({ target: target, animationUp: false })
                 }
-            };
-        }
-    }
+            }
+        },
+    },
 }
 </script>
 
@@ -58,7 +46,9 @@ export default {
         class="intro-container relative flex flex-col justify-end overflow-hidden bg-left-bottom"
     >
         <div class="container-box h-full flex flex-col justify-between z-10">
-            <div class="flex flex-col pt-10 pb-25 lg:py-20 gap-12 w-full h-[70%] lg:h-full">
+            <div
+                class="flex flex-col pt-10 pb-25 lg:py-20 gap-12 w-full h-[70%] lg:h-full"
+            >
                 <div
                     class="flex flex-row snap-x snap-mandatory overflow-x-scroll w-full h-full scrollbar-hidden"
                     ref="container"
@@ -73,7 +63,12 @@ export default {
                             </h1>
                             <p
                                 class="text-sans text-base lg:text-2xl w-full lg:w-2/3"
-                            >Desinformation ist ein komplexes Phänomen. Wir wollen verstehen, wie Desinformation wirkt. Eine ganzheitliche Perspektive soll uns dabei helfen, Desinformation wirksam zu bekämpfen.</p>
+                            >
+                                Desinformation ist ein komplexes Phänomen. Wir
+                                wollen verstehen, wie Desinformation wirkt. Eine
+                                ganzheitliche Perspektive soll uns dabei helfen,
+                                Desinformation wirksam zu bekämpfen.
+                            </p>
                         </div>
                     </div>
                     <div
@@ -83,7 +78,23 @@ export default {
                             <h1 class="text-2xl lg:text-7xl">Das Universum</h1>
                             <p
                                 class="text-sans text-base lg:text-2xl w-full lg:w-2/3"
-                            >Für böswillige Akteur*innen entsteht durch Desinformation Wert. Im Kern blicken wir daher auf die Wertschöpfungskette (WSK) von Desinformation. Doch Desinformation entsteht nicht im luftleeren Raum. Gesellschaftliche Entwicklungen ermöglichen oder begünstigen sie. Mit Makro- und Meso-Trends beschreiben wir Muster, die unsere Welt über einen längeren Zeitpunkt beeinflussen und einen breiten Geltungsbereich haben. Makro-Trends beschreiben exemplarisch, welche großen Entwicklungslinien unsere Gesellschaft als Ganze prägen und zur Spaltung beitragen. Meso-Trends sind konkrete Ausprägungen davon mit konkretem Bezug zu Desinformation.</p>
+                            >
+                                Für böswillige Akteur*innen entsteht durch
+                                Desinformation Wert. Im Kern blicken wir daher
+                                auf die Wertschöpfungskette (WSK) von
+                                Desinformation. Doch Desinformation entsteht
+                                nicht im luftleeren Raum. Gesellschaftliche
+                                Entwicklungen ermöglichen oder begünstigen sie.
+                                Mit Makro- und Meso-Trends beschreiben wir
+                                Muster, die unsere Welt über einen längeren
+                                Zeitpunkt beeinflussen und einen breiten
+                                Geltungsbereich haben. Makro-Trends beschreiben
+                                exemplarisch, welche großen Entwicklungslinien
+                                unsere Gesellschaft als Ganze prägen und zur
+                                Spaltung beitragen. Meso-Trends sind konkrete
+                                Ausprägungen davon mit konkretem Bezug zu
+                                Desinformation.
+                            </p>
                         </div>
                     </div>
                     <div
@@ -93,7 +104,16 @@ export default {
                             <h1 class="text-2xl lg:text-7xl">Makro-Trends</h1>
                             <p
                                 class="text-sans text-base lg:text-2xl w-full lg:w-2/3"
-                            >Große historische Entwicklungslinien prägen unseren Blick auf die Welt, sie tragen aber auch zur gesellschaftlichen Spaltung und Polarisierung bei. Desinformation kann so überhaupt erst auf fruchtbaren Boden fallen. Mit Makro-Trends beschreiben wir exemplarisch das Gesamtsystem, in das Desinformation eingebettet ist.</p>
+                            >
+                                Große historische Entwicklungslinien prägen
+                                unseren Blick auf die Welt, sie tragen aber auch
+                                zur gesellschaftlichen Spaltung und
+                                Polarisierung bei. Desinformation kann so
+                                überhaupt erst auf fruchtbaren Boden fallen. Mit
+                                Makro-Trends beschreiben wir exemplarisch das
+                                Gesamtsystem, in das Desinformation eingebettet
+                                ist.
+                            </p>
                         </div>
                     </div>
                     <div
@@ -103,48 +123,88 @@ export default {
                             <h1 class="text-2xl lg:text-7xl">Meso-Trends</h1>
                             <p
                                 class="text-sans text-base lg:text-2xl w-full lg:w-2/3"
-                            >Meso-Trends beschreiben konkrete Ausprägungen der großen historischen Entwicklungslinien (Makro-Trends). Die geringere Abstraktionsebene stellt einen konkreten Zusammenhang zur Ausbreitung von Desinformation her. Meso-Trends bieten Ansatzpunkte für Maßnahmen gegen das Symptom Desinformation.</p>
+                            >
+                                Meso-Trends beschreiben konkrete Ausprägungen
+                                der großen historischen Entwicklungslinien
+                                (Makro-Trends). Die geringere Abstraktionsebene
+                                stellt einen konkreten Zusammenhang zur
+                                Ausbreitung von Desinformation her. Meso-Trends
+                                bieten Ansatzpunkte für Maßnahmen gegen das
+                                Symptom Desinformation.
+                            </p>
                         </div>
                     </div>
                     <div
                         class="h-full flex flex-col-reverse lg:flex-col justify-end lg:justify-between gap-5 min-w-full snap-center"
                     >
-                        <WSK lg:showDescription :phaseIndex=1 :padding-top="true"></WSK>
+                        <WSK
+                            lg:showDescription
+                            :phaseIndex="1"
+                            :padding-top="true"
+                        ></WSK>
                         <div class="lg:w-7/12">
-                            <h1
-                                class="text-2xl lg:text-7xl"
-                            >Die Wertschöpfungskette von Desinformation</h1>
-                            <p
-                                class="text-sans text-base lg:text-2xl"
-                            >Wie Desinformation entsteht und ihre Wirkung entfaltet, lässt sich wie ein Herstellungsprozess beschreiben, bei dem Gewinne erzielt werden: an Einfluss, Macht, Status, Geld. Wir nennen diesen Prozess deshalb „Wertschöpfungskette“ – unterteilt in fünfsieben aufeinanderfolgende Phasen.</p>
+                            <h1 class="text-2xl lg:text-7xl">
+                                Die Wertschöpfungskette von Desinformation
+                            </h1>
+                            <p class="text-sans text-base lg:text-2xl">
+                                Wie Desinformation entsteht und ihre Wirkung
+                                entfaltet, lässt sich wie ein
+                                Herstellungsprozess beschreiben, bei dem Gewinne
+                                erzielt werden: an Einfluss, Macht, Status,
+                                Geld. Wir nennen diesen Prozess deshalb
+                                „Wertschöpfungskette“ – unterteilt in fünfsieben
+                                aufeinanderfolgende Phasen.
+                            </p>
                         </div>
                     </div>
                     <div
                         class="flex flex-col-reverse lg:flex-col justify-end lg:justify-between lg:gap-5 min-w-full snap-center"
                     >
                         <div class="flex flex-col gap-4 lg:gap-8 lg:w-1/3">
-                            <WSK class="py-8 lg:pt-0" :showTitle="false" :padding-top="true"></WSK>
+                            <WSK
+                                class="py-8 lg:pt-0"
+                                :showTitle="false"
+                                :padding-top="true"
+                            ></WSK>
                             <div class="relative pt-2">
-                                <h3 class="absolute -translate-y-6 lg:-translate-y-8">Wer</h3>
+                                <h3
+                                    class="absolute -translate-y-6 lg:-translate-y-8"
+                                >
+                                    Wer
+                                </h3>
                                 <div class="h-0.5 bg-red-500"></div>
-                                <p
-                                    class="w-full flex-shrink-0 mt-2 mr-4"
-                                >Wer macht’s? Akteur*innen sind je nach Phase z. B. Staaten, Verbände, Medien, Big-Tech-Plattformen, Einzelpersonen …</p>
+                                <p class="w-full flex-shrink-0 mt-2 mr-4">
+                                    Wer macht’s? Akteur*innen sind je nach Phase
+                                    z. B. Staaten, Verbände, Medien,
+                                    Big-Tech-Plattformen, Einzelpersonen …
+                                </p>
                             </div>
                             <div class="relative pt-2">
-                                <h3 class="absolute -translate-y-6 lg:-translate-y-8">Wie</h3>
+                                <h3
+                                    class="absolute -translate-y-6 lg:-translate-y-8"
+                                >
+                                    Wie
+                                </h3>
                                 <div class="w-full h-0.5 bg-red-500"></div>
-                                <p
-                                    class="w-full flex-shrink-0 mt-2 mr-4"
-                                >Wie wird’s gemacht? Methoden sind die Mittel und Werkzeuge, die je nach Phase zum Einsatz kommen: darunter z. B. Dekontextualisierung, Micro-Targeting oder Algorithmen.</p>
+                                <p class="w-full flex-shrink-0 mt-2 mr-4">
+                                    Wie wird’s gemacht? Methoden sind die Mittel
+                                    und Werkzeuge, die je nach Phase zum Einsatz
+                                    kommen: darunter z. B. Dekontextualisierung,
+                                    Micro-Targeting oder Algorithmen.
+                                </p>
                             </div>
                         </div>
 
                         <div class="w-full lg:w-7/12">
-                            <h1 class="text-2xl lg:text-7xl">Akteur*innen und Methoden</h1>
-                            <p
-                                class="text-sans text-base lg:text-2xl"
-                            >In jeder Phase der Wertschöpfungskette gibt es Akteur*innen, die an der Desinformations-Herstellung beteiligt sind – und dazu jeweils spezifische Methoden verwenden.</p>
+                            <h1 class="text-2xl lg:text-7xl">
+                                Akteur*innen und Methoden
+                            </h1>
+                            <p class="text-sans text-base lg:text-2xl">
+                                In jeder Phase der Wertschöpfungskette gibt es
+                                Akteur*innen, die an der
+                                Desinformations-Herstellung beteiligt sind – und
+                                dazu jeweils spezifische Methoden verwenden.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -157,13 +217,23 @@ export default {
         </div>
         <div
             class="absolute z-0"
-            v-bind:class="[slide == 1 ? 'overview-intro-slide' : 'follow-up-slides']"
+            v-bind:class="[
+                slide == 1 ? 'overview-intro-slide' : 'follow-up-slides',
+            ]"
         >
             <Overview :current_slide="slide"></Overview>
         </div>
 
-        <Pagination :length="6" :index="slide" class="lg:hidden absolute z-0 pb-2 w-full justify-center"></Pagination>
-        <PageCount :length="6" :index="slide" class="lg:hidden absolute top-0 right-0 mt-4 mr-4"></PageCount>
+        <Pagination
+            :length="6"
+            :index="slide"
+            class="lg:hidden absolute z-0 pb-2 w-full justify-center"
+        ></Pagination>
+        <PageCount
+            :length="6"
+            :index="slide"
+            class="lg:hidden absolute top-0 right-0 mt-4 mr-4"
+        ></PageCount>
     </div>
 </template>
 
@@ -171,7 +241,7 @@ export default {
 .intro-container {
     height: 90vh;
     /* background-image: ; */
-    background-image: url("@/assets/bubbles_desktop.svg"),
+    background-image: url('@/assets/bubbles_desktop.svg'),
         linear-gradient(rgba(255, 255, 255, 1), rgba(255, 246, 204, 1));
 }
 
@@ -192,7 +262,7 @@ export default {
         height: 95vh;
         min-height: 667px;
         /* background-image: ; */
-        background-image: url("@/assets/bubbles_mobile.svg"),
+        background-image: url('@/assets/bubbles_mobile.svg'),
             linear-gradient(rgba(255, 255, 255, 1), rgba(255, 246, 204, 1));
     }
 }

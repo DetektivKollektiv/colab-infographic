@@ -1,7 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-import Infographic from './components/Infographic/Infographic.vue'
-import Story from './components/Story/Story.vue'
 
 import stories from '@/api/stories.json'
 // import IntroSection from './components/Intro/IntroSection.vue'
