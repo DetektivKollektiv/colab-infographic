@@ -51,9 +51,7 @@
                                     class="transition-all"
                                     :class="[
                                         phase.index + 1 == phaseIndex ||
-                                        phaseIndex >
-                                            phasesWithZeros[phases.length - 1]
-                                                .index
+                                        phaseIndex > 5
                                             ? 'label-xl mt-2 md:mt-4'
                                             : 'label-sm mt-2',
                                         phase.index + 1 !== phaseIndex
