@@ -4,9 +4,13 @@
         ref="container"
         @scroll="update"
     >
-        <div v-for="trend in trends" :key="trend" class="snap-start">
+        <div
+            v-for="trend in trends"
+            :key="trend"
+            class="snap-start w-screen flex-shrink-0"
+        >
             <TextBlock
-                class="relative top-1/2 -translate-y-1/2 -mt-4 w-screen container-box"
+                class="relative top-1/2 -translate-y-1/2 -mt-4 container-box"
             >
                 <template v-slot:subtitle>
                     <p class="font-serif">{{ subtitle }}</p>
