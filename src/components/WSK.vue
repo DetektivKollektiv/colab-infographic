@@ -47,7 +47,10 @@
                                     v-if="showTitle"
                                     class="transition-all"
                                     :class="[
-                                        phase.index + 1 == phaseIndex
+                                        phase.index + 1 == phaseIndex ||
+                                        phaseIndex >
+                                            phasesWithZeros[phases.length - 1]
+                                                .index
                                             ? 'label-xl mt-2 md:mt-4'
                                             : 'label-sm mt-2',
                                         phase.index + 1 !== phaseIndex
@@ -59,7 +62,7 @@
                                 </p>
                                 <p
                                     v-if="showSummaries"
-                                    class="max-w-xs px-4 hidden lg:block"
+                                    class="max-w-xs px-4 mt-2 hidden lg:block"
                                 >
                                     {{ summaries[phase.index] }}
                                 </p>
@@ -136,6 +139,7 @@ function insertZeros(array) {
 }
 
 const phasesWithZeros = insertZeros(phases)
+console.log({ phasesWithZeros })
 
 const emit = defineEmits(['phaseIndex'])
 
