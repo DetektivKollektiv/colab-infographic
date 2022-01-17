@@ -40,6 +40,11 @@
                         srcset=""
                     />
                 </div>
+                <div class="container-box">
+                    <ButtonText @click="next" class="float-right"
+                        >Weiter</ButtonText
+                    >
+                </div>
                 <div
                     v-if="state == 'phasen'"
                     class="container-box mb-12 md:mb-16"
@@ -101,6 +106,14 @@ const phaseIndex = ref(1)
 
 const summaries = story.value.phases.map((phase) => phase.summary.text)
 
+function next() {
+    if (phaseIndex.value <= 4) {
+        phaseIndex.value += 1
+    } else {
+        state.value = 'uebersicht'
+    }
+}
+
 function setPhaseIndex(i) {
     phaseIndex.value = i
 }
@@ -116,7 +129,7 @@ function setState(s) {
 }
 
 watch(state, () => {
-    if (state.value == 'uebersicht' || state.value == 'trends') {
+    if (state.value == 'uebersicht') {
         phaseIndex.value = 6
     }
     if (state.value == 'phasen' && phaseIndex.value == 6) {
@@ -178,6 +191,5 @@ const marginTop = ref(0)
 
 function setMarginTop(height) {
     marginTop.value = height.value + 'px'
-    console.log('height', height.value)
 }
 </script>
