@@ -1,13 +1,21 @@
 <template>
-    <div class="flex gap-2">
-        <div
-            v-for="i in length"
+    <div class="flex gap-2 md:gap-6 text-red-500 text-2xl items-center">
+        <button class="hidden md:block" @click="emit('index', index - 1)">
+            <i v-if="showArrows" class="fas fa-caret-left"></i>
+        </button>
+        <button
+            v-for="i in Array(length).keys()"
             :key="i"
-            class="w-2 h-2 border-2 rounded-full border-red-500"
+            class="w-2 md:w-4 h-2 md:h-4 border-2 rounded-full border-red-500"
             :class="i <= index ? 'bg-red-500' : 'bg-white'"
-        ></div>
+            @click="emit('index', i)"
+        ></button>
+        <button class="hidden md:block" @click="emit('index', index + 1)">
+            <i v-if="showArrows" class="fas fa-caret-right"></i>
+        </button>
     </div>
 </template>
+
 <script setup>
 const props = defineProps({
     length: {
@@ -18,9 +26,11 @@ const props = defineProps({
         type: Number,
         default: false,
     },
+    showArrows: {
+        type: Boolean,
+        default: false,
+    },
 })
-
-const { length, index } = toRefs(props)
 
 const emit = defineEmits(['index'])
 </script>

@@ -1,7 +1,7 @@
 <script setup></script>
 
 <script>
-export default {
+/* export default {
     data() {
         return {
             slide: 1,
@@ -36,13 +36,67 @@ export default {
                 }
             }
         },
+        swipe() {
+            return (direction, event) => {
+                console.log('Swiped in direction ', direction)
+                let target = self.slide
+                if (direction == 'left') {
+                    target = self.slide + 1 == 7 ? 1 : self.slide + 1
+                    self.method_slide({ target: target, animationUp: true })
+                }
+                if (direction == 'right') {
+                    target = self.slide - 1 == 0 ? 6 : self.slide - 1
+                    self.method_slide({ target: target, animationUp: false })
+                }
+            }
+        }
+    },
+} */
+
+export default {
+    data: () => ({ index: 0, elementsLefts: [], length: 0 }),
+    mounted() {
+        this.elementsLefts = this.getElementsLefts()
+        this.length = this.$refs.container.children.length
+    },
+    methods: {
+        getElementsLefts() {
+            return Array.prototype.slice
+                .call(this.$refs.container.children)
+                .map((el) => el.getBoundingClientRect().x)
+        },
+        scrollTo(index) {
+            if (index >= this.length) {
+                index = 0
+            } else if (index < 0) {
+                index = this.length - 1
+            }
+            this.$refs.container.scrollTo({
+                left:
+                    this.$refs.container.scrollLeft + this.elementsLefts[index],
+                behavior: 'smooth',
+            })
+        },
+        getCurrentElement() {
+            this.elementsLefts = this.getElementsLefts()
+            return this.elementsLefts.indexOf(
+                this.elementsLefts.reduce((prev, curr) =>
+                    Math.abs(curr - 0) < Math.abs(prev - 0) ? curr : prev
+                )
+            )
+        },
+        update() {
+            if (this.getCurrentElement() !== this.index) {
+                this.index = this.getCurrentElement()
+                console.log('current Element:', this.index)
+            }
+        },
     },
 }
 </script>
 
 <template>
     <div
-        v-touch:swipe="swipe"
         class="intro-container relative flex flex-col justify-end overflow-hidden bg-left-bottom"
     >
         <div class="container-box h-full flex flex-col justify-between z-10">
@@ -52,6 +106,7 @@ export default {
                 <div
                     class="flex flex-row snap-x snap-mandatory overflow-x-scroll w-full h-full scrollbar-hidden"
                     ref="container"
+                    @scroll="update"
                 >
                     <div
                         class="flex flex-col justify-start lg:justify-end gap-5 min-w-full snap-center"
@@ -208,30 +263,30 @@ export default {
                         </div>
                     </div>
                 </div>
-                <SectionArrows
+                <!-- <SectionArrows
                     class="hidden lg:flex"
                     @change_slide="method_slide"
                     :current_slide="slide"
-                ></SectionArrows>
+                ></SectionArrows> -->
+                <Pagination
+                    :length="length"
+                    :index="index"
+                    :showArrows="true"
+                    @index="scrollTo"
+                ></Pagination>
             </div>
         </div>
         <div
-            class="absolute z-0"
+            class="absolute z-0 transition-all duration-700"
             v-bind:class="[
-                slide == 1 ? 'overview-intro-slide' : 'follow-up-slides',
+                index == 0 ? 'overview-intro-slide' : 'follow-up-slides',
             ]"
         >
-            <Overview :current_slide="slide"></Overview>
+            <Overview :current_slide="index + 1"></Overview>
         </div>
-
-        <Pagination
-            :length="6"
-            :index="slide"
-            class="lg:hidden absolute z-0 pb-2 w-full justify-center"
-        ></Pagination>
         <PageCount
-            :length="6"
-            :index="slide"
+            :length="length"
+            :index="index + 1"
             class="lg:hidden absolute top-0 right-0 mt-4 mr-4"
         ></PageCount>
     </div>
@@ -251,10 +306,11 @@ export default {
     width: 80vw;
     height: 80vw;
 }
+
 @media only screen and (max-width: 1024px) {
     .overview-intro-slide {
         bottom: -247vw;
-        left: -100vw;
+        right: -100vw;
         width: 300vw;
         height: 300vw;
     }
