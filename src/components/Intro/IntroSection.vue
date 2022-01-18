@@ -245,10 +245,10 @@ export default {
     @apply font-bold font-headline border-2 border-black;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 550px) {
     .overview-intro-slide,
     .follow-up-slides {
-        @apply -bottom-[247vw] -right-[100vw] w-[300vw] h-[300vw];
+        @apply -bottom-[250vw] -right-[100vw] w-[300vw] h-[300vw];
     }
     .intro-container {
         height: 95vh;
@@ -258,10 +258,10 @@ export default {
     }
 }
 
-@media only screen and (max-width: 1023px) and (min-width: 651px) {
+@media only screen and (max-width: 1023px) and (min-width: 551px) {
     .overview-intro-slide,
     .follow-up-slides {
-        @apply -bottom-[167vw] -right-[50vw] w-[200vw] h-[200vw];
+        @apply -bottom-[170vw] -right-[50vw] w-[200vw] h-[200vw];
     }
 }
 </style>

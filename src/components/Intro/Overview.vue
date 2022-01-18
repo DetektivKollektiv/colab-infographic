@@ -49,6 +49,11 @@
         padding-top: 2%;
     }
 }
+@media only screen and (max-width: 1023px) and (min-width: 651px) {
+   .circle {
+        padding-top: 1%;
+    }
+}
 </style>
 
 <script>
