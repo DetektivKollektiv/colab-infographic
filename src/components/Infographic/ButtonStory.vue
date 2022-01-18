@@ -1,16 +1,5 @@
 <template>
-    <label
-        class="space-x-2 cursor-pointer flex items-center"
-        :for="storyFormat"
-        @click="onClick"
-    >
-        <div
-            class="rounded-full border-2 border-gray-800 mr-2"
-            :class="{ 'border-0 bg-purple-500': active }"
-            style="height: 12px; width: 12px"
-        ></div>
-        {{ story }}</label
-    >
+    <ButtonText :active="active" @click="setStory">{{ story }}</ButtonText>
 </template>
 
 <script setup>
@@ -34,7 +23,7 @@ const active = computed(() => {
     return useStoryStore().story === storyFormat.value
 })
 
-function onClick() {
+function setStory() {
     useStoryStore().setStory(storyFormat.value)
 }
 </script>

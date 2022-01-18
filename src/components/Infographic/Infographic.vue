@@ -1,9 +1,9 @@
 <template>
     <div class="container-box">
         <div class="flex space-x-4 justify-center pt-6">
-            <StoryButton story="Story 1"></StoryButton>
-            <StoryButton story="Story 2"></StoryButton>
-            <StoryButton story="Story 3"></StoryButton>
+            <ButtonStory story="Story 1"></ButtonStory>
+            <ButtonStory story="Story 2"></ButtonStory>
+            <ButtonStory story="Story 3"></ButtonStory>
         </div>
         <SectionHeadline>WAS</SectionHeadline>
         <Grid :doubleFourth="true" class="mt-4">
@@ -152,10 +152,6 @@
 
 <script setup>
 import { WER, WIE, WAS } from '@/api/infographic'
-import SectionHeadline from '@/components/Infographic/SectionHeadline.vue'
-import Column from '@/components/Infographic/Column.vue'
-import Grid from '@/components/Infographic/Grid.vue'
-import StoryButton from '@/components/Infographic/StoryButton.vue'
 
 import headline from '@/components/infographic/Headline.vue'
 import card from '@/components/infographic/Card.vue'

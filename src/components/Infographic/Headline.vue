@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="text-xl text-purple-500 font-bold">
+        <div class="text-xl text-red-500 font-bold">
             <h1>{{ content.headline }}</h1>
         </div>
         <div>
