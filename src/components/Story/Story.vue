@@ -15,7 +15,7 @@
             ></WSK>
         </div>
         <div
-            class="transition-all duration-300 overflow-hidden"
+            class="transition-all duration-300 overflow-hidden bg-gradient-to-b from-white to-yellow-300"
             :class="active ? `max-h-[4000px];` : 'max-h-[0px]'"
         >
             <div v-if="state == 'phasen'" :style="{ marginTop }">
