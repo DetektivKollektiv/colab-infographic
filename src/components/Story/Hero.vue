@@ -30,7 +30,7 @@
                             @click="emit('state', 'uebersicht')"
                             :active="state === 'uebersicht'"
                         >
-                            Übersicht</ButtonText
+                            Übersicht & Trends</ButtonText
                         >
                     </div>
                 </div>

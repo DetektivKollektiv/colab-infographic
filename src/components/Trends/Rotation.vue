@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-hidden bg-yellow-500" :class="bg">
+    <div class="overflow-hidden" :class="bg">
         <div class="w-screen relative min-h-[600px] h-[30rem] md:h-[40rem]">
             <div
                 class="rounded-full w-[500vw] h-[500vw] absolute -translate-x-1/2 left-1/2"

@@ -16,75 +16,21 @@
         </div>
         <div
             class="transition-all duration-300 overflow-hidden"
-            :class="active ? `max-h-[12000px];` : 'max-h-[0px]'"
+            :class="active ? `max-h-[4000px];` : 'max-h-[0px]'"
         >
-            <div
-                v-if="state == 'phasen'"
-                :style="{ marginTop }"
-                class="container-box pt-12"
-            >
-                <div
-                    class="flex flex-col flex-wrap md:flex-row justify-between space-y-8 md:space-y-0"
-                    :class="active ? '' : ''"
-                >
-                    <div class="flex-shrink-0 md:mr-12">
-                        <Text
-                            :texts="getTexts()"
-                            :phaseIndex="phaseIndex"
-                            @phaseIndex="setPhaseIndex"
-                        >
-                        </Text>
-                    </div>
-                    <img
-                        class="md:h-auto object-cover max-w-xl"
-                        v-for="image in getImages()"
-                        :key="image"
-                        :src="image"
-                        alt=""
-                        srcset=""
-                    />
-                </div>
-                <div class="mb-8 md:mb-12">
-                    <Sources
-                        :sources="getPhaseByIndex(phaseIndex).sources"
-                    ></Sources>
-                </div>
-                <ButtonText
-                    @click="next"
-                    class="float-right mb-8 md:mb-12 hidden md:block"
-                    >Weiter</ButtonText
-                >
+            <div v-if="state == 'phasen'" :style="{ marginTop }">
+                <Phasen
+                    :texts="getTexts()"
+                    :phaseIndex="phaseIndex"
+                    @phaseIndex="setPhaseIndex"
+                    :images="getImages()"
+                    :sources="getPhaseByIndex(phaseIndex).sources"
+                    @next="next"
+                ></Phasen>
             </div>
 
-            <div
-                v-if="state == 'uebersicht'"
-                class="relative h-[65rem] md:h-[85rem] lg:h-[70rem] min-h-[600px] overflow-hidden bg-yellow-500"
-            >
-                <div
-                    class="rounded-full w-[500vw] h-[500vw] mb-[24rem] md:mb-[33rem] absolute bottom-0 -translate-x-1/2 left-1/2 flex justify-center text-center bg-yellow-300"
-                ></div>
-                <div
-                    class="rounded-full w-[500vw] h-[500vw] mb-[26rem] md:mb-[37rem] absolute bottom-0 -translate-x-1/2 left-1/2 flex justify-center text-center bg-white"
-                ></div>
-                <div
-                    class="absolute bottom-0 w-screen flex justify-center z-10 mb-[5rem] md:mb-[7rem]"
-                >
-                    <TextBlock class="text-center">
-                        <template v-slot:subtitle>
-                            <p class="font-serif">
-                                {{ story.trends.subtitle }}
-                            </p>
-                        </template>
-                        <template v-slot:title>
-                            <h1>{{ story.trends.title }}</h1>
-                        </template>
-                        <template v-slot:description>
-                            <p>
-                                {{ story.trends.description }}
-                            </p>
-                        </template>
-                    </TextBlock>
-                </div>
+            <div v-if="state == 'uebersicht'">
+                <Uebersicht :trends="story.trends"></Uebersicht>
             </div>
         </div>
     </div>

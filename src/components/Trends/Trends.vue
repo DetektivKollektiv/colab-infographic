@@ -23,16 +23,23 @@
         </div>
         <Rotation
             bg="bg-yellow-500"
-            color="bg-yellow-300"
+            color="bg-yellow-400"
             :trends="makrotrends"
             subtitle="Makrotrends"
         ></Rotation>
         <Rotation
-            bg="bg-yellow-300"
-            color="bg-white"
+            bg="bg-yellow-400"
+            color="bg-yellow-300"
             :trends="mesotrends"
             subtitle="Mesotrends"
         ></Rotation>
+
+        <div class="relative h-[5vw] bg-yellow-300 overflow-hidden">
+            <div
+                class="rounded-full w-[500vw] h-[500vw] absolute -translate-x-1/2 left-1/2 bg-white"
+                :class="color"
+            ></div>
+        </div>
     </div>
 </template>
 <script setup>
