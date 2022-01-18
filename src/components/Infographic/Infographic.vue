@@ -1,23 +1,16 @@
 <template>
     <div class="container-box">
-        <div class="pt-6 relative">
-            <div class="flex space-x-4 justify-center float-left">
-                <ButtonStory story="Story 1"></ButtonStory>
-                <ButtonStory story="Story 2"></ButtonStory>
-                <ButtonStory story="Story 3"></ButtonStory>
-            </div>
-
-            <ButtonDropdown class="absolute right-0"></ButtonDropdown>
-        </div>
-        <SectionHeadline>WAS</SectionHeadline>
-        <Grid :doubleFourth="true" class="mt-4">
+        <Navbar class="pt-6"> </Navbar>
+        <WSKInfographic class="mt-24"></WSKInfographic>
+        <SectionHeadline class="mt-12">WAS</SectionHeadline>
+        <!-- <Grid :doubleFourth="true" class="mt-4">
             <component
                 v-for="chapter of WAS.chapters"
                 :is="getComponent(chapter)"
                 :content="chapter"
                 :key="chapter"
             />
-        </Grid>
+        </Grid> -->
         <SectionHeadline>WER</SectionHeadline>
         <Grid :doubleFourth="false">
             <Column>

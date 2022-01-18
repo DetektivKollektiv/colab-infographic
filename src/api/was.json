@@ -1,24 +1,24 @@
 {
-    "chapters": [
+    "phases": [
         {
-            "chapter": "01",
+            "id": "1",
             "text": "Initiieren"
         },
         {
-            "chapter": "02",
+            "id": "2",
             "text": "Produzieren"
         },
         {
-            "chapter": "03",
+            "id": "3",
             "text": "Platzieren"
         },
         {
-            "chapter": "04",
+            "id": "4",
             "text": "Verbreiten"
         },
         {
-            "chapter": "05",
-            "text": "Beeinflussende Faktoren"
+            "id": "5",
+            "text": "Beeinflussung"
         }
     ]
 }
