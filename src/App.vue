@@ -15,12 +15,11 @@ const activeStory = ref(0)
         @click="activeStory = i"
         :class="{ 'cursor-pointer': activeStory !== i }"
     >
-        <Story :story="story" :active="i == activeStory"></Story>
+        <Story :story="story" :active="i == activeStory" />
     </div>
-    <Trends></Trends>
-    <!--     <trends-section></trends-section>
+    <Trends />
 
-    <Infographic /> -->
+    <Infographic />
 </template>
 
 <style></style>

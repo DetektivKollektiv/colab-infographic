@@ -140,7 +140,6 @@ function insertZeros(array) {
 }
 
 const phasesWithZeros = insertZeros(phases)
-console.log({ phasesWithZeros })
 
 const emit = defineEmits(['phaseIndex', 'height'])
 
