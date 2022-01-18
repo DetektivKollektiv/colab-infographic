@@ -24,7 +24,7 @@
 <script setup>
 //
 import { nextTick, onMounted, watch, computed, ref, toRefs } from 'vue'
-import { useStoryStore } from '@/stores/story'
+import { useInfographicStore } from '@/stores/infographic'
 
 const props = defineProps({
     content: {
@@ -59,7 +59,7 @@ const description = computed(() => {
 })
 
 const active = computed(() => {
-    return content.value.storys.includes(useStoryStore().story)
+    return content.value.storys.includes(useInfographicStore().story)
 })
 
 const height = ref(0)

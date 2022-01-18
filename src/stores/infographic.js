@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-export const useStoryStore = defineStore('story', {
+export const useInfographicStore = defineStore('infographic', {
     state: () => {
         return {
             /** @type {'story-1' | 'story-2' | 'story-3'} */

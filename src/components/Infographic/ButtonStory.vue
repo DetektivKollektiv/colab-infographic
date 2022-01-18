@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { useStoryStore } from '@/stores/story'
+import { useInfographicStore } from '@/stores/infographic'
 
 const props = defineProps({
     story: {
@@ -19,11 +19,11 @@ const storyFormat = computed(() => {
 })
 
 const active = computed(() => {
-    return useStoryStore().story === storyFormat.value
+    return useInfographicStore().story === storyFormat.value
 })
 
 function setStory() {
-    useStoryStore().setStory(storyFormat.value)
+    useInfographicStore().setStory(storyFormat.value)
 }
 </script>
 
