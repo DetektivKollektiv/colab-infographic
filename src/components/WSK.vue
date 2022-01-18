@@ -1,65 +1,91 @@
 <template>
     <div>
-        <div class="relative">
-            <div class="w-full h-0.5 absolute bg-red-500 z-0 flex items-center">
+        <div class="relative" :class="marginTopClass">
+            <div class="h-0.5 absolute w-full">
                 <div
-                    class="grid grid-cols-5 container-box z-10 relative items-center"
+                    class="relative h-0.5 w-full"
+                    :style="{
+                        paddingLeft: left / 2 + 'px',
+                        paddingRight: right / 2 + 'px',
+                    }"
+                >
+                    <div class="h-full w-full bg-red-500"></div>
+                </div>
+                <div
+                    class="flex z-20 relative justify-between container-box"
+                    ref="elementContainer"
                 >
                     <div
-                        class="flex items-center flex-col cursor-pointer relative"
-                        v-for="(phaseText, i) in phases"
-                        :key="i"
-                        @click="emit('phaseIndex', i + 1)"
+                        v-for="phase in phasesWithZeros"
+                        :key="phase.index"
+                        @click="emit('phaseIndex', phase.index + 1)"
+                        :ref="(element) => phasesElements.push(element)"
                     >
                         <div
-                            class="rounded-full flex justify-center items-center border-2 border-red-500 transition-all"
-                            :class="
-                                i + 1 < phaseIndex
-                                    ? 'bg-red-500 w-4 h-4 md:w-8 md:h-8 text-white label-sm'
-                                    : i + 1 > phaseIndex
-                                    ? 'bg-white w-4 h-4 md:w-8 md:h-8 label-sm'
-                                    : 'w-8 h-8 md:w-12 md:h-12  label-xl bg-red-500 text-white'
-                            "
+                            v-if="typeof phase.title == 'string'"
+                            class="flex flex-col cursor-pointer relative items-center"
                         >
-                            <span
+                            <div
+                                class="rounded-full flex justify-center items-center border-2 border-red-500 transition-all"
                                 :class="
-                                    i + 1 !== phaseIndex
-                                        ? 'hidden md:block'
-                                        : ''
+                                    phase.index + 1 < phaseIndex
+                                        ? 'bg-red-500 w-4 h-4 md:w-8 md:h-8 -mt-2 md:-mt-4 text-white label-sm'
+                                        : phase.index + 1 > phaseIndex
+                                        ? 'bg-white w-4 h-4 md:w-8 md:h-8 -mt-2 md:-mt-4 label-sm'
+                                        : 'w-8 h-8 md:w-12 md:h-12 -mt-4 md:-mt-6  label-xl bg-red-500 text-white'
                                 "
                             >
-                                {{ i + 1 }}
-                            </span>
-                            <div
-                                v-if="i + 1 !== phases.length"
-                                class="arrow-right absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2"
-                            ></div>
+                                <span
+                                    :class="
+                                        phase.index + 1 !== phaseIndex
+                                            ? 'hidden md:block'
+                                            : ''
+                                    "
+                                >
+                                    {{ phase.index + 1 }}
+                                </span>
+                            </div>
+                            <div class="text-center">
+                                <p
+                                    v-if="showTitle"
+                                    class="transition-all"
+                                    :class="[
+                                        phase.index + 1 == phaseIndex ||
+                                        phaseIndex > 5
+                                            ? 'label-xl mt-2 md:mt-4'
+                                            : 'label-sm mt-2',
+                                        phase.index + 1 !== phaseIndex
+                                            ? 'hidden md:block'
+                                            : '',
+                                    ]"
+                                >
+                                    {{ phase.title }}
+                                </p>
+                                <p
+                                    v-if="showSummaries"
+                                    class="max-w-xs px-4 mt-2 hidden lg:block"
+                                >
+                                    {{ summaries[phase.index] }}
+                                </p>
+                            </div>
                         </div>
+
+                        <i
+                            v-else
+                            class="fas fa-caret-right text-4xl text-red-500 -translate-y-1/2"
+                        ></i>
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-5 container-box">
+            <div v-if="showSummaries" class="container-box py-24 space-y-4">
                 <div
-                    class="flex items-center flex-col text-center cursor-pointer"
-                    v-for="(phaseText, i) in phases"
-                    :key="i"
-                    @click="emit('phaseIndex', i + 1)"
+                    v-for="(sum, i) in summaries"
+                    :key="sum"
+                    class="flex flex-col lg:hidden"
                 >
-                    <p
-                        v-if="showTitle"
-                        class="transition-all"
-                        :class="[
-                            i + 1 == phaseIndex
-                                ? 'label-xl mt-6 md:mt-8'
-                                : 'label-sm mt-6',
-                            i + 1 !== phaseIndex ? 'hidden md:block' : '',
-                        ]"
-                    >
-                        {{ phaseText }}
-                    </p>
-                    <p v-if="showDescription" class="w-3/4">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Aliquam illo maxime fugiat corrupti adipisci.
+                    <h2>{{ phases[i] }}</h2>
+                    <p>
+                        {{ sum }}
                     </p>
                 </div>
             </div>
@@ -68,6 +94,8 @@
 </template>
 
 <script setup>
+import { nextTick, onMounted, watchEffect } from '@vue/runtime-core'
+
 const props = defineProps({
     phaseIndex: {
         type: Number,
@@ -76,12 +104,23 @@ const props = defineProps({
         type: Boolean,
         default: true,
     },
-    showDescription: {
+    showSummaries: {
         type: Boolean,
         default: false,
     },
+    marginTop: {
+        type: Boolean,
+        default: false,
+    },
+    summaries: {
+        type: Array,
+        default: [],
+    },
 })
-const { phaseIndex, showTitle, showDescription } = toRefs(props)
+
+const { phaseIndex, showTitle, showSummaries, marginTop, summaries } =
+    toRefs(props)
+
 const phases = [
     'Initiieren',
     'Produzieren',
@@ -89,7 +128,62 @@ const phases = [
     'Verbreiten',
     'Beeinflussung',
 ]
-const emit = defineEmits(['phaseIndex'])
+
+function insertZeros(array) {
+    return array.reduce((acc, title, i) => {
+        acc.push({ title, index: i })
+        if (i + 1 !== array.length) {
+            acc.push(0)
+        }
+        return acc
+    }, [])
+}
+
+const phasesWithZeros = insertZeros(phases)
+console.log({ phasesWithZeros })
+
+const emit = defineEmits(['phaseIndex', 'height'])
+
+const marginTopClass = computed(() => {
+    if (marginTop.value) {
+        if (phaseIndex.value > phases.length) {
+            return 'mt-2 md:mt-4'
+        } else {
+            return 'mt-3 md:mt-6'
+        }
+    } else {
+        return ''
+    }
+})
+
+const elementContainer = ref(null)
+const { height: elementContainerHeight } = useElementBounding(elementContainer)
+
+watchEffect(() => emit('height', elementContainerHeight))
+
+const phasesElements = ref([])
+const left = ref(0)
+const right = ref(0)
+
+function setPadding() {
+    const first = phasesElements.value[0]
+    const last = phasesElements.value[phasesElements.value.length - 1]
+
+    left.value = first.getBoundingClientRect().x * 2 + first.offsetWidth
+    right.value =
+        (window.innerWidth - last.getBoundingClientRect().right) * 2 +
+        last.offsetWidth
+}
+
+onMounted(() => setPadding())
+
+watch([phaseIndex, showTitle, showSummaries, marginTop, summaries], () =>
+    nextTick(() => setPadding())
+)
+
+useEventListener(window, 'resize', () => {
+    setPadding()
+})
 </script>
 
 <style scoped>

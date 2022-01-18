@@ -1,25 +1,31 @@
 <template>
     <div class="relative">
         <div
-            v-for="(block, i) in texts"
-            :key="block"
-            class="flex flex-row scroll-px-4 md:scroll-px-0 overflow-y-hidden w-full snap-mandatory snap-x scrollbar-hidden"
+            class="flex flex-col md:scroll-px-0 overflow-y-hidden w-full snap-mandatory snap-x scrollbar-hidden"
             @scroll="update"
-            ref="container"
         >
             <div
-                class="scroll-px-4 first:ml-4 last:mr-4 first:md:ml-0 md:last:mr-0"
+                class="flex"
+                v-for="block in texts"
+                :key="block"
+                ref="container"
             >
                 <div
-                    v-for="text in block.descriptions"
-                    class="py-2 mb-8 md:mb-12 h-64 md:h-fit"
+                    v-for="(text, i) in block.descriptions"
+                    class="py-2 mb-8 md:mb-12 w-full flex-shrink-0 snap-start"
                     :key="text"
                 >
-                    <h3 class="absolute -translate-y-6 md:-translate-y-8">
+                    <h3
+                        v-if="i == 0"
+                        class="absolute -translate-y-6 md:-translate-y-8"
+                    >
                         {{ block.title }}
                     </h3>
                     <div class="w-full h-0.5 bg-red-500"></div>
-                    <p class="w-96 flex-shrink-0 snap-start mt-2 mr-4 md:mr-0">
+                    <p
+                        class="mt-2 mr-4 md:mr-0"
+                        style="max-width: min(66ch, 80vw)"
+                    >
                         {{ text }}
                     </p>
                 </div>
@@ -39,9 +45,8 @@ const props = defineProps({
 })
 const { texts, phaseIndex } = toRefs(props)
 
-watch(texts, () => console.log(texts.value))
-
 const container = ref(0)
+
 const currentElement = ref(0)
 
 function getElementsLefts() {

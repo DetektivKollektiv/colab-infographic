@@ -1,5 +1,5 @@
 <template>
-    <div class="relative h-[50vh] min-h-[400px]">
+    <div class="relative h-[50vh] min-h-[400px] max-h-[30rem]">
         <div
             class="bg-gradient-to-b from-transparent to-black w-full h-full absolute opacity-40"
         ></div>
@@ -30,13 +30,7 @@
                             @click="emit('state', 'uebersicht')"
                             :active="state === 'uebersicht'"
                         >
-                            Übersicht</ButtonText
-                        >
-                        <ButtonText
-                            @click="emit('state', 'trends')"
-                            :active="state === 'trends'"
-                        >
-                            Trends</ButtonText
+                            Übersicht & Trends</ButtonText
                         >
                     </div>
                 </div>
@@ -44,7 +38,7 @@
         </div>
 
         <img
-            class="object-cover w-screen h-[50vh] min-h-[400px]"
+            class="object-cover w-screen h-[50vh] max-h-[30rem] min-h-[400px]"
             :src="story.image"
             alt=""
         />
