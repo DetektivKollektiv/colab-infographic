@@ -11,7 +11,7 @@
         :style="{ height: height + 'px' }"
     >
         <div ref="textContainer" class="group">
-            <p ref="textElement" class="group-hover:font-bold">
+            <p ref="textElement" class="group-hover:font-bold label-sm">
                 {{ text }}
             </p>
             <p class="text-md pt-4">
