@@ -1,9 +1,13 @@
 <template>
     <div class="container-box">
-        <div class="flex space-x-4 justify-center pt-6">
-            <ButtonStory story="Story 1"></ButtonStory>
-            <ButtonStory story="Story 2"></ButtonStory>
-            <ButtonStory story="Story 3"></ButtonStory>
+        <div class="pt-6 relative">
+            <div class="flex space-x-4 justify-center float-left">
+                <ButtonStory story="Story 1"></ButtonStory>
+                <ButtonStory story="Story 2"></ButtonStory>
+                <ButtonStory story="Story 3"></ButtonStory>
+            </div>
+
+            <ButtonDropdown class="absolute right-0"></ButtonDropdown>
         </div>
         <SectionHeadline>WAS</SectionHeadline>
         <Grid :doubleFourth="true" class="mt-4">

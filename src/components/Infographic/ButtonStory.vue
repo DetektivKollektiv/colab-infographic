@@ -3,7 +3,6 @@
 </template>
 
 <script setup>
-import { toRefs, ref, computed } from '@vue/reactivity'
 import { useStoryStore } from '@/stores/story'
 
 const props = defineProps({
