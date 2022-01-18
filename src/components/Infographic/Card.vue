@@ -3,16 +3,7 @@
         @mouseover="hover = true"
         @mouseleave="hover = false"
         @click="example = !example"
-        class="
-            p-4
-            bg-gray-100
-            rounded-md
-            w-full
-            transition-all
-            duration-300
-            overflow-hidden
-            cursor-pointer
-        "
+        class="p-4 bg-gray-100 rounded-md w-full transition-all duration-300 overflow-hidden cursor-pointer"
         :class="{
             'bg-purple-500 text-white': example,
             'duration-75 border-2 border-gray-800': active,

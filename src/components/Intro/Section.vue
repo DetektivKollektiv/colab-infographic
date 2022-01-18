@@ -3,84 +3,372 @@ import SectionSlide from './SectionSlide.vue'
 import SectionArrows from './SectionArrows.vue'
 </script>
 
+
 <script>
+import backgroundImage from '@/assets/pictures/unsplash_RmoWqDCqN2E.png'
 export default {
     data() {
         return {
             slide: 1,
+            enter_class: 'animate__animated animate__slideInRight',
+            leave_class: 'animate__animated animate__slideOutLeft',
         }
     },
     methods: {
         method_slide(input) {
-            this.slide = this.slide + input
-            console.log(this.slide)
+            console.log(input)
+            let target = input['target']
+            let animationUp = input['animationUp']
+            if (animationUp) {
+                this.enter_class = 'animate__animated animate__slideInRight'
+                this.leave_class = 'animate__animated animate__slideOutLeft'
+            } else {
+                this.enter_class = 'animate__animated animate__slideInLeft'
+                this.leave_class = 'animate__animated animate__slideOutRight'
+            }
+            this.slide = target;
         },
+        swipe() {
+            var self = this;
+            return function (direction, event) {
+                console.log("Swiped in direction ", direction);
+                let target = self.slide
+                if (direction == "left") {
+                    target = self.slide + 1 == 7 ? 1 : self.slide + 1
+                    self.method_slide({ 'target': target, 'animationUp': true })
+                }
+                if(direction == "right"){
+                    target = self.slide - 1 == 0 ? 6 : self.slide - 1
+                    self.method_slide({ 'target': target, 'animationUp': false })
+                }
+            };
+
+        }
     },
 }
 </script>
 
 <template>
-    <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
-        rel="stylesheet"
-        type="text/css"
-    />
-    <!-- <transition-group name="fade"> -->
-    <transition-group
-        name="custom-classes-transition"
-        enter-active-class="animate__animated animate__slideInLeft"
-        leave-active-class="animate__animated animate__slideOutRight"
-    >
-        <!-- <h1>-Section: Currently showing slide {{ this.slide }}</h1> -->
-        <SectionSlide
-            key="Slide1"
-            text="Hallo"
-            color="bg-red-200"
-            v-if="slide == 1"
-        ></SectionSlide>
-        <SectionSlide
-            key="Slide2"
-            text="Das"
-            color="bg-blue-200"
-            v-if="slide == 2"
-        ></SectionSlide>
-        <SectionSlide
-            key="Slide3"
-            text="ist"
-            color="bg-green-200"
-            v-if="slide == 3"
-        ></SectionSlide>
-        <SectionSlide
-            key="Slide4"
-            text="ein"
-            color="bg-yellow-200"
-            v-if="slide == 4"
-        ></SectionSlide>
-        <SectionSlide
-            key="Slide5"
-            text="Slider"
-            color="bg-purple-200"
-            v-if="slide == 5"
-        ></SectionSlide>
-    </transition-group>
+    <div v-touch:swipe="swipe()">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <transition
+            name="custom-classes-transition"
+            :enter-active-class="enter_class"
+            :leave-active-class="leave_class"
+            mode="out-in"
+        >
+            <div v-if="slide == 1" key="1" class="w-screen min-h-screen text-white">
+                <div
+                    class="w-full min-h-screen bg-center bg-no-repeat bg-cover"
+                    :style="{ backgroundImage: `url(${backgroundImage})` }"
+                >
+                    <div
+                        class="h-full min-h-screen w-full sm:w-2/3 flex flex-col justify-center px-8"
+                    >
+                        <h1
+                            class="text-purple-700 text-3xl sm:text-5xl font-bold pt-4 pb-8"
+                        >Ein holistischer Blick auf Desinformation</h1>
+                        <p class="sm:text-xl">
+                            Desinformation ist ein komplexes Phänomen. Wir wollen
+                            verstehen, wie Desinformation wirkt. Eine ganzheitliche
+                            Perspektive soll uns dabei helfen, Desinformation
+                            wirksam zu bekämpfen
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div
+                v-else-if="slide == 2"
+                key="2"
+                class="w-screen min-h-screen flex flex-col items-center sm:flex-row"
+            >
+                <div class="flex flex-col sm:w-1/2 p-8">
+                    <h3 class="slide-sub-headline">Ein holistischer Blick auf Desinformation</h3>
+                    <h2 class="slide-headline">Der systemische Kontext</h2>
+                    <p class="slide-text">
+                        Für böswillige Akteur*innen entsteht durch Desinformation
+                        Wert. Im Kern blicken wir daher auf die Wertschöpfungskette
+                        von Desinformation. Doch Desinformation entsteht nicht im
+                        luftleeren Raum. Gesellschaftliche Entwicklungen ermöglichen
+                        oder begünstigen sie. Mit Makro- und Meso-Trends beschreiben
+                        wir Muster, die unsere Welt über einen längeren Zeitpunkt
+                        beeinflussen und einen breiten Geltungsbereich haben.
+                        Makro-Trends beschreiben exemplarisch, welche großen
+                        Entwicklungslinien unsere Gesellschaft als Ganze prägen und
+                        zur Spaltung beitragen. Meso-Trends sind konkrete
+                        Ausprägungen davon mit konkretem Bezug zu Desinformation.
+                    </p>
+                </div>
+                <div class="sm:w-1/2 h-full p-8 flex items-center justify-center">
+                    <img class="max-w-full max-h-full" src="@/assets/pictures/intro/overview.svg" />
+                </div>
+            </div>
+            <div
+                v-else-if="slide == 3"
+                class="w-screen min-h-screen flex flex-col items-center sm:flex-row"
+            >
+                <div class="flex flex-col sm:w-1/2 p-8">
+                    <h3 class="slide-sub-headline">Ein holistischer Blick auf Desinformation</h3>
+                    <h2 class="slide-headline">Die Makrotrends</h2>
+                    <p class="slide-text">
+                        Große historische Entwicklungslinien prägen unseren Blick
+                        auf die Welt, sie tragen aber auch zur gesellschaftlichen
+                        Spaltung und Polarisierung bei. Desinformation kann so
+                        überhaupt erst auf fruchtbaren Boden fallen. Mit
+                        Makro-Trends beschreiben wir exemplarisch das Gesamtsystem,
+                        in das Desinformation eingebettet ist.
+                    </p>
+                </div>
+                <div class="sm:w-1/2 h-full p-10 flex items-center justify-center">
+                    <img
+                        class="max-w-full max-h-full"
+                        src="@/assets/pictures/intro/overview_macro.svg"
+                    />
+                </div>
+            </div>
+            <div
+                v-else-if="slide == 4"
+                class="w-screen min-h-screen flex flex-col items-center sm:flex-row"
+            >
+                <div class="flex flex-col sm:w-1/2 p-8">
+                    <h3 class="slide-sub-headline">Ein holistischer Blick auf Desinformation</h3>
+                    <h2 class="slide-headline">Die Mesotrends</h2>
+                    <p class="slide-text">
+                        Meso-Trends beschreiben konkrete Ausprägungen der großen
+                        historischen Entwicklungslinien (Makro-Trends). Die
+                        geringere Abstraktionsebene stellt einen konkreten
+                        Zusammenhang zur Ausbreitung von Desinformation dar.
+                        Meso-Trends bieten Ansatzpunkte für Maßnahmen gegen das
+                        Symptom Desinformation.
+                    </p>
+                </div>
+                <div class="sm:w-1/2 h-full p-10 flex items-center justify-center">
+                    <img
+                        class="max-w-full max-h-full"
+                        src="@/assets/pictures/intro/overview_meso.svg"
+                    />
+                </div>
+            </div>
+            <div
+                v-else-if="slide == 5"
+                class="w-screen min-h-screen flex flex-col items-center justify-center"
+            >
+                <div class="flex flex-col h-full p-8">
+                    <div>
+                        <h3 class="slide-sub-headline">Ein holistischer Blick auf Desinformation</h3>
+                        <h2 class="slide-headline">Die Wertschöpfungskette</h2>
+                    </div>
+                    <div class="flex flex-col items-center lg:flex-row">
+                        <div class="lg:w-1/3">
+                            <p class="slide-text">
+                                Wie Desinformation entsteht und ihre Wirkung
+                                entfaltet, lässt sich wie ein Herstellungsprozess
+                                beschreiben [, bei dem Gewinne erzielt werden: an
+                                Einfluss, Macht, Status, Geld]. Wir nennen diesen
+                                Prozess deshalb „Wertschöpfungskette“ – unterteilt
+                                in sieben aufeinanderfolgende Phasen.
+                            </p>
+                        </div>
+                        <div class="grid lg:grid-cols-5 lg:w-2/3 p-8">
+                            <div
+                                class="flex flex-col justify-between border-2 border-b-0 lg:border-b-2 lg:border-r-0 border-black p-2"
+                            >
+                                <h4 class="text-xl">Phase 1: Initiieren</h4>
+                                <p>
+                                    Also: den Anstoß oder den Auftrag für die
+                                    Produktion und Verbreitung von Desinformation
+                                    geben.
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-col justify-between border-2 border-b-0 lg:border-b-2 lg:border-r-0 border-black p-2"
+                            >
+                                <h4 class="text-xl">Phase 2: Produzieren</h4>
+                                <p>
+                                    Also: Desinformation entwickeln und erstellen –
+                                    in allen denkbaren Varianten.
+                                </p>
+                            </div>
 
-    <SectionArrows @change_slide="method_slide"></SectionArrows>
+                            <div
+                                class="flex flex-col justify-between border-2 border-b-0 lg:border-b-2 lg:border-r-0 border-black p-2"
+                            >
+                                <h4 class="text-xl">Phase 3: Platzieren</h4>
+                                <p>
+                                    Also: Desinformation gezielt veröffentlichen –
+                                    so, dass sie besonders viel Wirkung entfaltet
+                                    bzw. Wert erzeugt.
+                                </p>
+                            </div>
+
+                            <div
+                                class="flex flex-col justify-between border-2 border-b-0 lg:border-b-2 lg:border-r-0 border-black p-2"
+                            >
+                                <h4 class="text-xl">Phase 4: Verbreiten</h4>
+                                <p>
+                                    Also: Desinformation liken, teilen, empfehlen,
+                                    kommentieren … bewusst oder unbewusst,
+                                    persönlich oder automatisiert.
+                                </p>
+                            </div>
+
+                            <div class="flex flex-col justify-between border-2 border-black p-2">
+                                <h4 class="text-xl">Phase 5: Beeinflusst werden</h4>
+                                <p>
+                                    Also: Desinformation aufnehmen und verarbeiten –
+                                    mit allen Konsequenzen für Meinung und Haltung.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block pt-8">
+                        <img
+                            class="max-w-full max-h-full"
+                            src="@/assets/pictures/intro/overview_kette.svg"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div
+                v-else-if="slide == 6"
+                class="w-screen min-h-screen flex flex-col justify-center p-8"
+            >
+                <div>
+                    <h3 class="slide-sub-headline">Ein holistischer Blick auf Desinformation</h3>
+                    <h2 class="slide-headline">Akteur*innen und Methoden</h2>
+                </div>
+                <div class="flex flex-col lg:flex-row">
+                    <div class="flex flex-col pt-0 sm:pt-8 lg:w-1/3">
+                        <p class="slide-text">
+                            In jeder Phase der Wertschöpfungskette gibt es
+                            Akteur*innen, die an der Desinformations-Herstellung
+                            beteiligt sind – und dazu jeweils spezifische Methoden
+                            verwenden.
+                        </p>
+                        <div class="hidden lg:block pt-8">
+                            <img
+                                class="max-w-full max-h-full"
+                                src="@/assets/pictures/intro/overview_kette.svg"
+                            />
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-8 gap-10 sm:gap-20 w-full lg:w-2/3">
+                        <div class="hidden lg:block">
+                            <p class="text-xl">Was?</p>
+                            <div class="grid lg:grid-cols-5">
+                                <div
+                                    class="flex flex-col justify-between border-2 border-b-0 lg:border-b-2 lg:border-r-0 border-black p-2"
+                                >
+                                    <h4 class="text-xl">Phase 1: Initiieren</h4>
+                                </div>
+                                <div
+                                    class="flex flex-col justify-between border-2 border-b-0 lg:border-b-2 lg:border-r-0 border-black p-2"
+                                >
+                                    <h4 class="text-xl">Phase 2: Produzieren</h4>
+                                </div>
+
+                                <div
+                                    class="flex flex-col justify-between border-2 border-b-0 lg:border-b-2 lg:border-r-0 border-black p-2"
+                                >
+                                    <h4 class="text-xl">Phase 3: Platzieren</h4>
+                                </div>
+
+                                <div
+                                    class="flex flex-col justify-between border-2 border-b-0 lg:border-b-2 lg:border-r-0 border-black p-2"
+                                >
+                                    <h4 class="text-xl">Phase 4: Verbreiten</h4>
+                                </div>
+
+                                <div
+                                    class="flex flex-col justify-between border-2 border-black p-2"
+                                >
+                                    <h4 class="text-xl">Phase 5: Beeinflusst werden</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl">Wer?</p>
+                            <div class="w-full border-t-2 border-black">
+                                <p>
+                                    Wer macht’s? Akteur*innen sind je nach Phase z.
+                                    B. Staaten, Verbände, Medien,
+                                    Big-Tech-Plattformen, Einzelpersonen …
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl">Wie?</p>
+                            <div class="w-full border-t-2 border-black">
+                                <p>
+                                    Wie wird’s gemacht? Methoden sind die Mittel und
+                                    Werkzeuge, die je nach Phase zum Einsatz kommen:
+                                    darunter z. B. Dekontextualisierung,
+                                    Micro-Targeting oder Algorithmen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </transition>
+
+        <SectionArrows @change_slide="method_slide" :current_slide="slide"></SectionArrows>
+        <SectionNavigation></SectionNavigation>
+    </div>
 </template>
 
 <style scoped>
-.fade-enter-active {
+.slide-sub-headline {
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
-.fade-leave-active {
-    /* transition: opacity 0.5s ease; */
+.slide-headline {
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+    /* padding: 1rem 0; */
+    font-weight: bold;
 }
 
-.fade-enter-from {
-    transition: transform 1s;
-    transition-delay: 1s;
-    transform: translateX(100px);
+.slide-text {
+    font-size: 1rem /* 30px */;
+    line-height: 1.35rem /* 36px */;
+    text-align: justify;
 }
-.fade-leave-to {
-    transition: transform 1s;
-    transform: translateX(100vw);
+
+@media (min-width: 769px) {
+    .slide-sub-headline {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .slide-headline {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+        /* padding: 1rem 0; */
+    }
+
+    .slide-text {
+        font-size: 1.5rem /* 30px */;
+        line-height: 1.75rem /* 36px */;
+    }
+}
+
+@media (min-width: 1400px) {
+    .slide-sub-headline {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .slide-headline {
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+
+    .slide-text {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
 }
 </style>
