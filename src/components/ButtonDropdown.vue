@@ -2,18 +2,18 @@
     <!-- create Dropdown Menu -->
     <button
         class="px-4 border-2 border-red-500 inline-block bg-white overflow-hidden rounded-2xl text-right whitespace-nowrap transition-all"
-        @click="open = !open"
+        @click="closed = !closed"
         :style="{ width }"
     >
         <p class="font-bold text-sm md:text-lg inline-block" ref="textElement">
             {{ text }}
-            <i v-if="open" class="fas fa-caret-down ml-2 text-red-500"></i>
+            <i v-if="closed" class="fas fa-caret-down ml-2 text-red-500"></i>
             <i class="fas fa-caret-up ml-2 text-red-500" v-else></i>
         </p>
 
         <div
             class="text-sm md:text-lg transition-all space-y-2 float-right"
-            :class="{ 'mt-4': !open }"
+            :class="{ 'mt-4': !closed }"
             ref="optionsElement"
             :style="{ height }"
         >
@@ -25,7 +25,7 @@
     </button>
 </template>
 <script setup>
-const open = ref(false)
+const closed = ref(true)
 
 const options = [
     {
@@ -67,7 +67,7 @@ const textElement = ref(null)
 
 const height = computed(() => {
     if (optionsElement.value !== null) {
-        return open.value
+        return closed.value
             ? '0px'
             : optionsElement.value.scrollHeight + 16 + 'px'
     } else {
@@ -77,7 +77,7 @@ const height = computed(() => {
 
 const width = computed(() => {
     if (textElement.value !== null && optionsElement.value !== null) {
-        return open.value
+        return closed.value
             ? textElement.value.scrollWidth + 36 + 'px'
             : optionsElement.value.scrollWidth + 32 + 'px'
     } else {
