@@ -2,7 +2,7 @@
     <div
         class="text-center relative w-full h-full font-headline"
         :class="
-            current_slide == 1 ? 'md:text-4xl text-xl' : 'md:text-2xl text-xl'
+            current_slide == 1 ? 'lg:text-4xl text-xl' : 'lg:text-2xl text-xl'
         "
     >
         <div class="bg-yellow-500 circle h-full w-full">
@@ -11,26 +11,24 @@
             >
         </div>
         <div
-            class="bg-yellow-400 circle md:h-2/3 md:w-2/3 h-full w-full top-32 md:top-0"
+            class="bg-yellow-400 circle lg:h-2/3 lg:w-2/3 h-full w-full top-32 lg:top-0"
         >
             <span :class="current_slide == 4 ? 'font-bold' : ''"
                 >Meso-Trends</span
             >
         </div>
         <div
-            class="bg-white circle md:h-1/3 md:w-1/3 h-full w-full top-64 md:top-0"
+            class="bg-white circle lg:h-1/3 lg:w-1/3 h-full w-full top-64 lg:top-0"
         >
             <span
-                class="block md:hidden whitespace-pre"
+                class="block lg:hidden"
                 :class="[5, 6].includes(current_slide) ? 'font-bold' : ''"
-                >{{ current_slide == 1 ? 'Wertschöpfungskette' : 'WSK' }}</span
+                >Wertschöpfungskette</span
             >
             <span
-                class="hidden md:block whitespace-pre"
+                class="hidden lg:block -mt-4 2xl:-mt-0"
                 :class="[5, 6].includes(current_slide) ? 'font-bold' : ''"
-                >{{
-                    current_slide == 1 ? 'Wert-\nschöpfungskette' : 'WSK'
-                }}</span
+                >Wert-<br>schöpfungskette</span
             >
         </div>
     </div>
@@ -46,7 +44,7 @@
     bottom: 0;
     margin: auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
     .circle {
         padding-top: 2%;
     }
