@@ -1,5 +1,6 @@
 <template>
     <div class="relative">
+        <Modal></Modal>
         <div
             class="absolute w-full h-full container-box -z-50 left-1/2 -translate-x-1/2 pt-36"
         >

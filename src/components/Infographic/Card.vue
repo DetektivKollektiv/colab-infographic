@@ -2,20 +2,15 @@
     <div
         @mouseover="hover = true"
         @mouseleave="hover = false"
-        @click="example = !example"
-        class="p-4 bg-white rounded-md w-full transition-all duration-300 overflow-hidden cursor-pointer"
+        @click="popup = true"
+        class="px-4 py-2 bg-white rounded-md w-full transition-all duration-300 overflow-hidden cursor-pointer"
         :class="{
-            'bg-purple-500 text-white': example,
-            'duration-75 border-2 border-gray-800': active,
+            'duration-75 border-2 border-red-500': active,
         }"
-        :style="{ height: height + 'px' }"
     >
-        <div ref="textContainer" class="group">
-            <p ref="textElement" class="group-hover:font-bold label-sm">
+        <div class="group">
+            <p class="group-hover:text-red-500 label-md">
                 {{ text }}
-            </p>
-            <p class="text-md pt-4">
-                {{ description }}
             </p>
         </div>
     </div>
@@ -35,16 +30,7 @@ const props = defineProps({
 
 const { content } = toRefs(props)
 
-const textContainer = ref(0)
-const textElement = ref(0)
-
-function getHeight() {
-    return hover.value
-        ? textContainer.value.scrollHeight + 32
-        : textElement.value.scrollHeight + 32 // 16px for the padding
-}
-
-const hover = ref(false)
+const popup = ref(false)
 
 const example = ref(false)
 
@@ -52,27 +38,9 @@ const text = computed(() => {
     return example.value ? content.value.example : content.value.title
 })
 
-const description = computed(() => {
-    return example.value
-        ? content.value.exampleDescription
-        : content.value.description
-})
-
 const active = computed(() => {
     return content.value.storys.includes(useInfographicStore().story)
 })
 
 const height = ref(0)
-
-watch([example, hover], () => {
-    nextTick(() => {
-        height.value = getHeight()
-    })
-})
-
-onMounted(() => {
-    nextTick(() => {
-        height.value = getHeight()
-    })
-})
 </script>
