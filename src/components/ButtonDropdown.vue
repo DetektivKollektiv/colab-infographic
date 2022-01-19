@@ -20,7 +20,7 @@
             <p
                 v-for="option in options"
                 :key="option.value"
-                @click="emit('click', option.text)"
+                @click="emit('option', option.text)"
             >
                 <i :class="option.icon + ' ' + option.color" class="mr-2"></i>
                 {{ option.text }}
@@ -89,6 +89,6 @@ const width = computed(() => {
     }
 })
 
-const emit = defineEmits(['click'])
+const emit = defineEmits(['option'])
 </script>
 <style></style>
