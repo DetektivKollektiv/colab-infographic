@@ -19,7 +19,7 @@
     }
 
     p {
-        @apply text-sm md:text-base leading-snug;
+        @apply text-sm md:text-base leading-snug whitespace-pre-line;
     }
 
     .label-xs {
