@@ -52,8 +52,13 @@ const elements = {
 }
 
 import { WER, WIE, WAS } from '@/api/infographic'
+import { onUnmounted } from '@vue/runtime-core'
 const content = infographicStore.modalContent
 
 const isLocked = useScrollLock(document.documentElement)
 isLocked.value = true
+
+onUnmounted(() => {
+    isLocked.value = false
+})
 </script>
