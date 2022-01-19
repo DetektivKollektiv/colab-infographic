@@ -17,7 +17,11 @@
             ref="optionsElement"
             :style="{ height }"
         >
-            <p v-for="option in options" :key="option.value">
+            <p
+                v-for="option in options"
+                :key="option.value"
+                @click="emit('click', option.text)"
+            >
                 <i :class="option.icon + ' ' + option.color" class="mr-2"></i>
                 {{ option.text }}
             </p>
@@ -84,5 +88,7 @@ const width = computed(() => {
         return 'auto'
     }
 })
+
+const emit = defineEmits(['click'])
 </script>
 <style></style>

@@ -8,6 +8,7 @@ export const useInfographicStore = defineStore('infographic', {
         storyContent: [],
         modalContent: {},
         showModal: false,
+        massnahme: '',
     }),
     actions: {
         setStory(story) {
@@ -22,6 +23,10 @@ export const useInfographicStore = defineStore('infographic', {
         },
         closeModal() {
             this.showModal = false
+        },
+        setMassnahme(massnahme) {
+            console.log(massnahme)
+            this.massnahme = massnahme
         },
     },
 })

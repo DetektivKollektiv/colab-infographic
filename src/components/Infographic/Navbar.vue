@@ -7,10 +7,17 @@
                 :key="story.title"
             ></ButtonStory>
         </div>
-        <ButtonDropdown class="absolute right-0 z-10"></ButtonDropdown>
+
+        <ButtonDropdown
+            class="absolute right-0 z-10"
+            @option="infographicStore.setMassnahme"
+        ></ButtonDropdown>
     </div>
 </template>
 <script setup>
 import stories from '@/api/stories.json'
+import { useInfographicStore } from '@/stores/infographic'
+
+const infographicStore = useInfographicStore()
 </script>
 <style></style>
