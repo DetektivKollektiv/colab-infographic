@@ -12,8 +12,7 @@ const DEFAULT_TYPES = {
         type: 'card',
         title: '',
         description: '',
-        example: '',
-        exampleDescription: '',
+        subtitle: '',
         storys: [],
     },
     phase: {

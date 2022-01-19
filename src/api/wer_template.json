@@ -29,7 +29,10 @@
           "text": "Rechtsextremisten verwenden verbale Angriffe und falsche Tatsachenbehauptungen, um andere Personen einzuschüchtern und aus der Öffentlichkeit zu verdrängen."
         }
       ],
-      "maßnahmen": ["Forschen gegen Russland", "Forschen gegen China"]
+      "maßnahmen": [
+        "Forschen gegen Russland",
+        "Forschen gegen China"
+      ]
     },
     {
       "title": "Parteien",
@@ -57,9 +60,11 @@
       "storys": []
     },
     {
-        "Hier kommen": "noch mehr Karten"
+      "Hier kommen": "noch mehr Karten"
     }
   ],
-  "02": ["Hier kommen Karten für Phase 2"],
+  "02": [
+    "Hier kommen Karten für Phase 2"
+  ],
   "Hier kommen": "noch mehr Phasen"
 }
