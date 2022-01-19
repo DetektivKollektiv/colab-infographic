@@ -86,9 +86,9 @@ export default {
                                 Entwicklungen ermöglichen oder begünstigen sie.
                                 Mit
                                 <span
-                                    class="highlight bg-yellow-500"
+                                    class="highlight bg-yellow-400"
                                 >Makro-Trends</span> und
-                                <span class="highlight bg-yellow-400">Meso-Trends</span> beschreiben wir
+                                <span class="highlight bg-yellow-300">Meso-Trends</span> beschreiben wir
                                 Muster, die unsere Welt über einen längeren
                                 Zeitpunkt beeinflussen und einen breiten
                                 Geltungsbereich haben. Makro-Trends beschreiben
@@ -112,7 +112,7 @@ export default {
                                 Polarisierung bei. Desinformation kann so
                                 überhaupt erst auf fruchtbaren Boden fallen. Mit
                                 <span
-                                    class="highlight bg-yellow-500"
+                                    class="highlight bg-yellow-400"
                                 >Makro-Trends</span> beschreiben wir exemplarisch das
                                 Gesamtsystem, in das Desinformation eingebettet
                                 ist.
@@ -131,7 +131,7 @@ export default {
                                 stellt einen konkreten Zusammenhang zur
                                 Ausbreitung von Desinformation her.
                                 <span
-                                    class="highlight bg-yellow-400"
+                                    class="highlight bg-yellow-300"
                                 >Meso-Trends</span>
                                 bieten Ansatzpunkte für Maßnahmen gegen das
                                 Symptom Desinformation.
