@@ -49,6 +49,12 @@ const active = computed(() => {
 const deactivate = computed(() => {
     if (infographicStore.story !== '') {
         return !content.value.stories.includes(infographicStore.story)
+    } else if (infographicStore.massnahme !== '') {
+        return !massnahmen[infographicStore.massnahme].some((massnahme) =>
+            content.value.massnahmen.includes(massnahme.title)
+        )
+    } else {
+        return false
     }
 })
 
