@@ -1,6 +1,6 @@
 <template>
+    <Modal></Modal>
     <div class="relative">
-        <Modal></Modal>
         <div
             class="absolute w-full h-full container-box -z-50 left-1/2 -translate-x-1/2 pt-36"
         >
@@ -11,14 +11,6 @@
         <div class="container-box">
             <Navbar class="pt-6"> </Navbar>
             <WSKInfographic class="mt-24"></WSKInfographic>
-            <!-- <Grid :doubleFourth="true" class="mt-4">
-                <component
-                    v-for="chapter of WAS.chapters"
-                    :is="getComponent(chapter)"
-                    :content="chapter"
-                    :key="chapter"
-                />
-            </Grid> -->
             <SectionHeadline>WER</SectionHeadline>
             <Grid :doubleFourth="false">
                 <Column>

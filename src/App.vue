@@ -6,7 +6,7 @@ const activeStory = ref(0)
 
 <template>
     <!-- <Intro_section></Intro_section> -->
-    <div
+    <!-- <div
         v-for="(story, i) in stories"
         :key="story.title"
         @click="activeStory = i"
@@ -14,7 +14,7 @@ const activeStory = ref(0)
     >
         <Story :story="story" :active="i == activeStory" />
     </div>
-    <Trends />
+    <Trends /> -->
 
     <Infographic class="mt-24" />
 </template>
