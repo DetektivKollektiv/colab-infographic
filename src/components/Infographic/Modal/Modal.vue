@@ -4,24 +4,29 @@
             class="absolute inset-0 bg-white z-50 rounded-md mx-auto my-auto py-6 px-8 h-fit cursor-default"
             style="max-width: 66ch"
         >
-            <h2>{{ content.title }}</h2>
-            <p class="text-red-500 label-sm">{{ content.subtitle }}</p>
-
-            <div v-for="des in content.description" :key="des" class="mt-4">
-                <component
-                    class="mt-2"
-                    v-for="([key, content], i) in Object.entries(des)"
-                    :key="i"
-                    :is="elements[key]()"
-                    :content="content"
-                ></component>
+            <ButtonClose
+                @click="infographicStore.closeModal()"
+                class="float-right"
+            ></ButtonClose>
+            <div class="mt-8">
+                <h2>{{ content.title }}</h2>
+                <p class="text-red-500 label-sm">{{ content.subtitle }}</p>
+                <div v-for="des in content.description" :key="des" class="mt-4">
+                    <component
+                        class="mt-2"
+                        v-for="([key, content], i) in Object.entries(des)"
+                        :key="i"
+                        :is="elements[key]()"
+                        :content="content"
+                    ></component>
+                </div>
             </div>
             <div class="mt-4">
                 <Sources :sources="content.sources"></Sources>
             </div>
         </div>
         <div
-            @click="infographicStore.showModal = false"
+            @click="infographicStore.closeModal()"
             class="w-full h-screen bg-black opacity-50 fixed z-40"
         ></div>
     </div>
