@@ -20,10 +20,17 @@
                 <Sources :sources="content.sources"></Sources>
             </div>
         </div>
-        <div class="w-full h-screen bg-black opacity-50 fixed z-40"></div>
+        <div
+            @click="infographicStore.showModal = false"
+            class="w-full h-screen bg-black opacity-50 fixed z-40"
+        ></div>
     </div>
 </template>
 <script setup>
+import { useInfographicStore } from '@/stores/infographic'
+
+const infographicStore = useInfographicStore()
+
 const elements = {
     headline: () =>
         defineAsyncComponent(() =>
@@ -40,10 +47,8 @@ const elements = {
 }
 
 import { WER, WIE, WAS } from '@/api/infographic'
-const content = WER['01'][0]
-
-console.log(WER['01'][0])
+const content = infographicStore.modalContent
 
 const isLocked = useScrollLock(document.documentElement)
-isLocked.value = true // lock
+isLocked.value = true
 </script>

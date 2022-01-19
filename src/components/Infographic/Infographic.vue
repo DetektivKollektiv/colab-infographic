@@ -1,5 +1,5 @@
 <template>
-    <Modal></Modal>
+    <Modal v-if="infographicStore.showModal"></Modal>
     <div class="relative">
         <div
             class="absolute w-full h-full container-box -z-50 left-1/2 -translate-x-1/2 pt-36"
@@ -149,6 +149,9 @@
 
 <script setup>
 import { WER, WIE, WAS } from '@/api/infographic'
+import { useInfographicStore } from '@/stores/infographic'
+
+const infographicStore = useInfographicStore()
 
 import headline from '@/components/infographic/Headline.vue'
 import card from '@/components/infographic/Card.vue'
