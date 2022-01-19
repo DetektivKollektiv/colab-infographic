@@ -2,138 +2,128 @@
   {
     "Forschen & entwickeln": [
       {
-        "Forschen gegen Russland": {
-          "description": [
-            {
-              "text": "Forschen gegen Russland Absatz 1",
-              "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
-            },
-            {
-              "headline": "Zweiter Absatz",
-              "text": "Zum zweiten Absatz gibts auch Text"
-            }
-          ],
-          "sources": [
-            {
-              "text": "Kolumne in der SZ",
-              "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-            },
-            {
-              "text": "Kolumne in der SZ",
-              "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-            }
-          ],
-          "players": [
-            "HateAid",
-            "codetekt"
-          ]
-        }
+        "title": "Forschen gegen Russland",
+        "description": [
+          {
+            "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+          },
+          {
+            "headline": "Zweiter Absatz",
+            "text": "Zum zweiten Absatz gibts auch Text"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Kolumne in der SZ",
+            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+          },
+          {
+            "text": "Kolumne in der SZ",
+            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+          }
+        ],
+        "players": [
+          "HateAid",
+          "codetekt"
+        ]
       },
       {
-        "Forschen gegen China": {
-          "description": [
-            {
-              "text": "Forschen gegen China Absatz 1",
-              "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
-            },
-            {
-              "headline": "Zweiter Absatz",
-              "text": "Zum zweiten Absatz gibts auch Text"
-            }
-          ],
-          "sources": [
-            {
-              "text": "Kolumne in der SZ",
-              "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-            },
-            {
-              "text": "Kolumne in der SZ",
-              "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-            }
-          ],
-          "players": [
-            "HateAid",
-            "codetekt"
-          ]
-        }
-      },
-      "Mehr Maßnahmen zur Kategorie Forschen und Entwickeln"
+        "title": "Forschen gegen China",
+        "description": [
+          {
+            "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+          },
+          {
+            "headline": "Zweiter Absatz",
+            "text": "Zum zweiten Absatz gibts auch Text"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Kolumne in der SZ",
+            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+          },
+          {
+            "text": "Kolumne in der SZ",
+            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+          }
+        ],
+        "players": [
+          "HateAid",
+          "codetekt"
+        ]
+      }
     ]
   },
-  {
-    "Experimentieren & messen": [
+  "Experimentieren & messen": {
+     [
       {
-        "Experimentieren gegen Russland": {
-          "description": [
-            {
-              "text": "Experimentieren gegen Russland Absatz 1",
-              "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
-            },
-            {
-              "headline": "Zweiter Absatz",
-              "text": "Zum zweiten Absatz gibts auch Text"
-            }
-          ],
-          "sources": [
-            {
-              "text": "Kolumne in der SZ",
-              "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-            },
-            {
-              "text": "Kolumne in der SZ",
-              "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-            }
-          ],
-          "players": [
-            "HateAid",
-            "codetekt"
-          ]
-        }
+        "title": "Experimentieren gegen Russland",
+        "description": [
+          {
+            "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+          },
+          {
+            "headline": "Zweiter Absatz",
+            "text": "Zum zweiten Absatz gibts auch Text"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Kolumne in der SZ",
+            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+          },
+          {
+            "text": "Kolumne in der SZ",
+            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+          }
+        ],
+        "players": [
+          "HateAid",
+          "codetekt"
+        ]
       },
       {
-        "Experimentieren gegen China": {
-          "description": [
-            {
-              "text": "Experimentieren gegen China Absatz 1",
-              "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
-            },
-            {
-              "headline": "Zweiter Absatz",
-              "text": "Zum zweiten Absatz gibts auch Text"
-            }
-          ],
-          "sources": [
-            {
-              "text": "Kolumne in der SZ",
-              "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-            },
-            {
-              "text": "Kolumne in der SZ",
-              "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-            }
-          ],
-          "players": [
-            "HateAid",
-            "codetekt"
-          ]
-        }
-      },
-      "Mehr Maßnahmen zur Kategorie Experimentieren & Messen"
+        "title": "Experimentieren gegen China",
+        "description": [
+          {
+            "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+          },
+          {
+            "headline": "Zweiter Absatz",
+            "text": "Zum zweiten Absatz gibts auch Text"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Kolumne in der SZ",
+            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+          },
+          {
+            "text": "Kolumne in der SZ",
+            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+          }
+        ],
+        "players": [
+          "HateAid",
+          "codetekt"
+        ]
+      }
     ]
   },
-  {
-    "Informieren & bilden": []
+  "Informieren & bilden": {
+     []
   },
-  {
-    "Aufdecken & verteidigen": []
+  "Aufdecken & verteidigen": {
+     []
   },
-  {
-    "Durchsetzen & klagen": []
+  "Durchsetzen & klagen": {
+     []
   },
-  {
-    "Platzieren & antreiben": []
+  "Platzieren & antreiben": {
+     []
   },
-  {
-    "Demonstrieren & aktivieren": []
+  "Demonstrieren & aktivieren": {
+     []
   }
 ]
