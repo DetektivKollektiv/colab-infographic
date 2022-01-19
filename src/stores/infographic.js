@@ -12,11 +12,14 @@ export const useInfographicStore = defineStore('infographic', {
     }),
     actions: {
         setStory(story) {
-            this.story == story ? (this.story = '') : (this.story = story)
-            this.storyContent = stories
-                .filter((story) => story.title == this.story)[0]
-                .phases.map((phase) => phase.summary.text)
+            this.story = story
+            if (this.story) {
+                this.storyContent = stories
+                    .filter((story) => story.title == this.story)[0]
+                    .phases.map((phase) => phase.summary.text)
+            }
         },
+
         setModal(content) {
             this.modalContent = content
             this.showModal = true

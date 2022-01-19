@@ -19,7 +19,9 @@ const active = computed(() => {
 })
 
 function setStory() {
-    useInfographicStore().setStory(story.value)
+    active.value
+        ? useInfographicStore().setStory('')
+        : useInfographicStore().setStory(story.value)
 }
 </script>
 

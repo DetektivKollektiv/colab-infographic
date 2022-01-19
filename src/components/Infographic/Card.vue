@@ -6,6 +6,7 @@
         class="px-4 py-2 bg-white rounded-md w-full transition-all duration-300 overflow-hidden cursor-pointer"
         :class="{
             'duration-75 border-2 border-red-500': active,
+            'opacity-20 pointer-events-none': deactivate,
         }"
     >
         <div class="group">
@@ -13,7 +14,7 @@
                 {{ content.title }}
             </p>
         </div>
-        <div class="pt-2">
+        <div :class="{ 'pt-2': activeMassnahmen.length > 0 }">
             <p
                 class="hover:text-red-500 cursor-pointer"
                 v-for="massnahme in activeMassnahmen"
@@ -45,16 +46,14 @@ const active = computed(() => {
     return content.value.stories.includes(infographicStore.story)
 })
 
-const height = ref(0)
+const deactivate = computed(() => {
+    if (infographicStore.story !== '') {
+        return !content.value.stories.includes(infographicStore.story)
+    }
+})
 
 const activeMassnahmen = computed(() => {
     if (massnahmen[infographicStore.massnahme]) {
-        console.log(
-            'massnahmen',
-            massnahmen[infographicStore.massnahme],
-            content.value
-        )
-
         return massnahmen[infographicStore.massnahme].filter((massnahme) =>
             content.value.massnahmen.includes(massnahme.title)
         )
