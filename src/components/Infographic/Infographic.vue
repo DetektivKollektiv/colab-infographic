@@ -16,14 +16,13 @@
                 :class="[infographicStore.story ? 'max-h-96' : 'max-h-0']"
                 :doubleFourth="true"
             >
-                <Column
+                <p
                     v-for="story in infographicStore.storyContent"
                     :key="story"
+                    class="text-center rounded-md w-full h-fit"
                 >
-                    <p class="px-4 py-2 bg-white rounded-md w-full">
-                        {{ story }}
-                    </p>
-                </Column>
+                    {{ story }}
+                </p>
             </Grid>
             <SectionHeadline>WER</SectionHeadline>
             <Grid :doubleFourth="false">
