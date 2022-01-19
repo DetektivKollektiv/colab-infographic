@@ -14,16 +14,12 @@ const props = defineProps({
 
 const { story } = toRefs(props)
 
-const storyFormat = computed(() => {
-    return story.value.replace(/\s/g, '-').toLowerCase()
-})
-
 const active = computed(() => {
-    return useInfographicStore().story === storyFormat.value
+    return useInfographicStore().story === story.value
 })
 
 function setStory() {
-    useInfographicStore().setStory(storyFormat.value)
+    useInfographicStore().setStory(story.value)
 }
 </script>
 

@@ -1,13 +1,16 @@
 <template>
     <div class="relative">
         <div class="flex space-x-4 justify-center float-left">
-            <ButtonStory story="Story 1"></ButtonStory>
-            <ButtonStory story="Story 2"></ButtonStory>
-            <ButtonStory story="Story 3"></ButtonStory>
+            <ButtonStory
+                v-for="story in stories"
+                :story="story.title"
+                :key="story.title"
+            ></ButtonStory>
         </div>
-
         <ButtonDropdown class="absolute right-0 z-10"></ButtonDropdown>
     </div>
 </template>
-<script></script>
+<script setup>
+import stories from '@/api/stories.json'
+</script>
 <style></style>
