@@ -19,6 +19,7 @@
                 class="hover:text-red-500 cursor-pointer"
                 v-for="massnahme in activeMassnahmen"
                 :key="massnahme.title"
+                @click="infographicStore.setModal(massnahme)"
             >
                 {{ massnahme.title }}
             </p>
