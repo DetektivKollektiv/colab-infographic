@@ -16,7 +16,7 @@ const activeStory = ref(0)
     </div>
     <Trends />
 
-    <Infographic />
+    <Infographic class="mt-24" />
 </template>
 
 <style></style>

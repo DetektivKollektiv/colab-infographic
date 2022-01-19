@@ -8,15 +8,32 @@
             :key="phase"
             :class="{ 'col-span-2': phase.id == 4 }"
         >
-            <div class="flex flex-col cursor-pointer relative items-center">
+            <div class="flex flex-col relative items-center group">
                 <div
                     class="rounded-full flex justify-center items-center border-2 border-red-500 bg-red-500 w-8 h-8 text-white label-sm relative z-10"
                 >
                     <span> {{ phase.id }} </span>
                 </div>
 
-                <div v-if="isSticky" class="text-center">
-                    <p class="label-sm mt-2">{{ phase.text }}</p>
+                <div
+                    class="text-center absolute"
+                    :class="
+                        isSticky
+                            ? 'mt-8'
+                            : ' group-hover:bg-white p-2 group-hover:rounded-b-md mt-4 -z-10 group-hover:border-2 group-hover:border-red-500'
+                    "
+                >
+                    <p
+                        :class="{
+                            'hidden ': !isSticky,
+                        }"
+                        class="label-sm mt-2 group-hover:block"
+                    >
+                        {{ phase.text }}
+                    </p>
+                    <p v-if="!isSticky" class="hidden group-hover:block mt-2">
+                        {{ phase.description }}
+                    </p>
                 </div>
                 <div class="h-0.5 w-full bg-red-500 mt-4 absolute">
                     <i
