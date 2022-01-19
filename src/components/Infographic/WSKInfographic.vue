@@ -16,22 +16,15 @@
                 </div>
 
                 <div
-                    class="text-center absolute"
-                    :class="
-                        isSticky
-                            ? 'mt-8'
-                            : ' group-hover:bg-white p-2 group-hover:rounded-b-md mt-4 -z-10 group-hover:border-2 group-hover:border-red-500'
-                    "
+                    class="text-center absolute group-hover:bg-white p-2 group-hover:rounded-b-md mt-4 -z-10 group-hover:border-2 group-hover:border-red-500"
                 >
                     <p
-                        :class="{
-                            'hidden ': !isSticky,
-                        }"
+                        :class="{ hidden: !isSticky }"
                         class="label-sm mt-2 group-hover:block"
                     >
                         {{ phase.text }}
                     </p>
-                    <p v-if="!isSticky" class="hidden group-hover:block mt-2">
+                    <p class="hidden group-hover:block mt-2">
                         {{ phase.description }}
                     </p>
                 </div>
