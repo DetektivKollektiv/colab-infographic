@@ -31,8 +31,10 @@ const props = defineProps({
 
 const { content } = toRefs(props)
 
+console.log(content.value)
+
 const active = computed(() => {
-    return content.value.storys.includes(infographicStore.story)
+    return content.value.stories.includes(infographicStore.story)
 })
 
 const height = ref(0)

@@ -13,7 +13,7 @@ const DEFAULT_TYPES = {
         title: '',
         description: '',
         subtitle: '',
-        storys: [],
+        stories: [],
     },
     phase: {
         type: 'phase',
