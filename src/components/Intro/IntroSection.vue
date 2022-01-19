@@ -139,7 +139,7 @@ export default {
                         </div>
                     </div>
                     <div
-                        class="h-full flex flex-col-reverse lg:flex-col justify-end lg:justify-between gap-5 min-w-full snap-center"
+                        class="flex flex-col-reverse lg:flex-col justify-end lg:justify-between lg:gap-5 min-w-full snap-center"
                     >
                         <WSK lg:showDescription :phaseIndex="1" :marginTop="true"></WSK>
                         <div class="lg:w-7/12">
@@ -226,7 +226,7 @@ export default {
 
 <style scoped>
 .intro-container {
-    height: 90vh;
+    min-height: 90vh;
     background-image: url("@/assets/bubbles_desktop.svg"),
         linear-gradient(rgba(255, 255, 255, 1), rgba(255, 246, 204, 1));
 }
