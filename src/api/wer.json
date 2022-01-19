@@ -26,7 +26,7 @@
             "stories": [
                 "Der Fall Künast"
             ],
-            "maßnahmen": [
+            "massnahmen": [
                 "Forschen gegen Russland",
                 "Forschen gegen China"
             ]
@@ -55,7 +55,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         },
         {
             "title": "Medien",
@@ -81,7 +81,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         },
         {
             "title": "Interessen-/ Lobbyverbände",
@@ -107,7 +107,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         },
         {
             "title": "Ideolog*innen",
@@ -133,7 +133,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         },
         {
             "title": "Einzelkämpfer*innen",
@@ -159,7 +159,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         }
     ],
     "02": [
@@ -187,7 +187,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         },
         {
             "title": "Content-Provider",
@@ -215,7 +215,7 @@
             "stories": [
                 "Der Fall Künast"
             ],
-            "maßnahmen": [
+            "massnahmen": [
                 "Forschen gegen Russland",
                 "Forschen gegen China"
             ]
@@ -244,7 +244,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         },
         {
             "title": "Blogs/Podcasts",
@@ -270,7 +270,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         }
     ],
     "03": [
@@ -298,7 +298,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         },
         {
             "title": "Expert*innen/Berater*innen",
@@ -326,7 +326,7 @@
             "stories": [
                 "Der Fall Künast"
             ],
-            "maßnahmen": [
+            "massnahmen": [
                 "Forschen gegen Russland",
                 "Forschen gegen China"
             ]
@@ -355,7 +355,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         }
     ],
     "04": [
@@ -385,7 +385,7 @@
             "stories": [
                 "Der Fall Künast"
             ],
-            "maßnahmen": [
+            "massnahmen": [
                 "Forschen gegen Russland",
                 "Forschen gegen China"
             ]
@@ -414,7 +414,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         }
     ],
     "04A": [
@@ -446,7 +446,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         },
         {
             "title": "Gruppen/Bubbles",
@@ -474,7 +474,7 @@
             "stories": [
                 "Der Fall Künast"
             ],
-            "maßnahmen": [
+            "massnahmen": [
                 "Forschen gegen Russland",
                 "Forschen gegen China"
             ]
@@ -503,7 +503,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         }
     ],
     "04B": [
@@ -535,7 +535,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         },
         {
             "title": "Manuell: Menschen",
@@ -561,7 +561,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         }
     ],
     "05": [
@@ -591,7 +591,7 @@
             "stories": [
                 "Der Fall Künast"
             ],
-            "maßnahmen": [
+            "massnahmen": [
                 "Forschen gegen Russland",
                 "Forschen gegen China"
             ]
@@ -620,7 +620,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         },
         {
             "title": "Gespräche",
@@ -646,7 +646,7 @@
                 }
             ],
             "stories": [],
-            "maßnahmen": []
+            "massnahmen": []
         }
     ]
 }

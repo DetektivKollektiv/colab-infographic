@@ -13,12 +13,22 @@
                 {{ content.title }}
             </p>
         </div>
+        <div class="pt-2">
+            <p
+                class="hover:text-red-500 cursor-pointer"
+                v-for="massnahme in activeMassnahmen"
+                :key="massnahme.title"
+            >
+                {{ massnahme.title }}
+            </p>
+        </div>
     </div>
 </template>
 
 <script setup>
-import { computed, ref, toRefs } from 'vue'
+import { computed, ref, toRefs, watchEffect } from 'vue'
 import { useInfographicStore } from '@/stores/infographic'
+import massnahmen from '@/api/massnahmen_template.json'
 
 const infographicStore = useInfographicStore()
 
@@ -36,4 +46,20 @@ const active = computed(() => {
 })
 
 const height = ref(0)
+
+const activeMassnahmen = computed(() => {
+    if (massnahmen[infographicStore.massnahme]) {
+        console.log(
+            'massnahmen',
+            massnahmen[infographicStore.massnahme],
+            content.value
+        )
+
+        return massnahmen[infographicStore.massnahme].filter((massnahme) =>
+            content.value.massnahmen.includes(massnahme.title)
+        )
+    } else {
+        return []
+    }
+})
 </script>
