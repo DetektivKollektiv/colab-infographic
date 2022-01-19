@@ -44,6 +44,7 @@
     .container-box {
         @apply mx-auto container px-4 md:px-8;
     }
+
     .scrollbar-hidden {
         -ms-overflow-style: none;
         scrollbar-width: none;

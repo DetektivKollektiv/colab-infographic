@@ -6,7 +6,7 @@
             <ButtonStory story="Story 3"></ButtonStory>
         </div>
 
-        <ButtonDropdown class="absolute right-0"></ButtonDropdown>
+        <ButtonDropdown class="absolute right-0 z-10"></ButtonDropdown>
     </div>
 </template>
 <script></script>
