@@ -9,7 +9,7 @@
             class="font-bold text-sm md:text-lg inline-block"
             ref="textElement"
         >
-            <p>
+            <span>
                 <i :class="title.icon + ' ' + title.color" class="mr-2"></i>
                 {{ title.text }}
                 <i
@@ -17,7 +17,7 @@
                     class="fas fa-caret-down ml-2 text-red-500"
                 ></i>
                 <i class="fas fa-caret-up ml-2 text-red-500" v-else></i>
-            </p>
+            </span>
         </div>
 
         <div
@@ -78,7 +78,10 @@ const width = computed(() => {
     if (textElement.value !== null && optionsElement.value !== null) {
         return closed.value
             ? textElement.value.scrollWidth + 36 + 'px'
-            : optionsElement.value.scrollWidth + 32 + 'px'
+            : Math.max(
+                  optionsElement.value.scrollWidth + 36,
+                  textElement.value.scrollWidth + 36
+              ) + 'px'
     } else {
         return 'auto'
     }
