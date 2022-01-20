@@ -11,7 +11,7 @@
         >
             <span>
                 <i :class="title.icon + ' ' + title.color"></i>
-                <b class="hover:text-red-500">{{ title.text }}</b>
+                <b class="hover:text-red-500 ml-2">{{ title.text }}</b>
                 <i
                     v-if="closed"
                     class="fas fa-caret-down ml-2 text-red-500"

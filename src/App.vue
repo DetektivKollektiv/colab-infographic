@@ -16,7 +16,10 @@ const activeStory = ref(0)
     </div>
     <Trends /> -->
 
-    <Infographic class="mt-24" />
+    <div class="hidden md:block">
+        <Infographic class="mt-24" />
+    </div>
+    <InfographicMobile class="md:hidden" />
 </template>
 
 <style></style>
