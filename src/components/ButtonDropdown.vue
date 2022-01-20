@@ -10,8 +10,8 @@
             ref="textElement"
         >
             <span>
-                <i :class="title.icon + ' ' + title.color" class="mr-2"></i>
-                {{ title.text }}
+                <i :class="title.icon + ' ' + title.color"></i>
+                <b class="hover:text-red-500">{{ title.text }}</b>
                 <i
                     v-if="closed"
                     class="fas fa-caret-down ml-2 text-red-500"
@@ -40,6 +40,7 @@
                 :class="{
                     'text-red-500 font-bold': option.text === title.text,
                 }"
+                class="hover:text-red-500"
             >
                 <i :class="option.icon + ' ' + option.color" class="mr-2"></i>
                 {{ option.text }}

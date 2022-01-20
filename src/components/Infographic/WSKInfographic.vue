@@ -15,16 +15,17 @@
                     <span> {{ phase.id }} </span>
                 </div>
 
-                <div
-                    class="text-center absolute group-hover:bg-gray-100 p-2 mt-4 -z-10 group-hover:border-b-2 group-hover:border-red-500"
+                <p
+                    :class="{ hidden: !isSticky }"
+                    class="label-sm mt-10 group-hover:block absolute"
                 >
-                    <p
-                        :class="{ hidden: !isSticky }"
-                        class="label-sm mt-2 group-hover:block"
-                    >
-                        {{ phase.text }}
-                    </p>
-                    <p class="hidden group-hover:block mt-2">
+                    {{ phase.text }}
+                </p>
+
+                <div
+                    class="max-h-0 group-hover:max-h-64 duration-300 transition-all overflow-hidden text-center absolute bg-gray-100 group-hover:p-2 mt-4 -z-10 border-b-2 border-red-500"
+                >
+                    <p class="mt-12">
                         {{ phase.description }}
                     </p>
                 </div>
