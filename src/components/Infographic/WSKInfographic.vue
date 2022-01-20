@@ -16,7 +16,7 @@
                 </div>
 
                 <div
-                    class="text-center absolute group-hover:bg-white p-2 mt-4 -z-10 group-hover:border-b-2 group-hover:border-red-500"
+                    class="text-center absolute group-hover:bg-gray-100 p-2 mt-4 -z-10 group-hover:border-b-2 group-hover:border-red-500"
                 >
                     <p
                         :class="{ hidden: !isSticky }"
