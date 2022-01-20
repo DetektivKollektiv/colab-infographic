@@ -26,6 +26,13 @@
             ref="optionsElement"
             :style="{ height }"
         >
+            <button
+                v-if="activeOption"
+                @click="emit('option', '')"
+                class="label-md text-red-500"
+            >
+                Löschen
+            </button>
             <p
                 v-for="option in options"
                 :key="option.text"
