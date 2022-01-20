@@ -1,5 +1,7 @@
 <template>
-    <div class="bg-gray-500 text-white font-sans rounded-full px-2">{{index}} / {{length}}</div>
+    <div class="bg-black opacity-50 text-white font-sans rounded-full px-3">
+        {{ index }} / {{ length }}
+    </div>
 </template>
 
 <script setup>

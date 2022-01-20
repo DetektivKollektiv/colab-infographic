@@ -4,6 +4,11 @@
         ref="container"
         @scroll="update"
     >
+        <PageCount
+            :length="trends.length"
+            :index="currentElement"
+            class="absolute right-4 top-12"
+        ></PageCount>
         <div
             v-for="trend in trends"
             :key="trend"
@@ -30,7 +35,7 @@
     <div class="absolute bottom-6 left-1/2 -translate-x-1/2">
         <Pagination
             :length="trends.length"
-            :index="currentElement + 1"
+            :index="currentElement - 1"
         ></Pagination>
     </div>
 </template>
@@ -49,7 +54,7 @@ const props = defineProps({
 const { trends, subtitle } = toRefs(props)
 
 const container = ref(null)
-const currentElement = ref(0)
+const currentElement = ref(1)
 
 function getElementsLefts() {
     return Array.prototype.slice
