@@ -1,6 +1,6 @@
 <template lang="">
     <p v-if="sources.length > 0" class="label-xs">Quellen</p>
-    <div class="flex flex-col">
+    <div class="flex flex-col mt-1">
         <a
             target="_blank"
             class="text-xs text-blue-500"

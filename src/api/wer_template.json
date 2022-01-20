@@ -23,13 +23,16 @@
           "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
         }
       ],
-      "storys": [
+      "stories": [
         {
           "story": "story-01",
           "text": "Rechtsextremisten verwenden verbale Angriffe und falsche Tatsachenbehauptungen, um andere Personen einzuschüchtern und aus der Öffentlichkeit zu verdrängen."
         }
       ],
-      "maßnahmen": ["Forschen gegen Russland", "Forschen gegen China"]
+      "massnahmen": [
+        "Forschen gegen Russland",
+        "Forschen gegen China"
+      ]
     },
     {
       "title": "Parteien",
@@ -54,12 +57,14 @@
           "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
         }
       ],
-      "storys": []
+      "stories": []
     },
     {
-        "Hier kommen": "noch mehr Karten"
+      "Hier kommen": "noch mehr Karten"
     }
   ],
-  "02": ["Hier kommen Karten für Phase 2"],
+  "02": [
+    "Hier kommen Karten für Phase 2"
+  ],
   "Hier kommen": "noch mehr Phasen"
 }

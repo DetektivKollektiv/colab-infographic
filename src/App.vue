@@ -5,22 +5,22 @@ const activeStory = ref(0)
 </script>
 
 <template>
-    <!-- <div class="relative min-h-screen">
-        <Section></Section>
-    </div>
-    <Intro_section></Intro_section> -->
-    <div
+    <!-- <Intro_section></Intro_section> -->
+    <!-- <div
         v-for="(story, i) in stories"
         :key="story.title"
         @click="activeStory = i"
         :class="{ 'cursor-pointer': activeStory !== i }"
     >
-        <Story :story="story" :active="i == activeStory"></Story>
+        <Story :story="story" :active="i == activeStory" />
     </div>
-    <Trends></Trends>
-    <!--     <trends-section></trends-section>
+    <Trends /> -->
 
-    <Infographic /> -->
+    <div class="hidden lg:block my-24">
+        <Infographic />
+    </div>
+    <InfographicMobile class="lg:hidden" />
+    <Publication />
 </template>
 
 <style></style>

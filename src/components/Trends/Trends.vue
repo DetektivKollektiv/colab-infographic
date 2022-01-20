@@ -37,7 +37,6 @@
         <div class="relative h-[5vw] bg-yellow-300 overflow-hidden">
             <div
                 class="rounded-full w-[500vw] h-[500vw] absolute -translate-x-1/2 left-1/2 bg-white"
-                :class="color"
             ></div>
         </div>
     </div>

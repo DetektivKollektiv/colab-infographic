@@ -29,12 +29,22 @@
     .label-sm {
         @apply text-xs md:text-sm font-bold;
     }
+
+    .label-md {
+        @apply text-sm md:text-base font-bold;
+    }
+
+    .label-lg {
+        @apply text-base md:text-lg font-bold;
+    }
+
     .label-xl {
         @apply text-base md:text-xl font-bold;
     }
     .container-box {
         @apply mx-auto container px-4 md:px-8;
     }
+
     .scrollbar-hidden {
         -ms-overflow-style: none;
         scrollbar-width: none;
