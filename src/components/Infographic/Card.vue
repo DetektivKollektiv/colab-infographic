@@ -3,7 +3,7 @@
         @mouseover="hover = true"
         @mouseleave="hover = false"
         @click="infographicStore.setModal(content)"
-        class="px-4 py-2 bg-white rounded-md w-full transition-all duration-300 overflow-hidden cursor-pointer"
+        class="px-4 py-2 bg-white rounded-md w-full transition-all overflow-hidden cursor-pointer"
         :class="{
             'duration-75 border-2 border-red-500': active,
             'opacity-20 pointer-events-none': deactivate,

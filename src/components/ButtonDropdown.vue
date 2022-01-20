@@ -19,7 +19,7 @@
         >
             <p
                 v-for="option in options"
-                :key="option.value"
+                :key="option.text"
                 @click="emit('option', option.text)"
             >
                 <i :class="option.icon + ' ' + option.color" class="mr-2"></i>
@@ -31,38 +31,14 @@
 <script setup>
 const closed = ref(true)
 
-const options = [
-    {
-        text: 'Forschen & entwickeln',
-        icon: 'fas fa-atom',
-        color: 'text-red-500',
-        value: 'option-1',
+const props = defineProps({
+    options: {
+        type: Array,
+        required: true,
     },
-    {
-        text: 'Experimentieren & messen',
-        icon: 'fas fa-microscope',
-        color: 'text-black',
-        value: 'option-2',
-    },
-    {
-        text: 'Aufdecken & verteidigen',
-        icon: 'fas fa-search',
-        color: 'text-yellow-500',
-        value: 'option-3',
-    },
-    {
-        text: 'Platzieren & antreiben',
-        icon: 'fas fa-map-marker-alt',
-        color: 'text-blue-500',
-        value: 'option-3',
-    },
-    {
-        text: 'Demonstrieren & aktivieren',
-        icon: 'fas fa-toggle-on',
-        color: 'text-blue-light-500',
-        value: 'option-3',
-    },
-]
+})
+
+const { options } = toRefs(props)
 
 const text = ref('Maßnahmen')
 
