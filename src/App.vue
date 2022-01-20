@@ -2,12 +2,16 @@
 import { ref } from 'vue'
 
 import stories from '@/api/stories.json'
-// import IntroSection from './components/Intro/IntroSection.vue'
+import { useInfographicStore } from '@/stores/infographic'
+
+const infographicStore = useInfographicStore()
 
 const activeStory = ref(0)
 </script>
 
 <template>
+    <Modal v-if="infographicStore.showModal"></Modal>
+
     <IntroSection></IntroSection>
     <div @click.prevent="storyActive = true"></div>
     <div

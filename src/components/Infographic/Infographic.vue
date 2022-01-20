@@ -1,13 +1,5 @@
 <template>
-    <Modal v-if="infographicStore.showModal"></Modal>
     <div class="relative">
-        <!-- <div
-            class="absolute w-full h-full container-box -z-50 left-1/2 -translate-x-1/2 pt-36"
-        >
-            <div class="w-full h-full grid grid-cols-6 gap-2 -z-50">
-                <Column v-for="i in 6" :key="i"></Column>
-            </div>
-        </div> -->
         <div class="container-box">
             <Navbar class="pt-6"> </Navbar>
             <WSKInfographic class="mt-24"></WSKInfographic>
