@@ -16,10 +16,16 @@
         </div>
         <div :class="{ 'pb-2 pt-4 space-y-2': activeMassnahmen.length > 0 }">
             <p
-                class="hover:text-red-500 cursor-pointer px-2 border-red-500 border-2 rounded-lg font-bold"
+                class="cursor-pointer px-2 border-red-500 border-2 rounded-lg font-bold"
+                :class="{
+                    'text-red-500':
+                        infographicStore.massnahmeHover == massnahme.title,
+                }"
                 v-for="massnahme in activeMassnahmen"
                 :key="massnahme.title"
                 @click="infographicStore.setModal(massnahme)"
+                @mouseenter="infographicStore.massnahmeHover = massnahme.title"
+                @mouseleave="infographicStore.massnahmeHover = ''"
             >
                 {{ massnahme.title }}
             </p>
@@ -28,7 +34,7 @@
 </template>
 
 <script setup>
-import { computed, ref, toRefs, watchEffect } from 'vue'
+import { computed, toRefs } from 'vue'
 import { useInfographicStore } from '@/stores/infographic'
 import massnahmen from '@/api/massnahmen_template.json'
 

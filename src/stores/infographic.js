@@ -9,9 +9,11 @@ export const useInfographicStore = defineStore('infographic', {
         modalContent: {},
         showModal: false,
         massnahme: '',
+        massnahmeHover: '',
     }),
     actions: {
         setStory(story) {
+            this.massnahme = ''
             this.story = story
             if (this.story) {
                 this.storyContent = stories
@@ -28,7 +30,7 @@ export const useInfographicStore = defineStore('infographic', {
             this.showModal = false
         },
         setMassnahme(massnahme) {
-            console.log(massnahme)
+            this.story = ''
             this.massnahme = massnahme
         },
     },
