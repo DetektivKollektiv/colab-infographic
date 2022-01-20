@@ -40,7 +40,7 @@
                 :class="{
                     'text-red-500 font-bold': option.text === title.text,
                 }"
-                class="hover:text-red-500"
+                class="hover:text-red-500 whitespace-nowrap"
             >
                 <i :class="option.icon + ' ' + option.color" class="mr-2"></i>
                 {{ option.text }}
