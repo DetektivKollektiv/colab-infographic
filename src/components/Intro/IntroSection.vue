@@ -1,7 +1,6 @@
 <script setup></script>
 
 <script>
-
 export default {
     data: () => ({ index: 0, elementsLefts: [], length: 0 }),
     mounted() {
@@ -45,9 +44,13 @@ export default {
 </script>
 
 <template>
-    <div class="intro-container relative flex flex-col justify-end overflow-hidden bg-left-bottom">
+    <div
+        class="intro-container relative flex flex-col justify-end overflow-hidden bg-left-bottom"
+    >
         <div class="container-box h-full flex flex-col justify-between z-10">
-            <div class="flex flex-col justify-start lg:justify-end pt-10 pb-25 lg:py-20 gap-4 w-full h-[70%] lg:h-full">
+            <div
+                class="flex flex-col justify-start lg:justify-end pt-10 pb-25 lg:py-20 gap-4 w-full h-[70%] lg:h-full"
+            >
                 <div
                     class="flex flex-row snap-x snap-mandatory overflow-x-scroll w-full h-full scrollbar-hidden"
                     ref="container"
@@ -78,25 +81,28 @@ export default {
                                 Für böswillige Akteur*innen entsteht durch
                                 Desinformation Wert. Im Kern blicken wir daher
                                 auf die
-                                <span
-                                    class="highlight bg-white"
-                                >Wertschöpfungskette</span> von
-                                Desinformation. Doch Desinformation entsteht
+                                <span class="highlight bg-white"
+                                    >Wertschöpfungskette</span
+                                >
+                                von Desinformation. Doch Desinformation entsteht
                                 nicht im luftleeren Raum. Gesellschaftliche
                                 Entwicklungen ermöglichen oder begünstigen sie.
                                 Mit
-                                <span
-                                    class="highlight bg-yellow-400"
-                                >Makro-Trends</span> und
-                                <span class="highlight bg-yellow-300">Meso-Trends</span> beschreiben wir
-                                Muster, die unsere Welt über einen längeren
-                                Zeitpunkt beeinflussen und einen breiten
-                                Geltungsbereich haben. Makro-Trends beschreiben
-                                exemplarisch, welche großen Entwicklungslinien
-                                unsere Gesellschaft als Ganze prägen und zur
-                                Spaltung beitragen. Meso-Trends sind konkrete
-                                Ausprägungen davon mit konkretem Bezug zu
-                                Desinformation.
+                                <span class="highlight bg-yellow-400"
+                                    >Makro-Trends</span
+                                >
+                                und
+                                <span class="highlight bg-yellow-300"
+                                    >Meso-Trends</span
+                                >
+                                beschreiben wir Muster, die unsere Welt über
+                                einen längeren Zeitpunkt beeinflussen und einen
+                                breiten Geltungsbereich haben. Makro-Trends
+                                beschreiben exemplarisch, welche großen
+                                Entwicklungslinien unsere Gesellschaft als Ganze
+                                prägen und zur Spaltung beitragen. Meso-Trends
+                                sind konkrete Ausprägungen davon mit konkretem
+                                Bezug zu Desinformation.
                             </p>
                         </div>
                     </div>
@@ -111,11 +117,11 @@ export default {
                                 zur gesellschaftlichen Spaltung und
                                 Polarisierung bei. Desinformation kann so
                                 überhaupt erst auf fruchtbaren Boden fallen. Mit
-                                <span
-                                    class="highlight bg-yellow-400"
-                                >Makro-Trends</span> beschreiben wir exemplarisch das
-                                Gesamtsystem, in das Desinformation eingebettet
-                                ist.
+                                <span class="highlight bg-yellow-400"
+                                    >Makro-Trends</span
+                                >
+                                beschreiben wir exemplarisch das Gesamtsystem,
+                                in das Desinformation eingebettet ist.
                             </p>
                         </div>
                     </div>
@@ -130,9 +136,9 @@ export default {
                                 (Makro-Trends). Die geringere Abstraktionsebene
                                 stellt einen konkreten Zusammenhang zur
                                 Ausbreitung von Desinformation her.
-                                <span
-                                    class="highlight bg-yellow-300"
-                                >Meso-Trends</span>
+                                <span class="highlight bg-yellow-300"
+                                    >Meso-Trends</span
+                                >
                                 bieten Ansatzpunkte für Maßnahmen gegen das
                                 Symptom Desinformation.
                             </p>
@@ -141,19 +147,21 @@ export default {
                     <div
                         class="flex flex-col-reverse lg:flex-col justify-end lg:justify-between lg:gap-5 min-w-full snap-center"
                     >
-                        <WSK lg:showDescription :phaseIndex="1" :marginTop="true"></WSK>
+                        <WSKIntro></WSKIntro>
                         <div class="lg:w-7/12">
-                            <h1 class="headline">Die Wertschöpfungskette von Desinformation</h1>
+                            <h1 class="headline">
+                                Die Wertschöpfungskette von Desinformation
+                            </h1>
                             <p class="w-full lg:w-2/3">
                                 Wie Desinformation entsteht und ihre Wirkung
                                 entfaltet, lässt sich wie ein
                                 Herstellungsprozess beschreiben, bei dem Gewinne
                                 erzielt werden: an Einfluss, Macht, Status,
                                 Geld. Wir nennen diesen Prozess deshalb
-                                <span
-                                    class="highlight bg-white"
-                                >"Wertschöpfungskette"</span> – unterteilt in fünf
-                                aufeinanderfolgende Phasen.
+                                <span class="highlight bg-white"
+                                    >"Wertschöpfungskette"</span
+                                >
+                                – unterteilt in fünf aufeinanderfolgende Phasen.
                             </p>
                         </div>
                     </div>
@@ -161,9 +169,17 @@ export default {
                         class="flex flex-col-reverse lg:flex-col justify-end lg:justify-between lg:gap-5 min-w-full snap-center"
                     >
                         <div class="flex flex-col gap-4 lg:gap-8 lg:w-1/3">
-                            <WSK class="py-8 lg:pt-0" :showTitle="false" :marginTop="true"></WSK>
+                            <WSK
+                                class="py-8 lg:pt-0"
+                                :showTitle="false"
+                                :marginTop="true"
+                            ></WSK>
                             <div class="relative pt-2">
-                                <h3 class="absolute -translate-y-6 lg:-translate-y-8">Wer</h3>
+                                <h3
+                                    class="absolute -translate-y-6 lg:-translate-y-8"
+                                >
+                                    Wer
+                                </h3>
                                 <div class="h-0.5 bg-red-500"></div>
                                 <p class="w-full flex-shrink-0 mt-2 mr-4">
                                     Wer macht’s? Akteur*innen sind je nach Phase
@@ -172,7 +188,11 @@ export default {
                                 </p>
                             </div>
                             <div class="relative pt-2">
-                                <h3 class="absolute -translate-y-6 lg:-translate-y-8">Wie</h3>
+                                <h3
+                                    class="absolute -translate-y-6 lg:-translate-y-8"
+                                >
+                                    Wie
+                                </h3>
                                 <div class="w-full h-0.5 bg-red-500"></div>
                                 <p class="w-full flex-shrink-0 mt-2 mr-4">
                                     Wie wird’s gemacht? Methoden sind die Mittel
@@ -187,14 +207,12 @@ export default {
                             <h1 class="headline">Akteur*innen und Methoden</h1>
                             <p class="w-full lg:w-2/3">
                                 In jeder Phase der Wertschöpfungskette gibt es
-                                <span
-                                    class="highlight bg-white"
-                                >Akteur*innen</span>, die an der
-                                Desinformations-Herstellung beteiligt sind – und
-                                dazu jeweils spezifische
-                                <span
-                                    class="highlight bg-white"
-                                >Methoden</span> verwenden.
+                                <span class="highlight bg-white"
+                                    >Akteur*innen</span
+                                >, die an der Desinformations-Herstellung
+                                beteiligt sind – und dazu jeweils spezifische
+                                <span class="highlight bg-white">Methoden</span>
+                                verwenden.
                             </p>
                         </div>
                     </div>
@@ -227,7 +245,7 @@ export default {
 <style scoped>
 .intro-container {
     min-height: 90vh;
-    background-image: url("@/assets/bubbles_desktop.svg"),
+    background-image: url('@/assets/bubbles_desktop.svg'),
         linear-gradient(rgba(255, 255, 255, 1), rgba(255, 246, 204, 1));
 }
 
@@ -253,7 +271,7 @@ export default {
     .intro-container {
         height: 95vh;
         min-height: 667px;
-        background-image: url("@/assets/bubbles_mobile.svg"),
+        background-image: url('@/assets/bubbles_mobile.svg'),
             linear-gradient(rgba(255, 255, 255, 1), rgba(255, 246, 204, 1));
     }
 }
