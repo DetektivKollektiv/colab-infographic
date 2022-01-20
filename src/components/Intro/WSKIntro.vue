@@ -43,12 +43,12 @@
         </div>
         <div
             v-if="showDescription"
-            class="flex md:grid w-full overflow-x-scroll snap-x grid-cols-5 relative z-20"
+            class="flex md:grid w-full overflow-x-scroll snap-x snap-mandatory grid-cols-5 relative z-20 scrollbar-hidden"
             ref="container"
             @scroll="update"
         >
             <div
-                class="mt-6 w-full flex-shrink-0 text-center snap-center snap-mandatory"
+                class="w-full flex-shrink-0 text-center snap-center"
                 v-for="phase in WAS.phases"
                 :key="phase"
             >
@@ -109,4 +109,12 @@ function update() {
 const active = (index) => {
     return currentElement.value + 1 == index
 }
+
+const isMd = useMediaQuery('(min-width: 768px)')
+
+watch(isMd, () => {
+    if (isMd) {
+        currentElement.value = 6
+    }
+})
 </script>
