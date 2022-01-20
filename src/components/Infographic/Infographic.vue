@@ -24,7 +24,15 @@
                     {{ story }}
                 </p>
             </Grid>
-            <SectionHeadline>WER</SectionHeadline>
+            <SectionHeadline
+                ><template v-slot:headline>Wer</template
+                ><template v-slot:description
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt placeat magnam corrupti eligendi natus, illum nisi nam,
+                    rerum dolorum sint iure perferendis. Consequuntur ab
+                    explicabo architecto eveniet.</template
+                ></SectionHeadline
+            >
             <Grid :doubleFourth="false">
                 <Column>
                     <component
@@ -81,7 +89,15 @@
                     ></component
                 ></Column>
             </Grid>
-            <SectionHeadline>WIE</SectionHeadline>
+            <SectionHeadline
+                ><template v-slot:headline>WIE</template
+                ><template v-slot:description
+                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sunt placeat magnam corrupti eligendi natus, illum nisi nam,
+                    rerum dolorum sint iure perferendis. Consequuntur ab
+                    explicabo architecto eveniet.</template
+                ></SectionHeadline
+            >
             <Grid :doubleFourth="true">
                 <Column>
                     <component
