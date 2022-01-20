@@ -1,6 +1,6 @@
 {
   "Forschen & entwickeln": {
-    "icon": "fa-sience",
+    "icon": "fas fa-atom",
     "color": "text-red-500",
     "content": [
       {
@@ -58,8 +58,8 @@
     ]
   },
   "Experimentieren & messen": {
-    "icon": "fa-sience",
-    "color": "text-red-500",
+    "icon": "fas fa-microscope",
+    "color": "text-black",
     "content": [
       {
         "title": "Experimentieren gegen Russland",

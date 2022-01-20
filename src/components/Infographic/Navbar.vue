@@ -18,35 +18,14 @@
 <script setup>
 import stories from '@/api/stories.json'
 import { useInfographicStore } from '@/stores/infographic'
+import massnahmen from '@/api/massnahmen_template.json'
 
 const infographicStore = useInfographicStore()
 
-const options = [
-    {
-        text: 'Forschen & entwickeln',
-        icon: 'fas fa-atom',
-        color: 'text-red-500',
-    },
-    {
-        text: 'Experimentieren & messen',
-        icon: 'fas fa-microscope',
-        color: 'text-black',
-    },
-    {
-        text: 'Aufdecken & verteidigen',
-        icon: 'fas fa-search',
-        color: 'text-yellow-500',
-    },
-    {
-        text: 'Platzieren & antreiben',
-        icon: 'fas fa-map-marker-alt',
-        color: 'text-blue-500',
-    },
-    {
-        text: 'Demonstrieren & aktivieren',
-        icon: 'fas fa-toggle-on',
-        color: 'text-blue-light-500',
-    },
-]
+const options = Object.entries(massnahmen).map(([key, value]) => ({
+    text: key,
+    icon: value.icon,
+    color: value.color,
+}))
 </script>
 <style></style>
