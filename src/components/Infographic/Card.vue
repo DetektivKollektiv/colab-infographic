@@ -14,9 +14,9 @@
                 {{ content.title }}
             </p>
         </div>
-        <div :class="{ 'pt-2': activeMassnahmen.length > 0 }">
+        <div :class="{ 'pb-2 pt-4 space-y-2': activeMassnahmen.length > 0 }">
             <p
-                class="hover:text-red-500 cursor-pointer"
+                class="hover:text-red-500 cursor-pointer px-2 border-red-500 border-2 rounded-lg font-bold"
                 v-for="massnahme in activeMassnahmen"
                 :key="massnahme.title"
                 @click="infographicStore.setModal(massnahme)"
