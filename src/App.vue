@@ -16,10 +16,11 @@ const activeStory = ref(0)
     </div>
     <Trends /> -->
 
-    <div class="hidden md:block">
-        <Infographic class="mt-24" />
+    <div class="hidden lg:block my-24">
+        <Infographic />
     </div>
-    <InfographicMobile class="md:hidden" />
+    <InfographicMobile class="lg:hidden" />
+    <Publication />
 </template>
 
 <style></style>
