@@ -52,7 +52,7 @@
                 v-for="phase in WAS.phases"
                 :key="phase"
             >
-                <p class="label-sm mt-10">
+                <p class="label-sm mt-2 md:mt-4">
                     {{ phase.text }}
                 </p>
                 <p class="snap-start">
