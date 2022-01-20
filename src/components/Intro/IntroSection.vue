@@ -147,7 +147,10 @@ export default {
                     <div
                         class="flex flex-col-reverse lg:flex-col justify-end lg:justify-between lg:gap-5 min-w-full snap-center"
                     >
-                        <WSKIntro></WSKIntro>
+                        <WSKIntro
+                            :showDescription="true"
+                            :showText="true"
+                        ></WSKIntro>
                         <div class="lg:w-7/12">
                             <h1 class="headline">
                                 Die Wertschöpfungskette von Desinformation
@@ -169,11 +172,13 @@ export default {
                         class="flex flex-col-reverse lg:flex-col justify-end lg:justify-between lg:gap-5 min-w-full snap-center"
                     >
                         <div class="flex flex-col gap-4 lg:gap-8 lg:w-1/3">
-                            <WSK
-                                class="py-8 lg:pt-0"
-                                :showTitle="false"
-                                :marginTop="true"
-                            ></WSK>
+                            <div class="w-full">
+                                <WSKIntro
+                                    class="w-full inline-flex"
+                                    :showDescription="false"
+                                    :showText="false"
+                                ></WSKIntro>
+                            </div>
                             <div class="relative pt-2">
                                 <h3
                                     class="absolute -translate-y-6 lg:-translate-y-8"
