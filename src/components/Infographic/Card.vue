@@ -2,22 +2,43 @@
     <div
         @mouseover="hover = true"
         @mouseleave="hover = false"
-        class="p-4 bg-gray-100 rounded-md w-full transition-all duration-300 overflow-hidden"
+        @click="infographicStore.setModal(content)"
+        class="px-4 py-2 bg-white rounded-md w-full transition-all overflow-hidden cursor-pointer"
         :class="{
-            'bg-purple-500 text-white': hover,
-            'duration-75 border-2 border-purple-500 bg-purple-100 ': active,
+            'duration-75 border-2 border-red-500': active,
+            'opacity-20 pointer-events-none': deactivate,
         }"
-        :style="{ height: height + 'px' }"
     >
-        <p ref="textContainer" class="content">
-            {{ text }}
-        </p>
+        <div class="group">
+            <p class="group-hover:text-red-500 label-md">
+                {{ content.title }}
+            </p>
+        </div>
+        <div :class="{ 'pb-2 pt-4 space-y-2': activeMassnahmen.length > 0 }">
+            <p
+                class="cursor-pointer px-2 border-red-500 border-2 rounded-lg font-bold"
+                :class="{
+                    'text-red-500':
+                        infographicStore.massnahmeHover == massnahme.title,
+                }"
+                v-for="massnahme in activeMassnahmen"
+                :key="massnahme.title"
+                @click="infographicStore.setModal(massnahme)"
+                @mouseenter="infographicStore.massnahmeHover = massnahme.title"
+                @mouseleave="infographicStore.massnahmeHover = ''"
+            >
+                {{ massnahme.title }}
+            </p>
+        </div>
     </div>
 </template>
 
 <script setup>
-import { nextTick, onMounted, watch, computed, ref, toRefs } from 'vue'
-import { useStoryStore } from '@/stores/story'
+import { computed, toRefs } from 'vue'
+import { useInfographicStore } from '@/stores/infographic'
+import massnahmen from '@/api/massnahmen_template.json'
+
+const infographicStore = useInfographicStore()
 
 const props = defineProps({
     content: {
@@ -28,33 +49,29 @@ const props = defineProps({
 
 const { content } = toRefs(props)
 
-const textContainer = ref(0)
-
-function getContentHeight() {
-    return textContainer.value.scrollHeight + 32
-}
-
-const hover = ref(false)
-
-const text = computed(() => {
-    return hover.value ? content.value.example : content.value.title
-})
-
 const active = computed(() => {
-    return content.value.storys.includes(useStoryStore().story)
+    return content.value.stories.includes(infographicStore.story)
 })
 
-watch([text, active], () => {
-    nextTick(() => {
-        height.value = getContentHeight()
-    })
+const deactivate = computed(() => {
+    if (infographicStore.story !== '') {
+        return !content.value.stories.includes(infographicStore.story)
+    } else if (infographicStore.massnahme !== '') {
+        return !massnahmen[infographicStore.massnahme].content.some(
+            (massnahme) => content.value.massnahmen.includes(massnahme.title)
+        )
+    } else {
+        return false
+    }
 })
 
-const height = ref(0)
-
-onMounted(() => {
-    nextTick(() => {
-        height.value = getContentHeight() // 16px for the padding
-    })
+const activeMassnahmen = computed(() => {
+    if (massnahmen[infographicStore.massnahme]) {
+        return massnahmen[infographicStore.massnahme].content.filter(
+            (massnahme) => content.value.massnahmen.includes(massnahme.title)
+        )
+    } else {
+        return []
+    }
 })
 </script>

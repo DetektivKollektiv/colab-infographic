@@ -9,7 +9,6 @@ const activeStory = ref(0)
 
 <template>
     <IntroSection></IntroSection>
-    <Story :story="stories[0]" :active="true"></Story>
     <div @click.prevent="storyActive = true"></div>
     <div
         v-for="(story, i) in stories"
@@ -17,9 +16,13 @@ const activeStory = ref(0)
         @click="activeStory = i"
         :class="{ 'cursor-pointer': activeStory !== i }"
     >
-        <Story :story="story" :active="i == activeStory"></Story>
+        <Story :story="story" :active="i == activeStory" />
     </div>
-    <Trends></Trends>
-</template>
+    <Trends />
 
-<style></style>
+    <div class="hidden lg:block my-24">
+        <Infographic />
+    </div>
+    <InfographicMobile class="lg:hidden" />
+    <Publication />
+</template>

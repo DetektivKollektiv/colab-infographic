@@ -8,7 +8,9 @@ import AutoImport from 'unplugin-auto-import/vite'
 export default defineConfig({
     plugins: [
         vue(),
-        AutoImport({ imports: ['vue', '@vueuse/core'] }),
+        AutoImport({
+            imports: ['vue', '@vueuse/core'],
+        }),
         Components({}),
     ],
     server: {

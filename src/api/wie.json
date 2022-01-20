@@ -2,203 +2,327 @@
     "01": [
         {
             "title": "Langfristige strategisch planen",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "(Wirtschaftlichen) Druck ausüben/spüren",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Leidenschaftlich missionieren",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "provozieren",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         }
     ],
     "02": [
         {
             "title": "Mit Satiere/Parodie irritieren",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Ungenau/falsch betiteln, bebildern, beschriften",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Eine Information auf irreführende Weise nutzen (Framing)",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Echte Inhalte in einem falschen Kontext setzen",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Sich für eine andere, authentische Quelle ausgeben",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Inhalte gezielt manipulieren",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Inhalte komplett erfinden",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         }
     ],
     "03": [
         {
             "title": "Marktforschung",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "SEO-Optimierung",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Geo-Targeting",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Micro-Targeting",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Campaingning",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         }
     ],
     "04.1": [
         {
             "title": "Geschlossende Platformen",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         }
     ],
     "04A": [
         {
             "title": "Keine Kosten",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Hohe Performance",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Beliebte Funktionen",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Suchterzeugung",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         }
     ],
     "04.2": [
         {
             "title": "Offene Platformen",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         }
     ],
     "04B": [
         {
             "title": "Keine Kosten",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Wettbewerb um Status/Beliebtheit",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Wettbewerb um Aufmerksamkeit",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Bestätigende & radikalisierende Algorithmen/KI",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Suchterzeugung",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         }
     ],
     "05": [
         {
             "title": "Eigene Anhänger bestärken",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Neutrales, noch unentschlossenes Lager überzeugen",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Entgegengesetztes Lager verunsichern, provozieren, polarisieren",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         },
         {
             "title": "Entgegengesetzte Lager gegeneinander aufhetzen",
-            "example": "z. B. Russland, China",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-            "storys": []
+            "subtitle": "z. B. Russland, China",
+            "description": [
+                {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                }
+            ],
+            "stories": []
         }
     ]
 }

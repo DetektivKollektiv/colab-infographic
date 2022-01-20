@@ -11,13 +11,13 @@ const DEFAULT_TYPES = {
     card: {
         type: 'card',
         title: '',
-        example: '',
         description: '',
-        storys: [],
+        subtitle: '',
+        stories: [],
     },
-    chapter: {
-        type: 'chapter',
-        chapter: '',
+    phase: {
+        type: 'phase',
+        id: '',
         text: '',
     },
     notFound: {},
@@ -39,8 +39,8 @@ function getType(element) {
         ? 'headline'
         : isCard(element)
         ? 'card'
-        : isChapter(element)
-        ? 'chapter'
+        : isPhase(element)
+        ? 'phase'
         : undefined
 }
 
@@ -58,9 +58,9 @@ function isCard(element) {
     )
 }
 
-function isChapter(element) {
+function isPhase(element) {
     return (
-        Object.keys(element).includes('chapter') &&
+        Object.keys(element).includes('id') &&
         Object.keys(element).includes('text')
     )
 }

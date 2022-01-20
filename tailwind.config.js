@@ -1,6 +1,6 @@
 module.exports = {
     mode: 'jit',
-    content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+    content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx,json}'],
     theme: {
         fontFamily: {
             sans: ['Cabin', 'ui-sans-serif', 'system-ui'],

@@ -1,170 +1,177 @@
 <template>
-    <div class="container-box">
-        <div class="flex space-x-4 justify-center pt-6">
-            <StoryButton story="Story 1"></StoryButton>
-            <StoryButton story="Story 2"></StoryButton>
-            <StoryButton story="Story 3"></StoryButton>
+    <Modal v-if="infographicStore.showModal"></Modal>
+    <div class="relative">
+        <!-- <div
+            class="absolute w-full h-full container-box -z-50 left-1/2 -translate-x-1/2 pt-36"
+        >
+            <div class="w-full h-full grid grid-cols-6 gap-2 -z-50">
+                <Column v-for="i in 6" :key="i"></Column>
+            </div>
+        </div> -->
+        <div class="container-box">
+            <Navbar class="pt-6"> </Navbar>
+            <WSKInfographic class="mt-24"></WSKInfographic>
+            <Grid
+                class="mt-12 overflow-hidden transition-all duration-300"
+                :class="[infographicStore.story ? 'max-h-96' : 'max-h-0']"
+                :doubleFourth="true"
+            >
+                <p
+                    v-for="story in infographicStore.storyContent"
+                    :key="story"
+                    class="text-center rounded-md w-full h-fit"
+                >
+                    {{ story }}
+                </p>
+            </Grid>
+            <SectionHeadline>WER</SectionHeadline>
+            <Grid :doubleFourth="false">
+                <Column>
+                    <component
+                        v-for="element of WER['01']"
+                        :key="element"
+                        :is="getComponent(element)"
+                        :content="element"
+                    ></component>
+                </Column>
+                <Column>
+                    <component
+                        v-for="element of WER['02']"
+                        :key="element"
+                        :is="getComponent(element)"
+                        :content="element"
+                    ></component
+                ></Column>
+                <Column>
+                    <component
+                        v-for="element of WER['03']"
+                        :key="element"
+                        :is="getComponent(element)"
+                        :content="element"
+                    ></component
+                ></Column>
+                <Column>
+                    <component
+                        v-for="element of WER['04']"
+                        :key="element"
+                        :is="getComponent(element)"
+                        :content="element"
+                    ></component
+                ></Column>
+                <Column>
+                    <component
+                        v-for="element of WER['04A']"
+                        :key="element"
+                        :is="getComponent(element)"
+                        :content="element"
+                    ></component>
+                    <component
+                        v-for="element of WER['04B']"
+                        :key="element"
+                        :is="getComponent(element)"
+                        :content="element"
+                    ></component
+                ></Column>
+                <Column>
+                    <component
+                        v-for="element of WER['05']"
+                        :key="element"
+                        :is="getComponent(element)"
+                        :content="element"
+                    ></component
+                ></Column>
+            </Grid>
+            <SectionHeadline>WIE</SectionHeadline>
+            <Grid :doubleFourth="true">
+                <Column>
+                    <component
+                        v-for="element of WIE['01']"
+                        :key="element"
+                        :is="getComponent(element)"
+                        :content="element"
+                    ></component>
+                </Column>
+                <Column>
+                    <component
+                        v-for="element of WIE['02']"
+                        :key="element"
+                        :is="getComponent(element)"
+                        :content="element"
+                    ></component
+                ></Column>
+                <Column>
+                    <component
+                        v-for="element of WIE['03']"
+                        :key="element"
+                        :is="getComponent(element)"
+                        :content="element"
+                    ></component
+                ></Column>
+                <Column style="padding: 0%; background-color: transparent">
+                    <Column>
+                        <div class="flex w-full gap-2">
+                            <Column style="padding: 0%">
+                                <component
+                                    v-for="element of WIE['04.1']"
+                                    :key="element"
+                                    :is="getComponent(element)"
+                                    :content="element"
+                                ></component>
+                            </Column>
+                            <Column style="padding: 0%">
+                                <component
+                                    v-for="element of WIE['04A']"
+                                    :key="element"
+                                    :is="getComponent(element)"
+                                    :content="element"
+                                ></component>
+                            </Column></div
+                    ></Column>
+                    <Column>
+                        <div class="flex w-full gap-2">
+                            <Column style="padding: 0%">
+                                <component
+                                    v-for="element of WIE['04.2']"
+                                    :key="element"
+                                    :is="getComponent(element)"
+                                    :content="element"
+                                ></component>
+                            </Column>
+                            <Column style="padding: 0%">
+                                <component
+                                    v-for="element of WIE['04B']"
+                                    :key="element"
+                                    :is="getComponent(element)"
+                                    :content="element"
+                                ></component>
+                            </Column></div
+                    ></Column>
+                </Column>
+                <Column>
+                    <component
+                        v-for="element of WIE['05']"
+                        :key="element"
+                        :is="getComponent(element)"
+                        :content="element"
+                    ></component
+                ></Column>
+            </Grid>
         </div>
-        <SectionHeadline>WAS</SectionHeadline>
-        <Grid :doubleFourth="true" class="mt-4">
-            <component
-                v-for="chapter of WAS.chapters"
-                :is="getComponent(chapter)"
-                :content="chapter"
-                :key="chapter"
-            />
-        </Grid>
-        <SectionHeadline>WER</SectionHeadline>
-        <Grid :doubleFourth="false">
-            <Column>
-                <component
-                    v-for="element of WER['01']"
-                    :key="element"
-                    :is="getComponent(element)"
-                    :content="element"
-                ></component>
-            </Column>
-            <Column>
-                <component
-                    v-for="element of WER['02']"
-                    :key="element"
-                    :is="getComponent(element)"
-                    :content="element"
-                ></component
-            ></Column>
-            <Column>
-                <component
-                    v-for="element of WER['03']"
-                    :key="element"
-                    :is="getComponent(element)"
-                    :content="element"
-                ></component
-            ></Column>
-            <Column>
-                <component
-                    v-for="element of WER['04']"
-                    :key="element"
-                    :is="getComponent(element)"
-                    :content="element"
-                ></component
-            ></Column>
-            <Column>
-                <component
-                    v-for="element of WER['04A']"
-                    :key="element"
-                    :is="getComponent(element)"
-                    :content="element"
-                ></component>
-                <component
-                    v-for="element of WER['04B']"
-                    :key="element"
-                    :is="getComponent(element)"
-                    :content="element"
-                ></component
-            ></Column>
-            <Column>
-                <component
-                    v-for="element of WER['05']"
-                    :key="element"
-                    :is="getComponent(element)"
-                    :content="element"
-                ></component
-            ></Column>
-        </Grid>
-        <SectionHeadline>WIE</SectionHeadline>
-        <Grid :doubleFourth="true">
-            <Column>
-                <component
-                    v-for="element of WIE['01']"
-                    :key="element"
-                    :is="getComponent(element)"
-                    :content="element"
-                ></component>
-            </Column>
-            <Column>
-                <component
-                    v-for="element of WIE['02']"
-                    :key="element"
-                    :is="getComponent(element)"
-                    :content="element"
-                ></component
-            ></Column>
-            <Column>
-                <component
-                    v-for="element of WIE['03']"
-                    :key="element"
-                    :is="getComponent(element)"
-                    :content="element"
-                ></component
-            ></Column>
-            <Column style="padding: 0%; background-color: transparent">
-                <Column>
-                    <div class="flex w-full gap-2">
-                        <Column style="padding: 0%">
-                            <component
-                                v-for="element of WIE['04.1']"
-                                :key="element"
-                                :is="getComponent(element)"
-                                :content="element"
-                            ></component>
-                        </Column>
-                        <Column style="padding: 0%">
-                            <component
-                                v-for="element of WIE['04A']"
-                                :key="element"
-                                :is="getComponent(element)"
-                                :content="element"
-                            ></component>
-                        </Column></div
-                ></Column>
-                <Column>
-                    <div class="flex w-full gap-2">
-                        <Column style="padding: 0%">
-                            <component
-                                v-for="element of WIE['04.2']"
-                                :key="element"
-                                :is="getComponent(element)"
-                                :content="element"
-                            ></component>
-                        </Column>
-                        <Column style="padding: 0%">
-                            <component
-                                v-for="element of WIE['04B']"
-                                :key="element"
-                                :is="getComponent(element)"
-                                :content="element"
-                            ></component>
-                        </Column></div
-                ></Column>
-            </Column>
-
-            <Column>
-                <component
-                    v-for="element of WIE['05']"
-                    :key="element"
-                    :is="getComponent(element)"
-                    :content="element"
-                ></component
-            ></Column>
-        </Grid>
     </div>
 </template>
 
 <script setup>
 import { WER, WIE, WAS } from '@/api/infographic'
-import SectionHeadline from '@/components/Infographic/SectionHeadline.vue'
-import Column from '@/components/Infographic/Column.vue'
-import Grid from '@/components/Infographic/Grid.vue'
-import StoryButton from '@/components/Infographic/StoryButton.vue'
+import { useInfographicStore } from '@/stores/infographic'
+
+const infographicStore = useInfographicStore()
 
 import headline from '@/components/infographic/Headline.vue'
 import card from '@/components/infographic/Card.vue'
-import chapter from '@/components/infographic/Chapter.vue'
 
 const COMPONENTS = {
     headline,
     card,
-    chapter,
 }
 
 function getComponent(element) {

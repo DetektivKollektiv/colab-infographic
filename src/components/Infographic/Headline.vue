@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div class="text-xl text-purple-500 font-bold">
-            <h1>{{ content.headline }}</h1>
+        <div class="text-red-500">
+            <p class="label-xl">{{ content.headline }}</p>
         </div>
         <div>
-            <h2>{{ content.subheadline }}</h2>
+            <p>{{ content.subheadline }}</p>
         </div>
     </div>
 </template>

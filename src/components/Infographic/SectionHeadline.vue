@@ -1,6 +1,10 @@
 <template>
-    <div class="w-full border-gray-700 pb-2 pt-6 border-b-2 uppercase text-xl">
-        <slot></slot>
+    <div
+        class="w-full border-red-500 bg-gradient-to-b from-transparent to-white pt-6 border-b-2 pl-2"
+    >
+        <h3>
+            <slot></slot>
+        </h3>
     </div>
 </template>
 
