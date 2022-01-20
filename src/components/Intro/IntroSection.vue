@@ -174,7 +174,6 @@ export default {
                         <div class="flex flex-col gap-4 lg:gap-8 lg:w-1/3">
                             <div class="w-full">
                                 <WSKIntro
-                                    class="w-full inline-flex"
                                     :showDescription="false"
                                     :showText="false"
                                 ></WSKIntro>
