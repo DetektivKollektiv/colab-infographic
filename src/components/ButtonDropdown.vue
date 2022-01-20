@@ -5,11 +5,20 @@
         @click="closed = !closed"
         :style="{ width }"
     >
-        <p class="font-bold text-sm md:text-lg inline-block" ref="textElement">
-            {{ text }}
-            <i v-if="closed" class="fas fa-caret-down ml-2 text-red-500"></i>
-            <i class="fas fa-caret-up ml-2 text-red-500" v-else></i>
-        </p>
+        <div
+            class="font-bold text-sm md:text-lg inline-block"
+            ref="textElement"
+        >
+            <p>
+                <i :class="title.icon + ' ' + title.color" class="mr-2"></i>
+                {{ title.text }}
+                <i
+                    v-if="closed"
+                    class="fas fa-caret-down ml-2 text-red-500"
+                ></i>
+                <i class="fas fa-caret-up ml-2 text-red-500" v-else></i>
+            </p>
+        </div>
 
         <div
             class="text-sm md:text-lg transition-all space-y-2 float-right"
@@ -21,6 +30,9 @@
                 v-for="option in options"
                 :key="option.text"
                 @click="emit('option', option.text)"
+                :class="{
+                    'text-red-500 font-bold': option.text === title.text,
+                }"
             >
                 <i :class="option.icon + ' ' + option.color" class="mr-2"></i>
                 {{ option.text }}
@@ -29,18 +41,25 @@
     </button>
 </template>
 <script setup>
+import { computed } from '@vue/reactivity'
+
 const closed = ref(true)
 
 const props = defineProps({
+    text: {
+        type: String,
+        required: true,
+    },
     options: {
         type: Array,
         required: true,
     },
+    activeOption: {
+        type: Object,
+    },
 })
 
-const { options } = toRefs(props)
-
-const text = ref('Maßnahmen')
+const { options, activeOption, text } = toRefs(props)
 
 const optionsElement = ref(null)
 const textElement = ref(null)
@@ -62,6 +81,14 @@ const width = computed(() => {
             : optionsElement.value.scrollWidth + 32 + 'px'
     } else {
         return 'auto'
+    }
+})
+
+const title = computed(() => {
+    if (activeOption.value) {
+        return activeOption.value
+    } else {
+        return { text: text.value, icon: '', color: '' }
     }
 })
 

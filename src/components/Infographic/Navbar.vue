@@ -10,8 +10,10 @@
 
         <ButtonDropdown
             class="absolute right-0 z-10"
+            text="Maßnahmen"
             :options="options"
-            @option="infographicStore.setMassnahme"
+            :activeOption="activeOption"
+            @option="setMassnahme"
         ></ButtonDropdown>
     </div>
 </template>
@@ -27,5 +29,17 @@ const options = Object.entries(massnahmen).map(([key, value]) => ({
     icon: value.icon,
     color: value.color,
 }))
+
+const activeOption = computed(() => {
+    return options.find((option) => option.text === infographicStore.massnahme)
+})
+
+function setMassnahme(massnahme) {
+    if (massnahme !== infographicStore.massnahme) {
+        infographicStore.setMassnahme(massnahme)
+    } else {
+        infographicStore.setMassnahme('')
+    }
+}
 </script>
 <style></style>
