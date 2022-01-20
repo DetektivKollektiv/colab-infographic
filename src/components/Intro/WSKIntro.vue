@@ -6,18 +6,28 @@
             <div v-for="phase in WAS.phases" :key="phase">
                 <div class="flex flex-col relative items-center group">
                     <div
-                        class="rounded-full flex justify-center items-center border-2 border-red-500 bg-red-500 w-8 h-8 text-white label-sm relative z-10"
+                        class="rounded-full flex justify-center items-center border-2 border-red-500 transition-all relative z-10"
+                        :class="
+                            parseInt(phase.id) < currentElement
+                                ? 'bg-red-500 w-4 h-4 md:w-8 md:h-8 text-white label-sm'
+                                : parseInt(phase.id) > currentElement
+                                ? 'bg-white w-4 h-4 md:w-8 md:h-8 label-sm'
+                                : 'w-8 h-8 md:w-12 md:h-12 -mt-2 label-xl bg-red-500 text-white'
+                        "
                     >
-                        <span> {{ phase.id }} </span>
+                        <span
+                            :class="
+                                parseInt(phase.id) !== currentElement
+                                    ? 'hidden md:block'
+                                    : ''
+                            "
+                        >
+                            {{ parseInt(phase.id) }}
+                        </span>
                     </div>
-                    <p
-                        v-if="showText"
-                        class="label-sm mt-10 group-hover:block absolute"
-                    >
-                        {{ phase.text }}
-                    </p>
+
                     <div
-                        class="h-0.5 bg-red-500 mt-4 absolute w-full"
+                        class="h-0.5 bg-red-500 mt-2 md:mt-4 absolute w-full"
                         :class="{
                             'w-1/2 right-0': phase.id == 1,
                             'w-1/2 left-0': phase.id == 5,
@@ -34,6 +44,8 @@
         <div
             v-if="showDescription"
             class="flex md:grid w-full overflow-x-scroll snap-x grid-cols-5 relative z-20"
+            ref="container"
+            @scroll="update"
         >
             <div
                 class="mt-6 w-full flex-shrink-0 text-center snap-center snap-mandatory"
@@ -54,6 +66,9 @@
 import { WAS } from '@/api/infographic'
 
 const props = defineProps({
+    phaseIndex: {
+        type: Number,
+    },
     showDescription: {
         type: Boolean,
         default: false,
@@ -65,4 +80,33 @@ const props = defineProps({
 })
 
 const { showDescription, showText } = toRefs(props)
+
+const container = ref(null)
+const currentElement = ref(1)
+
+function getElementsLefts() {
+    return Array.prototype.slice
+        .call(container.value.children)
+        .map((el) => el.getBoundingClientRect().x)
+}
+
+function getCurrentElement() {
+    const elementsLefts = getElementsLefts()
+    return elementsLefts.indexOf(
+        elementsLefts.reduce((prev, curr) =>
+            Math.abs(curr - 0) < Math.abs(prev - 0) ? curr : prev
+        )
+    )
+}
+
+function update() {
+    if (getCurrentElement() !== currentElement.value) {
+        currentElement.value = getCurrentElement() + 1
+        console.log('current Element:', currentElement.value)
+    }
+}
+
+const active = (index) => {
+    return currentElement.value + 1 == index
+}
 </script>
