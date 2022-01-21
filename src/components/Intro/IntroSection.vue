@@ -264,7 +264,7 @@ export default {
     @apply text-2xl md:text-3xl xl:text-7xl;
 }
 .highlight {
-    @apply font-bold font-headline border-2 border-black;
+    @apply font-bold font-headline border-2 px-2 border-black;
 }
 
 @media only screen and (max-width: 550px) {
