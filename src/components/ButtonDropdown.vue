@@ -31,7 +31,7 @@
                 @click="emit('option', '')"
                 class="label-md text-red-500"
             >
-                Löschen
+                Auswahl löschen
             </button>
             <p
                 v-for="option in options"
