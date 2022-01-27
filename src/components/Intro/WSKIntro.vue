@@ -1,8 +1,6 @@
 <template>
     <div class="w-full">
-        <div
-            class="grid grid-cols-5 row-auto gap-2 to-transparent sticky top-[-1px] pt-2"
-        >
+        <div class="grid grid-cols-5 row-auto gap-2 sticky top-[-1px] pt-2">
             <div v-for="phase in WAS.phases" :key="phase">
                 <div class="flex flex-col relative items-center group">
                     <div

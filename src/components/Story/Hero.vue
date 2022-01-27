@@ -1,7 +1,7 @@
 <template>
     <div class="relative h-[50vh] min-h-[400px] max-h-[30rem]">
         <div
-            class="bg-gradient-to-b from-transparent to-black w-full h-full absolute opacity-40"
+            class="bg-gradient-to-b to-black w-full h-full absolute opacity-40"
         ></div>
         <div class="flex justify-start items-center container-box">
             <div class="absolute top-1/2 -translate-y-1/2">

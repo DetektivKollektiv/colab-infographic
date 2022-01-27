@@ -1,6 +1,4 @@
 <script setup>
-import { ref } from 'vue'
-
 import stories from '@/api/stories.json'
 import { useInfographicStore } from '@/stores/infographic'
 
