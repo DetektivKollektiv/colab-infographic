@@ -171,7 +171,9 @@ export default {
                     <div
                         class="flex flex-col-reverse lg:flex-col justify-end lg:justify-between lg:space-y-5 min-w-full snap-center"
                     >
-                        <div class="flex flex-col space-y-4 lg:gap-8 lg:w-1/3">
+                        <div
+                            class="flex flex-col space-y-4 lg:space-y-8 lg:w-1/3"
+                        >
                             <div class="w-full">
                                 <WSKIntro
                                     :showDescription="false"
