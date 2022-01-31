@@ -1,6 +1,6 @@
 <template>
     <div
-        class="grid gap-2 grid-cols-6"
+        class="grid grid-cols-6 gap-2"
         :class="{ 'double-fourth': doubleFourth }"
     >
         <slot></slot>
@@ -21,5 +21,6 @@ export default {
 <style scoped>
 .double-fourth {
     grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
+    grid-gap: 0.5rem;
 }
 </style>

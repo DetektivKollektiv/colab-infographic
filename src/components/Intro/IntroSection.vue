@@ -49,7 +49,7 @@ export default {
     >
         <div class="container-box h-full flex flex-col justify-between z-10">
             <div
-                class="flex flex-col justify-start lg:justify-end pt-10 pb-25 lg:py-20 gap-4 w-full h-[70%] lg:h-full"
+                class="flex flex-col justify-start lg:justify-end pt-10 pb-25 lg:py-20 space-y-4 w-full h-[70%] lg:h-full"
             >
                 <div
                     class="flex flex-row snap-x snap-mandatory overflow-x-scroll w-full h-full scrollbar-hidden"
@@ -57,7 +57,7 @@ export default {
                     @scroll="update"
                 >
                     <div
-                        class="flex flex-col justify-start lg:justify-end gap-5 min-w-full snap-center"
+                        class="flex flex-col justify-start lg:justify-end min-w-full snap-center"
                     >
                         <div class="w-full lg:w-7/12">
                             <h1 class="headline">
@@ -73,7 +73,7 @@ export default {
                         </div>
                     </div>
                     <div
-                        class="flex flex-col justify-start lg:justify-end gap-5 min-w-full snap-center"
+                        class="flex flex-col justify-start lg:justify-end min-w-full snap-center"
                     >
                         <div class="w-full lg:w-7/12">
                             <h1 class="headline">Das Universum</h1>
@@ -107,7 +107,7 @@ export default {
                         </div>
                     </div>
                     <div
-                        class="flex flex-col justify-start lg:justify-end gap-5 min-w-full snap-center"
+                        class="flex flex-col justify-start lg:justify-end min-w-full snap-center"
                     >
                         <div class="w-full lg:w-7/12">
                             <h1 class="headline">Makro-Trends</h1>
@@ -126,7 +126,7 @@ export default {
                         </div>
                     </div>
                     <div
-                        class="flex flex-col justify-start lg:justify-end gap-5 min-w-full snap-center"
+                        class="flex flex-col justify-start lg:justify-end min-w-full snap-center"
                     >
                         <div class="w-full lg:w-7/12">
                             <h1 class="headline">Meso-Trends</h1>
@@ -145,7 +145,7 @@ export default {
                         </div>
                     </div>
                     <div
-                        class="flex flex-col-reverse lg:flex-col justify-end lg:justify-between lg:gap-5 min-w-full snap-center"
+                        class="flex flex-col-reverse lg:flex-col justify-end lg:justify-between lg:space-y-5 min-w-full snap-center"
                     >
                         <WSKIntro
                             :showDescription="true"
@@ -169,9 +169,9 @@ export default {
                         </div>
                     </div>
                     <div
-                        class="flex flex-col-reverse lg:flex-col justify-end lg:justify-between lg:gap-5 min-w-full snap-center"
+                        class="flex flex-col-reverse lg:flex-col justify-end lg:justify-between lg:space-y-5 min-w-full snap-center"
                     >
-                        <div class="flex flex-col gap-4 lg:gap-8 lg:w-1/3">
+                        <div class="flex flex-col space-y-4 lg:gap-8 lg:w-1/3">
                             <div class="w-full">
                                 <WSKIntro
                                     :showDescription="false"

@@ -117,7 +117,7 @@
                 ></Column>
                 <Column style="padding: 0%; background-color: transparent">
                     <Column>
-                        <div class="flex w-full gap-2">
+                        <div class="flex w-full space-x-2">
                             <Column style="padding: 0%">
                                 <component
                                     v-for="element of WIE['04.1']"
@@ -136,7 +136,7 @@
                             </Column></div
                     ></Column>
                     <Column>
-                        <div class="flex w-full gap-2">
+                        <div class="flex w-full space-x-2">
                             <Column style="padding: 0%">
                                 <component
                                     v-for="element of WIE['04.2']"
