@@ -76,7 +76,6 @@ export default {
                         <div class="w-full lg:w-7/12">
                             <h1 class="headline">Das Universum</h1>
                             <p class="w-full lg:w-2/3">
-                                Für Akteur*innen entsteht durch Desinformation Wert. Im Kern blicken wir auf die Wertschöpfungskette von Desinformation. Doch Desinformation entsteht nicht im luftleeren Raum: Gesellschaftliche Entwicklungen ermöglichen oder begünstigen sie. Mit Makro- und Meso-Trends beschreiben wir Muster, die unsere Welt über einen längeren Zeitpunkt beeinflussen und einen breiten Geltungsbereich haben. Makro-Trends beschreiben exemplarisch, welche großen Entwicklungslinien unsere Gesellschaft als Ganze prägen und zur Spaltung beitragen. Meso-Trends sind konkrete Ausprägungen davon mit konkretem Bezug zu Desinformation.
                                 Für böswillige Akteur*innen entsteht durch
                                 Desinformation Wert. Im Kern blicken wir daher
                                 auf die
@@ -89,17 +88,17 @@ export default {
                                 Mit
                                 <span
                                     class="highlight bg-yellow-400"
-                                >Makro-Trends</span>
+                                >Makro‑Trends</span>
                                 und
                                 <span
                                     class="highlight bg-yellow-300"
-                                >Meso-Trends</span>
+                                >Meso‑Trends</span>
                                 beschreiben wir Muster, die unsere Welt über
                                 einen längeren Zeitpunkt beeinflussen und einen
-                                breiten Geltungsbereich haben. Makro-Trends
+                                breiten Geltungsbereich haben. Makro‑Trends
                                 beschreiben exemplarisch, welche großen
                                 Entwicklungslinien unsere Gesellschaft als Ganze
-                                prägen und zur Spaltung beitragen. Meso-Trends
+                                prägen und zur Spaltung beitragen. Meso‑Trends
                                 sind konkrete Ausprägungen davon mit konkretem
                                 Bezug zu Desinformation.
                             </p>
@@ -109,7 +108,7 @@ export default {
                         class="flex flex-col justify-start lg:justify-end gap-5 min-w-full snap-center"
                     >
                         <div class="w-full lg:w-7/12">
-                            <h1 class="headline">Makro-Trends</h1>
+                            <h1 class="headline">Makro‑Trends</h1>
                             <p class="w-full lg:w-2/3">
                                 Große historische Entwicklungslinien prägen
                                 unseren Blick auf die Welt, sie tragen aber auch
@@ -118,7 +117,7 @@ export default {
                                 überhaupt erst auf fruchtbaren Boden fallen. Mit
                                 <span
                                     class="highlight bg-yellow-400"
-                                >Makro-Trends</span>
+                                >Makro‑Trends</span>
                                 beschreiben wir exemplarisch das Gesamtsystem,
                                 in das Desinformation eingebettet ist.
                             </p>
@@ -128,16 +127,16 @@ export default {
                         class="flex flex-col justify-start lg:justify-end gap-5 min-w-full snap-center"
                     >
                         <div class="w-full lg:w-7/12">
-                            <h1 class="headline">Meso-Trends</h1>
+                            <h1 class="headline">Meso‑Trends</h1>
                             <p class="w-full lg:w-2/3">
-                                Meso-Trends beschreiben konkrete Ausprägungen
+                                Meso‑Trends beschreiben konkrete Ausprägungen
                                 der großen historischen Entwicklungslinien
-                                (Makro-Trends). Die geringere Abstraktionsebene
+                                (Makro‑Trends). Die geringere Abstraktionsebene
                                 stellt einen konkreten Zusammenhang zur
                                 Ausbreitung von Desinformation her.
                                 <span
-                                    class="highlight bg-yellow-300"
-                                >Meso-Trends</span>
+                                    class="highlight bg-yellow-300 break-normal"
+                                >Meso‑Trends</span>
                                 bieten Ansatzpunkte für Maßnahmen gegen das
                                 Symptom Desinformation.
                             </p>
