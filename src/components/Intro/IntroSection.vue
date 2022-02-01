@@ -156,7 +156,7 @@ export default {
                                 Geld. Wir nennen diesen Prozess deshalb
                                 <span
                                     class="highlight bg-white"
-                                >"Wertschöpfungskette"</span>
+                                >Wertschöpfungskette</span>
                                 – unterteilt in fünf aufeinanderfolgende Phasen.
                             </p>
                         </div>
