@@ -1,6 +1,6 @@
 {
     "Forschen & entwickeln": {
-        "icon": "fas fa-atom",
+        "icon": "fas fa-lightbulb-on",
         "color": "text-red-500",
         "content": [
             {
@@ -139,8 +139,18 @@
         "content": []
     },
     "Demonstrieren & aktivieren": {
-        "icon": "fas fa-toggle-on",
-        "color": "text-blue-light-500",
+        "icon": "fas fa-bullhorn",
+        "color": "text-red-500",
+        "content": []
+    },
+    "Informieren & bilden": {
+        "icon": "fas fa-info-circle",
+        "color": "text-yellow-500",
+        "content": []
+    },
+    "Durchsetzen & klagen": {
+        "icon": "fas fa-gavel",
+        "color": "text-black",
         "content": []
     }
 }
