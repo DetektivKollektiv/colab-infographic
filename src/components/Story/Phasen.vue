@@ -13,6 +13,7 @@
                 <ButtonText
                     @click="emit('next')"
                     class="float-right mb-8 md:mb-12 hidden md:block"
+                    :class="{ 'animate-scale': phaseIndex == 1 }"
                     >Weiter</ButtonText
                 >
             </div>

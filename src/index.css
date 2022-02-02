@@ -54,4 +54,13 @@
     .scrollbar-hidden::-webkit-scrollbar {
         display: none;
     }
+
+    @keyframes scale {
+        50% {
+            transform: scale(1.2);
+        }
+    }
+    .animate-scale {
+        animation: scale 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
 }
