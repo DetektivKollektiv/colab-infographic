@@ -24,13 +24,13 @@
                     <div class="space-x-2 mt-4">
                         <ButtonText
                             @click="emit('state', 'phasen')"
-                            :active="state === 'phasen'"
+                            :active="state === 'phasen' && active"
                         >
                             Phasen</ButtonText
                         >
                         <ButtonText
                             @click="emit('state', 'uebersicht')"
-                            :active="state === 'uebersicht'"
+                            :active="state === 'uebersicht' && active"
                         >
                             Übersicht & Trends</ButtonText
                         >
@@ -47,6 +47,8 @@
     </div>
 </template>
 <script setup>
+import { watchEffect } from '@vue/runtime-core'
+
 const props = defineProps({
     story: {
         type: Object,
@@ -56,8 +58,13 @@ const props = defineProps({
         type: String,
         required: true,
     },
+    active: {
+        type: Boolean,
+        default: false,
+    },
 })
-const { story, state } = toRefs(props)
+
+const { story, state, active } = toRefs(props)
 
 const emit = defineEmits(['state'])
 </script>
