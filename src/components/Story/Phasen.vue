@@ -10,6 +10,11 @@
                     @phaseIndex="(index) => emit('phaseIndex', index)"
                 >
                 </Text>
+                <ButtonText
+                    @click="emit('next')"
+                    class="float-right mb-8 md:mb-12 hidden md:block"
+                    >Weiter</ButtonText
+                >
             </div>
             <img
                 class="md:h-auto object-cover max-w-xl"
@@ -23,11 +28,6 @@
         <div class="mb-8 md:mb-12">
             <Sources :sources="sources"></Sources>
         </div>
-        <ButtonText
-            @click="emit('next')"
-            class="float-right mb-8 md:mb-12 hidden md:block"
-            >Weiter</ButtonText
-        >
     </div>
 </template>
 <script setup>
