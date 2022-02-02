@@ -21,7 +21,8 @@ export default {
             }
             console.log(index, this.length)
             this.$refs.container.scrollTo({
-                left: this.elementsLefts[index],
+                left:
+                    this.elementsLefts[index] + this.$refs.container.scrollLeft,
                 behavior: 'smooth',
             })
         },
