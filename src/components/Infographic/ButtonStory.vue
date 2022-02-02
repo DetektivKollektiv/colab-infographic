@@ -1,5 +1,8 @@
 <template>
-    <ButtonText :active="active" @click="setStory">{{ story }}</ButtonText>
+    <ButtonText :active="active" @click="setStory"
+        >{{ story }}
+        <i v-if="active" class="fas fa-times ml-2 relative top-[1px]"></i
+    ></ButtonText>
 </template>
 
 <script setup>
