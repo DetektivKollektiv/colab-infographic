@@ -5,53 +5,45 @@
             "subtitle": "z. B. China, Russland, Iran",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
-                },
-                {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren.\nBesonders aggressiv treten hierbei oft autokratische Staaten wie China, Russland oder der Iran auf [1] – um ihren Herrschaftsanspruch nach innen zu stärken, und um konkurrierende liberale Demokratien zu schwächen."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-                },
-                {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Analyse des Washington Institute",
+                    "link": "https://www.washingtoninstitute.org/policy-analysis/axis-disinformation-propaganda-iran-russia-and-china-covid-19"
                 }
             ],
-            "stories": [
-                "Der Fall Künast"
-            ],
-            "massnahmen": [
-                "Forschen gegen Russland",
-                "Forschen gegen China"
-            ]
+            "stories": ["Der Fall Künast"],
+            "massnahmen": ["Forschen gegen Russland", "Forschen gegen China"]
         },
         {
             "title": "Parteien",
-            "subtitle": "z. B. AfD, Republikaner, Wahlen in Indonesien",
+            "subtitle": "z. B. AfD, US-Republikaner, Präsidentschaftswahlen in Indonesien",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "Parteien möchten die öffentliche Meinung zu ihren eigenen Gunsten beeinflussen – um Wahlen zu gewinnen und um ihre Stellung zu festigen. Dazu gehört auch, politische Gegner in schlechtem Licht darzustellen. Nicht ausschließlich, aber auffallend oft sind hier Parteien vertreten, die den liberalen Rechtsstaat in Frage stellen – und die in schwächeren Demokratien besonders aggressiv und erfolgreich agieren."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Zum Beispiel beteiligen sich In Deutschland immer wieder die AfD und ihre Mitglieder an der Initiierung von Falschinformationen [1][2] (zuletzt gerade im Zusammenhang mit der Corona-Pandemie); in den USA heizt die Partei der Republikaner die fortgesetzte Verbreitung von Lügen über die Präsidentschaftswahlen 2020 an [3]; und in Indonesien benutzen Politiker*innen “Cyber-Armeen”, um die Stimmung in den sozialen Medien vor den Wahlen zu ihren Gunsten zu beeinflussen [4]."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Artikel in Coda",
+                    "link": "https://www.codastory.com/disinformation/germany-election-disinformation/"
                 },
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[2] Artikel in der Tagesschau",
+                    "link": "https://www.tagesschau.de/faktenfinder/afd-angst-impfungen-101.html"
+                },
+                {
+                    "text": "[3] Artikel in der New York Times",
+                    "link": "https://www.nytimes.com/2020/12/26/us/politics/republicans-voter-fraud.html"
+                },
+                {
+                    "text": "[4] Artikel im Guardian",
+                    "link": "https://www.theguardian.com/world/2018/jul/23/indonesias-fake-twitter-account-factories-jakarta-politic"
                 }
             ],
             "stories": [],
@@ -62,22 +54,28 @@
             "subtitle": "z. B. Fox News, Springer Verlag",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "Einige korrumpierte oder unseriöse Medien berichten nicht (immer) seriös und ausgewogen, sondern – mehr oder weniger häufig – unsachlich, populistisch oder im Sinne eines gewissen Weltbilds. Dies betrifft vor allem Medien, die aus politischen und/oder wirtschaftlichen Gründen von einseitiger, irrationaler oder Kampagnen-Berichterstattung profitieren."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Zum Beispiel zeigt in den USA das Murdoch-Network Fox News seit Jahren, wozu die Aufgabe von journalistischen Standards [1] und statt dessen eine konsequente Ausrichtung an den Zielen und der Ideologie der Trump-Bewegung [2] führt: zu einer Plattform, die fast schon als Dauerfeuer die Verbreitung von Falschinformationen initiiert [3] und ihr eine machtvolle Bühne bietet – vor allem deshalb, weil sich damit viel Geld verdienen lässt. In Deutschland lässt es der Axel-Springer-Verlag zu, dass insbesondere die Bild-Zeitung immer wieder das Gebiet sachlicher, faktenbasierter Berichterstattung verlässt – und dafür regelmäßig vom Presserat gerügt wird. [4]"
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Forschungsartikel",
+                    "link": "https://journals.sagepub.com/doi/abs/10.1177/19312431211060426"
                 },
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[2] Artikel von Media Matters (1)",
+                    "link": "https://www.mediamatters.org/fox-news/fox-news-employees-fox-pro-trump-propaganda-network"
+                },
+                {
+                    "text": "[3] Artikel von Media Matters (2)",
+                    "link": "https://www.mediamatters.org/fox-news/timeline-fox-news-misinformation-2020"
+                },
+                {
+                    "text": "[4] Artikel in Übermedien",
+                    "link": "https://uebermedien.de/64365/bild-findet-nach-jahren-erstmals-platz-im-blatt-fuer-presserats-ruegen/"
                 }
             ],
             "stories": [],
@@ -85,25 +83,47 @@
         },
         {
             "title": "Interessen-/ Lobbyverbände",
-            "subtitle": "z. B. Rauchen, fossile Energie, Pharma, Big Tech",
+            "subtitle": "z. B. Tabak, fossile Energie, Pharma, Big Tech",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "Interessen- oder Lobbyverbände haben ein wirtschaftliches Interesse daran, ihre eigene Position im öffentlichen Diskurs zu stärken. Besonders attraktiv ist die direkte Einflussnahme auf Zivilgesellschaft, Politik und Wissenschaft."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Viele der Fälle von extremem Lobbyismus kamen aus Branchen und Industrien, die unter besonderen gesellschaftlichen und politischen Druck geraten. Die Tabakindustrie wehrte sich lange erfolgreich gegen Regulierung [1][2] und verheimlichte die Risiken des Rauchens [3]; die Pharmaindustrie setzt sich für Gesetze in ihrem Sinne ein [4]; mit ähnlichen Mitteln versuchen die Interessenvertreter*innen der Fossilindustrie seit Jahren und Jahrzehnten, den Kampf gegen die Klimakrise in ihrem Sinne zu verlangsamen [5][6][7]. Aber auch die so genannten Big-Tech-Unternehmen geben Milliarden aus, um insbesondere in Washington und Brüssel Einfluss auf die politischen Entscheidungsträger*innen zu nehmen [8]."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Artikel in der Tagesschau",
+                    "link": "https://www.tagesschau.de/investigativ/rauchen-tabaklobby-101.html"
                 },
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[2] Artikel des Corporate Europe Observatory (1)",
+                    "link": "https://corporateeurope.org/da/node/1448"
+                },
+                {
+                    "text": "[3] Artikel in CBS News",
+                    "link": "https://www.cbsnews.com/news/big-tobacco-kept-cancer-risk-in-cigarettes-secret-study/"
+                },
+                {
+                    "text": "[4] Artikel des Corporate Europe Observatory (2)",
+                    "link": "https://corporateeurope.org/en/2021/05/big-pharmas-lobbying-firepower-brussels-least-eu36-million-year-and-likely-far-more"
+                },
+                {
+                    "text": "[5] Artikel im Guardian",
+                    "link": "https://www.theguardian.com/business/2019/oct/24/fossil-fuel-big-five-spent-251m-lobbying-european-union-2010-climate-crisis"
+                },
+                {
+                    "text": "[6] Artikel des Corporate Europe Observatory (3)",
+                    "link": "https://corporateeurope.org/el/node/1516"
+                },
+                {
+                    "text": "[7] Artikel des CNN",
+                    "link": "https://edition.cnn.com/2021/11/08/world/cop26-climate-fossil-fuel-lobbying-intl/index.html"
+                },
+                {
+                    "text": "[8] Bericht des Corporate Europe Observatory: “The Lobby Network: Big Tech’s Web of Influence in the EU”",
+                    "link": "​​https://corporateeurope.org/sites/default/files/2021-08/The%20lobby%20network%20-%20Big%20Tech%27s%20web%20of%20influence%20in%20the%20EU.pdf"
                 }
             ],
             "stories": [],
@@ -111,25 +131,23 @@
         },
         {
             "title": "Ideolog*innen",
-            "subtitle": "z. B. Impfgegner*innen, Fundamentalist*innen, Rechtsradikale",
+            "subtitle": "z. B. Impfgegner*innen, religiöse Fundamentalist*innen, Rechtsradikale, …",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "Ideolog*innen haben ein weltanschauliches Interesse daran, ihre eigenen Ansichten im gesellschaftlichen Diskurs zu stärken. Aus einer Blase mit Gleichgesinnten heraus entsteht der Wunsch, mehr Menschen von den eigenen Meinungen überzeugen zu wollen."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Problematisch ist dies insbesondere bei Vertreter*innen eines Weltbildes, das die Grundlagen von Rationalität und Wissenschaftlichkeit in Frage stellt. So stützen sich zum Beispiel Impfgegner*innen in ihrer Argumentation oft auf falsche Tatsachen [1] und Rechtsextremist*innen bauen ihr Feindbild auf falschen Behauptungen auf [2]. Je mehr die “Grundbausteine” eines solchen Weltbildes von der wirklichen Welt abweichen, desto schwieriger wird es für die Gesellschaft, mit ihren Anhänger*innen umzugehen."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Artikel in der Tagesschau",
+                    "link": "https://www.tagesschau.de/faktenfinder/covid19-impfungen-desinformation-101.html"
                 },
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[2] Artikel in Voxeurop",
+                    "link": "https://voxeurop.eu/de/wie-george-soros-vom-demokratieboten-zum-volksfeind-ungarns-gemacht-wurde/"
                 }
             ],
             "stories": [],
@@ -140,22 +158,20 @@
             "subtitle": "z. B. Promis, Influencer:innen, Trolle",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "Einzelkämpfer*innen agieren ohne Rückhalt durch eine größere Gruppe oder versammeln diese Gruppe erst im Laufe ihres Weges hinter sich. Sie verwenden oft unkonventionelle Mittel (auch spontan) – und erzielen dadurch Aufmerksamkeit; da sie im „Do-it-yourself“-Modus vorgehen, sind die Einzelkämpfer*innen oft in verschiedenen Phasen der Wertschöpfungskette aktiv."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Häufig sind dies Personen, die im Netz und den sozialen Medien schon zuvor aus einem anderen Grund über eine gewisse Reichweite verfügen – und diese dann für ihr neues Ziel nutzen und weiter ausbauen. So wandelte sich z.B. Ken Jebsen vom Radio-Moderator zum Verschwörungsprediger [1], und Attila Hildmann vom Kochbuchautor zum Rechtsextremist und Reichsbürger [2]."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Podcast in der ARD Audiothek",
+                    "link": "https://www.ardaudiothek.de/sendung/cui-bono-wtf-happened-to-ken-jebsen/89991466/"
                 },
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[2] Artikel im Spiegel",
+                    "link": "https://www.spiegel.de/panorama/justiz/attila-hildmann-verdacht-der-volksverhetzung-polizei-sucht-mit-haftbefehl-a-a0af455e-c6c8-4cfd-ab27-2f8534bd667e"
                 }
             ],
             "stories": [],
@@ -168,22 +184,24 @@
             "subtitle": "z. B. IRA (Russland), Endless Mayfly (Iran)",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "Sogenannte Troll-Fabriken beschäftigen Mitarbeiter*innen, die den gesamten Arbeitstag lang eine Vielzahl an gefälschten Social Media-Profile mit Inhalten befüllen und mit diesen Profilen an Online-Diskussionen teilnehmen, um den Diskurs zu steuern. Sie treten dabei oft polarisierend und provozierend auf – was im Internet „Troll“ genannt wird."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Besondere Aufmerksamkeit erlangten dabei zum Beispiel die russische Trollfabrik „Internet Research Agency“ (IRA) im Vorfeld der US-Wahlen 2016 [1] und das iranische Fake-News-Netzwerk „Endless Mayfly“ [2][3]."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Artikel von NBC News",
+                    "link": "https://www.nbcnews.com/news/all/russian-troll-describes-work-infamous-misinformation-factory-n821486"
                 },
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[2] Bericht des Citizenlab",
+                    "link": "https://citizenlab.ca/2019/05/burned-after-reading-endless-mayflys-ephemeral-disinformation-campaign/"
+                },
+                {
+                    "text": "[3] Fallstudie zum „Endless Mayfly“-Netzwerk",
+                    "link": "https://mediamanipulation.org/case-studies/copycat-websites-endless-mayfly-network"
                 }
             ],
             "stories": [],
@@ -191,56 +209,75 @@
         },
         {
             "title": "Content-Provider",
-            "subtitle": "z. B. RT, EIKE",
+            "subtitle": "z. B. RT, Sputnik, EIKE, Endless Mayfly (Iran)",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "Content-Provider tarnen sich als seriöse Nachrichtenseiten, produzieren und bündeln aber vor allem Desinformation in allen Spielarten, d.h. Artikel, die stark ideologisch gefärbt oder sogar frei erfunden sind."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Zum Beispiel treten immer wieder Netzwerke von Content-Providern aus Russland auf [1], die Desinformation in die Welt setzen und dann durch weitere Berichterstattung auf den vom russischen Staat kontrollierten Medienplattformen RT (Russia Today) und Sputnik legitimieren [2]. Zum Klimawandel verbreitet in Deutschland zum Beispiel die Lobbyorganisation der Klimaleugnerszene “EIKE” Desinformation, getarnt als Forschungsinstitut [3][4]. Und das iranische Netzwerk “Endless Mayfly” verbreitete in den USA, Saudi-Arabien und Israel Desinformation mithilfe von gefälschten Nachrichtenwebsites [5][6]."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Artikel auf Netzpolitik.org",
+                    "link": "https://netzpolitik.org/2020/russische-desinformation-das-netzwerk-gefaelschter-auslandsmedien/"
                 },
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[2] Artikel in der New York Times",
+                    "link": "https://www.nytimes.com/2016/08/29/world/europe/russia-sweden-disinformation.html"
+                },
+                {
+                    "text": "[3] Wikipedia-Eintrag zu EIKE",
+                    "link": "https://de.wikipedia.org/wiki/Europ%C3%A4isches_Institut_f%C3%BCr_Klima_und_Energie"
+                },
+                {
+                    "text": "[4] Artikel von Correctiv",
+                    "link": "https://correctiv.org/top-stories/2020/02/04/die-heartland-lobby-2/"
+                },
+                {
+                    "text": "[5] Bericht des Citizenlab",
+                    "link": "https://citizenlab.ca/2019/05/burned-after-reading-endless-mayflys-ephemeral-disinformation-campaign/"
+                },
+                {
+                    "text": "[6] Fallstudie zum „Endless Mayfly“-Netzwerk",
+                    "link": "https://mediamanipulation.org/case-studies/copycat-websites-endless-mayfly-network"
                 }
             ],
-            "stories": [
-                "Der Fall Künast"
-            ],
-            "massnahmen": [
-                "Forschen gegen Russland",
-                "Forschen gegen China"
-            ]
+            "stories": ["Der Fall Künast"],
+            "massnahmen": ["Forschen gegen Russland", "Forschen gegen China"]
         },
         {
             "title": "Offizielle Vertreter*innen",
-            "subtitle": "z. B. Zhao Lijan, Naomi Seibt",
+            "subtitle": "z. B. Donald Trump, Jair Bolsonaro, Zhao Lijian, AfD-Politiker*innen, Naomi Seibt",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "Offizielle Vertreter*innen stehen offensiv für eine Regierung, eine Gruppierung, eine politische Bewegung. Sie produzieren, verbreiten und bekräftigen Inhalte – und verleihen ihnen somit bei Anhänger*innen des eigenen Lagers Glaubwürdigkeit. Auch neutrale Personen können dadurch überzeugt oder zumindest irritiert werden."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Das Beispiel der Corona-Pandemie zeigt: Desinformation rund um die Krankheit wurde nicht nur anonym verbreitet, sondern zum Beispiel auch von Donald Trump [1], von Jair Bolsonaro [2], vom chinesischen Politiker und Botschafter Zhao Lijian [3], von AfD-Politiker*innen [4] und von der jugendlichen Rechtsextremistin und Influencerin Naomi Seibt [5]."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Artikel in der Deutschen Welle",
+                    "link": "https://www.dw.com/de/wie-donald-trump-zum-gr%C3%B6%C3%9Ften-antreiber-von-corona-fake-news-wurde/a-55130217"
                 },
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[2] Artikel in der FAZ",
+                    "link": "https://www.faz.net/aktuell/politik/ausland/corona-desinformation-twitter-loescht-zwei-botschaften-bolsonaros-16702973.html"
+                },
+                {
+                    "text": "[3] Artikel in CNN",
+                    "link": "https://edition.cnn.com/2020/03/13/asia/china-coronavirus-us-lijian-zhao-intl-hnk/index.htm"
+                },
+                {
+                    "text": "[4] Artikel in der TAZ",
+                    "link": "https://taz.de/Desinformation-in-der-Coronakrise/!5824346/"
+                },
+                {
+                    "text": "[5] Artikel auf Volksverpetzer.de",
+                    "link": "https://www.volksverpetzer.de/corona-faktencheck/pcr-test-naomi-seibt/"
                 }
             ],
             "stories": [],
@@ -251,22 +288,24 @@
             "subtitle": "z. B. Ken Jebsen, Alex Jones, Stefan Molyneux",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "Blogs und Podcasts verbreiten Inhalte ohne redaktionelle Kontrolle. Der Eindruck von Glaubwürdigkeit wird meistens durch die persönliche Ausstrahlung einzelner oder mehrerer der Autor*innen erreicht."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Beispiele für Blogs und Podcasts mit großer Reichweite, die oft ideologisch gefärbte Inhalte und Desinformation verbreitet haben, sind in Deutschland Ken Jebsen [1], der sich vom Radiomoderator zum Verschwörungsprediger gewandelt hat, und in den USA Alex Jones, der Verschwörungmythen an ein Millionenpublikum bringt [2] sowie der rechtsradikale Kanadier Stefan Molyneux [3]."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Podcast in der ARD Audiothek",
+                    "link": "https://www.ardaudiothek.de/sendung/cui-bono-wtf-happened-to-ken-jebsen/89991466/"
                 },
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[2] Artikel in der New York Times",
+                    "link": "https://www.nytimes.com/2019/12/05/magazine/alex-jones-infowars.html"
+                },
+                {
+                    "text": "[3] Artikel auf Netzpolitik.org",
+                    "link": "https://netzpolitik.org/2020/grosses-hass-domino-in-sozialen-netzwerken/"
                 }
             ],
             "stories": [],
@@ -275,22 +314,41 @@
     ],
     "03": [
         {
-            "title": "Beratungsfirmen/Agenturen",
-            "subtitle": "z. B. Cambridge Analytica, Storymachine",
+            "title": "Einzelkämpfer*innen",
+            "subtitle": "z. B. Promis, Influencer:innen, Trolle",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "Einzelkämpfer*innen agieren ohne Rückhalt durch eine größere Gruppe oder versammeln diese Gruppe erst im Laufe ihres Weges hinter sich. Sie verwenden oft unkonventionelle Mittel (auch spontan) – und erzielen dadurch Aufmerksamkeit; da sie im „Do-it-yourself“-Modus vorgehen, sind die Einzelkämpfer*innen oft in verschiedenen Phasen der Wertschöpfungskette aktiv."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Häufig sind dies Personen, die im Netz und den sozialen Medien schon zuvor aus einem anderen Grund über eine gewisse Reichweite verfügen – und diese dann für ihr neues Ziel nutzen und weiter ausbauen. So wandelte sich z.B. Ken Jebsen vom Radio-Moderator zum Verschwörungsprediger [1], und Attila Hildmann vom Kochbuchautor zum Rechtsextremist und Reichsbürger [2]."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Podcast in der ARD Audiothek",
+                    "link": "https://www.ardaudiothek.de/sendung/cui-bono-wtf-happened-to-ken-jebsen/89991466/"
+                },
+                {
+                    "text": "[2] Artikel im Spiegel",
+                    "link": "https://www.spiegel.de/panorama/justiz/attila-hildmann-verdacht-der-volksverhetzung-polizei-sucht-mit-haftbefehl-a-a0af455e-c6c8-4cfd-ab27-2f8534bd667e"
+                }
+            ],
+            "stories": [],
+            "massnahmen": []
+        },
+        {
+            "title": "Beratungsfirmen/Agenturen",
+            "subtitle": "z. B. Cambridge Analytica, Enigma, Storymachine",
+            "description": [
+                {
+                    "text": "Beratungsfirmen und Agenturen arbeiten profitorientiert und helfen ihren Kund*innen dabei, Inhalte strategisch und gezielt zu platzieren. Sie bringen das Know-How mit, um verschiedene Medienkanäle und Plattformen zu erreichen und zu „bespielen“, und unterstützen bei der Entwicklung und Umsetzung (technisch) anspruchsvoller Strategien – wie z. B. Microtargeting. Um den wahren Auftraggeber zu verschleiern, werden manchmal vorgebliche NGOs oder Graswurzelbewegungen gegründet."
+                }
+            ],
+            "sources": [
+                {
+                    "text": "[1] Artikel im Guardian",
+                    "link": "https://www.theguardian.com/news/2018/mar/17/data-war-whistleblower-christopher-wylie-faceook-nix-bannon-trump"
                 },
                 {
                     "text": "Kolumne in der SZ",
@@ -323,35 +381,28 @@
                     "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
                 }
             ],
-            "stories": [
-                "Der Fall Künast"
-            ],
-            "massnahmen": [
-                "Forschen gegen Russland",
-                "Forschen gegen China"
-            ]
+            "stories": ["Der Fall Künast"],
+            "massnahmen": ["Forschen gegen Russland", "Forschen gegen China"]
         },
         {
             "title": "Selbstorganisierte Bewegungen",
             "subtitle": "z. B. QAnon, Gamergate",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "Auch innerhalb von selbst formierten „Communities“ kann sich Expertise zur besonders wirkungsvollen Platzierung von Inhalten entwickeln. Besonders durch hohen persönlichen Einsatz kann schon eine kleine Gruppe ein großes Echo hervorrufen – und ihr Weltbild überproportional stark bekannt machen."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Ein Beispiel dafür sind neurechte, rassistische und rechtsextremistische Internetforen in den USA, aus denen schon mehrmals weithin wirksame  Bewegungen hervorgegangen sind – mit Bekanntheit bis in die Mitte der Gesellschaft, über die digitalen Grenzen hinaus. So hat sich der QAnon-Verschwörungsmythos mittlerweile global verbreitet [1] und die frauenfeindliche und antifeministische Hasskampagne „Gamergate“ erschütterte 2014 die Online- und Gaming-Kultur [2]."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Artikel in der New York Times",
+                    "link": "https://www.nytimes.com/article/what-is-qanon.html"
                 },
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[2] Artikel in Vox",
+                    "link": "https://www.vox.com/culture/2020/1/20/20808875/gamergate-lessons-cultural-impact-changes-harassment-laws"
                 }
             ],
             "stories": [],
@@ -364,27 +415,11 @@
             "subtitle": "z. B. Whatsapp, Telegram, geschlossene Facebook-Gruppen",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
-                },
-                {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Geschlossene Plattformen – oder entsprechende Features bei den offenen Plattformen – erlauben Nutzer*innen die Verbreitung von Inhalten an ausgewählte Kontakte oder Gruppenmitglieder. Posts können sich dennoch weit verbreiten, wenn sie manuell weitergeleitet werden."
                 }
             ],
-            "sources": [
-                {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-                },
-                {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-                }
-            ],
-            "stories": [
-                "Der Fall Künast"
-            ],
+            "sources": [],
+            "stories": ["Der Fall Künast"],
             "massnahmen": [
                 "Über Big Tech und Social Media aufklären",
                 "Forschen gegen China"
@@ -395,24 +430,10 @@
             "subtitle": "z. B. Facebook, Twitter, Youtube, TikTok",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
-                },
-                {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Offene Plattformen erlauben Nutzer*innen die offene Verbreitung von Inhalten, andere Nutzer*innen sehen diese dann in ihrem „Feed“ – Auswahl und Hierarchisierung erfolgen meist mit Hilfe von Algorithmen."
                 }
             ],
-            "sources": [
-                {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-                },
-                {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-                }
-            ],
+            "sources": [],
             "stories": [],
             "massnahmen": []
         }
@@ -423,83 +444,92 @@
             "subheadline": "(Qualitative) Verstärkung"
         },
         {
-            "title": "News-Seiten",
-            "subtitle": "z. B. Fox, Infowars, Breitbart, oliverjanich.de",
+            "title": "Gruppen/Bubbles",
+            "subtitle": "z. B. Impfgegner*innen bei Telegram",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "In geschlossenen Gruppen und durch personalisierte „Feeds“ können „Informationsblasen“ entstehen: eine bestimmte Weltsicht wird gegenseitig immer wieder bestätigt und verstärkt, ohne auf kritische Gegenstimmen zu stoßen."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "In bestimmten Telegram-Gruppen bestärken sich zum Beispiel Bürger*innen gegenseitig immer weiter in ihrer ablehnenden Haltung zu Impfungen. Da es innerhalb der Gruppe keine kritischen Gegenstimmen gibt, wird diese Haltung auch nicht hinterfragt oder durch andere Quellen validiert [1]."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Artikel im WDR",
+                    "link": "https://www1.wdr.de/nachrichten/themen/coronavirus/impfgegner-selbstversuch-100.html"
+                }
+            ],
+            "stories": ["Der Fall Künast"],
+            "massnahmen": ["Forschen gegen Russland", "Forschen gegen China"]
+        },
+        {
+            "title": "„News-Seiten“",
+            "subtitle": "z. B. Russische Fake-Zeitung “Abendlich Hamburg”",
+            "description": [
+                {
+                    "text": "„News-Seiten“ sehen seriösen Nachrichtenportalen zum Verwechseln ähnlich, dienen aber nur als Fassade für Artikel, die entweder von anderen Seiten kopiert, maschinengeschrieben oder übersetzt, frei erfunden oder stark ideologisch gefärbt sind. Die Seiten sind oft nicht sehr breit aufgestellt, sondern sollen eher einzelnen Artikeln, die über andere Plattformen verbreitet werden, Seriosität verleihen."
                 },
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "Zum Beispiel wurde deutschsprachige Desinformation aus Russland über Monate auf der eigens dafür erstellen Website “Abendlich Hamburg” verbreitet – die einer echten Zeitung so ähnlich sah, dass ihre Artikel von vielen Medien weiterverbreitet wurden [1]."
+                }
+            ],
+            "sources": [
+                {
+                    "text": "[1] Artikel auf Netzpolitik.org",
+                    "link": "https://netzpolitik.org/2020/russische-desinformation-das-netzwerk-gefaelschter-auslandsmedien/"
                 }
             ],
             "stories": [],
             "massnahmen": []
         },
         {
-            "title": "Gruppen/Bubbles",
-            "subtitle": "z. B. Impfgegner*innen bei Telegram",
+            "title": "Blogs/Podcasts",
+            "subtitle": "z. B. Ken Jebsen, Alex Jones, Stefan Molyneux",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "Blogs und Podcasts verbreiten Inhalte ohne redaktionelle Kontrolle. Der Eindruck von Glaubwürdigkeit wird meistens durch die persönliche Ausstrahlung einzelner oder mehrerer der Autor*innen erreicht."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Beispiele für Blogs und Podcasts mit großer Reichweite, die oft ideologisch gefärbte Inhalte und Desinformation verbreitet haben, sind in Deutschland Ken Jebsen [1], der sich vom Radiomoderator zum Verschwörungsprediger gewandelt hat, und in den USA Alex Jones, der Verschwörungsmythen an ein Millionenpublikum bringt [2] sowie der rechtsradikale Kanadier Stefan Molyneux [3]."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Podcast in der ARD Audiothek",
+                    "link": "https://www.ardaudiothek.de/sendung/cui-bono-wtf-happened-to-ken-jebsen/89991466/"
                 },
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[2] Artikel in der New York Times",
+                    "link": "https://www.nytimes.com/2019/12/05/magazine/alex-jones-infowars.html"
+                },
+                {
+                    "text": "[3] Artikel auf Netzpolitik.org",
+                    "link": "https://netzpolitik.org/2020/grosses-hass-domino-in-sozialen-netzwerken/"
                 }
             ],
-            "stories": [
-                "Der Fall Künast"
-            ],
-            "massnahmen": [
-                "Forschen gegen Russland",
-                "Forschen gegen China"
-            ]
+            "stories": [],
+            "massnahmen": []
         },
         {
-            "title": "Blogs/Podcasts",
-            "subtitle": "z. B. KenFM, Stefan Molyneux",
+            "title": "Einzelkämpfer*innen",
+            "subtitle": "z. B. Promis, Influencer:innen, Trolle",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "Einzelkämpfer*innen agieren ohne Rückhalt durch eine größere Gruppe oder versammeln diese Gruppe erst im Laufe ihres Weges hinter sich. Sie verwenden oft unkonventionelle Mittel (auch spontan) – und erzielen dadurch Aufmerksamkeit; da sie im „Do-it-yourself“-Modus vorgehen, sind die Einzelkämpfer*innen oft in verschiedenen Phasen der Wertschöpfungskette aktiv."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Häufig sind dies Personen, die im Netz und den sozialen Medien schon zuvor aus einem anderen Grund über eine gewisse Reichweite verfügen – und diese dann für ihr neues Ziel nutzen und weiter ausbauen. So wandelte sich z.B. Ken Jebsen vom Radio-Moderator zum Verschwörungsprediger [1], und Attila Hildmann vom Kochbuchautor zum Rechtsextremist und Reichsbürger [2]."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Podcast in der ARD Audiothek",
+                    "link": "https://www.ardaudiothek.de/sendung/cui-bono-wtf-happened-to-ken-jebsen/89991466/"
                 },
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[2] Artikel im Spiegel",
+                    "link": "https://www.spiegel.de/panorama/justiz/attila-hildmann-verdacht-der-volksverhetzung-polizei-sucht-mit-haftbefehl-a-a0af455e-c6c8-4cfd-ab27-2f8534bd667e"
                 }
             ],
             "stories": [],
@@ -516,24 +546,10 @@
             "subtitle": "z. B. Spam-Netzwerke, Netzwerke aus gefälschten Twitter-Konten",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
-                },
-                {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Sogenannte Bots sind Computerprogramme, die automatisiert Inhalte weiterverbreiten. Ausgehend von einer Vielzahl von gefälschten oder gestohlenen Profilen wird der gleiche Inhalt geteilt, manchmal geringfügig verändert oder automatisch in andere Sprachen übersetzt."
                 }
             ],
-            "sources": [
-                {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-                },
-                {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-                }
-            ],
+            "sources": [],
             "stories": [],
             "massnahmen": []
         },
@@ -542,22 +558,16 @@
             "subtitle": "z. B. Anonymous, K-Pop Community",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "Größere Bewegungen schaffen es manchmal, ihre Mitglieder zu gezielten Vervielfältigungs- Aktionen zu mobilisieren: die Anhänger*innen fluten dann synchron eine Website oder Plattform mit dem gleichen Inhalt. Wenn die Algorithmen der Plattform dies als Trend begreifen, kann die Aktion ab einer gewissen Masse gewaltige Eigendynamik entwickeln."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Besonders Online-Bewegungen können schnell agieren – wie zum Beispiel die Hacker-Bewegung Anonymous oder die Fans der Musikrichtung K-Pop, die tausende Tickets für Wahlkampfveranstaltungen von Donald Trump reservierten – aber dann nicht auf der Veranstaltung auftauchten, was zu einem größtenteils leeren Stadion führte [1]."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-                },
-                {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Artikel im Guardian",
+                    "link": "https://www.theguardian.com/us-news/2020/jun/21/trump-tulsa-rally-scheme-k-pop-fans-tiktok-users"
                 }
             ],
             "stories": [],
@@ -566,85 +576,65 @@
     ],
     "05": [
         {
-            "title": "Medien",
-            "subtitle": "z. B. ???",
+            "title": "Einzelkämpfer*innen",
+            "subtitle": "z. B. Promis, Influencer:innen, Trolle",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    "text": "Einzelkämpfer*innen agieren ohne Rückhalt durch eine größere Gruppe oder versammeln diese Gruppe erst im Laufe ihres Weges hinter sich. Sie verwenden oft unkonventionelle Mittel (auch spontan) – und erzielen dadurch Aufmerksamkeit; da sie im „Do-it-yourself“-Modus vorgehen, sind die Einzelkämpfer*innen oft in verschiedenen Phasen der Wertschöpfungskette aktiv."
                 },
                 {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Häufig sind dies Personen, die im Netz und den sozialen Medien schon zuvor aus einem anderen Grund über eine gewisse Reichweite verfügen – und diese dann für ihr neues Ziel nutzen und weiter ausbauen. So wandelte sich z.B. Ken Jebsen vom Radio-Moderator zum Verschwörungsprediger [1], und Attila Hildmann vom Kochbuchautor zum Rechtsextremist und Reichsbürger [2]."
                 }
             ],
             "sources": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[1] Podcast in der ARD Audiothek",
+                    "link": "https://www.ardaudiothek.de/sendung/cui-bono-wtf-happened-to-ken-jebsen/89991466/"
                 },
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-                }
-            ],
-            "stories": [
-                "Der Fall Künast"
-            ],
-            "massnahmen": [
-                "Forschen gegen Russland",
-                "Forschen gegen China"
-            ]
-        },
-        {
-            "title": "(Fach-)Diskurse",
-            "subtitle": "z. B. ???",
-            "description": [
-                {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
-                },
-                {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
-                }
-            ],
-            "sources": [
-                {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-                },
-                {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "[2] Artikel im Spiegel",
+                    "link": "https://www.spiegel.de/panorama/justiz/attila-hildmann-verdacht-der-volksverhetzung-polizei-sucht-mit-haftbefehl-a-a0af455e-c6c8-4cfd-ab27-2f8534bd667e"
                 }
             ],
             "stories": [],
             "massnahmen": []
         },
         {
-            "title": "Gespräche",
-            "subtitle": "z. B. ???",
+            "title": "Medien",
+            "subtitle": "z. B. NYT, Economist, Spiegel, öffentlich-rechtlicher Rundfunk, …",
             "description": [
                 {
-                    "text": "Staatliche Akteure haben ein machtpolitisches Interesse daran, die öffentliche Meinung in anderen Ländern in ihrem Sinne zu beeinflussen oder politische Systeme zu destabilisieren. Besonders aggressiv treten hierbei oft autokratische Staaten auf.",
-                    "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
-                },
-                {
-                    "headline": "Welche Staaten fallen besonders auf?",
-                    "text": "Vor allem autokratische Staaten, um liberale Demokratien zu schwächen"
+                    "text": "Auch seriöse Medien geraten durch Desinformation unter Druck: weil die eigene Glaubwürdigkeit immer öfter/stärker bezweifelt wird; weil geschickt platzierte Falschinformationen evtl. nicht erkannt werden; weil die Widerlegung von falschen Inhalten dennoch zur weiteren Verbreitung beitragen kann."
                 }
             ],
-            "sources": [
+            "sources": [],
+            "stories": ["Der Fall Künast"],
+            "massnahmen": ["Forschen gegen Russland", "Forschen gegen China"]
+        },
+        {
+            "title": "(Fach-)Diskurse",
+            "subtitle": "z. B. Politik, Wissenschaft, Medizin, Wirtschaft, Recht, …",
+            "description": [
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "Alle gesellschaftlichen Gruppen/Systeme sind Desinformationen ausgesetzt – mit jeweils spezifischen Folgen, was Verunsicherung, Identifizierung, Abwehr etc. betrifft. Das bindet nicht zuletzt gewaltige Ressourcen."
                 },
                 {
-                    "text": "Kolumne in der SZ",
-                    "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    "text": "Politiker*innen werden persönlich attackiert – und versuchen, wirksame Gesetze zu erlassen; Wissenschaftler*innen müssen bisher selbstverständliche Grundlagen ihrer Arbeit erklären und verteidigen; Mediziner*innen sind bei ihrer Arbeit von Misstrauen und persönlichen Angriffen betroffen."
                 }
             ],
+            "sources": [],
+            "stories": [],
+            "massnahmen": []
+        },
+        {
+            "title": "Meinungen",
+            "subtitle": "z. B. Familie, Freund*innen, Nachbar*innen, Kolleg*innen, …",
+            "description": [
+                {
+                    "text": "Desinformation betrifft jede*n Einzelne*n – individuell und persönlich. Sie erreicht uns nicht nur über die Big-Tech-Plattformen, sondern irgendwann auch in analogen Begegnungen und Gesprächen. In Situationen mit Menschen, die uns nahestehen, ist es oft besonders schwer, Desinformation zu erkennen und dagegen vorzugehen."
+                }
+            ],
+            "sources": [],
             "stories": [],
             "massnahmen": []
         }
