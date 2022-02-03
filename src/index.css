@@ -45,6 +45,32 @@
         @apply mx-auto container px-4 md:px-8;
     }
 
+    @media (min-width: 640px) {
+        .container-fixed {
+            min-width: 640px;
+        }
+    }
+    @media (min-width: 768px) {
+        .container-fixed {
+            min-width: 768px;
+        }
+    }
+    @media (min-width: 1024px) {
+        .container-fixed {
+            min-width: 1024px;
+        }
+    }
+    @media (min-width: 1280px) {
+        .container-fixed {
+            min-width: 1280px;
+        }
+    }
+    @media (min-width: 1536px) {
+        .container-fixed {
+            min-width: 1536px;
+        }
+    }
+
     .scrollbar-hidden {
         -ms-overflow-style: none;
         scrollbar-width: none;
