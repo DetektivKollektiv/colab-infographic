@@ -1,7 +1,12 @@
 <template>
     <div>
         <div class="relative z-20">
-            <Hero :story="story" :state="state" @state="setState"></Hero>
+            <Hero
+                :story="story"
+                :state="state"
+                @state="setState"
+                :active="active"
+            ></Hero>
             <WSK
                 v-if="active"
                 @phaseIndex="setPhaseIndex"

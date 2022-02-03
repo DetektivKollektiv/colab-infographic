@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-blue-500">
+    <div class="bg-blue-500 border-t-2 border-red-500">
         <div
             class="container-box py-12 text-white flex justify-between lg:items-center flex-col-reverse space-y-4 lg:flex-row"
         >

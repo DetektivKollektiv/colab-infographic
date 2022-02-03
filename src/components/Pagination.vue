@@ -1,5 +1,5 @@
 <template>
-    <div class="flex gap-2 md:gap-6 text-red-500 text-2xl items-center">
+    <div class="flex space-x-2 md:space-x-6 text-red-500 text-2xl items-center">
         <button class="hidden md:block" @click="emit('index', index - 1)">
             <i v-if="showArrows" class="fas fa-caret-left"></i>
         </button>
@@ -10,7 +10,11 @@
             :class="i <= index ? 'bg-red-500' : 'bg-white'"
             @click="emit('index', i)"
         ></button>
-        <button class="hidden md:block" @click="emit('index', index + 1)">
+        <button
+            class="hidden md:block"
+            :class="{ 'animate-ping': index == 0 }"
+            @click="emit('index', index + 1)"
+        >
             <i v-if="showArrows" class="fas fa-caret-right"></i>
         </button>
     </div>

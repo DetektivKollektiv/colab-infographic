@@ -1,6 +1,6 @@
 <template>
     <div
-        class="grid grid-cols-6 row-auto gap-2 bg-gradient-to-b from-white via-white to-transparent sticky top-[-1px] pt-2"
+        class="grid grid-cols-6 row-auto gap-2 bg-gradient-to-b from-white via-white sticky top-[-1px] pt-2 gap"
         ref="navbar"
     >
         <div
@@ -56,3 +56,9 @@ useIntersectionObserver(
     { threshold: [1] }
 )
 </script>
+
+<style scoped>
+.gap {
+    grid-gap: 0.5rem;
+}
+</style>

@@ -19,9 +19,10 @@ export default {
             } else if (index < 0) {
                 index = this.length - 1
             }
+            console.log(index, this.length)
             this.$refs.container.scrollTo({
                 left:
-                    this.$refs.container.scrollLeft + this.elementsLefts[index],
+                    this.elementsLefts[index] + this.$refs.container.scrollLeft,
                 behavior: 'smooth',
             })
         },
@@ -47,7 +48,7 @@ export default {
     <div class="intro-container relative flex flex-col justify-end overflow-hidden bg-left-bottom">
         <div class="w-full h-full flex flex-col justify-between z-10">
             <div
-                class="flex flex-col justify-start lg:justify-end pt-10 pb-25 lg:py-20 gap-4 w-full h-[70%] lg:h-full"
+                class="flex flex-col justify-start lg:justify-end pt-10 pb-25 lg:py-20 space-y-4 w-full h-[70%] lg:h-full"
             >
                 <div
                     class="flex flex-row snap-x snap-mandatory overflow-x-scroll w-full h-full scrollbar-hidden"
