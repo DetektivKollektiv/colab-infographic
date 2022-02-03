@@ -2,11 +2,11 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import './index.css'
 import { createPinia } from 'pinia'
-import Vue3TouchEvents from "vue3-touch-events";
+import smoothscroll from 'smoothscroll-polyfill'
 
+// kick off the polyfill!
+smoothscroll.polyfill()
 
-const app = createApp(App);
+const app = createApp(App)
 app.use(createPinia())
-app.use(Vue3TouchEvents);
-app.mount("#app");
-
+app.mount('#app')

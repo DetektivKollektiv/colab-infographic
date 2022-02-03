@@ -11,8 +11,8 @@
   "dependencies": {
     "@vueuse/core": "^7.5.3",
     "pinia": "^2.0.5",
-    "vue": "^3.2.16",
-    "vue3-touch-events": "^4.1.0"
+    "smoothscroll-polyfill": "^0.4.4",
+    "vue": "^3.2.16"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
