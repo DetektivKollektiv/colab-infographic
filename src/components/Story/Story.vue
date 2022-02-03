@@ -21,9 +21,12 @@
         </div>
         <div
             class="transition-all duration-300 overflow-hidden bg-gradient-to-b from-white to-yellow-300"
-            :class="active ? `max-h-[4000px];` : 'max-h-[0px]'"
+            :style="{ maxHeight: active ? '4000px' : '0px' }"
         >
-            <div v-if="state == 'phasen'" :style="{ marginTop }">
+            <div
+                v-if="state == 'phasen'"
+                :style="{ marginTop: marginTop + 'px' }"
+            >
                 <Phasen
                     :texts="getTexts()"
                     :phaseIndex="phaseIndex"
@@ -33,7 +36,6 @@
                     @next="next"
                 ></Phasen>
             </div>
-
             <div v-if="state == 'uebersicht'">
                 <Uebersicht :trends="story.trends"></Uebersicht>
             </div>
@@ -57,6 +59,12 @@ const { story, active } = toRefs(props)
 const phaseIndex = ref(1)
 
 const summaries = story.value.phases.map((phase) => phase.summary.text)
+
+const marginTop = ref(0)
+
+function setMarginTop(height) {
+    marginTop.value = height.value
+}
 
 function next() {
     if (phaseIndex.value <= 4) {
@@ -137,11 +145,5 @@ function getImages() {
     } else {
         return []
     }
-}
-
-const marginTop = ref(0)
-
-function setMarginTop(height) {
-    marginTop.value = height.value + 'px'
 }
 </script>
