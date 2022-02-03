@@ -71,9 +71,10 @@ function setMarginTop(height) {
 const hero = ref(null)
 
 const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+let isStart = true
 
 watchEffect(() => {
-    if (active.value && isSafari) {
+    if (active.value && isSafari && !isStart) {
         setTimeout(() => {
             hero.value.scrollIntoView({
                 behavior: 'smooth',
@@ -81,6 +82,7 @@ watchEffect(() => {
             })
         }, 300)
     }
+    isStart = false
 })
 
 function next() {
