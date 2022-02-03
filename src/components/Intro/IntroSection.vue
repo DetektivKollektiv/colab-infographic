@@ -64,12 +64,9 @@ export default {
                                     Ein holistischer Blick
                                     <br />auf Desinformation
                                 </h1>
-                                <p class="w-full lg:w-2/3">
-                                    Desinformation ist ein komplexes Phänomen. Wir
-                                    wollen verstehen, wie Desinformation wirkt. Eine
-                                    ganzheitliche Perspektive soll uns dabei helfen,
-                                    Desinformation wirksam zu bekämpfen.
-                                </p>
+                                <p
+                                    class="w-full lg:w-2/3"
+                                >Desinformation ist ein weit verbreitetes, komplexes und gefährliches Phänomen unserer Zeit. Wir wollen uns davon ein umfassendes und differenziertes Bild machen – um so herauszukriegen, wie sich wirkungsvoll gegen Desinformation vorgehen lässt.</p>
                             </div>
                         </div>
                     </div>
@@ -137,7 +134,9 @@ export default {
                             <div class="w-full lg:w-7/12">
                                 <h1 class="headline">Meso‑Trends</h1>
                                 <p class="w-full lg:w-2/3">
-                                    Meso‑Trends beschreiben konkrete Ausprägungen
+                                    <span
+                                        class="highlight bg-yellow-300 break-normal"
+                                    >Meso‑Trends</span> beschreiben konkrete Ausprägungen
                                     der großen historischen Entwicklungslinien
                                     (Makro‑Trends). Die geringere Abstraktionsebene
                                     stellt einen konkreten Zusammenhang zur
@@ -172,7 +171,7 @@ export default {
                             </div>
                         </div>
                     </div>
-                    <div class="min-w-full ">
+                    <div class="min-w-full">
                         <div
                             class="flex flex-col-reverse lg:flex-col justify-end lg:justify-between lg:gap-5 snap-center container-fixed container-box"
                         >
@@ -219,13 +218,13 @@ export default {
                     </div>
                 </div>
                 <div class="container-box flex flex-col">
-                <Pagination
-                    class="self-center lg:self-baseline pb-4 lg:pb-0"
-                    :length="length"
-                    :index="index"
-                    :showArrows="true"
-                    @index="scrollTo"
-                ></Pagination>
+                    <Pagination
+                        class="self-center lg:self-baseline pb-4 lg:pb-0"
+                        :length="length"
+                        :index="index"
+                        :showArrows="true"
+                        @index="scrollTo"
+                    ></Pagination>
                 </div>
             </div>
         </div>
