@@ -2,24 +2,21 @@
     "01": [
         {
             "title": "Langfristig strategisch planen",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "… wenn etwa ein machtpolitisches Ziel mit erheblichem Mitteleinsatz verfolgt werden soll: z. B. Wahlbeeinflussung durch Staaten."
                 }
             ],
             "stories": [],
-            "massnahmen": [
-                "Forschen gegen Russland",
-                "Forschen gegen China"
-            ]
+            "massnahmen": []
         },
         {
-            "title": "(Wirtschaftlichen) Druck ausüben/spüren",
-            "subtitle": "z. B. Russland, China",
+            "title": "(Wirtschaftlichen) Druck ausüben/ spüren",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "… wenn etwa eine Branche versucht, Profite zu erhalten oder zu erhöhen: z. B. Kampagnen der Tabak- oder Fossilenenergie-Industrie."
                 }
             ],
             "stories": [],
@@ -27,21 +24,21 @@
         },
         {
             "title": "Leidenschaftlich missionieren",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "… wenn etwa eine spezifische Weltsicht verbreitet und verstärkt werden soll: z. B. durch Impfgegner*innen oder Verschwörungsgläubige."
                 }
             ],
             "stories": [],
             "massnahmen": []
         },
         {
-            "title": "provozieren",
-            "subtitle": "z. B. Russland, China",
+            "title": "Provozieren",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "… wenn etwa kurzzeitig Aufmerksamkeit oder Anerkennung erreicht werden sollen: insb. durch das Auslösen von emotionalen Reaktionen („wow“, „unglaublich“)."
                 }
             ],
             "stories": [],
@@ -50,11 +47,17 @@
     ],
     "02": [
         {
-            "title": "Mit Satiere/Parodie irritieren",
-            "subtitle": "z. B. Russland, China",
+            "title": "Mit Satire/Parodie irritieren",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "… wenn ohne böse Absicht Verwirrung entsteht, weil Menschen Satire für bare Münze nehmen."
+                }
+            ],
+            "sources": [
+                {
+                    "text": "First Draft News",
+                    "link": "https://de.firstdraftnews.org/fake-news-es-ist-kompliziert/"
                 }
             ],
             "stories": [],
@@ -62,32 +65,50 @@
         },
         {
             "title": "Ungenau/falsch betiteln, bebildern, beschriften",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "… wenn Überschriften oder Bilder nicht zum Inhalt eines Artikels passen. Um Aufmerksamkeit zu erlangen, sind die Überschriften, Teaser und Thumbnails oft extremer gestaltet als der eigentliche Content. Ebenfalls verwendet werden provokative Fragen, die später verneint werden."
+                }
+            ],
+            "sources": [
+                {
+                    "text": "First Draft News",
+                    "link": "https://de.firstdraftnews.org/fake-news-es-ist-kompliziert/"
                 }
             ],
             "stories": [],
             "massnahmen": []
         },
         {
-            "title": "Eine Information auf irreführende Weise nutzen (Framing)",
-            "subtitle": "z. B. Russland, China",
+            "title": "Eine Information auf irreführende Weise nutzen („Framing“)",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "… wenn wahre Informationen aus dem Kontext gerissen werden oder in irreführender Weise mit einem anderen Sachverhalt in Zusammenhang gebracht werden. Ein Fakt, eine Statistik oder eine Aussage können so als Beleg für eine komplett unabhängige Aussage verwendet werden."
+                }
+            ],
+            "sources": [
+                {
+                    "text": "First Draft News",
+                    "link": "https://de.firstdraftnews.org/fake-news-es-ist-kompliziert/"
                 }
             ],
             "stories": [],
             "massnahmen": []
         },
         {
-            "title": "Echte Inhalte in einem falschen Kontext setzen",
-            "subtitle": "z. B. Russland, China",
+            "title": "Echte Inhalte in einen falschen Kontext setzen",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "… wenn echter Content absichtlich falsch eingeordnet wird. So lassen sich beispielsweise der Ursprung einer Aussage verändern, aber auch der Aufnahmeort und das Aufnahmedatum eines Bilds/Videos, die zeitliche Abfolge von Ereignissen oder der Kontext eines Zitats."
+                }
+            ],
+            "sources": [
+                {
+                    "text": "First Draft News",
+                    "link": "https://de.firstdraftnews.org/fake-news-es-ist-kompliziert/"
                 }
             ],
             "stories": [],
@@ -95,10 +116,16 @@
         },
         {
             "title": "Sich für eine andere, authentische Quelle ausgeben",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "… wenn Quellen nachgeahmt oder kopiert werden, um einen bestimmten, meist vertrauenswürdigeren Eindruck zu erwecken. Zum Beispiel kann eine PR-Agentur eine Social-Media-Kampagne als Graswurzelbewegung von Einzelpersonen erscheinen lassen, indem sie den Content absichtlich amateurhaft produziert."
+                }
+            ],
+            "sources": [
+                {
+                    "text": "First Draft News",
+                    "link": "https://de.firstdraftnews.org/fake-news-es-ist-kompliziert/"
                 }
             ],
             "stories": [],
@@ -106,10 +133,16 @@
         },
         {
             "title": "Inhalte gezielt manipulieren",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "… wenn echte Zitate, Bilder, Videos oder andere Inhalte überarbeitet oder frei ergänzt und somit in einem bestimmten Sinn verändert und verfälscht werden."
+                }
+            ],
+            "sources": [
+                {
+                    "text": "First Draft News",
+                    "link": "https://de.firstdraftnews.org/fake-news-es-ist-kompliziert/"
                 }
             ],
             "stories": [],
@@ -117,10 +150,16 @@
         },
         {
             "title": "Inhalte komplett erfinden",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "… wenn neue Inhalte erstellt werden, die überwiegend falsch sind. Das Ziel dabei ist nicht Information, sondern bewusste Täuschung, Verunsicherung und die Erzeugung von Schaden."
+                }
+            ],
+            "sources": [
+                {
+                    "text": "First Draft News",
+                    "link": "https://de.firstdraftnews.org/fake-news-es-ist-kompliziert/"
                 }
             ],
             "stories": [],
@@ -130,21 +169,21 @@
     "03": [
         {
             "title": "Marktforschung",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Durch Datenauswertung, Umfragen oder Recherchen werden geeignete Zielgruppen identifiziert. Anschließend wird der Inhalt genau auf die entsprechenden Bedürfnisse abgestimmt, um besser aufgenommen und schneller verbreitet zu werden."
                 }
             ],
             "stories": [],
             "massnahmen": []
         },
         {
-            "title": "SEO-Optimierung",
-            "subtitle": "z. B. Russland, China",
+            "title": "Suchmaschinenoptimierung (SEO)",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Durch die Verwendung bestimmter Stichwörter oder Programmiertricks werden Websites höher in den Suchergebnissen platziert."
                 }
             ],
             "stories": [],
@@ -152,10 +191,10 @@
         },
         {
             "title": "Geo-Targeting",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Dienste wie Facebook oder Google erlauben es, Anzeigen und Posts ganz gezielt Nutzer*innen in einer bestimmten geographischen Region anzuzeigen – Land, Bundesland, Stadt oder Viertel. Durch die IP-Adresse kann auch der Standort von nicht eingeloggten Nutzer*innen ermittelt werden. Der Vorteil für Unternehmen: Inhalte können auf die Bedürfnisse vor Ort zugeschnitten werden – und es wird kein Budget für Nutzer*innen außerhalb der gewünschten Zielgruppe verschwendet."
                 }
             ],
             "stories": [],
@@ -163,21 +202,21 @@
         },
         {
             "title": "Micro-Targeting",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Bei dieser extremen Form von personalisierten Anzeigen werden die Inhalte passgenau auf sozioökonomische, physische, politische oder psychologische Merkmale von Nutzer*innen zugeschnitten – theoretisch könnte jede einzelne Person unterschiedliche Inhalte sehen. Möglich wird dies erst durch die riesigen Datensätze, die Social-Media-Unternehmen über ihre Nutzer*innen gesammelt haben."
                 }
             ],
             "stories": [],
             "massnahmen": []
         },
         {
-            "title": "Campaingning",
-            "subtitle": "z. B. Russland, China",
+            "title": "Campaigning",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Der englische Begriff dafür, eine Kampagne umzusetzen – also die Koordination einer zeitlich befristeten Kommunikations-Aktion über mehrere Verbreitungs-Kanäle hinweg, um viel effektiver bestimmte Zielgruppen zu erreichen als durch klassische Werbung. Dabei können auch unorthodoxe Mittel wie Tabubrüche oder Guerrilla Marketing verwendet werden."
                 }
             ],
             "stories": [],
@@ -186,11 +225,11 @@
     ],
     "04.1": [
         {
-            "title": "Geschlossende Platformen",
-            "subtitle": "z. B. Russland, China",
+            "title": "Geschlossene Platformen",
+            "subtitle": "z.B. WhatsApp, Telegram, Facebook Messenger, geschlossene Facebook-Gruppen, …",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Geschlossene Plattformen – oder entsprechende Features bei den offenen Plattformen – erlauben ihren Nutzer*innen, Nachrichten an einen festen und begrenzten Personenkreis zu senden. Neben Direktnachrichten an Kontakte können Inhalte nur in geschlossenen Gruppen verbreitet werden. Durch das exponentielle Wachstum bei wiederholter Weiterverbreitung können einzelne Inhalte dennoch schnell viele Nutzer*innen erreichen."
                 }
             ],
             "stories": [],
@@ -200,10 +239,16 @@
     "04A": [
         {
             "title": "Keine Kosten",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Die meisten geschlossene Plattformen verwenden ein kostenloses Geschäftsmodell. Durch die für Nutzer*innen kostenlose Anmeldung und Benutzung erreichen die größten Plattformen einen sehr hohen Anteil der Bevölkerung [1]. Die Daten aller Nutzer*innen werden gesammelt und könnten in der Zukunft z.B. für personalisierte Werbung verwendet werden – viele Plattformen warten mit diesem Schritt allerdings lange und machen in den ersten Jahren Verluste."
+                }
+            ],
+            "sources": [
+                {
+                    "text": "[1] Onlinestudie des ARD/ZDF",
+                    "link": "https://ard-zdf-onlinestudie.de/"
                 }
             ],
             "stories": [],
@@ -211,10 +256,10 @@
         },
         {
             "title": "Hohe Performance",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Geschlossene Plattformen haben ein globales Netzwerk mit quasi unbegrenzter Serverkapazität aufgebaut – das allen Nutzer*innen zur Verfügung steht, um schnell und oft auch verschlüsselt Informationen mit ausgewählten Kontakten auszutauschen."
                 }
             ],
             "stories": [],
@@ -222,10 +267,10 @@
         },
         {
             "title": "Beliebte Funktionen",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Emojis, Sprachnachrichten, Gruppenchats, GIFs und Umfragen: die Elemente der geschlossenen Plattformen sind so entworfen, dass Nutzer*innen lebhafte Unterhaltungen führen können – und Inhalte auch einfach weiterleiten können."
                 }
             ],
             "stories": [],
@@ -233,10 +278,16 @@
         },
         {
             "title": "Suchterzeugung",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Geschlossene Plattformen werden so entworfen, dass Nutzer*innen möglichst schnell auf neue Nachrichten reagieren. Üblich sind zum Beispiel Push-Benachrichtigungen und eine leuchtend rote Anzeige der Zahl an neuen Nachrichten. Mittlerweile haben aber auch oft Funktionen aus den offenen Plattformen Einzug gehalten – wie Stories, die nur 24 Stunden lang verfügbar sind und zur täglichen Nutzung verleiten sollen."
+                }
+            ],
+            "sources": [
+                {
+                    "text": "Center for Humane Technology",
+                    "link": "https://www.humanetech.com/"
                 }
             ],
             "stories": [],
@@ -259,10 +310,16 @@
     "04B": [
         {
             "title": "Keine Kosten",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Offene Plattformen verwenden ein werbebasiertes Geschäftsmodell. Durch die für Nutzer*innen kostenlose Anmeldung und Benutzung erreichen die größten Plattformen einen sehr hohen Anteil der Bevölkerung [1]. Die Daten aller Nutzer*innen werden gesammelt und für den passgenauen Zuschnitt von Werbeanzeigen auf Zielgruppen verwendet. Genau diese Mechanismen können aber auch z.B. für Microtargeting von Desinformation verwendet werden."
+                }
+            ],
+            "sources": [
+                {
+                    "text": "[1] Onlinestudie des ARD/ZDF",
+                    "link": "https://ard-zdf-onlinestudie.de/"
                 }
             ],
             "stories": [],
@@ -270,10 +327,10 @@
         },
         {
             "title": "Wettbewerb um Status/Beliebtheit",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Die Vernetzung mit tausenden anderen Menschen in den sozialen Medien schafft einen Wettstreit um Anerkennung, Status und Beliebtheit. Durch Netzwerkeffekte, Trends und Hypes können einige Nutzer*innen oft in kurzer Zeit riesigen Einfluss erlangen. Doch schon bei einer geringen Anzahl von Freund*innen und Follower*innen wird unser Bedürfnis nach Aufmerksamkeit und Anerkennung von jedem Like und jeder Reaktion auf unsere Posts angeregt – und weckt den Wunsch nach mehr."
                 }
             ],
             "stories": [],
@@ -281,10 +338,10 @@
         },
         {
             "title": "Wettbewerb um Aufmerksamkeit",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Nutzer*innen können zwar mit den eigenen Posts beliebig viele Personen erreichen, aber selbst nur eine begrenzte Menge an Information aufnehmen. Dies führt zu einem Wettstreit um Aufmerksamkeit: Welche Inhalte schaffen es, aus der Masse hervorzustechen? Oft sind dies die emotionalsten, ungewöhnlichsten und provozierendsten Inhalte – unabhängig von ihrer Qualität und insbesondere ihrem Wahrheitsgehalt."
                 }
             ],
             "stories": [],
@@ -292,10 +349,10 @@
         },
         {
             "title": "Bestätigende & radikalisierende Algorithmen/KI",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Mit Hilfe von Algorithmen wählen die Plattformbetreiber aus, welche Inhalte Nutzer*innen angezeigt bekommen. Das führt dazu, dass sich diejenigen Inhalte durchsetzen, die besonders viele Klicks, Reaktionen, Kommentare, Empfehlungen hervorrufen – also besonders emotionalisierend wirken. Außerdem werden Nutzer*innen immer wieder mit Inhalten beschallt, die den bisherigen Aufrufen sehr ähnlich sind (bzw. eine verstärkende/radikalisierende Wirkung haben) – dieser Echokammer-Effekt kann dazu führen, dass abweichende Meinungen nicht mehr sichtbar werden."
                 }
             ],
             "stories": [],
@@ -306,7 +363,21 @@
             "subtitle": "z. B. Russland, China",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Die Plattformbetreiber verdienen mehr, wenn Menschen lange Zeit in ihrem Ökosystem verbringen und dort möglichst oft und intensiv interagieren. Daher kommen bei der Entwicklung und beim konkreten Design oft „Dark Patterns“ zum Einsatz, also spezifische Muster, die sehr gezielt menschliche Bedürfnisse ausnutzen, um den Dienst prominent im Leben der Nutzer*innen zu platzieren und diese täglich zur Nutzung zu verleiten [1][2][3]. Beispiele dafür sind zum Beispiel Stories, die nur für 24 Stunden verfügbar sind, und visuell-akustische Push-Benachrichtigungen, sobald Freund*innen Inhalte teilen."
+                }
+            ],
+            "sources": [
+                {
+                    "text": "[1] Film „The Social Dilemma“",
+                    "link": "https://www.thesocialdilemma.com/"
+                },
+                {
+                    "text": "[2] Center for Humane Technology",
+                    "link": "https://www.humanetech.com/"
+                },
+                {
+                    "text": "[3] Dark Patterns",
+                    "link": "https://www.darkpatterns.org/"
                 }
             ],
             "stories": [],
@@ -316,10 +387,10 @@
     "05": [
         {
             "title": "Eigene Anhänger bestärken",
-            "subtitle": "z. B. Russland, China",
+            "subtitle": "",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Personen im eigenen Lager werden in ihrer Meinung bestärkt. Der Zusammenhalt wächst zum einen durch die wechselseitige positive Bestätigung – und zum anderen durch den Druck von außen, der durch die steigende Polarisierung entsteht und gemeinsam ausgehalten und abgewehrt wird. Desinformation entzieht sich damit jeder Diskussion über den Wahrheitsgehalt – sondern wird zu einem Mittel der Identitätsprägung und -bindung."
                 }
             ],
             "stories": [],
@@ -330,7 +401,7 @@
             "subtitle": "z. B. Russland, China",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Unentschlossene, uninformierte oder bisher gleichgültige Personen können beeinflusst werden, da Desinformation oft besonders emotional oder aufsehenerregend gestaltet ist. Je höher die Reichweite, desto höher ist auch die Wahrscheinlichkeit, dass einige Nutzer*innen nicht zu genau hinschauen – und von Desinformation verunsichert, irritiert oder sogar überzeugt werden."
                 }
             ],
             "stories": [],
@@ -341,7 +412,7 @@
             "subtitle": "z. B. Russland, China",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Desinformation, die in eine bestimmte ideologische Richtung geht, wird von Personen des entgegengesetzten Lagers grundsätzlich skeptischer aufgenommen. Trotzdem verbleibt Verunsicherung, Grundzweifel oder Verärgerung – besonders, wenn die Desinformation auf vertrauten Kanälen oder von persönlichen Bekannten verbreitet und weitergeleitet wird."
                 }
             ],
             "stories": [],
@@ -352,7 +423,7 @@
             "subtitle": "z. B. Russland, China",
             "description": [
                 {
-                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
+                    "text": "Die steigende Polarisierung durch Desinformation spaltet die Gesellschaft. Falschinformationen sind oft übertrieben, zugespitzt und emotionalisiert. Personengruppen, die sich vorher schon kritisch gegenüberstanden, bekommen nun möglicherweise eine überzogene Vorstellung von der tatsächlichen Haltung der anderen Seite oder verschärfen ihre eigene Position auf der Basis von unzutreffenden Informationen."
                 }
             ],
             "stories": [],
