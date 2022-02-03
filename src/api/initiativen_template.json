@@ -1,12 +1,17 @@
 [
     {
-        "title": "HateAid",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+        "headline": "HateAid",
+        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
         "link": "hateaid.de"
     },
     {
-        "title": "codetekt",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
+        "headline": "codetekt",
+        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
         "link": "codetekt.org"
+    },
+    {
+        "headline": "Social Media Watchblog",
+        "text": "Das deutsche Journalismusprojekt Social Media Watchblog berichtet seit 2012 kritisch über das Geschehen und die Geschäftsmodelle in der digitalen Medienlandschaft. Es erklärt die technischen, politischen, ökonomischen und gesamtgesellschaftlichen Entwicklungen rund um die Big Tech Plattformen und ihre Social Media Angebote auf kompakte, nachvollziehbare, aber tiefgründige Weise – und bietet somit einen so schnellen wie umfassenden Zugang zum Verständnis der oft komplexen digitalen Welt. Zwei Mal pro Woche erscheint ein kostenpflichtiger Newsletter, der aktuell informiert; ergänzend gibt es z. B. regelmäßige Lectures für den Kreis der Abonnent*innen.",
+        "link": "https://socialmediawatchblog.de"
     }
 ]

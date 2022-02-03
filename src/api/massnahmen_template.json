@@ -1,133 +1,156 @@
 {
-  "Forschen & entwickeln": {
-    "icon": "fas fa-atom",
-    "color": "text-red-500",
-    "content": [
-      {
-        "title": "Forschen gegen Russland",
-        "description": [
-          {
-            "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
-          },
-          {
-            "headline": "Zweiter Absatz",
-            "text": "Zum zweiten Absatz gibts auch Text"
-          }
-        ],
-        "sources": [
-          {
-            "text": "Kolumne in der SZ",
-            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-          },
-          {
-            "text": "Kolumne in der SZ",
-            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-          }
-        ],
-        "players": [
-          "HateAid",
-          "codetekt"
+    "Forschen & entwickeln": {
+        "icon": "fas fa-lightbulb-on",
+        "color": "text-red-500",
+        "content": [
+            {
+                "title": "Forschen gegen Russland",
+                "description": [
+                    {
+                        "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    },
+                    {
+                        "headline": "Zweiter Absatz",
+                        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.             Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.             Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. "
+                    }
+                ],
+                "sources": [
+                    {
+                        "text": "Kolumne in der SZ",
+                        "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    },
+                    {
+                        "text": "Kolumne in der SZ",
+                        "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    }
+                ],
+                "players": ["HateAid", "codetekt"]
+            },
+            {
+                "title": "Forschen gegen China",
+                "description": [
+                    {
+                        "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    },
+                    {
+                        "headline": "Zweiter Absatz",
+                        "text": "Zum zweiten Absatz gibts auch Text"
+                    }
+                ],
+                "sources": [
+                    {
+                        "text": "Kolumne in der SZ",
+                        "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    },
+                    {
+                        "text": "Kolumne in der SZ",
+                        "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    }
+                ],
+                "players": ["HateAid", "codetekt"]
+            }
         ]
-      },
-      {
-        "title": "Forschen gegen China",
-        "description": [
-          {
-            "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
-          },
-          {
-            "headline": "Zweiter Absatz",
-            "text": "Zum zweiten Absatz gibts auch Text"
-          }
-        ],
-        "sources": [
-          {
-            "text": "Kolumne in der SZ",
-            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-          },
-          {
-            "text": "Kolumne in der SZ",
-            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-          }
-        ],
-        "players": [
-          "HateAid",
-          "codetekt"
+    },
+    "Experimentieren & messen": {
+        "icon": "fas fa-microscope",
+        "color": "text-black",
+        "content": [
+            {
+                "title": "Experimentieren gegen Russland",
+                "description": [
+                    {
+                        "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    },
+                    {
+                        "headline": "Zweiter Absatz",
+                        "text": "Zum zweiten Absatz gibts auch Text"
+                    }
+                ],
+                "sources": [
+                    {
+                        "text": "Kolumne in der SZ",
+                        "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    },
+                    {
+                        "text": "Kolumne in der SZ",
+                        "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    }
+                ],
+                "players": ["HateAid", "codetekt"]
+            },
+            {
+                "title": "Experimentieren gegen China",
+                "description": [
+                    {
+                        "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
+                    },
+                    {
+                        "headline": "Zweiter Absatz",
+                        "text": "Zum zweiten Absatz gibts auch Text"
+                    }
+                ],
+                "sources": [
+                    {
+                        "text": "Kolumne in der SZ",
+                        "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    },
+                    {
+                        "text": "Kolumne in der SZ",
+                        "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    }
+                ],
+                "players": ["HateAid", "codetekt"]
+            }
         ]
-      }
-    ]
-  },
-  "Experimentieren & messen": {
-    "icon": "fas fa-microscope",
-    "color": "text-black",
-    "content": [
-      {
-        "title": "Experimentieren gegen Russland",
-        "description": [
-          {
-            "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
-          },
-          {
-            "headline": "Zweiter Absatz",
-            "text": "Zum zweiten Absatz gibts auch Text"
-          }
-        ],
-        "sources": [
-          {
-            "text": "Kolumne in der SZ",
-            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-          },
-          {
-            "text": "Kolumne in der SZ",
-            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-          }
-        ],
-        "players": [
-          "HateAid",
-          "codetekt"
+    },
+    "Aufdecken & verteidigen": {
+        "icon": "fas fa-search",
+        "color": "text-yellow-500",
+        "content": [
+            {
+                "title": "Über Big Tech und Social Media aufklären",
+                "description": [
+                    {
+                        "headline": "Über die Entwicklungen insb. der Geschäftsmodelle von Big Tech und Social Media regelmäßig und tiefgehend berichten",
+                        "text": "Die großen Big Tech Unternehmen – überwiegend aus den USA – beherrschen längst den Markt der digitalen Kommunikations- und Informationsnetzwerke: und zwar im globalen Maßstab. Natürlich ergeben sich aus den Angeboten von Meta (bzw. Facebook), Twitter, Telegram oder TikTok prinzipiell auch neue Chancen für direkten, offenen Austausch, insb. für marginalisierte Gruppen – der sonst nicht oder nur erschwert stattfinden könnte. Aber oft überwiegen die negativen Effekte: auf individuell-psychologischer wie gesellschaftlicher Ebene, nicht zuletzt durch die Verbreitung von Desinformation. Um mit diesen Herausforderungen so rational und angemessen wie möglich umgehen zu können, sind Information und Aufklärung über die politischen und insb. ökonomischen Hintergründe von Big Tech und Social Media dringend nötige Voraussetzung."
+                    },
+                    {
+                        "headline": "Initiative: Social Media Watchblog",
+                        "text": "Das deutsche Journalismusprojekt Social Media Watchblog berichtet seit 2012 kritisch über das Geschehen und die Geschäftsmodelle in der digitalen Medienlandschaft. Es erklärt die technischen, politischen, ökonomischen und gesamtgesellschaftlichen Entwicklungen rund um die Big Tech Plattformen und ihre Social Media Angebote auf kompakte, nachvollziehbare, aber tiefgründige Weise – und bietet somit einen so schnellen wie umfassenden Zugang zum Verständnis der oft komplexen digitalen Welt. Zwei Mal pro Woche erscheint ein kostenpflichtiger Newsletter, der aktuell informiert; ergänzend gibt es z. B. regelmäßige Lectures für den Kreis der Abonnent*innen."
+                    }
+                ],
+                "sources": [
+                    {
+                        "text": "Kolumne in der SZ",
+                        "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    },
+                    {
+                        "text": "Kolumne in der SZ",
+                        "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
+                    }
+                ],
+                "players": ["Social Media Watchblog"]
+            }
         ]
-      },
-      {
-        "title": "Experimentieren gegen China",
-        "description": [
-          {
-            "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
-          },
-          {
-            "headline": "Zweiter Absatz",
-            "text": "Zum zweiten Absatz gibts auch Text"
-          }
-        ],
-        "sources": [
-          {
-            "text": "Kolumne in der SZ",
-            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-          },
-          {
-            "text": "Kolumne in der SZ",
-            "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
-          }
-        ],
-        "players": [
-          "HateAid",
-          "codetekt"
-        ]
-      }
-    ]
-  },
-  "Aufdecken & verteidigen": {
-    "icon": "fas fa-search",
-    "color": "text-yellow-500",
-    "content": []
-  },
-  "Platzieren & antreiben": {
-    "icon": "fas fa-map-marker-alt",
-    "color": "text-blue-500",
-    "content": []
-  },
-  "Demonstrieren & aktivieren": {
-    "icon": "fas fa-toggle-on",
-    "color": "text-blue-light-500",
-    "content": []
-  }
+    },
+    "Platzieren & antreiben": {
+        "icon": "fas fa-map-marker-alt",
+        "color": "text-blue-500",
+        "content": []
+    },
+    "Demonstrieren & aktivieren": {
+        "icon": "fas fa-bullhorn",
+        "color": "text-red-500",
+        "content": []
+    },
+    "Informieren & bilden": {
+        "icon": "fas fa-info-circle",
+        "color": "text-yellow-500",
+        "content": []
+    },
+    "Durchsetzen & klagen": {
+        "icon": "fas fa-gavel",
+        "color": "text-black",
+        "content": []
+    }
 }

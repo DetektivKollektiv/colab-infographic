@@ -1,7 +1,7 @@
 <template>
     <div class="relative">
         <div class="container-box">
-            <Navbar class="pt-6"> </Navbar>
+            <Navbar class="pt-6"></Navbar>
             <WSKInfographic class="mt-24"></WSKInfographic>
             <Grid
                 class="mt-12 overflow-hidden transition-all duration-300"
@@ -12,19 +12,16 @@
                     v-for="story in infographicStore.storyContent"
                     :key="story"
                     class="text-center rounded-md w-full h-fit"
-                >
-                    {{ story }}
-                </p>
+                >{{ story }}</p>
             </Grid>
-            <SectionHeadline
-                ><template v-slot:headline>Wer</template
-                ><template v-slot:description
-                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Sunt placeat magnam corrupti eligendi natus, illum nisi nam,
-                    rerum dolorum sint iure perferendis. Consequuntur ab
-                    explicabo architecto eveniet.</template
-                ></SectionHeadline
-            >
+            <SectionHeadline>
+                <template v-slot:headline>Wer</template>
+                <template v-slot:description>
+                    Wer macht’s? Akteur*innen sind je nach Phase
+                    z. B. Staaten, Verbände, Medien,
+                    Big-Tech-Plattformen, Einzelpersonen.
+                </template>
+            </SectionHeadline>
             <Grid :doubleFourth="false">
                 <Column>
                     <component
@@ -40,24 +37,24 @@
                         :key="element"
                         :is="getComponent(element)"
                         :content="element"
-                    ></component
-                ></Column>
+                    ></component>
+                </Column>
                 <Column>
                     <component
                         v-for="element of WER['03']"
                         :key="element"
                         :is="getComponent(element)"
                         :content="element"
-                    ></component
-                ></Column>
+                    ></component>
+                </Column>
                 <Column>
                     <component
                         v-for="element of WER['04']"
                         :key="element"
                         :is="getComponent(element)"
                         :content="element"
-                    ></component
-                ></Column>
+                    ></component>
+                </Column>
                 <Column>
                     <component
                         v-for="element of WER['04A']"
@@ -70,26 +67,26 @@
                         :key="element"
                         :is="getComponent(element)"
                         :content="element"
-                    ></component
-                ></Column>
+                    ></component>
+                </Column>
                 <Column>
                     <component
                         v-for="element of WER['05']"
                         :key="element"
                         :is="getComponent(element)"
                         :content="element"
-                    ></component
-                ></Column>
+                    ></component>
+                </Column>
             </Grid>
-            <SectionHeadline
-                ><template v-slot:headline>WIE</template
-                ><template v-slot:description
-                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Sunt placeat magnam corrupti eligendi natus, illum nisi nam,
-                    rerum dolorum sint iure perferendis. Consequuntur ab
-                    explicabo architecto eveniet.</template
-                ></SectionHeadline
-            >
+            <SectionHeadline>
+                <template v-slot:headline>WIE</template>
+                <template v-slot:description>
+                    Wie wird’s gemacht? Methoden sind die Mittel
+                    und Werkzeuge, die je nach Phase zum Einsatz
+                    kommen: darunter z. B. Dekontextualisierung,
+                    Micro-Targeting oder Algorithmen.
+                </template>
+            </SectionHeadline>
             <Grid :doubleFourth="true">
                 <Column>
                     <component
@@ -105,16 +102,16 @@
                         :key="element"
                         :is="getComponent(element)"
                         :content="element"
-                    ></component
-                ></Column>
+                    ></component>
+                </Column>
                 <Column>
                     <component
                         v-for="element of WIE['03']"
                         :key="element"
                         :is="getComponent(element)"
                         :content="element"
-                    ></component
-                ></Column>
+                    ></component>
+                </Column>
                 <Column style="padding: 0%; background-color: transparent">
                     <Column>
                         <div class="flex w-full space-x-2">
@@ -133,8 +130,9 @@
                                     :is="getComponent(element)"
                                     :content="element"
                                 ></component>
-                            </Column></div
-                    ></Column>
+                            </Column>
+                        </div>
+                    </Column>
                     <Column>
                         <div class="flex w-full space-x-2">
                             <Column style="padding: 0%">
@@ -152,8 +150,9 @@
                                     :is="getComponent(element)"
                                     :content="element"
                                 ></component>
-                            </Column></div
-                    ></Column>
+                            </Column>
+                        </div>
+                    </Column>
                 </Column>
                 <Column>
                     <component
@@ -161,8 +160,8 @@
                         :key="element"
                         :is="getComponent(element)"
                         :content="element"
-                    ></component
-                ></Column>
+                    ></component>
+                </Column>
             </Grid>
         </div>
     </div>
