@@ -100,7 +100,6 @@ function getCurrentElement() {
 function update() {
     if (getCurrentElement() !== currentElement.value) {
         currentElement.value = getCurrentElement() + 1
-        console.log('current Element:', currentElement.value)
     }
 }
 

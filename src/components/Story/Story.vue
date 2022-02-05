@@ -20,7 +20,7 @@
             ></WSK>
         </div>
         <div
-            class="transition-all duration-300 overflow-hidden bg-gradient-to-b from-white to-yellow-300"
+            class="overflow-hidden bg-gradient-to-b from-white to-yellow-300"
             :style="{ maxHeight: active ? '4000px' : '0px' }"
         >
             <div
@@ -74,13 +74,11 @@ const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
 let isStart = true
 
 watchEffect(() => {
-    if (active.value && isSafari && !isStart) {
-        setTimeout(() => {
-            hero.value.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            })
-        }, 300)
+    if (active.value && !isStart) {
+        hero.value.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        })
     }
     isStart = false
 })

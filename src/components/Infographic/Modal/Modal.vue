@@ -59,7 +59,6 @@ const isLocked = useScrollLock(document.documentElement)
 isLocked.value = true
 
 onUnmounted(() => {
-    console.log('unmounting modal')
     isLocked.value = false
 })
 </script>
