@@ -21,8 +21,8 @@ export const useInfographicStore = defineStore('infographic', {
                     .phases.map((phase) => phase.summary.text)
             }
         },
-
         setModal(content) {
+            console.log('setModal', content)
             this.modalContent = content
             this.showModal = true
         },

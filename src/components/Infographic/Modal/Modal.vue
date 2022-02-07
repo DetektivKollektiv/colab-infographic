@@ -49,9 +49,12 @@ const elements = {
         defineAsyncComponent(() =>
             import('@/components/infographic/Modal/MImage.vue')
         ),
+    link: () =>
+        defineAsyncComponent(() =>
+            import('@/components/infographic/Modal/MLink.vue')
+        ),
 }
 
-import { WER, WIE, WAS } from '@/api/infographic'
 import { onUnmounted } from '@vue/runtime-core'
 const content = infographicStore.modalContent
 

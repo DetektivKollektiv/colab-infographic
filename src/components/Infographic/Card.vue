@@ -23,7 +23,7 @@
                 }"
                 v-for="massnahme in activeMassnahmen"
                 :key="massnahme.title"
-                @click="infographicStore.setModal(massnahme)"
+                @click.prevent.stop="infographicStore.setModal(massnahme)"
                 @mouseenter="infographicStore.massnahmeHover = massnahme.title"
                 @mouseleave="infographicStore.massnahmeHover = ''"
             >
@@ -36,7 +36,7 @@
 <script setup>
 import { computed, toRefs } from 'vue'
 import { useInfographicStore } from '@/stores/infographic'
-import massnahmen from '@/api/massnahmen_template.json'
+import { massnahmen } from '@/api/massnahmen.js'
 
 const infographicStore = useInfographicStore()
 
