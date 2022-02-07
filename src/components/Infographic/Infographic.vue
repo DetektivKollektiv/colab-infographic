@@ -47,7 +47,7 @@
                         :content="element"
                     ></component>
                 </Column>
-                <Column>
+                <Column style='width: calc(100% + 0.5rem) !important'>
                     <component
                         v-for="element of WER['04']"
                         :key="element"
@@ -61,6 +61,7 @@
                         :key="element"
                         :is="getComponent(element)"
                         :content="element"
+                        class='w-[calc(100% + 0.5rem)]'
                     ></component>
                     <component
                         v-for="element of WER['04B']"
