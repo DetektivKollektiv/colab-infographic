@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="relative z-20" ref="hero">
+        <div class="relative z-20">
             <Hero
                 :story="story"
                 :state="state"
@@ -67,21 +67,6 @@ const marginTop = ref(0)
 function setMarginTop(height) {
     marginTop.value = height.value
 }
-
-const hero = ref(null)
-
-const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
-let isStart = true
-
-watchEffect(() => {
-    if (active.value && !isStart) {
-        hero.value.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-        })
-    }
-    isStart = false
-})
 
 function next() {
     if (phaseIndex.value <= 4) {
