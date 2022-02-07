@@ -3,20 +3,20 @@
         @mouseover="hover = true"
         @mouseleave="hover = false"
         @click="infographicStore.setModal(content)"
-        class="px-4 py-2 bg-white rounded-md w-full transition-all overflow-hidden cursor-pointer"
+        class="w-full cursor-pointer overflow-hidden rounded-md bg-white px-4 py-2 transition-all"
         :class="{
-            'duration-75 border-2 border-red-500': active,
-            'opacity-20 pointer-events-none': deactivate,
+            'border-2 border-red-500 duration-75': active,
+            'pointer-events-none opacity-20': deactivate,
         }"
     >
         <div class="group">
-            <p class="group-hover:text-red-500 label-md">
+            <p class="label-md group-hover:text-red-500">
                 {{ content.title }}
             </p>
         </div>
-        <div :class="{ 'pb-2 pt-4 space-y-2': activeMassnahmen.length > 0 }">
+        <div :class="{ 'space-y-2 pb-2 pt-4': activeMassnahmen.length > 0 }">
             <p
-                class="cursor-pointer px-2 border-red-500 border-2 rounded-lg font-bold"
+                class="cursor-pointer rounded-lg border-2 border-red-500 px-2 font-bold"
                 :class="{
                     'text-red-500':
                         infographicStore.massnahmeHover == massnahme.title,

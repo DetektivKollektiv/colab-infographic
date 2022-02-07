@@ -1,6 +1,6 @@
 <template>
     <div class="relative">
-        <div class="flex space-x-2 justify-center float-left">
+        <div class="float-left flex justify-center space-x-2">
             <ButtonStory
                 v-for="story in stories"
                 :story="story.title"

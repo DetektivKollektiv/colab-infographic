@@ -1,17 +1,17 @@
 <template>
     <div class="overflow-hidden" :class="bg">
-        <div class="w-screen relative min-h-[600px] h-[30rem] md:h-[40rem]">
+        <div class="relative h-[30rem] min-h-[600px] w-screen md:h-[40rem]">
             <div
-                class="rounded-full w-[500vw] h-[500vw] absolute -translate-x-1/2 left-1/2"
+                class="absolute left-1/2 h-[500vw] w-[500vw] -translate-x-1/2 rounded-full"
                 :class="color"
             ></div>
 
             <div
-                class="w-0 h-[500vw] relative left-1/2 -translate-x-1/2 transition-all hidden md:block"
+                class="relative left-1/2 hidden h-[500vw] w-0 -translate-x-1/2 transition-all md:block"
                 :style="getStyle(currentElement.rotation * -1)"
             >
                 <div
-                    class="h-[500vw] w-0 absolute left-1/2 cursor-pointer"
+                    class="absolute left-1/2 h-[500vw] w-0 cursor-pointer"
                     v-for="trend in trendsFormated"
                     :key="trend"
                     :style="getStyle(trend.rotation)"
@@ -21,7 +21,7 @@
                     @click="setCurrentElement(trend)"
                 >
                     <TextBlock
-                        class="w-screen -translate-x-1/2 mt-[20rem] -translate-y-1/2"
+                        class="mt-[20rem] w-screen -translate-x-1/2 -translate-y-1/2"
                     >
                         <template v-slot:subtitle>
                             <p class="font-serif">{{ subtitle }}</p>

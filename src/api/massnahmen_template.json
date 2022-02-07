@@ -24,10 +24,7 @@
                         "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
                     }
                 ],
-                "players": [
-                    "HateAid",
-                    "codetekt"
-                ]
+                "players": ["HateAid", "codetekt"]
             },
             {
                 "title": "Forschen gegen China",
@@ -50,10 +47,7 @@
                         "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
                     }
                 ],
-                "players": [
-                    "HateAid",
-                    "codetekt"
-                ]
+                "players": ["HateAid", "codetekt"]
             }
         ]
     },
@@ -82,10 +76,7 @@
                         "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
                     }
                 ],
-                "players": [
-                    "HateAid",
-                    "codetekt"
-                ]
+                "players": ["HateAid", "codetekt"]
             },
             {
                 "title": "Experimentieren gegen China",
@@ -108,10 +99,7 @@
                         "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
                     }
                 ],
-                "players": [
-                    "HateAid",
-                    "codetekt"
-                ]
+                "players": ["HateAid", "codetekt"]
             }
         ]
     },
@@ -141,9 +129,7 @@
                         "link": "https://www.sueddeutsche.de/politik/radikalisierung-was-ist-los-in-diesem-land-1.5488912"
                     }
                 ],
-                "players": [
-                    "Social Media Watchblog"
-                ]
+                "players": ["Social Media Watchblog"]
             }
         ]
     },

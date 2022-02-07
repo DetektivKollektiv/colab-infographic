@@ -1,7 +1,7 @@
 <template>
-    <div class="text-center relative z-20">
+    <div class="relative z-20 text-center">
         <div
-            class="h-[30rem] md:h-[40rem] w-full bg-yellow-500 flex justify-center items-center"
+            class="flex h-[30rem] w-full items-center justify-center bg-yellow-500 md:h-[40rem]"
         >
             <TextBlock>
                 <template v-slot:subtitle>
@@ -34,9 +34,9 @@
             subtitle="Mesotrends"
         ></Rotation>
 
-        <div class="relative h-[5vw] bg-yellow-300 overflow-hidden">
+        <div class="relative h-[5vw] overflow-hidden bg-yellow-300">
             <div
-                class="rounded-full w-[500vw] h-[500vw] absolute -translate-x-1/2 left-1/2 bg-white"
+                class="absolute left-1/2 h-[500vw] w-[500vw] -translate-x-1/2 rounded-full bg-white"
             ></div>
         </div>
     </div>

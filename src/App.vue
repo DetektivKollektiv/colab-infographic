@@ -22,7 +22,7 @@ const activeStory = ref(0)
     </div>
     <Trends />
 
-    <div class="hidden lg:block my-24">
+    <div class="my-24 hidden lg:block">
         <Infographic />
     </div>
     <InfographicMobile class="lg:hidden" />

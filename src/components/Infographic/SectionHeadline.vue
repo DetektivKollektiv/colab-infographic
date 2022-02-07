@@ -1,6 +1,6 @@
 <template>
     <div
-        class="w-full border-red-500 bg-gradient-to-b to-white pt-6 border-b-2"
+        class="w-full border-b-2 border-red-500 bg-gradient-to-b to-white pt-6"
     >
         <h3>
             <slot name="headline"></slot>

@@ -47,18 +47,18 @@ export default {
     <div
         class="intro-container relative flex flex-col justify-end overflow-hidden bg-left-bottom"
     >
-        <div class="w-full h-full flex flex-col justify-between z-10">
+        <div class="z-10 flex h-full w-full flex-col justify-between">
             <div
-                class="flex flex-col justify-start lg:justify-end pt-10 pb-25 lg:py-20 space-y-4 w-full h-[70%] lg:h-full"
+                class="pb-25 flex h-[70%] w-full flex-col justify-start space-y-4 pt-10 lg:h-full lg:justify-end lg:py-20"
             >
                 <div
-                    class="flex flex-row snap-x snap-mandatory overflow-x-scroll w-full h-full scrollbar-hidden"
+                    class="scrollbar-hidden flex h-full w-full snap-x snap-mandatory flex-row overflow-x-scroll"
                     ref="container"
                     @scroll="update"
                 >
-                    <div class="min-w-full flex items-end">
+                    <div class="flex min-w-full items-end">
                         <div
-                            class="flex flex-col justify-start lg:justify-end gap-5 snap-center container-box fixed-container"
+                            class="container-box fixed-container flex snap-center flex-col justify-start gap-5 lg:justify-end"
                         >
                             <div class="w-full lg:w-7/12">
                                 <h1 class="headline">
@@ -76,9 +76,9 @@ export default {
                             </div>
                         </div>
                     </div>
-                    <div class="min-w-full flex items-end">
+                    <div class="flex min-w-full items-end">
                         <div
-                            class="flex flex-col justify-start lg:justify-end gap-5 snap-center container-box fixed-container"
+                            class="container-box fixed-container flex snap-center flex-col justify-start gap-5 lg:justify-end"
                         >
                             <div class="w-full lg:w-7/12">
                                 <h1 class="headline">Das Universum</h1>
@@ -113,9 +113,9 @@ export default {
                             </div>
                         </div>
                     </div>
-                    <div class="min-w-full flex items-end">
+                    <div class="flex min-w-full items-end">
                         <div
-                            class="flex flex-col justify-start lg:justify-end gap-5 snap-center container-fixed container-box"
+                            class="container-fixed container-box flex snap-center flex-col justify-start gap-5 lg:justify-end"
                         >
                             <div class="w-full lg:w-7/12">
                                 <h1 class="headline">Makro‑Trends</h1>
@@ -136,15 +136,15 @@ export default {
                             </div>
                         </div>
                     </div>
-                    <div class="min-w-full flex items-end">
+                    <div class="flex min-w-full items-end">
                         <div
-                            class="flex flex-col justify-start lg:justify-end gap-5 snap-center container-fixed container-box"
+                            class="container-fixed container-box flex snap-center flex-col justify-start gap-5 lg:justify-end"
                         >
                             <div class="w-full lg:w-7/12">
                                 <h1 class="headline">Meso‑Trends</h1>
                                 <p class="w-full lg:w-2/3">
                                     <span
-                                        class="highlight bg-yellow-300 break-normal"
+                                        class="highlight break-normal bg-yellow-300"
                                         >Meso‑Trends</span
                                     >
                                     beschreiben konkrete Ausprägungen der großen
@@ -154,7 +154,7 @@ export default {
                                     Zusammenhang zur Ausbreitung von
                                     Desinformation her.
                                     <span
-                                        class="highlight bg-yellow-300 break-normal"
+                                        class="highlight break-normal bg-yellow-300"
                                         >Meso‑Trends</span
                                     >
                                     bieten Ansatzpunkte für Maßnahmen gegen das
@@ -163,9 +163,9 @@ export default {
                             </div>
                         </div>
                     </div>
-                    <div class="min-w-full flex items-end">
+                    <div class="flex min-w-full items-end">
                         <div
-                            class="flex flex-col-reverse lg:flex-col justify-end lg:justify-between lg:gap-5 snap-center container-fixed container-box"
+                            class="container-fixed container-box flex snap-center flex-col-reverse justify-end lg:flex-col lg:justify-between lg:gap-5"
                         >
                             <WSKIntro
                                 :showDescription="true"
@@ -193,9 +193,9 @@ export default {
                     </div>
                     <div class="min-w-full">
                         <div
-                            class="flex flex-col-reverse lg:flex-col justify-end lg:justify-between lg:gap-5 snap-center container-fixed container-box"
+                            class="container-fixed container-box flex snap-center flex-col-reverse justify-end lg:flex-col lg:justify-between lg:gap-5"
                         >
-                            <div class="flex flex-col gap-4 lg:gap-8 lg:w-1/3">
+                            <div class="flex flex-col gap-4 lg:w-1/3 lg:gap-8">
                                 <div class="w-full">
                                     <WSKIntro
                                         :showDescription="false"
@@ -209,7 +209,7 @@ export default {
                                         Wer
                                     </h3>
                                     <div class="h-0.5 bg-red-500"></div>
-                                    <p class="w-full flex-shrink-0 mt-2 mr-4">
+                                    <p class="mt-2 mr-4 w-full flex-shrink-0">
                                         Wer macht’s? Akteur*innen sind je nach
                                         Phase z. B. Staaten, Verbände, Medien,
                                         Big-Tech-Plattformen, Einzelpersonen …
@@ -221,8 +221,8 @@ export default {
                                     >
                                         Wie
                                     </h3>
-                                    <div class="w-full h-0.5 bg-red-500"></div>
-                                    <p class="w-full flex-shrink-0 mt-2 mr-4">
+                                    <div class="h-0.5 w-full bg-red-500"></div>
+                                    <p class="mt-2 mr-4 w-full flex-shrink-0">
                                         Wie wird’s gemacht? Methoden sind die
                                         Mittel und Werkzeuge, die je nach Phase
                                         zum Einsatz kommen: darunter z. B.
@@ -255,7 +255,7 @@ export default {
                 </div>
                 <div class="container-box flex flex-col">
                     <Pagination
-                        class="self-center lg:self-baseline pb-4 lg:pb-0"
+                        class="self-center pb-4 lg:self-baseline lg:pb-0"
                         :length="length"
                         :index="index"
                         :showArrows="true"
@@ -275,7 +275,7 @@ export default {
         <PageCount
             :length="length"
             :index="index + 1"
-            class="lg:hidden absolute top-0 right-0 mt-4 mr-4"
+            class="absolute top-0 right-0 mt-4 mr-4 lg:hidden"
         ></PageCount>
     </div>
 </template>
@@ -288,23 +288,23 @@ export default {
 }
 
 .overview-intro-slide {
-    @apply -bottom-[41vw] -right-[20vw] w-[80vw] h-[80vw];
+    @apply -bottom-[41vw] -right-[20vw] h-[80vw] w-[80vw];
 }
 .follow-up-slides {
-    @apply -bottom-[25vw] -right-[15vw] w-[50vw] h-[50vw];
+    @apply -bottom-[25vw] -right-[15vw] h-[50vw] w-[50vw];
 }
 
 .headline {
     @apply text-2xl md:text-3xl xl:text-7xl;
 }
 .highlight {
-    @apply font-bold font-headline border-2 px-2 border-black;
+    @apply border-2 border-black px-2 font-headline font-bold;
 }
 
 @media only screen and (max-width: 550px) {
     .overview-intro-slide,
     .follow-up-slides {
-        @apply -bottom-[250vw] -right-[100vw] w-[300vw] h-[300vw];
+        @apply -bottom-[250vw] -right-[100vw] h-[300vw] w-[300vw];
     }
     .intro-container {
         height: 95vh;
@@ -317,7 +317,7 @@ export default {
 @media only screen and (max-width: 1023px) and (min-width: 551px) {
     .overview-intro-slide,
     .follow-up-slides {
-        @apply -bottom-[170vw] -right-[50vw] w-[200vw] h-[200vw];
+        @apply -bottom-[170vw] -right-[50vw] h-[200vw] w-[200vw];
     }
 }
 </style>

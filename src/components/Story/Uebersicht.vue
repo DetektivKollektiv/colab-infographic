@@ -1,17 +1,17 @@
 <template>
     <div
-        class="relative h-[70rem] md:h-[85rem] lg:h-[60rem] min-h-[600px] overflow-hidden bg-yellow-500"
+        class="relative h-[70rem] min-h-[600px] overflow-hidden bg-yellow-500 md:h-[85rem] lg:h-[60rem]"
     >
         <div
-            class="rounded-full w-[500vw] h-[500vw] mb-[2rem] md:mb-[3rem] absolute bottom-0 -translate-x-1/2 left-1/2 flex justify-center text-center bg-yellow-300"
+            class="absolute bottom-0 left-1/2 mb-[2rem] flex h-[500vw] w-[500vw] -translate-x-1/2 justify-center rounded-full bg-yellow-300 text-center md:mb-[3rem]"
         ></div>
         <div
-            class="rounded-full w-[500vw] h-[500vw] mb-[26rem] md:mb-[37rem] absolute bottom-0 -translate-x-1/2 left-1/2 flex justify-center text-center bg-white"
+            class="absolute bottom-0 left-1/2 mb-[26rem] flex h-[500vw] w-[500vw] -translate-x-1/2 justify-center rounded-full bg-white text-center md:mb-[37rem]"
         ></div>
         <div
-            class="absolute bottom-0 flex justify-center z-10 mb-[6rem] md:mb-[13rem] w-screen"
+            class="absolute bottom-0 z-10 mb-[6rem] flex w-screen justify-center md:mb-[13rem]"
         >
-            <div class="container-box w-full flex justify-center">
+            <div class="container-box flex w-full justify-center">
                 <TextBlock class="text-center">
                     <template v-slot:subtitle>
                         <p class="font-serif">

@@ -1,5 +1,5 @@
 <template>
-    <a :href="content" target="_blank" class="underline text-blue-500"
+    <a :href="content" target="_blank" class="text-blue-500 underline"
         >Zur Website</a
     >
 </template>

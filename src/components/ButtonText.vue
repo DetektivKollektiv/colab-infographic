@@ -1,9 +1,9 @@
 <template>
     <button
-        class="px-4 rounded-full border-2 border-red-500 inline-block"
+        class="inline-block rounded-full border-2 border-red-500 px-4"
         :class="active ? 'bg-red-500 text-white' : 'bg-none hover:text-red-500'"
     >
-        <span class="font-bold text-sm md:text-lg">
+        <span class="text-sm font-bold md:text-lg">
             <slot></slot>
         </span>
     </button>

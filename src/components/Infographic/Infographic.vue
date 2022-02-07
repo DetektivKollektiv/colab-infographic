@@ -11,7 +11,7 @@
                 <p
                     v-for="story in infographicStore.storyContent"
                     :key="story"
-                    class="text-center rounded-md w-full h-fit"
+                    class="h-fit w-full rounded-md text-center"
                 >
                     {{ story }}
                 </p>

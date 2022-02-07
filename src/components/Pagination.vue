@@ -1,12 +1,12 @@
 <template>
-    <div class="flex space-x-2 md:space-x-6 text-red-500 text-2xl items-center">
+    <div class="flex items-center space-x-2 text-2xl text-red-500 md:space-x-6">
         <button class="hidden md:block" @click="emit('index', index - 1)">
             <i v-if="showArrows" class="fas fa-caret-left"></i>
         </button>
         <button
             v-for="i in Array(length).keys()"
             :key="i"
-            class="w-2 md:w-4 h-2 md:h-4 border-2 rounded-full border-red-500"
+            class="h-2 w-2 rounded-full border-2 border-red-500 md:h-4 md:w-4"
             :class="i <= index ? 'bg-red-500' : 'bg-white'"
             @click="emit('index', i)"
         ></button>
