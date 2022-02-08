@@ -19,7 +19,6 @@ export default {
             } else if (index < 0) {
                 index = this.length - 1
             }
-            console.log(index, this.length)
             this.$refs.container.scrollTo({
                 left:
                     this.elementsLefts[index] + this.$refs.container.scrollLeft,

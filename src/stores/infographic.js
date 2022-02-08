@@ -22,7 +22,6 @@ export const useInfographicStore = defineStore('infographic', {
             }
         },
         setModal(content) {
-            console.log('setModal', content)
             this.modalContent = content
             this.showModal = true
         },
