@@ -15,14 +15,16 @@ export const options = Object.entries(massnahmenTemplate).map(
 export const massnahmen = Object.entries(massnahmenTemplate).reduce(
     (acc, [key, value]) => {
         const content = value.content.map((item) => {
-            item.description = item.description.concat(
-                item.players.map((player) => findInitiative(player))
-            )
+            if (item.players) {
+                item.description = item.description.concat(
+                    item.players.map((player) => findInitiative(player))
+                )
+            }
+
             return item
         })
 
         value.content = content
-        console.log(value)
 
         acc[key] = value
         return acc
