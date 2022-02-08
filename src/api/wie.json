@@ -61,7 +61,7 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": ["Fakten checken („Debunking“)"]
         },
         {
             "title": "Ungenau/falsch betiteln, bebildern, beschriften",
@@ -78,7 +78,7 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": ["Fakten checken („Debunking“)"]
         },
         {
             "title": "Eine Information auf irreführende Weise nutzen („Framing“)",
@@ -95,7 +95,7 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": ["Fakten checken („Debunking“)"]
         },
         {
             "title": "Echte Inhalte in einen falschen Kontext setzen",
@@ -112,7 +112,7 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": ["Fakten checken („Debunking“)"]
         },
         {
             "title": "Sich für eine andere, authentische Quelle ausgeben",
@@ -129,7 +129,7 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": ["Fakten checken („Debunking“)"]
         },
         {
             "title": "Inhalte gezielt manipulieren",
@@ -146,7 +146,7 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": ["Fakten checken („Debunking“)"]
         },
         {
             "title": "Inhalte komplett erfinden",
@@ -163,7 +163,7 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": ["Fakten checken („Debunking“)"]
         }
     ],
     "03": [
@@ -416,7 +416,7 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": ["Täter verfolgen & Opfer verteidigen"]
         },
         {
             "title": "Entgegengesetzte Lager gegeneinander aufhetzen",
@@ -427,7 +427,7 @@
                 }
             ],
             "stories": [],
-            "massnahmen": ["Über Big Tech und Social Media aufklären"]
+            "massnahmen": ["Über Big Tech und Social Media aufklären", "Täter verfolgen & Opfer verteidigen"]
         }
     ]
 }
