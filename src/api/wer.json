@@ -15,7 +15,10 @@
                 }
             ],
             "stories": ["Der Fall Künast"],
-            "massnahmen": ["Forschen gegen Russland", "Forschen gegen China"]
+            "massnahmen": [
+                "Investigativ recherchieren",
+                "Kampagnen organisieren"
+            ]
         },
         {
             "title": "Parteien",
@@ -47,7 +50,10 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": [
+                "Investigativ recherchieren",
+                "Kampagnen organisieren"
+            ]
         },
         {
             "title": "Medien",
@@ -79,7 +85,10 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": [
+                "Investigativ recherchieren",
+                "Kampagnen organisieren"
+            ]
         },
         {
             "title": "Interessen-/ Lobbyverbände",
@@ -127,7 +136,10 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": [
+                "Investigativ recherchieren",
+                "Kampagnen organisieren"
+            ]
         },
         {
             "title": "Ideolog*innen",
@@ -151,7 +163,10 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": [
+                "Täter verfolgen & Opfer verteidigen",
+                "Kampagnen organisieren"
+            ]
         },
         {
             "title": "Einzelkämpfer*innen",
@@ -175,7 +190,10 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": [
+                "Täter verfolgen & Opfer verteidigen",
+                "Kampagnen organisieren"
+            ]
         }
     ],
     "02": [
@@ -205,7 +223,7 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": ["Investigativ recherchieren"]
         },
         {
             "title": "Content-Provider",
@@ -245,7 +263,7 @@
                 }
             ],
             "stories": ["Der Fall Künast"],
-            "massnahmen": ["Forschen gegen Russland", "Forschen gegen China"]
+            "massnahmen": ["Investigativ recherchieren"]
         },
         {
             "title": "Offizielle Vertreter*innen",
@@ -281,7 +299,7 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": ["Investigativ recherchieren"]
         },
         {
             "title": "Blogs/Podcasts",
@@ -309,7 +327,7 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": ["Täter verfolgen & Opfer verteidigen"]
         }
     ],
     "03": [
@@ -335,7 +353,7 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": ["Täter verfolgen & Opfer verteidigen"]
         },
         {
             "title": "Beratungsfirmen/Agenturen",
@@ -356,7 +374,7 @@
                 }
             ],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": ["Regulierung ermöglichen"]
         },
         {
             "title": "Expert*innen/Berater*innen",
@@ -382,7 +400,7 @@
                 }
             ],
             "stories": ["Der Fall Künast"],
-            "massnahmen": ["Forschen gegen Russland", "Forschen gegen China"]
+            "massnahmen": ["Regulierung ermöglichen"]
         },
         {
             "title": "Selbstorganisierte Bewegungen",
@@ -422,7 +440,7 @@
             "stories": ["Der Fall Künast"],
             "massnahmen": [
                 "Über Big Tech und Social Media aufklären",
-                "Forschen gegen China"
+                "Regulierung ermöglichen"
             ]
         },
         {
@@ -435,7 +453,10 @@
             ],
             "sources": [],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": [
+                "Über Big Tech und Social Media aufklären",
+                "Regulierung ermöglichen"
+            ]
         }
     ],
     "04A": [
@@ -609,7 +630,11 @@
             ],
             "sources": [],
             "stories": ["Der Fall Künast"],
-            "massnahmen": ["Forschen gegen Russland", "Forschen gegen China"]
+            "massnahmen": [
+                "Fakten checken („Debunking“)",
+                "Täter verfolgen & Opfer verteidigen",
+                "Regulierung ermöglichen"
+            ]
         },
         {
             "title": "(Fach-)Diskurse",
@@ -624,7 +649,12 @@
             ],
             "sources": [],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": [
+                "Polarisierung ermitteln",
+                "Neue Beteiligungsformate testen",
+                "Täter verfolgen & Opfer verteidigen",
+                "Regulierung ermöglichen"
+            ]
         },
         {
             "title": "Meinungen",
@@ -636,7 +666,12 @@
             ],
             "sources": [],
             "stories": [],
-            "massnahmen": []
+            "massnahmen": [
+                "Polarisierung ermitteln",
+                "Neue Beteiligungsformate testen",
+                "Täter verfolgen & Opfer verteidigen",
+                "Kampagnen organisieren"
+            ]
         }
     ]
 }
