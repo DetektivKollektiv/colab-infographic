@@ -236,14 +236,16 @@
                     "text": "In der Öffentlichkeit verbleibt Verunsicherung und Irritation. Die rechte Szene wird durch das klare Feindbild bestärkt. Gleichzeitig zeigt die konsequente Reaktion der Organisation „HateAid“ mit und für Künast, dass es sich lohnt, gegen Desinformation vorzugehen.",
                     "image": ""
                 },
-                "sources": [{
-                    "text": "[1] Bericht von Forscher*innen der University of Haifa zur mazedonischen Desinformationsindustrie",
-                    "link": "https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/macedonian-fake-news-industry-and-the-2016-us-election/79F67A4F23148D230F120A3BD7E3384F"
-                },
-                {
-                    "text": "[2] Artikel in NBC News zu Desinformation während der US-Präsidentschaftswahlen 2016",
-                    "link": "https://www.nbcnews.com/news/world/fake-news-how-partying-macedonian-teen-earns-thousands-publishing-lies-n692451"
-                }]
+                "sources": [
+                    {
+                        "text": "[1] Bericht von Forscher*innen der University of Haifa zur mazedonischen Desinformationsindustrie",
+                        "link": "https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/macedonian-fake-news-industry-and-the-2016-us-election/79F67A4F23148D230F120A3BD7E3384F"
+                    },
+                    {
+                        "text": "[2] Artikel in NBC News zu Desinformation während der US-Präsidentschaftswahlen 2016",
+                        "link": "https://www.nbcnews.com/news/world/fake-news-how-partying-macedonian-teen-earns-thousands-publishing-lies-n692451"
+                    }
+                ]
             }
         ],
         "trends": {
@@ -267,18 +269,20 @@
                     "text": "Rechtsextremisten verwenden verbale Angriffe und falsche Tatsachenbehauptungen, um andere Personen einzuschüchtern und aus der Öffentlichkeit zu verdrängen.",
                     "image": ""
                 },
-                "sources": [{
-                    "text": "[1] BPB-Artikel über globale Desinformation",
-                    "link": "https://www.bpb.de/gesellschaft/digitales/digitale-desinformation/340538/desinformation-der-globale-blick"
-                },
-                {
-                    "text": "[2] Analyse der Carnegie Endownment for International Peace",
-                    "link": "https://carnegieendowment.org/2021/06/30/grand-illusions-impact-of-misperceptions-about-russia-on-u.s.-policy-pub-84845"
-                },
-                {
-                    "text": "[3] Artikel des Stasi-Unterlagen-Archivs",
-                    "link": "https://www.stasi-unterlagen-archiv.de/informationen-zur-stasi/themen/beitrag/die-aids-verschwoerung/"
-                }]
+                "sources": [
+                    {
+                        "text": "[1] BPB-Artikel über globale Desinformation",
+                        "link": "https://www.bpb.de/gesellschaft/digitales/digitale-desinformation/340538/desinformation-der-globale-blick"
+                    },
+                    {
+                        "text": "[2] Analyse der Carnegie Endownment for International Peace",
+                        "link": "https://carnegieendowment.org/2021/06/30/grand-illusions-impact-of-misperceptions-about-russia-on-u.s.-policy-pub-84845"
+                    },
+                    {
+                        "text": "[3] Artikel des Stasi-Unterlagen-Archivs",
+                        "link": "https://www.stasi-unterlagen-archiv.de/informationen-zur-stasi/themen/beitrag/die-aids-verschwoerung/"
+                    }
+                ]
             },
             {
                 "phaseIndex": 2,
@@ -357,18 +361,20 @@
                     "text": "Das Bild wurde vielfach geteilt. In den Kommentaren unter Liebichs Post kam es zu drastischen Beschimpfungen, Beleidigungen und Bedrohungen. Künast klagte gegen Liebich, viele Medien berichteten.",
                     "image": ""
                 },
-                "sources": [{
-                    "text": "[1] Artikel in der Washington Post",
-                    "link": "https://www.washingtonpost.com/world/national-security/russian-troll-farm-13-suspects-indicted-for-interference-in-us-election/2018/02/16/2504de5e-1342-11e8-9570-29c9830535e5_story.html"
-                },
-                {
-                    "text": "[2] Artikel des Harvard Misinformation Review",
-                    "link": "https://misinforeview.hks.harvard.edu/article/engaging-ira-coordinated-information-operation/"
-                },
-                {
-                    "text": "[3] Artikel in Slate",
-                    "link": "https://slate.com/technology/2019/04/mueller-report-internet-research-agency-ira-trolls-real-life.html"
-                }]
+                "sources": [
+                    {
+                        "text": "[1] Artikel in der Washington Post",
+                        "link": "https://www.washingtonpost.com/world/national-security/russian-troll-farm-13-suspects-indicted-for-interference-in-us-election/2018/02/16/2504de5e-1342-11e8-9570-29c9830535e5_story.html"
+                    },
+                    {
+                        "text": "[2] Artikel des Harvard Misinformation Review",
+                        "link": "https://misinforeview.hks.harvard.edu/article/engaging-ira-coordinated-information-operation/"
+                    },
+                    {
+                        "text": "[3] Artikel in Slate",
+                        "link": "https://slate.com/technology/2019/04/mueller-report-internet-research-agency-ira-trolls-real-life.html"
+                    }
+                ]
             },
             {
                 "phaseIndex": 5,
@@ -379,10 +385,12 @@
                     "text": "In der Öffentlichkeit verbleibt Verunsicherung und Irritation. Die rechte Szene wird durch das klare Feindbild bestärkt. Gleichzeitig zeigt die konsequente Reaktion der Organisation „HateAid“ mit und für Künast, dass es sich lohnt, gegen Desinformation vorzugehen.",
                     "image": ""
                 },
-                "sources": [{
-                    "text": "[1] Video der Washington Post",
-                    "link": "https://www.washingtonpost.com/video/politics/here-are-the-ads-that-russian-linked-groups-posted-on-social-media/2017/11/01/464e3dd8-bf34-11e7-9294-705f80164f6e_video.html"
-                }]
+                "sources": [
+                    {
+                        "text": "[1] Video der Washington Post",
+                        "link": "https://www.washingtonpost.com/video/politics/here-are-the-ads-that-russian-linked-groups-posted-on-social-media/2017/11/01/464e3dd8-bf34-11e7-9294-705f80164f6e_video.html"
+                    }
+                ]
             }
         ],
         "trends": {

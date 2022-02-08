@@ -1,17 +1,17 @@
 <template>
     <!-- create Dropdown Menu -->
     <button
-        class="px-4 border-2 border-red-500 inline-block bg-white overflow-hidden rounded-2xl text-right whitespace-nowrap transition-all"
+        class="inline-block overflow-hidden whitespace-nowrap rounded-2xl border-2 border-red-500 bg-white px-4 text-right transition-all"
         @click="closed = !closed"
         :style="{ width }"
     >
         <div
-            class="font-bold text-sm md:text-lg inline-block"
+            class="inline-block text-sm font-bold md:text-lg"
             ref="textElement"
         >
             <span>
                 <i :class="title.icon + ' ' + title.color"></i>
-                <b class="hover:text-red-500 ml-2">{{ title.text }}</b>
+                <b class="ml-2 hover:text-red-500">{{ title.text }}</b>
                 <i
                     v-if="closed"
                     class="fas fa-caret-down ml-2 text-red-500"
@@ -21,7 +21,7 @@
         </div>
 
         <div
-            class="text-sm md:text-lg transition-all space-y-2 float-right"
+            class="float-right space-y-2 text-sm transition-all md:text-lg"
             :class="{ 'mt-4': !closed }"
             ref="optionsElement"
             :style="{ height }"
@@ -38,9 +38,9 @@
                 :key="option.text"
                 @click="emit('option', option.text)"
                 :class="{
-                    'text-red-500 font-bold': option.text === title.text,
+                    'font-bold text-red-500': option.text === title.text,
                 }"
-                class="hover:text-red-500 whitespace-nowrap"
+                class="whitespace-nowrap hover:text-red-500"
             >
                 <i :class="option.icon + ' ' + option.color" class="mr-2"></i>
                 {{ option.text }}

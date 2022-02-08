@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-blue-500 border-t-2 border-red-500">
+    <div class="border-t-2 border-red-500 bg-blue-500">
         <div
-            class="container-box py-12 text-white flex justify-between lg:items-center flex-col-reverse space-y-4 lg:flex-row"
+            class="container-box flex flex-col-reverse justify-between space-y-4 py-12 text-white lg:flex-row lg:items-center"
         >
             <div class="mt-12 lg:mt-0">
                 <TextBlock>
@@ -21,7 +21,7 @@
                 <ButtonText class="mt-4">Download</ButtonText>
             </div>
             <img
-                class="lg:max-w-md lg:ml-12"
+                class="lg:ml-12 lg:max-w-md"
                 src="https://images.unsplash.com/photo-1504198322253-cfa87a0ff25f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
             />
         </div>

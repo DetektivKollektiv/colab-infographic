@@ -1,7 +1,7 @@
 <template>
     <ButtonText :active="active" @click="setStory"
         >{{ story }}
-        <i v-if="active" class="fas fa-times ml-2 relative top-[1px]"></i
+        <i v-if="active" class="fas fa-times relative top-[1px] ml-2"></i
     ></ButtonText>
 </template>
 

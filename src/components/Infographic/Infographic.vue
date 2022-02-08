@@ -11,15 +11,16 @@
                 <p
                     v-for="story in infographicStore.storyContent"
                     :key="story"
-                    class="text-center rounded-md w-full h-fit"
-                >{{ story }}</p>
+                    class="h-fit w-full rounded-md text-center"
+                >
+                    {{ story }}
+                </p>
             </Grid>
             <SectionHeadline>
                 <template v-slot:headline>Wer</template>
                 <template v-slot:description>
-                    Wer macht’s? Akteur*innen sind je nach Phase
-                    z. B. Staaten, Verbände, Medien,
-                    Big-Tech-Plattformen, Einzelpersonen.
+                    Wer macht’s? Akteur*innen sind je nach Phase z. B. Staaten,
+                    Verbände, Medien, Big-Tech-Plattformen, Einzelpersonen.
                 </template>
             </SectionHeadline>
             <Grid :doubleFourth="false">
@@ -82,10 +83,9 @@
             <SectionHeadline>
                 <template v-slot:headline>WIE</template>
                 <template v-slot:description>
-                    Wie wird’s gemacht? Methoden sind die Mittel
-                    und Werkzeuge, die je nach Phase zum Einsatz
-                    kommen: darunter z. B. Dekontextualisierung,
-                    Micro-Targeting oder Algorithmen.
+                    Wie wird’s gemacht? Methoden sind die Mittel und Werkzeuge,
+                    die je nach Phase zum Einsatz kommen: darunter z. B.
+                    Dekontextualisierung, Micro-Targeting oder Algorithmen.
                 </template>
             </SectionHeadline>
             <Grid :doubleFourth="true">

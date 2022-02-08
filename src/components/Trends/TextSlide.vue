@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex overflow-x-scroll snap-x snap-mandatory scrollbar-hidden h-[80vh] min-h-[600px]"
+        class="scrollbar-hidden flex h-[80vh] min-h-[600px] snap-x snap-mandatory overflow-x-scroll"
         ref="container"
         @scroll="update"
     >
@@ -12,10 +12,10 @@
         <div
             v-for="trend in trends"
             :key="trend"
-            class="snap-start w-screen flex-shrink-0"
+            class="w-screen flex-shrink-0 snap-start"
         >
             <TextBlock
-                class="relative top-1/2 -translate-y-1/2 -mt-4 container-box"
+                class="container-box relative top-1/2 -mt-4 -translate-y-1/2"
             >
                 <template v-slot:subtitle>
                     <p class="font-serif">{{ subtitle }}</p>

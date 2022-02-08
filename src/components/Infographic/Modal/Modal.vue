@@ -1,7 +1,7 @@
 <template>
-    <div class="w-full h-screen fixed z-40 cursor-pointer">
+    <div class="fixed z-40 h-screen w-full cursor-pointer">
         <div
-            class="absolute inset-0 bg-white z-50 rounded-md mx-auto my-auto py-6 px-8 h-fit cursor-default"
+            class="absolute inset-0 z-50 mx-auto my-auto h-fit cursor-default rounded-md bg-white py-6 px-8"
             style="max-width: 66ch"
         >
             <ButtonClose
@@ -10,7 +10,7 @@
             ></ButtonClose>
             <div class="mt-8">
                 <h2>{{ content.title }}</h2>
-                <p class="text-red-500 label-sm">{{ content.subtitle }}</p>
+                <p class="label-sm text-red-500">{{ content.subtitle }}</p>
                 <div v-for="des in content.description" :key="des" class="mt-4">
                     <component
                         class="mt-2"
@@ -27,7 +27,7 @@
         </div>
         <div
             @click="infographicStore.closeModal()"
-            class="w-full h-screen bg-black opacity-50 fixed z-40"
+            class="fixed z-40 h-screen w-full bg-black opacity-50"
         ></div>
     </div>
 </template>
@@ -49,9 +49,12 @@ const elements = {
         defineAsyncComponent(() =>
             import('@/components/infographic/Modal/MImage.vue')
         ),
+    link: () =>
+        defineAsyncComponent(() =>
+            import('@/components/infographic/Modal/MLink.vue')
+        ),
 }
 
-import { WER, WIE, WAS } from '@/api/infographic'
 import { onUnmounted } from '@vue/runtime-core'
 const content = infographicStore.modalContent
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-black opacity-50 text-white font-sans rounded-full px-3">
+    <div class="rounded-full bg-black px-3 font-sans text-white opacity-50">
         {{ index }} / {{ length }}
     </div>
 </template>

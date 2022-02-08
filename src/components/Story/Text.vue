@@ -1,7 +1,7 @@
 <template>
     <div class="relative">
         <div
-            class="flex flex-col md:scroll-px-0 overflow-y-hidden w-full snap-mandatory snap-x scrollbar-hidden"
+            class="scrollbar-hidden flex w-full snap-x snap-mandatory flex-col overflow-y-hidden md:scroll-px-0"
             @scroll="update"
         >
             <div
@@ -12,7 +12,7 @@
             >
                 <div
                     v-for="(text, i) in block.descriptions"
-                    class="py-2 mb-8 md:mb-12 w-full flex-shrink-0 snap-start"
+                    class="mb-8 w-full flex-shrink-0 snap-start py-2 md:mb-12"
                     :key="text"
                 >
                     <h3
@@ -21,7 +21,7 @@
                     >
                         {{ block.title }}
                     </h3>
-                    <div class="w-full h-0.5 bg-red-500"></div>
+                    <div class="h-0.5 w-full bg-red-500"></div>
                     <p
                         class="mt-2 mr-4 md:mr-0"
                         style="max-width: min(66ch, 80vw)"

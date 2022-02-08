@@ -1,7 +1,7 @@
 <template>
     <div class="container-box pt-12">
         <div
-            class="flex flex-col flex-wrap md:flex-row justify-between space-y-8 md:space-y-0"
+            class="flex flex-col flex-wrap justify-between space-y-8 md:flex-row md:space-y-0"
         >
             <div class="flex-shrink-0 md:mr-12">
                 <Text
@@ -12,13 +12,13 @@
                 </Text>
                 <ButtonText
                     @click="emit('next')"
-                    class="float-right mb-8 md:mb-12 hidden md:block"
+                    class="float-right mb-8 hidden md:mb-12 md:block"
                     :class="{ 'animate-scale': phaseIndex == 1 }"
                     >Weiter</ButtonText
                 >
             </div>
             <img
-                class="md:h-auto object-cover max-w-xl"
+                class="max-w-xl object-cover md:h-auto"
                 v-for="image in images"
                 :key="image"
                 :src="image"

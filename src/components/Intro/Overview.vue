@@ -1,24 +1,24 @@
 <template>
     <div
-        class="text-center relative w-full h-full font-headline"
+        class="relative h-full w-full text-center font-headline"
         :class="
-            current_slide == 1 ? 'lg:text-4xl text-xl' : 'lg:text-2xl text-xl'
+            current_slide == 1 ? 'text-xl lg:text-4xl' : 'text-xl lg:text-2xl'
         "
     >
-        <div class="bg-yellow-400 circle h-full w-full">
+        <div class="circle h-full w-full bg-yellow-400">
             <span :class="current_slide == 3 ? 'font-bold' : ''"
                 >Makro-Trends</span
             >
         </div>
         <div
-            class="bg-yellow-300 circle lg:h-2/3 lg:w-2/3 h-full w-full top-32 lg:top-0"
+            class="circle top-32 h-full w-full bg-yellow-300 lg:top-0 lg:h-2/3 lg:w-2/3"
         >
             <span :class="current_slide == 4 ? 'font-bold' : ''"
                 >Meso-Trends</span
             >
         </div>
         <div
-            class="bg-white circle lg:h-1/3 lg:w-1/3 h-full w-full top-64 lg:top-0"
+            class="circle top-64 h-full w-full bg-white lg:top-0 lg:h-1/3 lg:w-1/3"
         >
             <span
                 class="block lg:hidden"
@@ -26,9 +26,9 @@
                 >Wertschöpfungskette</span
             >
             <span
-                class="hidden lg:block -mt-4 2xl:-mt-0"
+                class="-mt-4 hidden lg:block 2xl:-mt-0"
                 :class="[5, 6].includes(current_slide) ? 'font-bold' : ''"
-                >Wert-<br>schöpfungskette</span
+                >Wert-<br />schöpfungskette</span
             >
         </div>
     </div>
@@ -50,7 +50,7 @@
     }
 }
 @media only screen and (max-width: 1023px) and (min-width: 651px) {
-   .circle {
+    .circle {
         padding-top: 1%;
     }
 }

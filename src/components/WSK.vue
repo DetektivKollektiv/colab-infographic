@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="relative" :class="marginTopClass">
-            <div class="h-0.5 absolute w-full">
+            <div class="absolute h-0.5 w-full">
                 <div
                     class="relative h-0.5 w-full"
                     :style="{
@@ -12,7 +12,7 @@
                     <div class="h-full w-full bg-red-500"></div>
                 </div>
                 <div
-                    class="flex z-20 relative justify-between container-box"
+                    class="container-box relative z-20 flex justify-between"
                     ref="elementContainer"
                 >
                     <div
@@ -23,16 +23,16 @@
                     >
                         <div
                             v-if="typeof phase.title == 'string'"
-                            class="flex flex-col cursor-pointer relative items-center"
+                            class="relative flex cursor-pointer flex-col items-center"
                         >
                             <div
-                                class="rounded-full flex justify-center items-center border-2 border-red-500 transition-all"
+                                class="flex items-center justify-center rounded-full border-2 border-red-500 transition-all"
                                 :class="
                                     phase.index + 1 < phaseIndex
-                                        ? 'bg-red-500 w-4 h-4 md:w-8 md:h-8 -mt-2 md:-mt-4 text-white label-sm'
+                                        ? 'label-sm -mt-2 h-4 w-4 bg-red-500 text-white md:-mt-4 md:h-8 md:w-8'
                                         : phase.index + 1 > phaseIndex
-                                        ? 'bg-white w-4 h-4 md:w-8 md:h-8 -mt-2 md:-mt-4 label-sm'
-                                        : 'w-8 h-8 md:w-12 md:h-12 -mt-4 md:-mt-6  label-xl bg-red-500 text-white'
+                                        ? 'label-sm -mt-2 h-4 w-4 bg-white md:-mt-4 md:h-8 md:w-8'
+                                        : 'label-xl -mt-4 h-8 w-8 bg-red-500 text-white  md:-mt-6 md:h-12 md:w-12'
                                 "
                             >
                                 <span
@@ -63,7 +63,7 @@
                                 </p>
                                 <p
                                     v-if="showSummaries"
-                                    class="max-w-xs px-4 mt-2 hidden lg:block"
+                                    class="mt-2 hidden max-w-xs px-4 lg:block"
                                 >
                                     {{ summaries[phase.index] }}
                                 </p>
@@ -72,12 +72,12 @@
 
                         <i
                             v-else
-                            class="fas fa-caret-right text-4xl text-red-500 -translate-y-1/2"
+                            class="fas fa-caret-right -translate-y-1/2 text-4xl text-red-500"
                         ></i>
                     </div>
                 </div>
             </div>
-            <div v-if="showSummaries" class="container-box py-24 space-y-4">
+            <div v-if="showSummaries" class="container-box space-y-4 py-24">
                 <div
                     v-for="(sum, i) in summaries"
                     :key="sum"

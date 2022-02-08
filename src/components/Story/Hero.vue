@@ -1,11 +1,11 @@
 <template>
     <div
-        class="relative h-[50vh] min-h-[400px] max-h-[30rem] border-t-2 border-red-500"
+        class="relative h-[50vh] max-h-[30rem] min-h-[400px] border-t-2 border-red-500"
     >
         <div
-            class="bg-gradient-to-b from-transparent to-black w-full h-full absolute opacity-40"
+            class="absolute h-full w-full bg-gradient-to-b from-transparent to-black opacity-40"
         ></div>
-        <div class="flex justify-start items-center container-box">
+        <div class="container-box flex items-center justify-start">
             <div class="absolute top-1/2 -translate-y-1/2">
                 <div class="text-white">
                     <TextBlock>
@@ -21,7 +21,7 @@
                             </p>
                         </template>
                     </TextBlock>
-                    <div class="space-x-2 mt-4">
+                    <div class="mt-4 space-x-2">
                         <ButtonText
                             @click="emit('state', 'phasen')"
                             :active="state === 'phasen' && active"
@@ -40,7 +40,7 @@
         </div>
 
         <img
-            class="object-cover w-screen h-[50vh] max-h-[30rem] min-h-[400px]"
+            class="h-[50vh] max-h-[30rem] min-h-[400px] w-screen object-cover"
             :src="story.image"
             alt=""
         />

@@ -1,16 +1,16 @@
 <template>
     <div class="w-full">
-        <div class="grid grid-cols-5 row-auto space-x-2 sticky top-[-1px] pt-2">
+        <div class="sticky top-[-1px] row-auto grid grid-cols-5 space-x-2 pt-2">
             <div v-for="phase in WAS.phases" :key="phase">
-                <div class="flex flex-col relative items-center group">
+                <div class="group relative flex flex-col items-center">
                     <div
-                        class="rounded-full flex justify-center items-center border-2 border-red-500 transition-all relative z-10"
+                        class="relative z-10 flex items-center justify-center rounded-full border-2 border-red-500 transition-all"
                         :class="
                             parseInt(phase.id) < currentElement
-                                ? 'bg-red-500 w-4 h-4 md:w-8 md:h-8 text-white label-sm'
+                                ? 'label-sm h-4 w-4 bg-red-500 text-white md:h-8 md:w-8'
                                 : parseInt(phase.id) > currentElement
-                                ? 'bg-white w-4 h-4 md:w-8 md:h-8 label-sm'
-                                : 'w-8 h-8 md:w-12 md:h-12 -mt-2 label-xl bg-red-500 text-white'
+                                ? 'label-sm h-4 w-4 bg-white md:h-8 md:w-8'
+                                : 'label-xl -mt-2 h-8 w-8 bg-red-500 text-white md:h-12 md:w-12'
                         "
                     >
                         <span
@@ -25,15 +25,15 @@
                     </div>
 
                     <div
-                        class="h-0.5 bg-red-500 mt-2 md:mt-4 absolute w-full"
+                        class="absolute mt-2 h-0.5 w-full bg-red-500 md:mt-4"
                         :class="{
-                            'w-1/2 right-0': phase.id == 1,
-                            'w-1/2 left-0': phase.id == 5,
+                            'right-0 w-1/2': phase.id == 1,
+                            'left-0 w-1/2': phase.id == 5,
                         }"
                     >
                         <i
                             v-if="phase.id != 5"
-                            class="fas fa-caret-right text-4xl text-red-500 absolute right-0 translate-x-full -translate-y-1/2 mt-0.5"
+                            class="fas fa-caret-right absolute right-0 mt-0.5 translate-x-full -translate-y-1/2 text-4xl text-red-500"
                         ></i>
                     </div>
                 </div>
@@ -41,12 +41,12 @@
         </div>
         <div
             v-if="showDescription"
-            class="flex md:grid w-full overflow-x-scroll snap-x snap-mandatory grid-cols-5 relative z-20 scrollbar-hidden"
+            class="scrollbar-hidden relative z-20 flex w-full snap-x snap-mandatory grid-cols-5 overflow-x-scroll md:grid"
             ref="container"
             @scroll="update"
         >
             <div
-                class="w-full flex-shrink-0 text-center snap-center"
+                class="w-full flex-shrink-0 snap-center text-center"
                 v-for="phase in WAS.phases"
                 :key="phase"
             >
