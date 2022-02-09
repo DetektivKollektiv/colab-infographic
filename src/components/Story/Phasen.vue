@@ -3,7 +3,7 @@
         <div
             class="flex flex-col flex-wrap justify-between space-y-8 md:flex-row md:space-y-0"
         >
-            <div class="flex-shrink-0 md:mr-12">
+            <div class="md:w-8/12 flex-shrink-0 md:mr-12">
                 <Text
                     :texts="texts"
                     :phaseIndex="phaseIndex"
@@ -18,7 +18,7 @@
                 >
             </div>
             <img
-                class="max-w-xl object-cover md:h-auto"
+                class="md:w-3/12 max-w-xl object-contain md:h-auto"
                 v-for="image in images"
                 :key="image"
                 :src="image"

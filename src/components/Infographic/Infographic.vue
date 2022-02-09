@@ -1,6 +1,24 @@
 <template>
     <div class="relative">
         <div class="container-box">
+                        <TextBlock class="items-center justify-center text-center mx-auto pb-8">
+                <template v-slot:subtitle>
+                    <p class="font-serif">Wie Wirkung von Trends</p>
+                </template>
+                <template v-slot:title>
+                    <h1>Die Wertschöpfungskette</h1>
+                </template>
+                <template v-slot:description>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Exercitationem corporis at ipsum laborum impedit
+                        ut nesciunt aspernatur consequatur tempore, corrupti
+                        veniam autem eligendi dignissimos eveniet molestias vel
+                        cumque deserunt accusantium?
+                    </p>
+                </template>
+            </TextBlock>
+
             <Navbar class="pt-6"></Navbar>
             <WSKInfographic class="mt-24"></WSKInfographic>
             <Grid
@@ -48,7 +66,7 @@
                         :content="element"
                     ></component>
                 </Column>
-                <Column>
+                <Column style='width: calc(100% + 0.5rem) !important'>
                     <component
                         v-for="element of WER['04']"
                         :key="element"
@@ -62,6 +80,7 @@
                         :key="element"
                         :is="getComponent(element)"
                         :content="element"
+                        class='w-[calc(100% + 0.5rem)]'
                     ></component>
                     <component
                         v-for="element of WER['04B']"

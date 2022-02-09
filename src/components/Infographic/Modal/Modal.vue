@@ -1,7 +1,7 @@
 <template>
     <div class="fixed z-40 h-screen w-full cursor-pointer">
         <div
-            class="absolute inset-0 z-50 mx-auto my-auto h-fit cursor-default rounded-md bg-white py-6 px-8"
+            class="absolute inset-0 z-50 mx-auto my-auto h-fit max-h-[90%] cursor-default rounded-md bg-white py-6 px-8 overflow-y-auto"
             style="max-width: 66ch"
         >
             <ButtonClose

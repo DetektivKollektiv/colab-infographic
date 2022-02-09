@@ -1,17 +1,50 @@
 [
+    
     {
-        "headline": "HateAid",
-        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-        "link": "https://hateaid.de"
+        "headline": "Beispiel-Organisation: More in Common",
+        "text": "More in Common ist eine gemeinnützige Organisation, die in den USA, Großbritannien, Frankreich und auch in Deutschland tätig ist und die fortschreitende Polarisierung und Spaltung der Gesellschaft bekämpfen will: „We have more in common than what divides us.“ Insbesondere ermittelt More in Common mit aufwendigen sozialpsychologischen Forschungen den tatsächlichen Stand von Identitäts-Debatten und gesellschaftlicher Polarisierung im jeweiligen Land. Für Deutschland wurden u. a. Studien zur „anderen deutschen Teilung“, zum Klimaschutz, zur Corona-Pandemie und zur Einwanderungspolitik vorgelegt.",                        
+        "link": "https://www.moreincommon.de"
     },
     {
-        "headline": "codetekt",
-        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et",
-        "link": "https://codetekt.org"
+        "headline": "Beispiel-Organisation: Mehr Demokratie e.V.",
+        "text": "Der Verein Mehr Demokratie setzt sich seit 1988 für die Stärkung der direkten Demokratie, für Bürger*innenbeteiligung auf allen Ebenen sowie für Wahlrechtsreformen in Deutschland und der EU ein. Er bezeichnet sich selbst als „größte Nichtregierungsorganisation für direkte Demokratie weltweit“. Insbesondere bei der Bekanntmachung und Erprobung der Bürger*innenräte als die repräsentative Demokratie ergänzendes Werkzeug in Deutschland spielt Mehr Demokratie eine führende Rolle: So gehen die ersten beiden bundesweiten Räte auf die Initiative des Vereins zurück.",
+        "link": "https://www.mehr-demokratie.de"
     },
     {
-        "headline": "Social Media Watchblog",
+        "headline": "Beispiel-Organisation: Social Media Watchblog",
         "text": "Das deutsche Journalismusprojekt Social Media Watchblog berichtet seit 2012 kritisch über das Geschehen und die Geschäftsmodelle in der digitalen Medienlandschaft. Es erklärt die technischen, politischen, ökonomischen und gesamtgesellschaftlichen Entwicklungen rund um die Big Tech Plattformen und ihre Social Media Angebote auf kompakte, nachvollziehbare, aber tiefgründige Weise – und bietet somit einen so schnellen wie umfassenden Zugang zum Verständnis der oft komplexen digitalen Welt. Zwei Mal pro Woche erscheint ein kostenpflichtiger Newsletter, der aktuell informiert; ergänzend gibt es z. B. regelmäßige Lectures für den Kreis der Abonnent*innen.",
         "link": "https://socialmediawatchblog.de"
+    },
+    {
+        "headline": "Beispiel-Organisation: Center for Humane Technology",
+        "text": "Das Center for Humane Technology ist eine unabhängige US-amerikanische NGO, die sich mit ethischen, psychologischen und gesellschaftlichen Konsequenzen der Technologieentwicklung beschäftigt. Insbesondere engagiert sich das Center gegen die Dominanz des Prinzips der Aufmerksamkeitsökonomie. Nachrichtenseiten, Computerspiele und Social-Media-Plattformen werden demnach so gestaltet, dass sie alles auf die maximierte Bindung der Aufmerksamkeit von Nutzer*innen ausrichten – was im Extremfall zu Abhängigkeit und Sucht führen kann. Damit beleuchtet das Center eine der wichtigsten Rahmenbedingungen für die Verstärkung und Vervielfältigung von Desinformation im Internet. Gegründet wurde die Organisation 2013 vom ehemaligen Google-Mitarbeiter Tristan Harris. Sie versucht ihr Ziel unter anderem durch Aufklärung, Kampagnen und Lobbyarbeit zu erreichen: hervorzuheben wären der Podcast „Your Undevided Attention“ sowie die federführende Beteiligung an der Netflix-Dokumentation „The Social Dilemma“.",
+        "link": "https://www.humanetech.com"
+    },
+    {
+        "headline": "Beispiel-Organisation: Bellingcat",
+        "text": "Bellingcat ist ein internationales Netzwerk für investigativen Journalismus mit Sitz in Amsterdam, das 2012 vom britischen Online-Journalisten Eliot Higgins ins Leben gerufen wurde. Die Organisation (Leitlinie: „the home of online investigations“) beschäftigt etwa 20 feste und zahlreiche freie Mitarbeiter*innen in mehr als 20 Ländern. Trotz seiner kleinen Größe und der Unabhängigkeit von großen Medienunternehmen war das Netzwerk unter anderem an der Aufklärung des Chemiewaffeneinsatzes 2018 in Syrien, des Flugzeugabsturzes 2014 über der Ostukraine und der Giftangriffe auf Sergei Skripal (2018) und Alexei Navalny (2020) beteiligt – und damit auch immer wieder an der Erhellung von Ursachen und Ausgangspunkten von Desinformation. Bellingcat finanziert sich ursprünglich über Crowdfunding und bietet kostenpflichtige Workshops an.",
+        "link": "https://www.bellingcat.com"
+    },
+    {
+        "headline": "Beispiel-Organisation: Correctiv",
+        "text": "Correctiv ist eine deutsche journalistische Organisation, die investigative Recherchen und Faktenchecks durchführt. Hinter Correctiv steht eine gemeinnützige GmbH mit etwa 40 fest angestellten Reporter*innen und Mitarbeiter*innen, die sich durch Spenden und Stiftungszuwendungen finanziert: deshalb können alle Inhalte umsonst angeboten werden. Zu den bekanntesten Rechercheergebnissen zählt die in Zusammenarbeit mit Frontal21 (ZDF) aufgedeckte AfD-Spendenaffäre – im Rahmen von zwei Correctiv-Schwerpunkten zu „Neuen Rechten“ und „Parteispenden“. Eine Unterabteilung von Correctiv führt laufend Faktenchecks durch und kennzeichnet Desinformation, die sich bereits über die Big Tech Plattformen verbreitet hat. Dabei kooperiert Correctiv (gegen Bezahlung) auch mit Facebook: Das Netzwerk darf dann die Faktencheck-Ergebnisse zur Kennzeichnung entsprechender Inhalte verwenden.",
+        "link": "https://correctiv.org/"
+    },
+    {
+        "headline": "Beispiel-Organisation: HateAid",
+        "text": "HateAid ist eine deutsche NGO, die sich für die Opfer digitaler Gewalt einsetzt – also eintritt gegen gezielt personalisierte Desinformation und Verleumdung, Hassrede, Bedrohung und Belästigung im Internet. Dazu bietet HateAid eine Beratungsstelle mit Telefonhotline, Website und App, sodass sich Betroffene nicht nur selbst informieren, sondern auch individuell und persönlich beraten lassen können. Darüber hinaus werden Hilfe bei der Anzeigenerstattung und eine Prozesskostenfinanzierung angeboten. HateAid unterstützt auch immer wieder einzelne – häufig prominente – Opfer von Online-Hass bei der Durchführung von Leuchtturm- und Musterprozessen. Auch damit nimmt die Organisation häufig als „Stimme der Betroffenen“ auf Politik und Medien Einfluss und verhilft dem Thema zu mehr Sichtbarkeit.",
+        "link": "https://hateaid.org/"
+    },
+    
+    {
+        "headline": "Beispiel-Organisation: Corporate Europe Observatory",
+        "text": "Das Corporate Europe Observatory (CEO) ist eine gemeinnützige Organisation mit etwa 14 fest angestellten Mitarbeiter*innen und Sitz in Brüssel, die sich dem Kampf gegen intransparenten Lobbyismus in der EU verschrieben hat. Das CEO betreibt Forschung, Öffentlichkeitsarbeit und Aufklärung zur Einflussnahme von Firmen auf EU-Gesetzgebungsprozesse – und schafft es damit immer wieder, selbst Einfluss auszuüben. Zum Beispiel hat das CEO im Sommer 2021 einen umfangreichen Report zu „Big Tech’s Web of Influence in the EU“ vorgelegt, der dazu beitragen kann, die Notwendigkeit wirkungsvoller Regulierung beim Kampf gegen Desinformation an den entscheidenden Stellen zu platzieren und voranzutreiben.",
+        "link": "https://corporateeurope.org"
+    },
+    
+    {
+        "headline": "Beispiel-Organisation: Campact",
+        "text": "Campact ist eine NGO mit Sitz in Berlin, die als Plattform den Protest von Bürger*innen in Kampagnen und Petitionen bündelt. Sie sieht sich somit als Gegengewicht zu den professionellen Interessen von Lobbygruppen. Häufig sammelt Campact unter den mehr als zwei Millionen Unterstützer*innen Unterschriften und konfrontiert mit diesen Forderungen dann die Politik. Campact trägt den online organisierten und verstärkten Protest aber immer wieder auch auf die Straßen und macht ihn auf diese Weise sichtbar – und damit über digitale Kanäle wiederum verwertbar. Regelmäßig engagiert sich Campact mit Bürger*innen gegen die Ursachen und Urheber*innen von Desinformation: zum Beispiel gegen die staatliche Förderung der AfD-Parteistiftung – oder mit einer Aktion, die alle Bundesländern zum effektiven Kampf gegen Hate Speech verpflichten will.",
+        "link": "https://www.campact.de"
     }
 ]
