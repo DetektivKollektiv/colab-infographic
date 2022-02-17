@@ -1,8 +1,6 @@
 <script setup>
 import stories from '@/api/stories.json'
 import { useInfographicStore } from '@/stores/infographic'
-import '@fortawesome/fontawesome-free/css/all.css'
-import '@fortawesome/fontawesome-free/js/all.js'
 
 const infographicStore = useInfographicStore()
 
