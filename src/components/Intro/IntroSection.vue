@@ -43,9 +43,7 @@ export default {
 </script>
 
 <template>
-    <div
-        class="intro-container relative flex flex-col justify-end overflow-hidden bg-left-bottom"
-    >
+    <div class="intro-container relative flex flex-col justify-end overflow-hidden bg-left-bottom">
         <div class="z-10 flex h-full w-full flex-col justify-between">
             <div
                 class="pb-25 flex h-[70%] w-full flex-col justify-start space-y-4 pt-10 lg:h-full lg:justify-end lg:py-20"
@@ -61,7 +59,7 @@ export default {
                         >
                             <div class="w-full lg:w-7/12">
                                 <h1 class="headline">
-                                    Ein holistischer Blick
+                                    Ein umfassender Blick
                                     <br />auf Desinformation
                                 </h1>
                                 <p class="w-full lg:w-2/3">
@@ -80,34 +78,16 @@ export default {
                             class="container-box fixed-container flex snap-center flex-col justify-start gap-5 lg:justify-end"
                         >
                             <div class="w-full lg:w-7/12">
-                                <h1 class="headline">Das Universum</h1>
+                                <h1 class="headline">Rein ins Detail, raus in den Kontext</h1>
                                 <p class="w-full lg:w-2/3">
-                                    Für böswillige Akteur*innen entsteht durch
-                                    Desinformation Wert. Im Kern blicken wir
-                                    daher auf die
-                                    <span class="highlight bg-white"
-                                        >Wertschöpfungskette</span
-                                    >
-                                    von Desinformation. Doch Desinformation
-                                    entsteht nicht im luftleeren Raum.
-                                    Gesellschaftliche Entwicklungen ermöglichen
-                                    oder begünstigen sie. Mit
-                                    <span class="highlight bg-yellow-400"
-                                        >Makro‑Trends</span
-                                    >
-                                    und
-                                    <span class="highlight bg-yellow-300"
-                                        >Meso‑Trends</span
-                                    >
-                                    beschreiben wir Muster, die unsere Welt über
-                                    einen längeren Zeitpunkt beeinflussen und
-                                    einen breiten Geltungsbereich haben.
-                                    Makro‑Trends beschreiben exemplarisch,
-                                    welche großen Entwicklungslinien unsere
-                                    Gesellschaft als Ganze prägen und zur
-                                    Spaltung beitragen. Meso‑Trends sind
-                                    konkrete Ausprägungen davon mit konkretem
-                                    Bezug zu Desinformation.
+                                    Für Akteur*innen entsteht durch Desinformation Wert. Im Kern blicken wir auf die <span
+                                        class="highlight bg-white"
+                                    >Wertschöpfungskette</span> von Desinformation. Doch Desinformation entsteht nicht im luftleeren Raum: Gesellschaftliche Entwicklungen ermöglichen oder begünstigen sie. Mit Makro- und Meso-Trends beschreiben wir Muster, die unsere Welt über einen langen Zeitpunkt beeinflussen und einen breiten Geltungsbereich haben. <span
+                                        class="highlight bg-yellow-400"
+                                    >Makro‑Trends</span> meinen die großen Entwicklungslinien unsere Gesellschaft, die sie als Ganze prägen und zur Spaltung beitragen. <span
+                                        class="highlight bg-yellow-300"
+                                    >Meso‑Trends</span> sind Ausprägungen davon mit konkretem Bezug zu Desinformation.
+                                    
                                 </p>
                             </div>
                         </div>
@@ -125,9 +105,9 @@ export default {
                                     Polarisierung bei. Desinformation kann so
                                     überhaupt erst auf fruchtbaren Boden fallen.
                                     Mit
-                                    <span class="highlight bg-yellow-400"
-                                        >Makro‑Trends</span
-                                    >
+                                    <span
+                                        class="highlight bg-yellow-400"
+                                    >Makro‑Trends</span>
                                     beschreiben wir exemplarisch das
                                     Gesamtsystem, in das Desinformation
                                     eingebettet ist.
@@ -142,10 +122,7 @@ export default {
                             <div class="w-full lg:w-7/12">
                                 <h1 class="headline">Meso‑Trends</h1>
                                 <p class="w-full lg:w-2/3">
-                                    <span
-                                        class="highlight break-normal bg-yellow-300"
-                                        >Meso‑Trends</span
-                                    >
+                                    <span class="highlight break-normal bg-yellow-300">Meso‑Trends</span>
                                     beschreiben konkrete Ausprägungen der großen
                                     historischen Entwicklungslinien
                                     (Makro‑Trends). Die geringere
@@ -154,8 +131,7 @@ export default {
                                     Desinformation her.
                                     <span
                                         class="highlight break-normal bg-yellow-300"
-                                        >Meso‑Trends</span
-                                    >
+                                    >Meso‑Trends</span>
                                     bieten Ansatzpunkte für Maßnahmen gegen das
                                     Symptom Desinformation.
                                 </p>
@@ -166,14 +142,9 @@ export default {
                         <div
                             class="container-fixed container-box flex snap-center flex-col-reverse justify-end lg:flex-col lg:justify-between lg:gap-5"
                         >
-                            <WSKIntro
-                                :showDescription="true"
-                                :showText="true"
-                            ></WSKIntro>
+                            <WSKIntro :showDescription="true" :showText="true"></WSKIntro>
                             <div class="lg:w-7/12">
-                                <h1 class="headline">
-                                    Die Wertschöpfungskette von Desinformation
-                                </h1>
+                                <h1 class="headline">Die Wertschöpfungskette von Desinformation</h1>
                                 <p class="w-full lg:w-2/3">
                                     Wie Desinformation entsteht und ihre Wirkung
                                     entfaltet, lässt sich wie ein
@@ -181,9 +152,9 @@ export default {
                                     Gewinne erzielt werden: an Einfluss, Macht,
                                     Status, Geld. Wir nennen diesen Prozess
                                     deshalb
-                                    <span class="highlight bg-white"
-                                        >Wertschöpfungskette</span
-                                    >
+                                    <span
+                                        class="highlight bg-white"
+                                    >Wertschöpfungskette</span>
                                     – unterteilt in fünf aufeinanderfolgende
                                     Phasen.
                                 </p>
@@ -196,17 +167,10 @@ export default {
                         >
                             <div class="flex flex-col gap-4 lg:w-1/3 lg:gap-8">
                                 <div class="w-full">
-                                    <WSKIntro
-                                        :showDescription="false"
-                                        :showText="false"
-                                    ></WSKIntro>
+                                    <WSKIntro :showDescription="false" :showText="false"></WSKIntro>
                                 </div>
                                 <div class="relative pt-2">
-                                    <h3
-                                        class="absolute -translate-y-6 lg:-translate-y-8"
-                                    >
-                                        Wer
-                                    </h3>
+                                    <h3 class="absolute -translate-y-6 lg:-translate-y-8">Wer</h3>
                                     <div class="h-0.5 bg-red-500"></div>
                                     <p class="mt-2 mr-4 w-full flex-shrink-0">
                                         Wer macht’s? Akteur*innen sind je nach
@@ -215,11 +179,7 @@ export default {
                                     </p>
                                 </div>
                                 <div class="relative pt-2">
-                                    <h3
-                                        class="absolute -translate-y-6 lg:-translate-y-8"
-                                    >
-                                        Wie
-                                    </h3>
+                                    <h3 class="absolute -translate-y-6 lg:-translate-y-8">Wie</h3>
                                     <div class="h-0.5 w-full bg-red-500"></div>
                                     <p class="mt-2 mr-4 w-full flex-shrink-0">
                                         Wie wird’s gemacht? Methoden sind die
@@ -232,20 +192,18 @@ export default {
                             </div>
 
                             <div class="w-full lg:w-7/12">
-                                <h1 class="headline">
-                                    Akteur*innen und Methoden
-                                </h1>
+                                <h1 class="headline">Akteur*innen und Methoden</h1>
                                 <p class="w-full lg:w-2/3">
                                     In jeder Phase der Wertschöpfungskette gibt
                                     es
-                                    <span class="highlight bg-white"
-                                        >Akteur*innen</span
-                                    >, die an der Desinformations-Herstellung
+                                    <span
+                                        class="highlight bg-white"
+                                    >Akteur*innen</span>, die an der Desinformations-Herstellung
                                     beteiligt sind – und dazu jeweils
                                     spezifische
-                                    <span class="highlight bg-white"
-                                        >Methoden</span
-                                    >
+                                    <span
+                                        class="highlight bg-white"
+                                    >Methoden</span>
                                     verwenden.
                                 </p>
                             </div>
@@ -282,7 +240,7 @@ export default {
 <style scoped>
 .intro-container {
     min-height: 90vh;
-    background-image: url('@/assets/bubbles_desktop.svg'),
+    background-image: url("@/assets/bubbles_desktop.svg"),
         linear-gradient(rgba(255, 255, 255, 1), rgba(255, 246, 204, 1));
 }
 
@@ -308,7 +266,7 @@ export default {
     .intro-container {
         height: 95vh;
         min-height: 667px;
-        background-image: url('@/assets/bubbles_mobile.svg'),
+        background-image: url("@/assets/bubbles_mobile.svg"),
             linear-gradient(rgba(255, 255, 255, 1), rgba(255, 246, 204, 1));
     }
 }
