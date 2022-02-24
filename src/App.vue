@@ -1,6 +1,7 @@
 <script setup>
 import stories from '@/api/stories.json'
 import { useInfographicStore } from '@/stores/infographic'
+import Team from './components/Team.vue';
 
 const infographicStore = useInfographicStore()
 
@@ -20,11 +21,12 @@ const activeStory = ref(0)
     >
         <Story :story="story" :active="i == activeStory" />
     </div>
-    <Trends />
+    <Trends id="trendSection"/>
 
     <div class="my-24 hidden lg:block">
         <Infographic />
     </div>
     <InfographicMobile class="lg:hidden" />
     <Publication />
+    <Team />
 </template>

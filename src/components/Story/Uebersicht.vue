@@ -8,23 +8,20 @@
         <div
             class="absolute bottom-0 left-1/2 mb-[26rem] flex h-[500vw] w-[500vw] -translate-x-1/2 justify-center rounded-full bg-white text-center md:mb-[37rem]"
         ></div>
-        <div
-            class="absolute bottom-0 z-10 mb-[6rem] flex w-screen justify-center md:mb-[11rem]"
-        >
+        <div class="absolute bottom-0 z-10 mb-[6rem] flex w-screen justify-center md:mb-[11rem]">
             <div class="container-box flex w-full justify-center">
                 <TextBlock class="text-center">
                     <template v-slot:subtitle>
-                        <p class="font-serif">
-                            {{ trends.subtitle }}
-                        </p>
+                        <p class="font-serif">{{ trends.subtitle }}</p>
                     </template>
                     <template v-slot:title>
                         <h1>{{ trends.title }}</h1>
                     </template>
                     <template v-slot:description>
-                        <p>
-                            {{ trends.description }}
-                        </p>
+                        <p>{{ trends.description }}</p>
+                        <p
+                            class="translate-y-4"
+                        >Eine detaillierte Beschreibung aller Trends findet sich <button @click="goto('trendSection')" class="text-blue-500 underline">hier</button>.</p>
                     </template>
                 </TextBlock>
             </div>
@@ -38,6 +35,12 @@ const props = defineProps({
         required: true,
     },
 })
+function goto(refName) {
+    document.getElementById(refName).scrollIntoView({
+        behavior: "smooth"
+      });
+}
+
 
 const { trends } = toRefs(props)
 </script>

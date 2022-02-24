@@ -14,7 +14,7 @@
                     "link": "https://www.washingtoninstitute.org/policy-analysis/axis-disinformation-propaganda-iran-russia-and-china-covid-19"
                 }
             ],
-            "stories": ["Der Fall Künast"],
+            "stories": ["Der Fall Künast", "Der Fall der US-Wahlen"],
             "massnahmen": [
                 "Investigativ recherchieren",
                 "Kampagnen organisieren"
@@ -189,7 +189,7 @@
                     "link": "https://www.spiegel.de/panorama/justiz/attila-hildmann-verdacht-der-volksverhetzung-polizei-sucht-mit-haftbefehl-a-a0af455e-c6c8-4cfd-ab27-2f8534bd667e"
                 }
             ],
-            "stories": [],
+            "stories": ["Der Fall Nordmazedonien"],
             "massnahmen": [
                 "Täter verfolgen & Opfer verteidigen",
                 "Kampagnen organisieren"
@@ -222,7 +222,7 @@
                     "link": "https://mediamanipulation.org/case-studies/copycat-websites-endless-mayfly-network"
                 }
             ],
-            "stories": [],
+            "stories": ["Der Fall Nordmazedonien", "Der Fall der US-Wahlen"],
             "massnahmen": ["Investigativ recherchieren"]
         },
         {
@@ -262,7 +262,7 @@
                     "link": "https://mediamanipulation.org/case-studies/copycat-websites-endless-mayfly-network"
                 }
             ],
-            "stories": ["Der Fall Künast"],
+            "stories": ["Der Fall Künast", "Der Fall der US-Wahlen"],
             "massnahmen": ["Investigativ recherchieren"]
         },
         {
@@ -352,7 +352,7 @@
             "massnahmen": ["Täter verfolgen & Opfer verteidigen"]
         },
         {
-            "title": "Beratungsfirmen/Agenturen",
+            "title": "Beratungsfirmen/ Agenturen",
             "subtitle": "z. B. Cambridge Analytica, Enigma, Storymachine",
             "description": [
                 {
@@ -380,11 +380,11 @@
                     "link": "https://www.stern.de/politik/deutschland/der-deutsche-pr-rat-kritisiert-storymachine-9276590.html"
                 }
             ],
-            "stories": [],
+            "stories": ["Der Fall der US-Wahlen"],
             "massnahmen": ["Regulierung ermöglichen"]
         },
         {
-            "title": "Expert*innen/Berater*innen",
+            "title": "Expert*innen/ Berater*innen",
             "subtitle": "z. B. Roger Stone, Sebastian Kurz, Dominic Cummings, …",
             "description": [
                 {
@@ -412,7 +412,7 @@
                     "link": "https://dominiccummings.substack.com/p/regime-change-2-a-plea-to-silicon"
                 }
             ],
-            "stories": ["Der Fall Künast"],
+            "stories": ["Der Fall Künast", "Der Fall Nordmazedonien"],
             "massnahmen": ["Regulierung ermöglichen"]
         },
         {
@@ -442,7 +442,7 @@
     ],
     "04": [
         {
-            "title": "Geschlossene Platformen",
+            "title": "Geschlossene Plattformen",
             "subtitle": "z. B. Whatsapp, Telegram, geschlossene Facebook-Gruppen",
             "description": [
                 {
@@ -450,14 +450,14 @@
                 }
             ],
             "sources": [],
-            "stories": ["Der Fall Künast"],
+            "stories": ["Der Fall Künast", "Der Fall der US-Wahlen"],
             "massnahmen": [
                 "Über Big Tech und Social Media aufklären",
                 "Regulierung ermöglichen"
             ]
         },
         {
-            "title": "Offene Platformen",
+            "title": "Offene Plattformen",
             "subtitle": "z. B. Facebook, Twitter, Youtube, TikTok",
             "description": [
                 {
@@ -465,7 +465,7 @@
                 }
             ],
             "sources": [],
-            "stories": [],
+            "stories": ["Der Fall Nordmazedonien", "Der Fall der US-Wahlen"],
             "massnahmen": [
                 "Über Big Tech und Social Media aufklären",
                 "Regulierung ermöglichen"
@@ -494,7 +494,7 @@
                     "link": "https://www1.wdr.de/nachrichten/themen/coronavirus/impfgegner-selbstversuch-100.html"
                 }
             ],
-            "stories": ["Der Fall Künast"],
+            "stories": ["Der Fall Künast", "Der Fall Nordmazedonien", "Der Fall der US-Wahlen"],
             "massnahmen": ["Forschen gegen Russland", "Forschen gegen China"]
         },
         {
@@ -514,7 +514,7 @@
                     "link": "https://netzpolitik.org/2020/russische-desinformation-das-netzwerk-gefaelschter-auslandsmedien/"
                 }
             ],
-            "stories": [],
+            "stories": ["Der Fall Nordmazedonien", "Der Fall der US-Wahlen"],
             "massnahmen": []
         },
         {
@@ -584,7 +584,7 @@
                 }
             ],
             "sources": [],
-            "stories": [],
+            "stories": ["Der Fall der US-Wahlen"],
             "massnahmen": []
         },
         {
@@ -604,7 +604,7 @@
                     "link": "https://www.theguardian.com/us-news/2020/jun/21/trump-tulsa-rally-scheme-k-pop-fans-tiktok-users"
                 }
             ],
-            "stories": [],
+            "stories": ["Der Fall der US-Wahlen"],
             "massnahmen": []
         }
     ],
@@ -642,7 +642,7 @@
                 }
             ],
             "sources": [],
-            "stories": ["Der Fall Künast"],
+            "stories": ["Der Fall Künast", "Der Fall Nordmazedonien", "Der Fall der US-Wahlen"],
             "massnahmen": [
                 "Fakten checken („Debunking“)",
                 "Täter verfolgen & Opfer verteidigen",
@@ -661,7 +661,7 @@
                 }
             ],
             "sources": [],
-            "stories": [],
+            "stories": ["Der Fall Nordmazedonien", "Der Fall der US-Wahlen"],
             "massnahmen": [
                 "Polarisierung ermitteln",
                 "Neue Beteiligungsformate testen",
@@ -678,7 +678,7 @@
                 }
             ],
             "sources": [],
-            "stories": [],
+            "stories": ["Der Fall Nordmazedonien", "Der Fall der US-Wahlen"],
             "massnahmen": [
                 "Polarisierung ermitteln",
                 "Neue Beteiligungsformate testen",

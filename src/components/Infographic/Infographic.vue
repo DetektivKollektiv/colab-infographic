@@ -1,21 +1,14 @@
 <template>
     <div class="relative">
         <div class="container-box">
-                        <TextBlock class="items-center justify-center text-center mx-auto pb-8">
+            <TextBlock class="items-center justify-center text-center mx-auto pb-8">
                 <template v-slot:subtitle>
-                    <p class="font-serif">Wie Wirkung von Trends</p>
                 </template>
                 <template v-slot:title>
                     <h1>Die Wertschöpfungskette</h1>
                 </template>
                 <template v-slot:description>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Exercitationem corporis at ipsum laborum impedit
-                        ut nesciunt aspernatur consequatur tempore, corrupti
-                        veniam autem eligendi dignissimos eveniet molestias vel
-                        cumque deserunt accusantium?
-                    </p>
+                    <p>Die folgende interaktive Grafik zeigt unser Modell der Wertschöpfungskette von Desinformation – und darin beispielhaft Akteur*innen („Wer?“) und Methoden („Wie?), verteilt auf die fünf Phasen des Prozesses. Per Klick lassen sich für jedes einzelne Beispiel kurze Informationen abrufen. Zudem werden die drei bereits ausführlich vorgestellten exemplarischen Fälle hier in die Kette einsortiert. Außerdem stellen wir verschiedene Maßnahmen (und auch Organisationen) vor, die jeweils an einem bestimmten Punkt der Wertschöpfungskette ansetzen, um gegen Desinformation vorzugehen. Diese Maßnahmen sind in sieben verschiedene Kategorien eingeteilt, mit denen wir den jeweiligen Wirkungsmechanismus unterscheiden.</p>
                 </template>
             </TextBlock>
 
@@ -30,9 +23,7 @@
                     v-for="story in infographicStore.storyContent"
                     :key="story"
                     class="h-fit w-full rounded-md text-center"
-                >
-                    {{ story }}
-                </p>
+                >{{ story }}</p>
             </Grid>
             <SectionHeadline>
                 <template v-slot:headline>Wer</template>
@@ -66,7 +57,7 @@
                         :content="element"
                     ></component>
                 </Column>
-                <Column style='width: calc(100% + 0.5rem) !important'>
+                <Column style="width: calc(100% + 0.5rem) !important">
                     <component
                         v-for="element of WER['04']"
                         :key="element"
@@ -80,7 +71,7 @@
                         :key="element"
                         :is="getComponent(element)"
                         :content="element"
-                        class='w-[calc(100% + 0.5rem)]'
+                        class="w-[calc(100% + 0.5rem)]"
                     ></component>
                     <component
                         v-for="element of WER['04B']"

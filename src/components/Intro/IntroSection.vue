@@ -78,16 +78,31 @@ export default {
                             class="container-box fixed-container flex snap-center flex-col justify-start gap-5 lg:justify-end"
                         >
                             <div class="w-full lg:w-7/12">
+                                <h1 class="headline">Unsere Definition</h1>
+                                <p
+                                    class="w-full lg:w-2/3"
+                                >Mit Desinformation sind nachweislich falsche oder irreführende Informationen gemeint, die mit dem Ziel des wirtschaftlichen Gewinns oder der vorsätzlichen Täuschung der Öffentlichkeit konzipiert, vorgelegt und verbreitet werden und öffentlichen Schaden anrichten können. Irrtümer bei der Berichterstattung, Satire und Parodien oder eindeutig als parteiliche gekennzeichnete Nachrichten oder Kommentare sind keine Desinformation im engeren Sinn. Doch auch von der unabsichtlichen oder unwissentlichen Verbreitung falscher bzw. fehlerhafter Informationen können Gefahren ausgehen. Zudem wird die Absicht (ein entscheidendes Kriterium zur Beurteilung) nicht immer nachweisbar sein. Daher tauchen in unserer Wertschöpfungskette auch beispielhafte Akteur*innen und Methoden auf, die für ein unabsichtliches oder unwissentliches Vorgehen stehen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex min-w-full items-end">
+                        <div
+                            class="container-box fixed-container flex snap-center flex-col justify-start gap-5 lg:justify-end"
+                        >
+                            <div class="w-full lg:w-7/12">
                                 <h1 class="headline">Rein ins Detail, raus in den Kontext</h1>
                                 <p class="w-full lg:w-2/3">
-                                    Für Akteur*innen entsteht durch Desinformation Wert. Im Kern blicken wir auf die <span
+                                    Für Akteur*innen entsteht durch Desinformation Wert. Im Kern blicken wir auf die
+                                    <span
                                         class="highlight bg-white"
-                                    >Wertschöpfungskette</span> von Desinformation. Doch Desinformation entsteht nicht im luftleeren Raum: Gesellschaftliche Entwicklungen ermöglichen oder begünstigen sie. Mit Makro- und Meso-Trends beschreiben wir Muster, die unsere Welt über einen langen Zeitpunkt beeinflussen und einen breiten Geltungsbereich haben. <span
+                                    >Wertschöpfungskette</span> von Desinformation. Doch Desinformation entsteht nicht im luftleeren Raum: Gesellschaftliche Entwicklungen ermöglichen oder begünstigen sie. Mit Makro- und Meso-Trends beschreiben wir Muster, die unsere Welt über einen langen Zeitpunkt beeinflussen und einen breiten Geltungsbereich haben.
+                                    <span
                                         class="highlight bg-yellow-400"
-                                    >Makro‑Trends</span> meinen die großen Entwicklungslinien unsere Gesellschaft, die sie als Ganze prägen und zur Spaltung beitragen. <span
+                                    >Makro‑Trends</span> meinen die großen Entwicklungslinien unsere Gesellschaft, die sie als Ganze prägen und zur Spaltung beitragen.
+                                    <span
                                         class="highlight bg-yellow-300"
-                                    >Meso‑Trends</span> sind Ausprägungen davon mit konkretem Bezug zu Desinformation.
-                                    
+                                    >Meso‑Trends</span>
+                                    sind Ausprägungen davon mit konkretem Bezug zu Desinformation.
                                 </p>
                             </div>
                         </div>
@@ -218,6 +233,10 @@ export default {
                         :showArrows="true"
                         @index="scrollTo"
                     ></Pagination>
+                </div>
+                <div v-if="index===length-1" class="mx-auto flex flex-col items-center translate-y-5 text-red-500 animate-bounce">
+                    <p>Unten geht's weiter</p>
+                    <i class="fas fa-caret-down"></i>
                 </div>
             </div>
         </div>

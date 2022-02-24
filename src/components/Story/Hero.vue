@@ -40,7 +40,7 @@
         </div>
 
         <img
-            class="h-[50vh] max-h-[30rem] min-h-[400px] w-screen object-cover"
+            class="h-[50vh] max-h-[30rem] min-h-[400px] w-screen object-cover object-center"
             :src="story.image"
             alt=""
         />

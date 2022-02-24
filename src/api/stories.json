@@ -3,7 +3,7 @@
         "title": "Der Fall Künast",
         "subtitle": "Mit Desinformation attackieren und verletzen:",
         "description": "Verleumdung, die Wut und Hass erzeugt: Gezielt eingesetzt, kann Desinformation wie eine Waffe wirken. Demokratische Politiker*innen sind häufig Opfer solcher Angriffe, die oft von rechtsextremer Seite erfolgen. Als Beispiel erzählen wir die Geschichte von Renate Künast – der es gelang, sich mit Hilfe der Organisation „Hate Aid“ zur Wehr zu setzen.",
-        "image": "https://picsum.photos/2048/1280",
+        "image": "./pictures/title_story_2.jpg",
         "phases": [
             {
                 "phaseIndex": 1,
@@ -139,7 +139,7 @@
         "title": "Der Fall Nordmazedonien",
         "subtitle": "Mit Desinformation Geld verdienen:",
         "description": "Nicht immer wird Desinformation produziert und verbreitet, um ideologische oder politische Ziele zu verfolgen. Manchmal sind auch ausschließlich ökonomische Motive der Auslöser: zum Beispiel in Ländern, in denen es sonst nur wenige vergleichbar reizvolle Verdienst-Chancen gibt. Als Beispiel erzählen wir die Geschichte einer kleinen Stadt in Nordmazedonien – in der Jugendliche Desinformation mit Hilfe von Online-Werbung als lukrative Einnahmequelle nutzen konnten.",
-        "image": "https://picsum.photos/1048",
+        "image": "./pictures/title_story_2.jpg",
         "phases": [
             {
                 "phaseIndex": 1,
@@ -148,12 +148,12 @@
                 "how": "Mit einer erfolgreichen Website lassen sich durch die Verwendung von Googles Anzeigenservice AdSense oder ähnlichen Diensten hohe Werbeeinnahmen erzielen. Schon länger wurden deshalb von Nordmazedonien aus Websites mit Gesundheitstipps oder Promi-News speziell für den amerikanischen Markt aufgesetzt und betrieben [1]. Gerade im Vorfeld der US-Präsidentschaftswahlen 2016 stellte sich bei Tests jedoch schnell heraus, dass politische Nachrichtenwebsites mit eindeutig rechter Tendenz die größte Aufmerksamkeit, die meisten Aufrufe und damit die höchsten Gewinne generieren [3][4].",
                 "images": ["https://picsum.photos/720/480"],
                 "summary": {
-                    "text": "Rechtsextremisten verwenden verbale Angriffe und falsche Tatsachenbehauptungen, um andere Personen einzuschüchtern und aus der Öffentlichkeit zu verdrängen.",
+                    "text": "Wer es schafft, viele Aufrufe und Klicks zu generieren, kann mit einer eigenen Website durch Werbeanzeigen viel Geld verdienen. Besonders gut geeignet sind emotionale oder polarisierende politische Inhalte.",
                     "image": ""
                 },
                 "sources": [
                     {
-                        "text": "[1] CNN-Artikel über Desinformation aus Mazedonien",
+                        "text": "[1] CNN-Artikel über Desinformation aus Nordmazedonien",
                         "link": "https://money.cnn.com/interactive/media/the-macedonia-story/"
                     },
                     {
@@ -161,11 +161,11 @@
                         "link": "https://www.etui.org/topics/health-safety-working-conditions/hesamag/the-future-of-work-in-the-digital-era/in-veles-meeting-the-producers-of-fake-news"
                     },
                     {
-                        "text": "[3] “Wired”-Artikel über Desinformation aus Mazedonien",
+                        "text": "[3] “Wired”-Artikel über Desinformation aus Nordazedonien",
                         "link": "https://www.wired.com/2017/02/veles-macedonia-fake-news/"
                     },
                     {
-                        "text": "[4] Bericht von Forscher*innen der University of Haifa zur mazedonischen Desinformationsindustrie",
+                        "text": "[4] Bericht von Forscher*innen der University of Haifa zur nordmazedonischen Desinformationsindustrie",
                         "link": "https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/macedonian-fake-news-industry-and-the-2016-us-election/79F67A4F23148D230F120A3BD7E3384F"
                     }
                 ]
@@ -176,7 +176,7 @@
                 "who": "Am Anfang erstellten die Jugendlichen alle Inhalte selbst. Schon bald konnten sie aber weitere Mitarbeiter*innen beschäftigen – die drei Euro pro Artikel erhielten [1].",
                 "how": "Bereits veröffentlichte Zeitungsartikel aus den USA wurden kopiert, gekürzt und leicht verändert, damit das Duplikat nicht automatisiert erkannt werden konnte. Als Vorlagen dienten teils aktuelle Ereignisse, die dramatisiert und in ein rechtes Weltbild eingeordnet wurden, teils länger zurückliegende und nun sozusagen „recycelte“ Ereignisse. Ergänzt wurden die Artikel mit Bildern aus der Google-Bildersuche [1]. Durch eine genaue Analyse der Wirkung konnten alle Inhalte laufend optimiert werden: für eine konsequente Maximierung von Aufmerksamkeit, Klicks und damit Werbeeinnahmen [2].",
                 "summary": {
-                    "text": "Der Rechtsextremist Sven Liebich erstellte ein Bild mit einem falschen Zitat von Renate Künast (Grüne), um den Eindruck zu erwecken, sie befürworte Sex mit Kindern.",
+                    "text": "Jugendliche aus Nordmazedonien erstellten Nachrichtenwebsites mit erfundenen Inhalten, die sich an US-Amerikaner*innen aus dem rechten Lager richteten, um mit deren Aufrufen Geld zu verdienen.",
                     "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
                 },
                 "sources": [
@@ -196,7 +196,7 @@
                 "who": "Die Jugendlichen nutzten ausgewählte Social-Media-Kanäle, um Nutzer*innen auf ihre Websites zu locken.",
                 "how": "Die produzierten Artikel wurden auf mehreren hundert verschiedenen, nur für diesen Zweck erstellten Websites hochgeladen. Die Namensgebung und das Design der Websites waren jeweils echten Nachrichtenportalen nachempfunden. Anschließend posteten die Jugendlichen die Links zu den Artikeln täglich in einer Vielzahl von Facebook-Gruppen – vor allem dort, wo sich Anhänger*innen rechter Bewegungen und insbesondere von Donald Trump zusammenfanden [1]. Strategische Unterstützung bei der Verbreitung erhielten viele der Personen von einem nordmazedonischen Social-Media-Experten [2].",
                 "summary": {
-                    "text": "Liebich postete das Bild auf seinem Blog und auf Facebook. Er bezahlte Geld an Facebook, um seinen Post weiteren Nutzer*innen als Werbung anzuzeigen.",
+                    "text": "Die Jugendlichen posteten Links zu ihren „Artikeln“ in den sozialen Medien und insbesondere in Social-Media-Gruppen von Trump-Anhänger*innen, um für ihre Inhalte besonders viel Aufmerksamkeit zu erzielen.",
                     "image": ""
                 },
                 "sources": [
@@ -216,12 +216,12 @@
                 "who": "In den sozialen Medien verbreiteten sich viele der Links zu den Artikeln viral [1].",
                 "how": "Die Aufmerksamkeits-Mechanismen der auf Emotionen und Klicks optimierten Plattformen wurden durch die produzierten Artikel optimal ausgenutzt. Nach einem ersten Anstoß verbreiteten sich viele der in Nordmazedonien produzierten Artikel durch Empfehlungen immer weiter – und erwiesen sich damit als „Selbstläufer“ in den rechten Echokammern [1]. Die über die Aufrufe erzielten Werbeeinnahmen machten einige der Jugendlichen zu Millionären [2].",
                 "summary": {
-                    "text": "Das Bild wurde vielfach geteilt. In den Kommentaren unter Liebichs Post kam es zu drastischen Beschimpfungen, Beleidigungen und Bedrohungen. Künast klagte gegen Liebich, viele Medien berichteten.",
+                    "text": "Viele der „Artikel“ verbreiteten sich aufgrund ihrer emotionalen politischen Ausrichtung viral in den sozialen Medien und wurden immer breiter geteilt.",
                     "image": ""
                 },
                 "sources": [
                     {
-                        "text": "[1] “Wired”-Artikel über Desinformation aus Mazedonien",
+                        "text": "[1] “Wired”-Artikel über Desinformation aus Nordazedonien",
                         "link": "https://www.wired.com/2017/02/veles-macedonia-fake-news/"
                     },
                     {
@@ -236,12 +236,12 @@
                 "who": "Die amerikanische Öffentlichkeit wurde weiter polarisiert. Die seriösen Medien gerieten weiter unter Druck. Die Präsidentschaftswahlen 2016 wurden möglicherweise beeinflusst [1][2].",
                 "how": "Auch wenn Desinformation wie in diesem Fall ausschließlich aus ökonomischem Interesse produziert und verbreitet wird – sie wirkt: Desinformation verhindert eine sachliche Debatte zu politischen Streitpunkten. Durch das ständige Bombardement mit widersprüchlichen und falschen Informationen werden Bürger*innen skeptisch auch gegenüber seriösen Medien oder glauben an nicht belegbare Behauptungen. Die Polarisierung nimmt zu, da sich die unterschiedlichen Lager nicht mehr auf eine gemeinsam anerkannte Faktengrundlage einigen können.",
                 "summary": {
-                    "text": "In der Öffentlichkeit verbleibt Verunsicherung und Irritation. Die rechte Szene wird durch das klare Feindbild bestärkt. Gleichzeitig zeigt die konsequente Reaktion der Organisation „HateAid“ mit und für Künast, dass es sich lohnt, gegen Desinformation vorzugehen.",
+                    "text": "Die amerikanische Öffentlichkeit wurde polarisiert und verunsichert. Einige der Jugendlichen aus Nordmazedonien verdienten Millionen durch die Werbeeinnahmen.",
                     "image": ""
                 },
                 "sources": [
                     {
-                        "text": "[1] Bericht von Forscher*innen der University of Haifa zur mazedonischen Desinformationsindustrie",
+                        "text": "[1] Bericht von Forscher*innen der University of Haifa zur nordmazedonischen Desinformationsindustrie",
                         "link": "https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/macedonian-fake-news-industry-and-the-2016-us-election/79F67A4F23148D230F120A3BD7E3384F"
                     },
                     {
@@ -260,7 +260,7 @@
         "title": "Der Fall der US-Wahlen",
         "subtitle": "Mit Desinformation verunsichern und polarisieren:",
         "description": "Die Produktion und Verbreitung von Desinformation gehört schon lange zum Arsenal der Kriegsführung zwischen Staaten. Aber was früher vor allem eine Aufgabe hoch spezialisierter Geheimdienste war, die dafür Agent*innen, Flugblätter, Zeitungen oder Rundfunkprogramme einsetzten, lässt sich dank Digitalisierung und Vernetzung sehr viel schneller, leichter und wirkungsvoller organisieren. Als Beispiel erzählen wir von Desinformationskampagnen, mit denen Russland seit dem Zusammenbruch der Sowjetunion insbesondere westliche Länder zu destabilisieren versucht.",
-        "image": "https://picsum.photos/1280",
+        "image": "./pictures/title_story_3.jpg",
         "phases": [
             {
                 "phaseIndex": 1,
@@ -269,7 +269,7 @@
                 "how": "Staatlich organisierte Desinformationskampagnen können enorme Wirkungskraft entfalten und die öffentliche Meinung in einem Land nachhaltig beeinflussen. So hält sich zum Beispiel vereinzelt bis heute die falsche Vorstellung, dass AIDS in einem amerikanischen Labor entwickelt worden wäre – Ergebnis einer Desinformationskampagne des KGB in den 1980er-Jahren [3]. Der russische Staat kann bei seinen Operationen auf langjährige geheimdienstliche Erfahrung sowie enorme finanzielle und personelle Ressourcen zurückgreifen.",
                 "images": ["https://picsum.photos/720/480"],
                 "summary": {
-                    "text": "Rechtsextremisten verwenden verbale Angriffe und falsche Tatsachenbehauptungen, um andere Personen einzuschüchtern und aus der Öffentlichkeit zu verdrängen.",
+                    "text": "Der russische Staat benutzt Desinformation, um geopolitische Ziele wie Einflussnahme auf die Politik anderer Länder und deren Destabilisierung zu verfolgen.",
                     "image": ""
                 },
                 "sources": [
@@ -291,9 +291,9 @@
                 "phaseIndex": 2,
                 "title": "Produzieren",
                 "who": "Das Unternehmen „Internet Research Agency“ (IRA) ist eine russische Medienagentur mit Verbindungen zu den staatlichen Geheimdiensten, die Desinformation im Sinne des russischen Staats verbreitet. Im Vorfeld der US-Präsidentschaftswahlen 2016 führte die IRA eine groß angelegte Kampagne durch, um die Siegchancen von Donald Trump zu verbessern [1]. Diese Kampagne wurde laut Geheimdiensterkenntnissen der USA direkt von Putin angeordnet [1][2][3]. Seitdem ist die IRA auch in Verbindung mit Desinformation zu den französischen Präsidentschaftswahlen [4] und zur Corona-Pandemie [5] aufgetreten.",
-                "how": "Die IRA nutzte vielfältige Formen von Inhalten, um ihre Ziele zu erreichen. Die Inhalte richteten sich einerseits an Unterstützer*innen von Trump. Solche Manöver werden oft gestreut mit der Absicht zu polarisieren, radikalisieren und in ihrer Haltung festigen. Zu dieser Kategorie gehörten Posts, Kommentare, Videos und Memes, die Trump unterstützten und seine Gegner*innen in schlechtem Licht darstellten. Andererseits erstellte die IRA auch überspitzte Anti-Trump-Inhalte – mit dem Ziel, das entgegengesetzte Lager zu verwirren, bestimmte Gruppen vom Wählen abzuhalten und Trump-Anhänger*innen weiter in ihrer Meinung zu bestätigen [6].",
+                "how": "Die IRA nutzte vielfältige Formen von Inhalten, um ihre Ziele zu erreichen. Die Inhalte richteten sich einerseits an Unterstützer*innen von Trump. Solche Manöver bewirken oft Polarisierung oder Radikalisierung. Zu dieser Kategorie gehörten Posts, Kommentare, Videos und Memes, die Trump unterstützten und seine Gegner*innen in schlechtem Licht darstellten. Andererseits erstellte die IRA auch überspitzte Anti-Trump-Inhalte – mit dem Ziel, das entgegengesetzte Lager zu verwirren, bestimmte Gruppen vom Wählen abzuhalten und Trump-Anhänger*innen weiter in ihrer Meinung zu bestätigen [6].",
                 "summary": {
-                    "text": "Der Rechtsextremist Sven Liebich erstellte ein Bild mit einem falschen Zitat von Renate Künast (Grüne), um den Eindruck zu erwecken, sie befürworte Sex mit Kindern.",
+                    "text": "Die Organisation IRA mit Sitz in Sankt Petersburg und Verbindungen zum russischen Geheimdienst erstellte vor den US-Präsidentschaftswahlen 2016 Desinformation, die insbesondere Anhänger*innen von Donald Trump radikalisieren und seine Gegner*innen verunsichern sollte.",
                     "image": "src/assets/pictures/unsplash_RmoWqDCqN2E.png"
                 },
                 "sources": [
@@ -329,7 +329,7 @@
                 "who": "Im Hauptquartier der IRA in Sankt Petersburg arbeiteten mehr als 1.000 Mitarbeiter*innen daran, die Inhalte mit allen Mitteln weiterzuverbreiten, die online und in den sozialen Medien zur Verfügung stehen [1].",
                 "how": "Die IRA postete die Inhalte mithilfe von tausenden gefälschten Social-Media-Profilen, die schon lange im Voraus als Tarnidentitäten erstellt worden waren – was auf eine lange Planungsphase für die Operation hindeutet. Die meisten Inhalte wurden auf Facebook (mind. 80.000 Posts), Twitter (mind. 1,4 Mio. Tweets), YouTube (mind. 1.000 Videos) und Instagram veröffentlicht [2][3]. Die Profile teilten die geposteten Inhalte untereinander und sollten so den Eindruck erwecken, dass amerikanische Bürger*innen über das Thema diskutieren.\nNeben dieser „organischen“ Verbreitung verwendete die IRA bezahlte Anzeigen und Bots, um ihre Inhalte weiter in Umlauf zu bringen [4]. Allein auf Facebook gab die IRA mindestens $100.000 für gesponserte Posts aus [5]. Auf Twitter waren mehr als 30.000 Bots aktiv, die Inhalte automatisiert teilten [5]. Die Anzeigen konnten durch die bestehenden Microtargeting-Mechanismen auf Facebook gezielt an die politische Orientierung von Personen angepasst werden – und so insbesondere Trump-Anhänger*innen effektiv erreichen.",
                 "summary": {
-                    "text": "Liebich postete das Bild auf seinem Blog und auf Facebook. Er bezahlte Geld an Facebook, um seinen Post weiteren Nutzer*innen als Werbung anzuzeigen.",
+                    "text": "Über 1000 Mitarbeiter*innen der IRA legten eine Vielzahl an gefälschten Social-Media-Accounts an – und benutzten diese Tarnidentitäten, um auf Facebook, Twitter, YouTube und Instagram ganz gezielt an politischen Diskussionen von US-Bürger*innen teilzunehmen.",
                     "image": ""
                 },
                 "sources": [
@@ -361,7 +361,7 @@
                 "who": "Nutzer*innen in den sozialen Medien verbreiteten die Inhalte der IRA tausendfach weiter. Außerdem gewann die Kampagne unwissende Mitstreiter*innen aus dem Trump-Lager, die entweder direkt von der IRA angesprochen wurden oder einer der von der IRA erstellten Facebook-Gruppen beitraten [1][2].",
                 "how": "Die Inhalte waren emotional, polarisierend und alarmierend formuliert – und wurden deshalb im Trump-Lager, das von vielen Seiten Kritik einstecken musste, als willkommene Selbstbestätigung gesehen. Viele Nutzer*innen interagierten mit Inhalten der IRA, nahmen an Diskussionen teil oder verbreiteten die Posts und Anzeigen weiter. Die IRA organisierte über die sozialen Medien sogar Demonstrationen, die teilweise von hunderten US-Bürger*innen besucht wurden [3].",
                 "summary": {
-                    "text": "Das Bild wurde vielfach geteilt. In den Kommentaren unter Liebichs Post kam es zu drastischen Beschimpfungen, Beleidigungen und Bedrohungen. Künast klagte gegen Liebich, viele Medien berichteten.",
+                    "text": "Viele Posts der IRA wurden von Trump-Unterstützer*innen tausendfach weiterverbreitet und erhielten so eine größere Reichweite. Die IRA konnte durch gezielte Aufrufe auf Facebook sogar reale Demonstrationen des Trump-Lagers provozieren.",
                     "image": ""
                 },
                 "sources": [
@@ -385,7 +385,7 @@
                 "who": "Wähler*innen in den USA wurden in ihrer Meinung beeinflusst. Die Gesellschaft wurde weiter polarisiert. Manche Wähler*innen wurden von der Wahl abgehalten. Donald Trumps Kandidatur für die Präsidentschaftswahlen wurde durch die professionelle, breit aufgestellte Kampagne unterstützt. Die Posts der IRA erreichten bis zu 126 Mio. Nutzer*innen auf Facebook [1].",
                 "how": "Echokammern und Verbreitungsdynamiken in den sozialen Medien führen dazu, dass wir leicht nur noch das hören, was wir hören wollen. Kritische Gegenstimmen werden unsichtbar, stattdessen bildet und verstärkt sich eine Gemeinschaft von Gleichgesinnten. Wenn dieser Effekt von einem mächtigen Akteur schadhaft missbraucht wird, kann eine ganze Demokratie verunsichert und erschüttert werden.",
                 "summary": {
-                    "text": "In der Öffentlichkeit verbleibt Verunsicherung und Irritation. Die rechte Szene wird durch das klare Feindbild bestärkt. Gleichzeitig zeigt die konsequente Reaktion der Organisation „HateAid“ mit und für Künast, dass es sich lohnt, gegen Desinformation vorzugehen.",
+                    "text": "Die US-amerikanische Demokratie wurde geschwächt und die Bevölkerung weiter polarisiert. Donald Trump gewann die Wahlen – unter anderem, weil er online das dominierende Gesprächsthema war.",
                     "image": ""
                 },
                 "sources": [
