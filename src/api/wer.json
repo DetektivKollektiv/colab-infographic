@@ -14,7 +14,7 @@
                     "link": "https://www.washingtoninstitute.org/policy-analysis/axis-disinformation-propaganda-iran-russia-and-china-covid-19"
                 }
             ],
-            "stories": ["Der Fall Künast", "Der Fall der US-Wahlen"],
+            "stories": ["Der Fall der US-Wahlen"],
             "massnahmen": [
                 "Investigativ recherchieren",
                 "Kampagnen organisieren"
@@ -162,7 +162,7 @@
                     "link": "https://voxeurop.eu/de/wie-george-soros-vom-demokratieboten-zum-volksfeind-ungarns-gemacht-wurde/"
                 }
             ],
-            "stories": [],
+            "stories": ["Der Fall Künast"],
             "massnahmen": [
                 "Täter verfolgen & Opfer verteidigen",
                 "Kampagnen organisieren"
@@ -262,7 +262,7 @@
                     "link": "https://mediamanipulation.org/case-studies/copycat-websites-endless-mayfly-network"
                 }
             ],
-            "stories": ["Der Fall Künast", "Der Fall der US-Wahlen"],
+            "stories": ["Der Fall der US-Wahlen"],
             "massnahmen": ["Investigativ recherchieren"]
         },
         {
@@ -322,11 +322,9 @@
                     "link": "https://netzpolitik.org/2020/grosses-hass-domino-in-sozialen-netzwerken/"
                 }
             ],
-            "stories": [],
+            "stories": ["Der Fall Künast"],
             "massnahmen": ["Täter verfolgen & Opfer verteidigen"]
-        }
-    ],
-    "03": [
+        },
         {
             "title": "Einzelkämpfer*innen",
             "subtitle": "z. B. Promis, Influencer:innen, Trolle",
@@ -348,9 +346,11 @@
                     "link": "https://www.spiegel.de/panorama/justiz/attila-hildmann-verdacht-der-volksverhetzung-polizei-sucht-mit-haftbefehl-a-a0af455e-c6c8-4cfd-ab27-2f8534bd667e"
                 }
             ],
-            "stories": [],
+            "stories": ["Der Fall Künast"],
             "massnahmen": ["Täter verfolgen & Opfer verteidigen"]
-        },
+        }
+    ],
+    "03": [
         {
             "title": "Beratungsfirmen/ Agenturen",
             "subtitle": "z. B. Cambridge Analytica, Enigma, Storymachine",
@@ -412,7 +412,7 @@
                     "link": "https://dominiccummings.substack.com/p/regime-change-2-a-plea-to-silicon"
                 }
             ],
-            "stories": ["Der Fall Künast", "Der Fall Nordmazedonien"],
+            "stories": ["Der Fall Nordmazedonien"],
             "massnahmen": ["Regulierung ermöglichen"]
         },
         {
@@ -450,7 +450,7 @@
                 }
             ],
             "sources": [],
-            "stories": ["Der Fall Künast", "Der Fall der US-Wahlen"],
+            "stories": ["Der Fall der US-Wahlen"],
             "massnahmen": [
                 "Über Big Tech und Social Media aufklären",
                 "Regulierung ermöglichen"
@@ -465,7 +465,7 @@
                 }
             ],
             "sources": [],
-            "stories": ["Der Fall Nordmazedonien", "Der Fall der US-Wahlen"],
+            "stories": ["Der Fall Künast", "Der Fall Nordmazedonien", "Der Fall der US-Wahlen"],
             "massnahmen": [
                 "Über Big Tech und Social Media aufklären",
                 "Regulierung ermöglichen"
@@ -606,9 +606,7 @@
             ],
             "stories": ["Der Fall der US-Wahlen"],
             "massnahmen": []
-        }
-    ],
-    "05": [
+        },
         {
             "title": "Einzelkämpfer*innen",
             "subtitle": "z. B. Promis, Influencer:innen, Trolle",
@@ -632,7 +630,9 @@
             ],
             "stories": [],
             "massnahmen": []
-        },
+        }
+    ],
+    "05": [
         {
             "title": "Medien",
             "subtitle": "z. B. NYT, Economist, Spiegel, öffentlich-rechtlicher Rundfunk, …",
@@ -642,7 +642,7 @@
                 }
             ],
             "sources": [],
-            "stories": ["Der Fall Künast", "Der Fall Nordmazedonien", "Der Fall der US-Wahlen"],
+            "stories": ["Der Fall Nordmazedonien", "Der Fall der US-Wahlen"],
             "massnahmen": [
                 "Fakten checken („Debunking“)",
                 "Täter verfolgen & Opfer verteidigen",
@@ -678,7 +678,7 @@
                 }
             ],
             "sources": [],
-            "stories": ["Der Fall Nordmazedonien", "Der Fall der US-Wahlen"],
+            "stories": ["Der Fall Künast", "Der Fall Nordmazedonien", "Der Fall der US-Wahlen"],
             "massnahmen": [
                 "Polarisierung ermitteln",
                 "Neue Beteiligungsformate testen",

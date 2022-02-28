@@ -3,7 +3,7 @@
         "title": "Der Fall Künast",
         "subtitle": "Mit Desinformation attackieren und verletzen:",
         "description": "Verleumdung, die Wut und Hass erzeugt: Gezielt eingesetzt, kann Desinformation wie eine Waffe wirken. Demokratische Politiker*innen sind häufig Opfer solcher Angriffe, die oft von rechtsextremer Seite erfolgen. Als Beispiel erzählen wir die Geschichte von Renate Künast – der es gelang, sich mit Hilfe der Organisation „Hate Aid“ zur Wehr zu setzen.",
-        "image": "./pictures/title_story_2.jpg",
+        "image": "./pictures/title_story_1.jpg",
         "phases": [
             {
                 "phaseIndex": 1,
@@ -260,7 +260,7 @@
         "title": "Der Fall der US-Wahlen",
         "subtitle": "Mit Desinformation verunsichern und polarisieren:",
         "description": "Die Produktion und Verbreitung von Desinformation gehört schon lange zum Arsenal der Kriegsführung zwischen Staaten. Aber was früher vor allem eine Aufgabe hoch spezialisierter Geheimdienste war, die dafür Agent*innen, Flugblätter, Zeitungen oder Rundfunkprogramme einsetzten, lässt sich dank Digitalisierung und Vernetzung sehr viel schneller, leichter und wirkungsvoller organisieren. Als Beispiel erzählen wir von Desinformationskampagnen, mit denen Russland seit dem Zusammenbruch der Sowjetunion insbesondere westliche Länder zu destabilisieren versucht.",
-        "image": "./pictures/title_story_3.jpg",
+        "image": "./pictures/title_story_3.png",
         "phases": [
             {
                 "phaseIndex": 1,

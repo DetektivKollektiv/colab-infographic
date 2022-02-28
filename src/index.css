@@ -1,27 +1,32 @@
 @font-face {
     font-family: Cabin;
-    src: url('/google_fonts/Cabin-Bold.ttf')  format('truetype');
+    src: url('./assets/google_fonts/Cabin-Bold.ttf')  format('truetype');
     font-weight: 700;
+    font-display: swap;
   }
   @font-face {
     font-family: Cabin;
-    src: url('/google_fonts/Cabin-Regular.ttf')  format('truetype');
+    src: url('./assets/google_fonts/Cabin-Regular.ttf')  format('truetype');
     font-weight: 400;
+    font-display: swap;
   }
   @font-face {
     font-family: EB Garamond;
-    src: url('/google_fonts/EBGaramond-Regular.ttf')  format('truetype');
+    src: url('./assets/google_fonts/EBGaramond-Regular.ttf')  format('truetype');
     font-weight: 400;
+    font-display: swap;
   }
   @font-face {
     font-family: Space Grotesk;
-    src: url('/google_fonts/SpaceGrotesk-Bold.ttf')  format('truetype');
+    src: url('./assets/google_fonts/SpaceGrotesk-Bold.ttf')  format('truetype');
     font-weight: 700;
+    font-display: swap;
   }
   @font-face {
     font-family: Space Grotesk;
-    src: url('/google_fonts/SpaceGrotesk-Light.ttf')  format('truetype');
+    src: url('./assets/google_fonts/SpaceGrotesk-Light.ttf')  format('truetype');
     font-weight: 300;
+    font-display: swap;
   }
 @tailwind base;
 @tailwind components;

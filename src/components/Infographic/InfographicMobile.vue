@@ -10,14 +10,12 @@
                 </template>
                 <template v-slot:description>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis distinctio id, amet consequuntur libero a
-                        aliquam laudantium ducimus error cupiditate minima totam
-                        adipisci iste quia harum eveniet iure dicta. Asperiores.
+                        Komm doch gerne auf einem Desktoprechner zurück, um unsere interaktive Wertschöpfungskette zu testen. <br/>
+                        Wenn du bereits auf einem Desktoprechner bist, versuche den Zoomfaktor deines Browsers solange zu reduzieren bis dir die interaktive Wertschöpfungskette angezeigt wird.
                     </p>
                 </template>
             </TextBlock>
-            <img class="mt-12" src="@/assets/infographic_image.png" />
+            <img class="mt-12" src="/pictures/infographic_image.png" />
         </div>
     </div>
 </template>

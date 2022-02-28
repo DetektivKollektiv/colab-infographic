@@ -23,10 +23,10 @@ const activeStory = ref(0)
     </div>
     <Trends id="trendSection"/>
 
-    <div class="my-24 hidden lg:block">
+    <div class="my-24 hidden xl:block">
         <Infographic />
     </div>
-    <InfographicMobile class="lg:hidden" />
+    <InfographicMobile class="xl:hidden" />
     <Publication />
     <Team />
 </template>
