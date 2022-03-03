@@ -234,7 +234,7 @@ export default {
                         @index="scrollTo"
                     ></Pagination>
                 </div>
-                <div v-if="index===length-1" class="mx-auto flex flex-col items-center translate-y-5 text-red-500 animate-bounce">
+                <div v-if="index===length-1" class="hidden absolute bottom-5 left-0 right-0 mx-auto lg:flex flex-col items-center text-red-500 animate-bounce">
                     <p>Unten geht's weiter</p>
                     <i class="fas fa-caret-down"></i>
                 </div>
