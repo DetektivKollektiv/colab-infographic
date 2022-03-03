@@ -32,11 +32,11 @@
                             </div>
                             <div class="mb-4">
                                 <h3 class="border-b-2 border-red-500">Konzept und Inhalt</h3>
-                                <p>Stefan Sippel und Nikolas Gritsch (Vince&Vert), Joana Breidenbach und Katja Jäger (betterplace lab)</p>
+                                <p>Stefan Sippell und Nikolas Gritsch (Vince&Vert, auf Basis eines Modells von legacies.now), Joana Breidenbach und Katja Jäger (betterplace lab)</p>
                             </div>
                             <div class="mb-4">
                                 <h3 class="border-b-2 border-red-500">Design & Implementierung</h3>
-                                <p>Patrick Müller und Henning Trenkamp (codetekt)</p>
+                                <p>Patrick Müller und Henning Trenkamp (codetekt), Gorm Labenz</p>
                             </div>
                         </div>
                     </template>

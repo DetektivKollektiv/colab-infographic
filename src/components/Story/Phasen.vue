@@ -1,7 +1,7 @@
 <template>
     <div class="container-box pt-12">
         <div
-            class="flex flex-col flex-wrap justify-between space-y-8 md:flex-row md:space-y-0"
+            class="flex flex-col-reverse flex-wrap justify-between space-y-8 md:flex-row md:space-y-0"
         >
             <div class="md:w-8/12 flex-shrink-0 md:mr-12">
                 <Text
@@ -18,7 +18,7 @@
                 >
             </div>
             <img
-                class="md:w-3/12 max-w-xl object-contain md:h-auto"
+                class="md:w-3/12 w-full max-w-xl object-contain object-top md:h-auto"
                 v-for="image in images"
                 :key="image"
                 :src="image"

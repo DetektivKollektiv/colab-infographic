@@ -10,7 +10,7 @@
 
         <ButtonDropdown
             class="absolute right-0 z-10"
-            text="Maßnahmen"
+            text="Lösungs-Ansätze"
             :options="options"
             :activeOption="activeOption"
             @option="setMassnahme"

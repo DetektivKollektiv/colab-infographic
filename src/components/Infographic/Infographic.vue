@@ -8,7 +8,7 @@
                     <h1>Die Wertschöpfungskette</h1>
                 </template>
                 <template v-slot:description>
-                    <p>Die folgende interaktive Grafik zeigt unser Modell der Wertschöpfungskette von Desinformation – und darin beispielhaft Akteur*innen („Wer?“) und Methoden („Wie?), verteilt auf die fünf Phasen des Prozesses. Per Klick lassen sich für jedes einzelne Beispiel kurze Informationen abrufen. Zudem werden die drei bereits ausführlich vorgestellten exemplarischen Fälle hier in die Kette einsortiert. Außerdem stellen wir verschiedene Maßnahmen (und auch Organisationen) vor, die jeweils an einem bestimmten Punkt der Wertschöpfungskette ansetzen, um gegen Desinformation vorzugehen. Diese Maßnahmen sind in sieben verschiedene Kategorien eingeteilt, mit denen wir den jeweiligen Wirkungsmechanismus unterscheiden.</p>
+                    <p>Die folgende interaktive Grafik zeigt unser Modell der Wertschöpfungskette von Desinformation – und darin beispielhaft Akteur*innen („Wer?“) und Methoden („Wie?), verteilt auf die fünf Phasen des Prozesses. Per Klick lassen sich für jedes einzelne Beispiel kurze Informationen abrufen. Zudem werden die drei bereits ausführlich vorgestellten exemplarischen Fälle hier in die Kette einsortiert. Außerdem stellen wir verschiedene Lösungs-Ansätze (und auch Organisationen) vor, die jeweils an einem bestimmten Punkt der Wertschöpfungskette ansetzen, um gegen Desinformation vorzugehen. Diese Lösungs-Ansätze sind in sieben verschiedene Kategorien eingeteilt, mit denen wir den jeweiligen Wirkungsmechanismus unterscheiden.</p>
                 </template>
             </TextBlock>
 
