@@ -49,7 +49,7 @@ export default {
                 class="pb-25 flex h-[70%] w-full flex-col justify-start space-y-4 pt-10 lg:h-full lg:justify-end lg:py-20"
             >
                 <div
-                    class="scrollbar-hidden flex h-full w-full snap-x snap-mandatory flex-row overflow-x-scroll"
+                    class="scrollbar-hidden flex h-full w-full snap-x snap-mandatory flex-row overflow-x-scroll lg:overflow-hidden"
                     ref="container"
                     @scroll="update"
                 >
@@ -176,7 +176,7 @@ export default {
                             </div>
                         </div>
                     </div>
-                    <div class="min-w-full">
+                    <div class="flex min-w-full items-end">
                         <div
                             class="container-fixed container-box flex snap-center flex-col-reverse justify-end lg:flex-col lg:justify-between lg:gap-5"
                         >
@@ -234,7 +234,10 @@ export default {
                         @index="scrollTo"
                     ></Pagination>
                 </div>
-                <div v-if="index===length-1" class="hidden absolute bottom-5 left-0 right-0 mx-auto lg:flex flex-col items-center text-red-500 animate-bounce">
+                <div
+                    v-if="index === length - 1"
+                    class="hidden absolute bottom-5 left-0 right-0 mx-auto lg:flex flex-col items-center text-red-500 animate-bounce"
+                >
                     <p>Unten geht's weiter</p>
                     <i class="fas fa-caret-down"></i>
                 </div>
@@ -258,7 +261,6 @@ export default {
 
 <style scoped>
 .intro-container {
-    min-height: 90vh;
     background-image: url("@/assets/bubbles_desktop.svg"),
         linear-gradient(rgba(255, 255, 255, 1), rgba(255, 246, 204, 1));
 }
@@ -283,8 +285,8 @@ export default {
         @apply -bottom-[250vw] -right-[100vw] h-[300vw] w-[300vw];
     }
     .intro-container {
-        height: 95vh;
-        min-height: 667px;
+        height: 800px;
+        /* min-height: 667px; */
         background-image: url("@/assets/bubbles_mobile.svg"),
             linear-gradient(rgba(255, 255, 255, 1), rgba(255, 246, 204, 1));
     }
@@ -294,6 +296,12 @@ export default {
     .overview-intro-slide,
     .follow-up-slides {
         @apply -bottom-[170vw] -right-[50vw] h-[200vw] w-[200vw];
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .intro-container {
+        @apply min-h-[1000px];
     }
 }
 </style>

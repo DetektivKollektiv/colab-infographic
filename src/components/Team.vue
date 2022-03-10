@@ -14,7 +14,7 @@
                             einer digitalen Welt. Für uns ist dies vor allem eine Frage der Kollaboration. So haben sich
                             im betterplace co:lab verschiedene Akteur*innen zusammengefunden – begleitet durch ein
                             Qualifizierungsprogramm und eine Organisationsentwicklerin – um gemeinsam der Frage nachzugehen, wie Zusammenarbeit im komplexen Themenfeld Desinformation aussehen
-                            kann. Entstanden im Rahmen des Projekts „Kompetenznetzwerk gegen Hass im Netz” ist eine interaktive Landkarte zum Themenfeld, die den Entstehungsprozess von Desinformation in Form einer Wertschöpfungskette beschreibt und gesellschaftliche Entwicklungslinien mit in den Blick nimmt.
+                            kann. Entstanden ist eine interaktive Landkarte zum Themenfeld, die den Entstehungsprozess von Desinformation in Form einer Wertschöpfungskette beschreibt und gesellschaftliche Entwicklungslinien mit in den Blick nimmt.
                         </p>
                     </template>
                 </TextBlock>
@@ -22,7 +22,7 @@
             <div>
                 <TextBlock>
                     <template v-slot:title>
-                        <h2>Diese Veröffentlichung ist ein Kollaborationsprojekt folgender Akteur*innen:</h2>
+                        <h2>Die interaktive Landkarte zum Themenfeld Desinformation ist eine Kollaboration von:</h2>
                     </template>
                     <template v-slot:description>
                         <div>
