@@ -16,7 +16,7 @@
             </div>
             <img
                 class="lg:ml-12 lg:max-w-md"
-                src="https://images.unsplash.com/photo-1504198322253-cfa87a0ff25f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                src="/pictures/publication.png"
             />
         </div>
     </div>
