@@ -1,7 +1,7 @@
 <template>
-    <div class="fixed z-40 h-screen w-full cursor-pointer">
+    <div class="absolute z-40 w-full cursor-pointer" :style="hScreen">
         <div
-            class="absolute inset-0 z-50 mx-auto my-auto h-fit max-h-[90%] cursor-default rounded-md bg-white py-6 px-8 overflow-y-auto"
+            class="absolute inset-0 z-50 mx-auto my-auto h-fit max-h-[90%] cursor-default overflow-y-auto rounded-md bg-white py-6 px-8"
             style="max-width: 66ch"
         >
             <ButtonClose
@@ -27,11 +27,12 @@
         </div>
         <div
             @click="infographicStore.closeModal()"
-            class="fixed z-40 h-screen w-full bg-black opacity-50"
+            class="absolute z-40 h-full w-full bg-black opacity-50"
         ></div>
     </div>
 </template>
 <script setup>
+import { computed, onMounted, onUnmounted } from '@vue/runtime-core'
 import { useInfographicStore } from '@/stores/infographic'
 
 const infographicStore = useInfographicStore()
@@ -55,13 +56,22 @@ const elements = {
         ),
 }
 
-import { onUnmounted } from '@vue/runtime-core'
 const content = infographicStore.modalContent
 
-const isLocked = useScrollLock(document.documentElement)
-isLocked.value = true
+const height = ref(0)
 
-onUnmounted(() => {
-    isLocked.value = false
+const { y } = useWindowScroll()
+const hScreen = computed(() => ({
+    height: `${height.value}px`,
+    top: `${y.value}px`,
+}))
+
+onMounted(() => {
+    console.log('load')
+    height.value = window.innerHeight
+})
+useEventListener(window, 'resize', () => {
+    console.log('resize')
+    height.value = window.innerHeight
 })
 </script>
