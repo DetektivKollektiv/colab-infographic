@@ -59,19 +59,22 @@ const elements = {
 const content = infographicStore.modalContent
 
 const height = ref(0)
+const y = ref(0)
 
-const { y } = useWindowScroll()
+window.parent.window.addEventListener('scroll', () => {
+    y.value = window.parent.window.scrollY
+})
+
 const hScreen = computed(() => ({
     height: `${height.value}px`,
     top: `${y.value}px`,
 }))
 
 onMounted(() => {
-    console.log('load')
-    height.value = window.innerHeight
+    height.value = window.parent.window.innerHeight
+    y.value = window.parent.window.scrollY
 })
-useEventListener(window, 'resize', () => {
-    console.log('resize')
-    height.value = window.innerHeight
+useEventListener(window.parent.window, 'resize', () => {
+    height.value = window.parent.window.innerHeight
 })
 </script>
