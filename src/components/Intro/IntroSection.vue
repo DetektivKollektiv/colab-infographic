@@ -67,7 +67,7 @@ export default {
                                     komplexes und gefährliches Phänomen unserer
                                     Zeit. Wir wollen uns davon ein umfassendes
                                     und differenziertes Bild machen – um so
-                                    herauszukriegen, wie sich wirkungsvoll gegen
+                                    herauszufinden, wie sich wirkungsvoll gegen
                                     Desinformation vorgehen lässt.
                                 </p>
                             </div>

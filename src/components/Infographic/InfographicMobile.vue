@@ -5,13 +5,13 @@
                 <template v-slot:title>
                     <h1>
                         Eine detaillierte Ansicht <br />
-                        ist leider nur für Desktop verfügbar
+                        ist leider nur für Desktop (im Vollbildmodus) verfügbar
                     </h1>
                 </template>
                 <template v-slot:description>
                     <p>
-                        Komm doch gerne auf einem Desktoprechner zurück, um unsere interaktive Wertschöpfungskette zu testen. <br/>
-                        Wenn du bereits auf einem Desktoprechner bist, versuche den Zoomfaktor deines Browsers solange zu reduzieren bis dir die interaktive Wertschöpfungskette angezeigt wird.
+                        Komm doch gerne auf einem Desktoprechner zurück, um unsere interaktive Wertschöpfungskette zu erkunden. <br/>
+                        Wenn du bereits auf einem Desktoprechner bist, nutze das Browserfenster im Vollbildmodus und versuche den Zoomfaktor deines Browsers solange zu reduzieren bis dir die interaktive Wertschöpfungskette angezeigt wird.
                     </p>
                 </template>
             </TextBlock>

@@ -3,27 +3,27 @@
         {
             "id": "1",
             "text": "Initiieren",
-            "description": "Also: den Anstoß oder den Auftrag für die Produktion und Verbreitung von Desinformation geben."
+            "description": "Den Anstoß oder den Auftrag für die Produktion und Verbreitung von Desinformation geben."
         },
         {
             "id": "2",
             "text": "Produzieren",
-            "description": "Also: Desinformation entwickeln und erstellen – in allen denkbaren Varianten."
+            "description": "Desinformation entwickeln und erstellen – in allen denkbaren Varianten."
         },
         {
             "id": "3",
             "text": "Platzieren",
-            "description": "Also: Desinformation gezielt veröffentlichen – so, dass sie besonders viel Wirkung entfaltet bzw. Wert erzeugt."
+            "description": "Desinformation gezielt veröffentlichen – so, dass sie besonders viel Wirkung entfaltet bzw. Wert erzeugt."
         },
         {
             "id": "4",
             "text": "Verbreiten",
-            "description": "Also: Desinformation liken, teilen, empfehlen, kommentieren … bewusst oder unbewusst, persönlich oder automatisiert."
+            "description": "Desinformation liken, teilen, empfehlen, kommentieren … bewusst oder unbewusst, persönlich oder automatisiert."
         },
         {
             "id": "5",
             "text": "Beeinflussung",
-            "description": "Also: Desinformation aufnehmen und verarbeiten – mit allen Konsequenzen für Meinung, Haltung und Verhalten."
+            "description": "Desinformation aufnehmen und verarbeiten – mit allen Konsequenzen für Meinung, Haltung und Verhalten."
         }
     ]
 }
