@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute z-40 w-full cursor-pointer" :style="hScreen">
+    <div class="mt-modal absolute z-40 w-full cursor-pointer" :style="hScreen">
         <div
             class="absolute inset-0 z-50 mx-auto my-auto h-fit max-h-[90%] cursor-default overflow-y-auto rounded-md bg-white py-6 px-8"
             style="max-width: 66ch"
@@ -78,3 +78,16 @@ useEventListener(window.parent.window, 'resize', () => {
     height.value = window.parent.window.innerHeight
 })
 </script>
+
+<style scoped>
+@media (max-width: 650px) {
+    .mt-modal {
+        margin-top: -231.11px;
+    }
+}
+@media (min-width: 650px) {
+    .mt-modal {
+        margin-top: -179.11px;
+    }
+}
+</style>
