@@ -1,6 +1,6 @@
 <template>
     <div
-        class="scrollbar-hidden flex h-[80vh] min-h-[600px] snap-x snap-mandatory overflow-x-scroll"
+        class="scrollbar-hidden flex min-h-[600px] snap-x snap-mandatory overflow-x-scroll"
         ref="container"
         @scroll="update"
     >
