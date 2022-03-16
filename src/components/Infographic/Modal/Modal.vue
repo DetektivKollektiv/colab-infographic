@@ -87,7 +87,7 @@ useEventListener(window.parent.window, 'resize', () => {
 }
 @media (min-width: 650px) {
     .mt-modal {
-        margin-top: -179.11px;
+        margin-top: -247.11px;
     }
 }
 </style>
